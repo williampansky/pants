@@ -1,0 +1,21 @@
+{{ partial "header" . }}
+<div class="container">
+  <div class="row col-lg-8 offset-lg-2">
+    {{ partial "navigation" . }}
+  </div>
+</div>
+<hr />
+<main>
+  <section id="404">
+    <div class="container">
+      <div class="row col-lg-8 offset-lg-2">
+        <h1>{{ .Title }}</h1>
+        <p>
+          Hmm.. Seems something is missing, 'cause you just hit a 404. Eh, oh
+          well; <a href="{{ .Site.BaseURL }}">check out this other stuff</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+{{ partial "footer" . }}

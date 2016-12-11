@@ -1,0 +1,48 @@
+{{ partial "header" . }}
+<div class="container">
+  <div class="row col-lg-8 offset-lg-2">
+    {{ partial "navigation" . }}
+  </div>
+</div>
+<hr />
+<main>
+  <section id="breadcrumb">
+    <div class="container">
+      <div class="row col-lg-8 offset-lg-2">
+        <p>
+          My name is William Pansky; I'm a graphic designer and
+          aspiring front-end webdev living and working in Dallas, TX.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="single">
+    <div class="container">
+      <div class="row col-lg-8 offset-lg-2">
+        <h1>{{ .Title }}</h1>
+        {{ if (isset .Params "client") and (isset .Params "category") }}
+        <div class="details">
+          <p class="client"><strong>Client:</strong> {{ .Params.client }}</p>
+          <p class="category"><strong>Category:</strong> {{ .Params.category }}</p>
+        </div>
+        {{ end }}
+        {{ if isset .Params "image" }}
+        <img src="{{ .Params.image }}" alt="{{ .Params.alt }}" />
+        {{ end }}
+        {{ if isset .Params "project" }}
+        <div class="details">
+          <p class="client"><strong>Project:</strong><br /> {{ .Params.project }}</p>
+        </div>
+        {{ end }}
+        {{ if isset .Params "execution" }}
+        <div class="details">
+          <p class="category"><strong>Execution:</strong><br /> {{ .Params.execution }}</p>
+          <hr />
+        </div>
+        {{ end }}
+        {{ .Content }}
+      </div>
+    </div>
+  </section>
+</main>
+{{ partial "footer" . }}

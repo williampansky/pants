@@ -1,0 +1,36 @@
+baseurl = "/"
+title = "William Pansky | Dallas, TX"
+languageCode = "en-us"
+theme = "p2017"
+metadataformat = "toml"
+canonifyurls = true
+menus = "main"
+googleAnalytics = ""
+
+[params]
+  author = "William Pansky"
+  URL = "http://williampansky.com"
+  description = "Dallas, TX; Graphic designer & aspiring front-end webdev."
+  copyright = "© 2016 William Pansky."
+  license = "Released under the MIT license."
+
+[[menu.main]]
+	name   = "Portfolio"
+	url    = "/"
+	weight = 10
+
+[[menu.main]]
+	name   = "LinkedIn*"
+	url    = "https://www.linkedin.com/in/williampansky"
+	weight = 20
+
+[[menu.main]]
+	name   = "Contact"
+	url    = "/contact/"
+	weight = 30
+
+[blackfriday]
+  smartypants	= true
+	fractions = true
+	smartDashes = true
+	plainIDAnchors = true

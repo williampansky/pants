@@ -1,0 +1,24 @@
+<ul>
+  {{ range (where .Data.Pages.ByPublishDate "Section" "portfolio") }}
+      <li>
+        <div class="cube">
+          <a href="{{ .Permalink }}" title="{{ .Params.title }}">
+              <img src="{{ .Params.featured }}" alt="{{ .Params.alt }}" />
+              <h2>{{ .Title }}</h2>
+          </a>
+          <div class="details">
+            <p class="client">Client: {{ .Params.client }}</p>
+            <p class="category">Category: {{ .Params.category }}</p>
+          </div>
+          <div class="details-desktop">
+            <div class="text">
+              <h3>{{ .Title }}</h3>
+              <p class="client">Client: {{ .Params.client }}</p>
+              <p class="category">Category: {{ .Params.category }}</p>
+            </div>
+          </div>
+          <div class="bg"></div>
+        </div>
+      </li>
+  {{ end }}
+</ul>

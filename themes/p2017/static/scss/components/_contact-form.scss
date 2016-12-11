@@ -1,0 +1,25 @@
+// main: ../main.scss
+
+.contact-form {
+  margin-bottom: 1.75rem;
+}
+.contact-form {
+  input {
+    border-radius: 0;
+  }
+  label {
+    margin-bottom: 0;
+  }
+  .form-group {
+    margin-bottom: 2rem;
+  }
+  .btn-outline-primary {
+    border-color: $accent;
+    color: $accent;
+    margin: 1rem 0;
+  }
+  .btn-outline-primary:hover {
+    background: $accent;
+    color: $white;
+  }
+}
