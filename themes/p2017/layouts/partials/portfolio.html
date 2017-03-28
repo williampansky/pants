@@ -10,13 +10,15 @@
             <p class="client">Client: {{ .Params.client }}</p>
             <p class="category">Category: {{ .Params.category }}</p>
           </div>
-          <div class="details-desktop">
-            <div class="text">
-              <h3>{{ .Title }}</h3>
-              <p class="client">Client: {{ .Params.client }}</p>
-              <p class="category">Category: {{ .Params.category }}</p>
+          <a href="{{ .Permalink }}" title="{{ .Params.title }}">
+            <div class="details-desktop">
+              <div class="text">
+                <h3>{{ .Title }}</h3>
+                <p class="client">Client: {{ .Params.client }}</p>
+                <p class="category">Category: {{ .Params.category }}</p>
+              </div>
             </div>
-          </div>
+          </a>
           <div class="bg"></div>
         </div>
       </li>

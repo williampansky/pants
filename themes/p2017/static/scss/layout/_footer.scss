@@ -1,10 +1,10 @@
-// main: ../main.scss
+/* main: ../main.scss*/
 
 footer {
   margin-top: 0;
   margin-bottom: 2.2rem;
   padding: 0;
-  // background-color: $gray-light;
+  /* background-color: $gray-light;*/
 }
 footer {
   p {
@@ -27,6 +27,25 @@ footer {
   a:hover, a:focus, a:active {
     color: $accent;
     text-decoration: none;
+  }
+  #copyright {
+    a {
+      font-weight: 700;
+      &:hover {
+        color: #cd007b;
+      }
+    }
+    img {
+      max-width: 15px;
+      position: relative;
+      top: -1px;
+      -webkit-filter: grayscale(100%);
+              filter: grayscale(100%);
+    }
+    a:hover img {
+      -webkit-filter: grayscale(0%);
+              filter: grayscale(0%);
+    }
   }
 }
 hr.footer {

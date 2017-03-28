@@ -1,16 +1,18 @@
-// main: ../main.scss
+/* main: ../main.scss*/
 
-// Resets
+/* Resets*/
 @import "resets";
 
-// Colors
+/* Colors*/
 @import "colors";
 
-// Type
+/* Type*/
 @import "typography";
 
-// Image Width 100%
+/* Image Width 100%*/
 @import "img";
 
-// Webkit Scrollbar Edits
+/* Webkit Scrollbar Edits*/
 @import "scrollbar";
+
+@import "links";

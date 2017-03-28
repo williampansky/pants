@@ -1,0 +1,13 @@
+/* main: ../main.scss*/
+
+a {
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  &:hover {
+    @extend a;
+  }
+}
+
+a img {
+  @extend a;
+}
