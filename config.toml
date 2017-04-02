@@ -1,16 +1,18 @@
 baseurl = "/"
 title = "William Pansky | Dallas, TX"
 languageCode = "en-us"
-theme = "pFront"
+theme = "p2017"
 metadataformat = "toml"
 canonifyurls = true
 menus = "main"
+publishDir = "docs"
 googleAnalytics = "UA-25458964-1"
 
 [params]
   author = "William Pansky"
   URL = "http://williampansky.com"
   description = "Dallas, TX; Graphic designer & aspiring front-end webdev."
+  subject = "Me, myself, and I."
   copyright = "© 2017 William Pansky."
   license = "Released under the MIT license."
 

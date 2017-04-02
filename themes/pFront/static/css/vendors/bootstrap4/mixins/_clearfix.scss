@@ -1,0 +1,9 @@
+// main: ../main.scss
+
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}

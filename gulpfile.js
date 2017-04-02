@@ -29,15 +29,15 @@ var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('autoprefixer');
 
 gulp.task('default', function () {
-  return gulp.src('themes/2017/static/css/main.scss')
+  return gulp.src('themes/pFront/static/css/main.scss')
     .pipe(sourcemaps.init())
     .pipe(sass()) // using gulp-sass
     .pipe(postcss([ autoprefixer() ]))
-    .pipe(nano())
+    // .pipe(nano())
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('themes/2017/static/css'));
+    .pipe(gulp.dest('static/css'));
 });
 
 gulp.task('watch', function() {
-  gulp.watch('themes/2017/static/css/**.scss', ['default']);
+  gulp.watch('themes/pFront/static/css/**.scss', ['default']);
 });

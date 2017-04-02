@@ -1,0 +1,30 @@
+<nav id="menu">
+  <header class="menu-header">
+    <span class="menu-header-title">Menu</span>
+  </header>
+  <section class="menu-section" id="navPortfolio">
+    <h3 class="menu-section-title">Portfolio</h3>
+    <ul class="menu-section-list">
+      {{ range (where .Data.Pages.ByPublishDate "Section" "portfolio") }}
+        <li>
+          <a href="{{ .Permalink }}" title="{{ .Params.title }}">
+            {{ .Title }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </section>
+  <section class="menu-section" id="navAbout">
+    <h3 class="menu-section-title">William Pansky</h3>
+    <ul class="menu-section-list">
+      {{ $currentNode := . }}
+      {{ range .Site.Menus.main }}
+        <li>
+          <a href="{{ .URL }}" title="{{ .Name }}">
+            {{ .Name }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </section>
+</nav>

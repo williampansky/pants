@@ -1,0 +1,109 @@
+// main: ../main.scss
+
+// card styles exclusive to homepage
+
+#portfolio {
+  & .card-image {
+    max-height: 175px;
+  }
+  & .card-content {
+    padding: 24px 24px 20px;
+    & .card-title {
+      margin-bottom: 0;
+    }
+  }
+  & .card-reveal {
+    & .card-title {
+      font-size: 1.05rem;
+      font-weight: bold;
+      & > p {
+        font-size: .9rem;
+        font-weight: normal;
+        line-height: 1.25;
+      }
+    }
+  }
+  & .card-action {
+    padding: 10px 24px 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    & > a {
+      color: $color-primary;
+      font-size: .65rem;
+      &:hover, &:focus {
+        color: $color-primary-lighten-2;
+      }
+    }
+  }
+  & .iHome {
+    display: none;
+  }
+} // end #portfolio
+
+@media (min-width: 390px) { // @media min-390
+	#portfolio {
+    & .iHome {
+      display: block;
+    }
+	}
+}
+
+@media (min-width: 576px) { // @media min-576
+	#portfolio {
+    & .card-reveal {
+      & .card-title {
+        & > p {
+          font-size: .8rem;
+        }
+      }
+    }
+	}
+}
+
+@media (min-width: 768px) { // @media min-768
+  #portfolio {
+    & .card-reveal {
+      & .card-title {
+        font-size: 1.25rem;
+        & > p {
+          font-size: 1rem;
+          line-height: 1.5;
+        }
+      }
+    }
+	}
+}
+
+@media (min-width: 992px) { // @media min-992
+  #portfolio {
+    & .card-image {
+      max-height: inherit;
+    }
+    & .card-reveal {
+      & .card-title {
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) { // @media min-1200
+	.div {
+
+	}
+}
+
+@media (min-width: 1440px) { // @media min-1440
+	.div {
+
+	}
+}
+
+@media (min-width: 2400px) { // @media min-2400
+	.div {
+
+	}
+}

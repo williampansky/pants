@@ -1,0 +1,53 @@
+{{ partial "header" . }}
+
+<!-- <main id="panel" class="panel">
+  <section class="container" id="photo"></section>
+  <section class="container" id="intro">
+    <div class="row">
+      <div class="col">
+        {{ range where .Site.Pages "Type" "=" "index" }}
+          {{ .Content }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  <section class="container-fluid" id="portfolio">
+    <div class="row grid">
+      {{ partial "portfolio" . }}
+    </div>
+  </section>
+  {{ partial "footer" . }}
+</main> -->
+
+
+
+
+<main id="panel" class="panel">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- left -->
+      <div class="col-sm-12 col-md-4 col-4k-3" id="photo" style="height:100vh;">
+        <span style="height:100vh;"></span>
+      </div>
+      <!-- right -->
+      <div class="col-sm-12 col-md-8 col-4k-9" style="height:100vh; overflow:scroll;">
+        <section class="container" id="intro">
+          <div class="row">
+            <div class="col">
+              {{ range where .Site.Pages "Type" "=" "index" }}
+                {{ .Content }}
+              {{ end }}
+            </div>
+          </div>
+        </section>
+        <section class="container" id="portfolio">
+          <div class="row grid">
+            {{ partial "portfolio-cardgrid" . }}
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</main>
+
+{{ partial "ender" . }}

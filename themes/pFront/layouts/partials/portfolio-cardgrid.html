@@ -1,0 +1,38 @@
+{{ range (where .Data.Pages.ByPublishDate "Section" "portfolio") }}
+
+<!-- <div class="col-sm-12 col-md-6 col-xl-4 col-4k-2 grid-item"> -->
+<div class="col-12 col-md-6 col-lg-4 col-4k-3 grid-item">
+  <div class="card">
+
+    <div class="card-image waves-effect waves-block waves-light">
+      <img src="{{ .Params.featured }}" alt="{{ .Params.alt }}">
+    </div>
+
+    <div class="card-content">
+      <span class="card-title">
+        {{ if isset .Params "icon" }}
+          <i class="material-icons left iHome">{{ .Params.icon }}</i>
+        {{ end }}
+        {{ .Title }}
+      </span>
+      {{ if isset .Params "project" }}
+        <p>{{ .Params.project }}</p>
+      {{ end }}
+      <a class="waves-effect waves-light btn btn-fluid" href="{{ .Permalink }}" title="{{ .Params.title }}">
+        <!-- <i class="material-icons center">cloud_circle</i> -->
+        View project
+      </a>
+    </div>
+
+    {{ if isset .Params "tag" }}
+      <div class="card-action">
+        <a href="#">#{{ .Params.tag }}</a>
+      </div>
+    {{ end }}
+
+  </div>
+</div>
+
+{{ end }}
+
+{{ partial "codepens" . }}

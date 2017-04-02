@@ -1,19 +1,39 @@
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} | {{ .Site.Title }}{{ end }}</title>
-<meta property="og:title" content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} | {{ .Site.Title }}{{ end }}">
-<meta name="description" content="{{ .Site.Params.description }}">
-<meta property="og:description" content="{{ .Description }}">
-<meta name="keywords" content="{{ delimit .Keywords ", " }}">
-<meta property="og:image" content="{{ .Params.featured }}" />
+<!-- up to date list of meta -->
+<!-- https://gist.github.com/kevinSuttle/1997924 -->
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ .Title }}</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,IE=11">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+{{ .Hugo.Generator }}
+
+<meta name="description" content="{{ .Site.Params.description }}">
+<meta name="keywords" content="william pansky, web development, graphic design, dallas">
+<meta name="url" content="{{ .Site.Params.URL }}">
+<meta name="subject" content="{{ .Site.Params.subject }}">
+<!-- <meta name="Classification" content="nonprofit"> -->
+<meta name="copyright" content="{{ .Site.Params.copyright }}">
+<!-- <meta name="coverage" content="US"> -->
+<!-- <meta name="revised" content="Friday, March 24th, 2017, 8:00 pm"> -->
+
+<meta name="designer" content="{{ .Site.Params.author }}, {{ .Site.Params.URL }}">
+<link rel="author" href="humans.txt" type="text/plain">
+
+<!-- REMOVE for deployment -->
+<!-- Tells robots not to search/follow -->
+<!-- <meta name="robots" content="noindex,nofollow"> -->
 <meta name="robots" content="all,follow">
 <meta name="googlebot" content="index,follow,snippet,archive">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-<link rel="manifest" href="/manifest.json">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#303030">
-<meta name="theme-color" content="#f76708">
-{{ template "_internal/google_analytics.html" . }}
-{{ .Hugo.Generator }}
+
+<!-- favicon metas -->
+{{ partial "favicon.html" . }}
+
+<!-- if rss -->
+{{ if .RSSLink -}}
+  <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">
+{{- end }}
+
+<!-- socials/OGs -->
+<meta property="og:description" content="{{ .Site.Params.description }}">
+<!-- <meta property="og:image" content="{{ .Site.BaseURL }}images/TheLunch-OfficialLogo.jpg" /> -->

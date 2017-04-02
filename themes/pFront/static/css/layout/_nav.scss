@@ -1,0 +1,45 @@
+// main: ../main.scss
+
+// mobile nav
+#menu {
+  background-color: $nav-base-bg;
+  & ul > li { float: none; }
+}
+
+#menu {
+  & .menu-header {
+    border-bottom: 1px solid $nav-color-hr;
+    padding: 20px;
+    background-size: 32px;
+    &-title {
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      margin: 0;
+    }
+  }
+  & .menu-section {
+    margin: 25px 0;
+    &-title {
+      text-transform: uppercase;
+      color: $nav-color-section-title;
+      font-weight: 200;
+      font-size: 13px;
+      letter-spacing: 1px;
+      padding: 0 20px;
+      margin: 0;
+    }
+    &-list {
+      padding: 0;
+      margin: 10px 0;
+      list-style: none;
+      & a {
+        display: block;
+        padding: 10px 20px;
+        color: $nav-color;
+        &:hover, &:focus {
+          color: $nav-color-hover;
+        }
+      }
+    }
+  }
+}

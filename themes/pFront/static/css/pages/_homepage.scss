@@ -1,0 +1,12 @@
+// main: ../main.scss
+
+#photo {
+  & span {
+    background: url("/images/ThinkstockPhotos-134713950-compressor.jpg") no-repeat center center;
+    height: 1075px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-size: cover;
+  }
+}

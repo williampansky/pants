@@ -1,0 +1,14 @@
+// main: ../main.scss
+
+// card styles exclusive to homepage
+
+.btn {
+  color: $button-primary-color;
+  background-color: $button-primary-bg;
+  box-shadow: $button-primary-shadow;
+  &:hover, &:focus {
+    color: $button-primary-color-hover;
+    background-color: $button-primary-bg-hover;
+    box-shadow: $button-primary-shadow-hover;
+  }
+}

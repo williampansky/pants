@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "William Pansky",
-  "url": "https://github.com/williampansky/pants",
+  "url": "http://williampansky.com",
+  "repo": "https://github.com/williampansky/pants",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^6.7.1",

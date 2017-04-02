@@ -11,6 +11,8 @@ client = "Goodwill Dallas"
 category = "Web development"
 project = "Establish and implement a new identity for Goodwill Dallas; a fresh look to update their brand and bring the Dallas branch, with it’s 15+ store locations, up to the modern age."
 execution = "To succeed in this endeavor, we scrapped and rebuilt the entire aesthetic from the ground up; the only aspects saved from the chopping block were the primary structure of the logo and the base blue color. Doing this allowed us a clean slate from which to craft from."
+icon = "language"
+tag = "webdevelopment"
 +++
 
 For over 90 years Goodwill Dallas has been committed to providing job training and employment to  those with disabilities and disadvantaging conditions.

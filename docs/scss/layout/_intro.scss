@@ -1,0 +1,21 @@
+// main: ../main.scss
+
+#intro span {
+  font-weight: bold;
+  color: #ff0000;
+}
+
+@media (min-width: 576px) { // @media min-576
+  section#intro {
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+@media (min-width: 992px) { // @media min-992
+  section#intro {
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+/* main: ../main.scss*/
+
+$headings: Proxima Nova, Helvetica, "Arial", sans-serif;
+$body: Proxima Nova, Helvetica, "Arial", sans-serif;
+
+h1,h2,h3,h4,h5,p,ul,li {
+  color: $wcag-lightest-black;
+  letter-spacing: -0.2px;
+}
+
+@media (min-width: 576px) { /* @media min-576*/
+	h1,h2,h3,h4,h5 {
+    font-family: $headings;
+	}
+  p,ul,li,input,label,.btn {
+    font-family: $body;
+  }
+}
+@media (min-width: 768px) { /* @media min-768*/
+  h1,h2,h3,h4,h5 {
+    font-weight: 300;
+	}
+  p,ul,li,input,label,.btn {
+    font-weight: 300;
+  }
+}
+
+#single ul {
+  padding: 0 1.5rem;
+  margin-bottom: 1rem;
+  li {
+    margin-bottom: .5rem;
+  }
+}

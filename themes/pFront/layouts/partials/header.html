@@ -1,7 +1,13 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}" class="no-js">
-<head>
-{{ partial "meta" . }}
-{{ partial "stylesheets" . }}
-</head>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+  <head>
+    {{ partial "meta" . }}
+
+    <!-- Modernizr -->
+  	<!-- https://modernizr.com/ -->
+  	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+
+    {{ partial "stylesheets" . }}
+  </head>
 <body>
+{{ partial "navigation" . }}
