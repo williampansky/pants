@@ -2,47 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Contacts on William Pansky | Dallas, TX</title>
-    <link>/contact/index.xml</link>
+    <link>/contact/</link>
     <description>Recent content in Contacts on William Pansky | Dallas, TX</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2017 William Pansky.</copyright>
-    <atom:link href="/contact/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/contact/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Contact</title>
-      <link>/contact/</link>
+      <link>/contact/index/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/contact/</guid>
-      <description>&lt;p&gt;Please fill out the form below and I will respond back to you as soon as I can.&lt;/p&gt;
-
-
-&lt;div class=&#34;contact-form&#34;&gt;
-	&lt;form action=&#34;https://www.formingo.co/submit/f3844498-f20d-45f1-a652-fc7e3fcd558f&#34; method=&#34;post&#34;&gt;
-		&lt;div class=&#34;form-group&#34;&gt;
-			&lt;label for=&#34;name&#34;&gt;Name&lt;/label&gt;
-			&lt;input type=&#34;text&#34; name=&#34;name&#34; id=&#34;name&#34; class=&#34;form-control&#34; placeholder=&#34;Who are you?&#34;&gt;
-		&lt;/div&gt;
-		&lt;div class=&#34;form-group&#34;&gt;
-			&lt;label for=&#34;email&#34;&gt;Email address&lt;/label&gt;
-			&lt;input type=&#34;text&#34; name=&#34;email&#34; id=&#34;email&#34; class=&#34;form-control&#34; aria-describedby=&#34;emailHelp&#34; placeholder=&#34;How can I get back to you?&#34;&gt;
-			&lt;small id=&#34;emailHelp&#34; class=&#34;form-text text-muted&#34;&gt;Don&#39;t worry, I don&#39;t sell these things.&lt;/small&gt;
-		&lt;/div&gt;
-		&lt;div class=&#34;form-group&#34;&gt;
-			&lt;label for=&#34;exampleInputEmail1&#34;&gt;Message&lt;/label&gt;
-			&lt;textarea name=&#34;message&#34; id=&#34;message&#34; class=&#34;form-control&#34; rows=&#34;3&#34; placeholder=&#34;What&#39;s on your mind?&#34;&gt;&lt;/textarea&gt;
-		&lt;/div&gt;
-			&lt;input type=&#34;hidden&#34; name=&#34;__subject&#34; value=&#34;Contact Form Submission&#34;&gt;
-			&lt;input type=&#34;hidden&#34; name=&#34;__redirect&#34; value=&#34;http://williampansky.com&#34;&gt;
-			&lt;input type=&#34;submit&#34; id=&#34;submit&#34; value=&#34;Submit&#34; class=&#34;btn btn-outline-primary btn-lg btn-block&#34;&gt;
-			&lt;input type=&#34;reset&#34; id=&#34;reset&#34; value=&#34;Reset&#34; class=&#34;btn btn-outline-secondary btn-lg btn-block&#34;&gt;
-	&lt;/form&gt;
-&lt;/div&gt;
-
-
-&lt;p&gt;Talk to you soon.&lt;/p&gt;
-</description>
+      <guid>/contact/index/</guid>
+      <description>Please fill out the form below and I will respond back to you as soon as I can.
+Name  Email address Don&#39;t worry, I don&#39;t sell these things.  Message     Talk to you soon.</description>
     </item>
     
   </channel>
