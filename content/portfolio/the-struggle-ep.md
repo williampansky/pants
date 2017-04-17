@@ -9,7 +9,7 @@ alt = "Businessman sticking his head into the sand."
 date = "2016-09-15"
 client = "Tungsten Wake"
 category = "Packaging"
-project = "Single EP artwork."
+project = "The client wanted to feature a businessman plunging his head into the sand from desperation and despair; I integrated some double exposure styles as well for added effect (and 'cause it's the hotness these days - makes sense, it looks slick)."
 execution = "The client wanted to feature a businessman plunging his head into the sand from desperation and despair; I integrated some double exposure styles as well for added effect (and 'cause it's the hotness these days - makes sense, it looks slick)."
 +++
 

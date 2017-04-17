@@ -1,0 +1,26 @@
+#old {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  color: #303030;
+  background: #ededed;
+
+  & p {
+    font-family: sans-serif;
+    text-align: center;
+    margin: .5rem;
+    padding: .5rem;
+  }
+
+  display: none;
+  @include mq($until: mobile) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,28 +1,167 @@
+// ===========================================
+// INUITCSS
+// ===========================================
 
-// VENDORS
-// 3rd-party vendor styles (normalize, bootstrap), etc.
-@import 'vendors/!module';
+// inuitcss, by @csswizardry
+// github.com/inuitcss | inuitcss.com
 
-// PARTIALS
-// Mixins, definitions (colors, font-families), functions, selectors, etc.
-@import 'partials/!module';
+// This is an example inuitcss manifest file. DO NOT MODIFY THIS FILE DIRECTLY.
+// Instead, copy and paste it into your own CSS directory and make additions,
+// extensions, and modifications there.
 
-// BASE
-// Global styles such as non-vendor resets, typography, etc.
-@import 'base/!module';
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//
+// # CONTENTS
+// ## SETTINGS   Global variables, site-wide settings, config switches, etc.
+// ## TOOLS      Site-wide mixins and functions.
+// ## VENDORS    Vendor-specific imports
+// ## GENERIC    Low-specificity, far-reaching rulesets (e.g. resets).
+// ## OBJECTS    Objects, abstractions, and design patterns (e.g. .o-layout {}).
+// ## COMPONENTS Discrete, complete chunks of UI
+// ## UTILITIES  High-specificity, very explicit selectors.
+//
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-// COMPONENTS
-// Resuable / independant module components (buttons, sliders, etc.)
-@import 'components/!module';
+// -----------------------------------------
+// ## SETTINGS
+// ## Global variables, site-wide settings, config switches, etc.
+// _Config            Project-level configuration and feature switches.
+// _Core              inuitcss’ core and setup settings.
+// _Global            Project-wide variables and settings.
 
-// LAYOUT
-// Styling for larger layout components; e.g. nav, header, footer, etc.
-@import 'layout/!module';
+// -----------------------------------------
+// ## TOOLS
+// ## Site-wide mixins and functions.
+// _Rem               Tools for converting pixel inputs into their rem equivalents.
+// _Font-size         A mixin which guarantees baseline-friendly line-heights.
+// _Clearfix          Micro clearfix mixin.
+// _Hidden            Mixin for hiding elements.
+// _Sass MQ           inuitcss’ default media query manager.
 
-// PAGES
-// Page-specific styling, such as homepage, if necessary.
-@import 'pages/!module';
+// -----------------------------------------
+// ## VENDORS
+// ## Vendor-specific imports
+// _bootstrap-grid    v4a6 grid only
+// _uikit             getuikit.com
+// _slideout          slideout.js.org
 
-// THEMES
-// Styles for different themes; such as holidays, events, etc.
-@import 'themes/!module';
+// -----------------------------------------
+// ## GENERIC
+// ## Low-specificity, far-reaching rulesets (e.g. resets).
+// _Box-sizing        Better default `box-sizing`.
+// _Normalize.css     A level playing field using @necolas’ Normalize.css.
+// _Reset             A tiny reset to complement Normalize.css.
+// _Shared            Sensibly and tersely share some global commonalities (particularly useful when managing vertical rhythm).
+
+// -----------------------------------------
+// ## ELEMENTS
+// ## Unclassed HTML elements (e.g. a {}, blockquote {}, address {}).
+// _Page              Set up our document’s default `font-size` and `line-height`.
+// _Headings          Very minimal (i.e. only font-size information) for headings 1 through 6.
+// _Images            Base image styles.
+// _Tables            Simple table styles.
+
+// -----------------------------------------
+// ## OBJECTS
+// ## Objects, abstractions, and design patterns (e.g. .o-layout {}).
+// _Wrapper           Page constraint object.
+// _Layout            Generic layout module.
+// _Media             Image- and text-like content side by side. The poster-child of OOCSS.
+// _Flag              Table-layout-based advancement on the Media object.
+// _List-bare         Lists with no bullets or indents.
+// _List-inline       A list whose items all site in a line.
+// _Box               Simple boxing abstraction.
+// _Block             Image-on-top-of-text object.
+// _Ratio             A container for maintaining aspect ratio of content.
+// _Crop              Provide a cropping context for media (images, etc.).
+// _Tables            Classes for manipulating `table`s.
+// _Pack              Pack items into available horizontal space.
+
+// -----------------------------------------
+// ## COMPONENTS
+// ## Discrete, complete chunks of UI
+// _Buttons           An example button component in the inuitcss framework.
+
+// -----------------------------------------
+// ## UTILITIES
+// ## High-specificity, very explicit selectors.
+// ## Overrides and helper classes (e.g. .u-hidden {}).
+// _Clearfix          Bind our clearfix onto a utility class.
+// _Widths            Simple width helper classes.
+// _Headings          Reassigning our heading styles to helper classes.
+// _Spacing           Nudge bits of the DOM around with these spacing classes.
+// _Print             Reset-like styles taken from the HTML5 Boilerplate.
+// _Hide              Helper classes to hide content
+
+// -----------------------------------------
+// ## SETTINGS
+@import "settings/settings.config";
+@import "node_modules/inuitcss/settings/settings.core";
+@import "settings/settings.global";
+
+// -----------------------------------------
+// ## VENDORS
+@import "node_modules/bootstrap/scss/bootstrap-grid";
+// @import "vendors/uikit";
+@import "vendors/slideout";
+
+// -----------------------------------------
+// ## TOOLS
+@import "node_modules/inuitcss/tools/tools.rem";
+@import "node_modules/inuitcss/tools/tools.font-size";
+@import "node_modules/inuitcss/tools/tools.clearfix";
+@import "node_modules/inuitcss/tools/tools.hidden";
+@import "tools/mq";
+
+// -----------------------------------------
+// ## GENERIC
+@import "node_modules/inuitcss/generic/generic.box-sizing";
+@import "node_modules/inuitcss/generic/generic.normalize";
+@import "node_modules/inuitcss/generic/generic.reset";
+@import "node_modules/inuitcss/generic/generic.shared";
+
+// -----------------------------------------
+// ## ELEMENTS
+@import "node_modules/inuitcss/elements/elements.page";
+@import "node_modules/inuitcss/elements/elements.headings";
+@import "node_modules/inuitcss/elements/elements.images";
+@import "node_modules/inuitcss/elements/elements.tables";
+
+// -----------------------------------------
+// ## OBJECTS
+// ## Uncomment and add to this section as necessary.
+@import "node_modules/inuitcss/objects/objects.wrapper";
+@import "node_modules/inuitcss/objects/objects.layout";
+@import "node_modules/inuitcss/objects/objects.media";
+@import "node_modules/inuitcss/objects/objects.flag";
+@import "node_modules/inuitcss/objects/objects.list-bare";
+@import "node_modules/inuitcss/objects/objects.list-inline";
+@import "node_modules/inuitcss/objects/objects.box";
+@import "node_modules/inuitcss/objects/objects.block";
+@import "node_modules/inuitcss/objects/objects.ratio";
+@import "node_modules/inuitcss/objects/objects.crop";
+@import "node_modules/inuitcss/objects/objects.tables";
+@import "node_modules/inuitcss/objects/objects.pack";
+@import "objects/homepage";
+
+// -----------------------------------------
+// ## COMPONENTS
+// ## Build and include your project’s UI Compoments here.
+@import "components/components.buttons";
+@import "components/components.header";
+@import "components/components.oldBrowsers";
+@import "components/components.sidebar";
+
+// -----------------------------------------
+// ## UTILITIES
+@import "node_modules/inuitcss/utilities/utilities.clearfix";
+$inuit-offsets: true;
+@import "node_modules/inuitcss/utilities/utilities.widths";
+@import "node_modules/inuitcss/utilities/utilities.headings";
+@import "node_modules/inuitcss/utilities/utilities.spacing";
+@import "node_modules/inuitcss/utilities/utilities.print";
+@import "node_modules/inuitcss/utilities/utilities.hide";

@@ -1,0 +1,378 @@
+body, .panel {
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  touch-action: none;
+}
+
+.slideout-menu {
+  overflow: hidden;
+}
+
+.panel:before {
+  content: '';
+  display: block;
+  background-color: rgba(0,0,0,0);
+  transition: background-color 0.5s ease-in-out;
+}
+
+.panel-open:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,.5);
+  z-index: 99;
+}
+
+#info {
+  border-bottom: 0; // 1px solid #a7a7a7
+  // box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); // 0.24
+  z-index: 2;
+}
+
+#buttons {
+  background: #eee;
+  border: 0;
+  // box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.4); // 0.24
+  z-index: 1;
+  & .col {
+    border-right: 0; // 1px solid rgba(0,0,0,.15);
+  }
+  & .uk-icon-button {
+    // border-width: 1px;
+    // border-style: solid;
+  }
+  &-phone {
+    background: $color-brand-android;
+    // border-color: mix(black, $color-brand-android, 15%);
+  }
+
+  &-mail {
+    background: $color-brand-gmail;
+    // border-color: mix(black, $color-brand-gmail, 15%);
+  }
+
+  &-github {
+    background: $color-brand-github;
+    // border-color: mix(black, $color-brand-github, 15%);
+  }
+
+  &-linkedin {
+    background: $color-brand-linkedin;
+    // border-color: mix(black, $color-brand-linkedin, 15%);
+  }
+}
+
+#text {
+  // box-shadow: 0 -1px 3px rgba(0,0,0,0.1), 0 -1px 2px rgba(0,0,0,0.14);
+  & .item {
+    border-bottom: 1px solid rgba(0,0,0,.15);
+  }
+
+  & .client {
+    flex: 2;
+    min-width: 100%;
+    margin-bottom: .5rem;
+  }
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+.row.no {
+  border: 0;
+}
+
+.row.nobtm {
+  border-bottom: 0;
+}
+
+h1 {
+  font-size: 1.25rem;
+  margin: 0;
+  text-transform: uppercase;
+  position: relative;
+  top: 1px;
+}
+
+#me {
+  height: 90%;
+  margin: 0;
+  padding: 0;
+}
+
+#me > .row {
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  position: relative;
+}
+
+#me.row:last-of-type {
+  border-bottom: 0;
+}
+
+#me #me-header {
+  padding: 4px 0;
+  height: 48px;
+}
+
+#me #me-header > .col {
+  height: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#me #info {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+#me #info > .col {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 15px 30px;
+}
+
+#me #info:after {
+  content: "";
+  height: 100%;
+  width: 1px;
+  margin: 0 auto;
+  background: rgba(0,0,0,.15);
+  position: absolute;
+}
+
+#me #info img {
+  width: 100%;
+  height: 100%;
+  max-width: 100px;
+  max-height: 100px;
+  padding: 1rem;
+  margin: .25rem;
+  filter: grayscale(100%);
+}
+
+#me #buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: scroll;
+}
+
+#me #buttons > .col {
+  /*height: 80px; /* 15% */
+  /*display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;*/
+  padding: 0;
+}
+
+#me #buttons > .col:last-child {
+  border-right: 0;
+}
+
+#me #buttons > .col a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#me #buttons a span.uk-icon-button {
+  width: 115px;
+  height: 40px;
+  border-radius: 0;
+  filter: grayscale(100%);
+  opacity: .5;
+}
+
+#me #buttons a span > svg {
+  color: white;
+  fill: white;
+  width: 20px;
+  height: 20px;
+}
+
+#me #text {
+  height: 100%;
+  overflow: scroll;
+}
+
+#me #text > .col-12 {
+  text-align: left;
+  /*height: 100%;*/
+  /*max-height: 40%;*/
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  filter: grayscale(100%);
+}
+
+#me #text .col-4 {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  text-align: right;
+}
+
+#me #text .col-10 {
+  line-height: 1;
+}
+
+#me #text .col-8 {
+  padding: .5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#me #text .col-2 {
+  padding-left: 0;
+}
+
+#me #text span {
+  font-size: 1rem;
+  line-height: 1;
+  margin: 0;
+}
+
+#me #text .uk-badge {
+  font-size: .75rem;
+  line-height: 1;
+  margin: 0;
+}
+
+#me #text p {
+  font-size: 10.5px;
+  text-transform: uppercase;
+  font-family: Verdana;
+  line-height: 1;
+  margin: 0;
+  padding-right: 20px;
+}
+
+#bottomNav {
+  width: 100%;
+  height: 64px;
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,.35);
+}
+
+#bottomNav span {
+  font-size: 11px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+#bottomNav a span > svg {
+  width: 30px;
+  height: 30px;
+}
+
+#bottomNav > .row {
+  /*border-top: 1px solid rgba(0,0,0,.15);*/
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+#bottomNav .row > .col {
+  border-right: 1px solid rgba(0,0,0,.15);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  position: relative;
+  background: #222;
+}
+
+#bottomNav .row > .col:last-child {
+  border-right: 0;
+}
+
+#bottomNav .row > .col > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 7px 15px 5px;
+}
+
+#bottomNav .row > .col.uk-active {
+  background: #fff;
+}
+
+.slideout-menu {
+  background: #eee;
+}
+
+.panel {
+  background: #fff;
+}
+
+@media (min-width: 375px) { // @media min-375
+
+}
+
+@media (min-width: 575px) { // @media min-575
+	.div {
+
+	}
+}
+
+@media (min-width: 768px) { // @media min-768
+	.div {
+
+	}
+}
+
+@media (min-width: 992px) { // @media min-992
+	.div {
+
+	}
+}
+
+@media (min-width: 1200px) { // @media min-1200
+	.div {
+
+	}
+}
+
+@media (min-width: 1800px) { // @media min-1800
+	.div {
+
+	}
+}

@@ -1,0 +1,78 @@
+// ===========================================
+//   #CONFIG
+// ===========================================
+
+// A map of global config settings. Define any project-level configuration,
+// feature switches, etc. in here.
+
+$inuit-config: (
+  env: dev,
+  healthcheck: false,
+  debug: true,
+);
+
+// You can access data in this map using the following function:
+// inuit-config(<key>)
+
+// Example usage:
+// @if (inuit-config(debug) == true) { ...  }
+
+@function inuit-config($key) {
+  @return map-get($inuit-config, $key);
+}
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//
+// # DEVELOPMENT
+//
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// -----------------------------------------
+// ## SASS-MQ - Show Media Breakpoints
+// ## Swap [true][false] for [on]|[off] respectively
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//
+// # COLOR
+// # https://scotch.io/tutorials/aesthetic-sass-2-colors
+//
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+$color-black:                 #000;
+$color-black-lighten-1:       mix(white, $color-black, 15%);
+$color-black-lighten-2:       mix(white, $color-black, 30%);
+$color-white:                 #fff;
+$color-white-darken-1:        mix(black, $color-white, 5%);
+$color-white-darken-2:        mix(black, $color-white, 10%);
+$color-white-darken-3:        mix(black, $color-white, 20%);
+
+$color-primary:               #607d8b; // .blue-grey
+$color-primary-lighten-1:     #78909c;
+$color-primary-lighten-2:     #90a4ae;
+$color-primary-darken-1:      #546e7a;
+$color-primary-darken-2:      #455a64;
+
+$color-accent:                #9e9e9e; // .grey
+$color-accent-lighten-1:      #bdbdbd;
+$color-accent-lighten-2:      #e0e0e0;
+$color-accent-darken-1:       #757575;
+$color-accent-darken-2:       #616161;
+
+$color-headingsColor:         #303030; // off-black
+$color-bodyColor:             #595959; // light-black 4c4c4c
+
+$color-success:               blue;
+$color-error:                 yellow;
+
+// networks
+$color-brand-android:         #a4c639;
+$color-brand-behance:         #053eff;
+$color-brand-github:          #171515;
+$color-brand-gmail:           #db4a39;
+$color-brand-linkedin:        #0e76a8;

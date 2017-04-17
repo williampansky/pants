@@ -11,6 +11,7 @@ client = "Tungsten Wake"
 category = "Packaging"
 project = "Album artwork and design."
 execution = "The boys liked epic scenery. They told me to make something that simply looked beautiful, so I gave it a shot! Tungsten is a type of metal; I manipulated a metal sphere plunging into a lake to signify motion and reaction."
+hashtag = "Packaging"
 +++
 
 Many years ago I created an album for a local band named Solcide; they loved the work. They enjoyed it so much that contacted me again, years later, and hired me to whip them up something new for their latest project - Tungsten Wake.

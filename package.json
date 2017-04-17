@@ -8,7 +8,10 @@
   },
   "author": "William Pansky",
   "url": "http://williampansky.com",
-  "repo": "https://github.com/williampansky/pants",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/williampansky/pants"
+  },
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^6.7.1",
@@ -18,5 +21,12 @@
     "gulp-postcss": "^6.3.0",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.4.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "inuitcss": "^6.0.0-beta.4",
+    "sass-mq": "^3.3.2",
+    "slideout": "^1.0.1",
+    "uikit": "^3.0.0-beta.20"
   }
 }

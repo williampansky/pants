@@ -33,11 +33,11 @@ gulp.task('default', function () {
     .pipe(sourcemaps.init())
     .pipe(sass()) // using gulp-sass
     .pipe(postcss([ autoprefixer() ]))
-    // .pipe(nano())
+    .pipe(nano())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('static/css'));
 });
 
 gulp.task('watch', function() {
-  gulp.watch('themes/pFront/static/css/**.scss', ['default']);
+  gulp.watch('themes/pFront/static/css/**/*.scss', ['default']);
 });
