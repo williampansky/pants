@@ -1,7 +1,7 @@
 baseurl = "/"
 title = "William Pansky | Dallas, TX"
 languageCode = "en-us"
-theme = "p2017"
+theme = "pFront"
 metadataformat = "toml"
 canonifyurls = true
 menus = "main"

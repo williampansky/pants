@@ -1,24 +1,30 @@
 {{ partial "header" . }}
 
-<article id="panel" class="panel">
+{{ partial "topNav" . }}
 
-  {{ partial "topBar" . }}
+<main id="mainContent" class="panel">
 
-  <header class="container">
-    <div class="row">
-      <div class="col">
-        <h1>{{ .Title }}</h1>
+  <article id="thisContent">
+
+    <header class="container">
+      <div class="row">
+        <div class="col">
+          <h1>{{ .Title }}</h1>
+        </div>
       </div>
-    </div>
-  </header>
-  <section class="container">
-    <div class="row">
-      <div class="col">
-        {{ .Content }}
+    </header>
+    <section class="container">
+      <div class="row">
+        <div class="col">
+          {{ .Content }}
+        </div>
       </div>
-    </div>
-  </section>
-  {{ partial "footer" . }}
-</article>
+    </section>
+
+  </article>
+
+</main>
+
+{{ partial "bottomNav" . }}
 
 {{ partial "ender" . }}
