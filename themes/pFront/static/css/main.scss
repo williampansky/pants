@@ -146,17 +146,15 @@
 @import "node_modules/inuitcss/objects/objects.crop";
 @import "node_modules/inuitcss/objects/objects.tables";
 @import "node_modules/inuitcss/objects/objects.pack";
-@import "objects/content";
 @import "objects/homepage";
 
 // -----------------------------------------
 // ## COMPONENTS
 // ## Build and include your project’s UI Compoments here.
-@import "components/components.bottomNav";
 @import "components/components.buttons";
+@import "components/components.header";
 @import "components/components.oldBrowsers";
 @import "components/components.sidebar";
-@import "components/components.topNav";
 
 // -----------------------------------------
 // ## UTILITIES

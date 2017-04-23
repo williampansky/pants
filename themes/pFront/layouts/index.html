@@ -1,10 +1,10 @@
 {{ partial "header" . }}
 
-{{ partial "topNav" . }}
-
-<main id="homeContent" class="panel">
+<main id="panel" class="panel">
 
   <section class="container-fluid" id="me">
+
+    {{ partial "topBar" . }}
 
     <!-- info -->
     <div class="row" id="info">
@@ -80,8 +80,36 @@
 
   </section>
 
-</main>
+  <!-- bottomNav -->
+  <section class="container-fluid" id="bottomNav">
+    <ul class="row nobtm uk-nav uk-nav-default uk-switcher" uk-switcher>
+      <li class="col uk-active">
+        <a href="#">
+          <span uk-icon="icon: home"></span>
+          <span>Home</span>
+        </a>
+      </li>
+      <li class="col">
+        <a href="#">
+          <span uk-icon="icon: code"></span>
+          <span>Work</span>
+        </a>
+      </li>
+      <li class="col">
+        <a href="#">
+          <span uk-icon="icon: info"></span>
+          <span>Resume</span>
+        </a>
+      </li>
+      <li class="col">
+        <a href="#">
+          <span uk-icon="icon: settings"></span>
+          <span>Settings</span>
+        </a>
+      </li>
+    </ul>
+  </section>
 
-{{ partial "bottomNav" . }}
+</main>
 
 {{ partial "ender" . }}
