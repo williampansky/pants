@@ -1,24 +1,15 @@
 {{ partial "header" . }}
 
+{{ partial "nav-mobile-top" . }}
+
 <article id="panel" class="panel">
 
-  {{ partial "topBar" . }}
 
-  <header class="container">
-    <div class="row">
-      <div class="col">
-        <h1>{{ .Title }}</h1>
-      </div>
-    </div>
-  </header>
-  <section class="container">
-    <div class="row">
-      <div class="col">
-        {{ .Content }}
-      </div>
-    </div>
-  </section>
-  {{ partial "footer" . }}
+
+
+
 </article>
+
+{{ partial "footer" . }}
 
 {{ partial "ender" . }}

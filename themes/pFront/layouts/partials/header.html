@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "en-us" }}">
   <head>
+
     {{ partial "meta" . }}
 
     <!-- Modernizr -->
@@ -8,6 +9,6 @@
   	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
 
     {{ partial "stylesheets" . }}
+
   </head>
 <body style="display: none;">
-{{ partial "navigation" . }}

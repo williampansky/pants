@@ -1,33 +1,24 @@
 {{ partial "header" . }}
 
-<header>
-  <nav>
-    {{ partial "navigation" . }}
+<main id="panel" class="panel">
+
+  <section class="container-fluid" id="me">
+
     {{ partial "nav-mobile-top" . }}
-  </nav>
-</header>
 
-<section id="aboutMe">
-  <div class="container">
-
+    <!-- info -->
     <div class="row" id="info">
       <div class="col">
         <img src="{{ .Site.BaseURL }}images/pansky.jpg" alt="" class="uk-border-circle" />
         <span>Based in Dallas, TX</span>
       </div>
-
       <div class="col">
         <img src="{{ .Site.BaseURL }}images/Thehoth-Seo-Seo-web-code.ico" alt="" class="uk-border-circle" />
         <span>Front-end Developer</span>
       </div>
     </div>
 
-  </div>
-</section>
-
-<section id="contactMe">
-  <div class="container">
-
+    <!-- contact -->
     <div class="row" id="buttons" data-slideout-ignore>
       <div class="col">
         <a href="">
@@ -51,36 +42,46 @@
       </div>
     </div>
 
-  </div>
-</section>
+    <!-- portfolio -->
+    <ul class="row" id="text">
 
-<main id="critiqueMe">
+      {{ range (where .Data.Pages.ByPublishDate "Section" "portfolio") }}
 
-  {{ range (where .Data.Pages.ByPublishDate "Section" "portfolio") }}
-
-  <article id="">
-    <header>
-      <div class="container">
+      <li class="col-12 item">
         <div class="row">
-          <div class="col">
+          <div class="col-4">
             <a href="{{ .Permalink }}" title="{{ .Params.title }}">
                 <img src="{{ .Params.featured }}" alt="{{ .Params.alt }}" />
             </a>
           </div>
+          <div class="col-8">
+            <div class="row no">
+              <div class="col-12">
+                <span>{{ .Title }}</span>
+              </div>
+            </div>
+            <div class="row no">
+              {{ if (isset .Params "client") and (isset .Params "category") }}
+              <div class="col client">
+                <p class="client">{{ .Params.client }}</p>
+              </div>
+              <div class="col">
+                <p class="category">#{{ .Params.category }}</p>
+              </div>
+              {{ end }}
+            </div>
+          </div>
         </div>
-      </div>
-    </header>
+      </li>
 
-    <!-- TODO: Finish html5 semantic layout conversion from index-old  -->
+      {{ end }}
 
-    <footer></footer>
-  </article>
+    </ul>
+
+  </section>
+
 </main>
 
-<aside>
-  <nav></nav>
-</aside>
+{{ partial "footer" . }}
 
-<footer>
-  <nav></nav>
-</footer>
+{{ partial "ender" . }}
