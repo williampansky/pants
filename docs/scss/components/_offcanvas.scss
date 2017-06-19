@@ -1,0 +1,158 @@
+// ==============================================================
+// OFFCANVAS & PROJECT NAV
+//
+// Totally not UIkit's theme code... okay, it is.
+// ==============================================================
+
+.uk-offcanvas {
+  & li > a {
+    font-size: 1rem;
+  }
+}
+
+.uk-nav-primary {
+  & li > a {
+    font-size: .875rem;
+  }
+}
+
+aside {
+  & .uk-container.uk-margin-large-bottom {
+    max-width: none;
+    padding: 0 !important;
+    margin-bottom: 20px!important;
+    & .uk-text-bold {
+      display: none;
+    }
+    & .pansky-project-list-title {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+.tm-sidebar-left {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+  box-sizing: border-box;
+  background: #fdfdfd;
+  width: 240px !important;
+  padding: 20px 20px 40px;
+  border-right: 1px #e5e5e5 solid;
+  overflow-y: auto;
+
+  // & .uk-active {
+  //   background: #282c34;
+  //   & > a {
+  //     color: #abb2bf !important;
+  //     padding-left: 10px;
+  //   }
+  // }
+}
+
+.tm-sidebar-right {
+    position: absolute;
+    top: 0;
+    left: calc(100% + 0px);
+    width: 200px;
+}
+
+@media (min-width: 960px) {
+    .tm-sidebar-left+.tm-main {
+        padding-left:240px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .tm-sidebar-right {
+        left:calc(100% + 0px);
+    }
+
+    .tm-sidebar-left+.tm-main {
+        padding-left: 40px;
+    }
+}
+
+@media (min-width: 1400px) {
+    // .tm-sidebar-left {
+    //     width:300px !important;
+    //     padding: 45px 45px 60px 45px
+    // }
+
+    .tm-sidebar-right {
+        left: calc(100% + 60px)
+    }
+
+    .tm-sidebar-left+.tm-main {
+        padding-left: 40px
+    }
+}
+
+.tm-navbar-container:not(.uk-navbar-transparent) {
+    background: linear-gradient(to left, #28a5f5, #1e87f0)
+}
+
+.tm-navbar-container .uk-navbar-nav>li>a,.tm-navbar-container .uk-navbar-item:not(.uk-logo),.tm-navbar-container .uk-navbar-toggle {
+    height: 70px;
+    font-size: 13px
+}
+
+.tm-navbar-container .uk-navbar-nav>li>a {
+    position: relative
+}
+
+.tm-navbar-container .uk-navbar-nav>li>a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 15px;
+    right: calc(102% - 15px);
+    bottom: 20px;
+    height: 1px;
+    background-color: currentColor;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    -webkit-transition-property: right;
+    transition-property: right
+}
+
+.tm-navbar-container .uk-navbar-nav>li>a:hover::before {
+    right: 15px
+}
+
+.tm-nav>li.uk-active>a {
+    position: relative
+}
+
+.tm-nav>li.uk-active>a:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: -25px;
+    width: 15px;
+    border-top: 1px solid #1e87f0
+}
+
+.tm-nav .uk-nav-header {
+    padding: 8px 0;
+    border-bottom: 1px solid #e5e5e5
+}
+
+@media (min-width: 960px) {
+    .tm-subnav {
+        margin-left:-50px
+    }
+
+    .tm-subnav>* {
+        padding-left: 50px
+    }
+}
+
+.tm-subnav>*>:first-child {
+    text-transform: capitalize
+}
+
+.tm-width-small {
+    width: 80px
+}

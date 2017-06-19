@@ -4,6 +4,26 @@
 // npm install --only=dev
 var gulp = require('gulp');
 
+// Gulp Util
+// https://www.npmjs.com/package/gulp-util
+// npm install gulp-util
+var gutil = require('gulp-util');
+
+// Babel
+// https://www.npmjs.com/package/gulp-babel
+// npm install gulp-babel --save-dev babel-preset-es2015
+const babel = require('gulp-babel');
+
+// Babel - Babili
+// https://www.npmjs.com/package/gulp-babili
+// npm install gulp-babili --save-dev
+const babili = require("gulp-babili");
+
+// Gulp Rename
+// https://www.npmjs.com/package/gulp-rename
+// npm install gulp-rename --save-dev
+var rename = require("gulp-rename");
+
 // Sass
 // https://www.npmjs.com/package/gulp-sass
 // npm install gulp-sass --save-dev
@@ -14,12 +34,22 @@ var sass = require('gulp-sass');
 // npm install gulp-postcss --save-dev
 var postcss = require('gulp-postcss');
 
+// Stylelint
+// https://www.npmjs.com/package/gulp-stylelint
+// https://stylelint.io/user-guide/
+// npm install gulp-stylelint --save-dev
+// Stylelint — Standard Config
+// https://www.npmjs.com/package/stylelint-config-standard
+// npm install stylelint-config-standard --save-dev
+const gulpStylelint = require('gulp-stylelint');
+
 // CSSnano
 // https://www.npmjs.com/package/gulp-cssnano
 // npm install gulp-cssnano --save-dev
 var nano = require('gulp-cssnano');
 
 // Source Maps
+// npm install gulp-sourcemaps --save-dev
 // https://www.npmjs.com/package/gulp-sourcemaps
 var sourcemaps = require('gulp-sourcemaps');
 
@@ -28,16 +58,108 @@ var sourcemaps = require('gulp-sourcemaps');
 // npm install gulp-autoprefixer --save-dev
 var autoprefixer = require('autoprefixer');
 
-gulp.task('default', function () {
-  return gulp.src('themes/pFront/static/css/main.scss')
+// Gulp Vinyl FTP
+// https://www.npmjs.com/package/vinyl-ftp
+// http://loige.co/gulp-and-ftp-update-a-website-on-the-fly/
+// npm install --save-dev vinyl-ftp
+// var ftp = require( 'vinyl-ftp' );
+
+// -----------------------------------------
+// ## RUN CMD 'gulp' TO COMPILE SCSS
+gulp.task('default', () => {
+  return gulp.src('themes/pFront/static/scss/main.scss')
     .pipe(sourcemaps.init())
     .pipe(sass()) // using gulp-sass
-    .pipe(postcss([ autoprefixer() ]))
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(gulpStylelint({
+      reporters: [
+        {
+          formatter: 'verbose', console: true
+        }
+      ]
+    }))
     .pipe(nano())
+    .pipe(rename('pants.min.css'))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('static/css'));
+    .pipe(gulp.dest('themes/pFront/static/css'))
 });
 
-gulp.task('watch', function() {
-  gulp.watch('themes/pFront/static/css/**/*.scss', ['default']);
+// -----------------------------------------
+// ## WATCH SCSS, COMPILE AND MINIFY ON SAVE
+gulp.task('watch', () => {
+  gulp.watch('themes/pFront/static/scss/**/*.scss', ['default']);
+});
+
+// -----------------------------------------
+// ## RUN CMD 'gulp deploy' TO DEPLOY TO FTP
+// Guide: discourse.roots.io/t/deploy-to-production-server-on-shared-hosting-with-gulp-with-ftp/4435
+gulp.task('deploy', function() {
+  var conn = ftp.create( {
+    host:     'hostname',
+    user:     'username',
+    password: 'password',
+    parallel: 10,
+    log:      gutil.log
+  });
+
+  // Match files using the patterns the shell uses, like stars and stuff.
+  // https://github.com/isaacs/node-glob
+  var globs = [
+    'static/css/*.css',
+    'static/css/*.map',
+    'static/js/*.js',
+    '!*',
+    '!*.php',
+    '!dist/**',
+    '!lang/**',
+    '!templates/*.php',
+    '!lib/*.php',
+    '!.git',
+    '!*.json',
+    '!*.md',
+    '!*.xml',
+    '!assets',
+    '!bower_components',
+    '!dist/scripts/jquery.js',
+    '!dist/scripts/jquery.js.map',
+    '!dist/scripts/main.js',
+    '!dist/scripts/main.js.map',
+    '!dist/scripts/modernizr.js',
+    '!dist/scripts/modernizr.js.map',
+    '!dist/styles/editor-style.css',
+    '!dist/styles/editor-style.css.map',
+    '!dist/styles/main.css',
+    '!dist/styles/main.css.map',
+    '!gulpfile.js',
+    '!node_modules',
+    '!node_modules/**',
+  ];
+
+  // using base = '.' will transfer everything to /public_html correctly
+  // turn off buffering in gulp.src for best performance
+  return gulp.src( globs, { base: '.', buffer: false } )
+    // .pipe( conn.newer( '/public_html/wp-content/themes/IllusiveApparel/assets/css' ) ) // only upload newer files
+    .pipe( conn.dest( '' ) );
+});
+
+// -----------------------------------------
+// ## RUN CMD 'gulp babel' TO MINIFY JS
+gulp.task('babel', () => {
+  return gulp.src('themes/pFront/static/babel/pansky.js')
+    .pipe(babel({
+      presets: ['es2015']
+    }))
+    .pipe(babili({
+      mangle: {
+        keepClassNames: true
+      }
+    }))
+    .pipe(rename('pansky.min.js'))
+    .pipe(gulp.dest('themes/pFront/static/js'));
+});
+
+gulp.task('babel watch', () => {
+  gulp.watch('themes/pFront/static/babel/*.js', ['babel']);
 });

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>/portfolio/the-struggle-ep/</loc>
@@ -32,6 +33,11 @@
   </url>
   
   <url>
+    <loc>/projects/thelunch.info/</loc>
+    <lastmod>2015-06-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/portfolio/the-strangle-and-the-struggle-ep/</loc>
     <lastmod>2014-03-29T00:00:00+00:00</lastmod>
   </url>
@@ -42,7 +48,7 @@
   </url>
   
   <url>
-    <loc>/contact/index/</loc>
+    <loc>/contact/</loc>
   </url>
   
   <url>
@@ -51,12 +57,18 @@
   </url>
   
   <url>
-    <loc>/index/</loc>
+    <loc>/</loc>
   </url>
   
   <url>
     <loc>/portfolio/</loc>
     <lastmod>2016-09-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/projects/</loc>
+    <lastmod>2015-06-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

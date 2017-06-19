@@ -1,7 +1,22 @@
-
-{{ partial "footer-content" . }}
-
-{{ partial "scripts" . }}
+</main>
+<hr class="uk-nav-divider-small"></hr>
+<footer class="uk-offcanvas-content pansky-project">
+  <section id="contact" class="uk-container uk-section uk-section-small">
+    <h2 class="uk-text-bold">Contact</h2>
+    {{ partial "contact-form" . }}
+  </section>
+  <section class="uk-container uk-margin-large-bottom">
+    {{ partial "social" . }}
+  </section>
+  <section class="uk-container">
+    {{ partial "projects" . }}
+  </section>
+  <section class="uk-container uk-margin-small-bottom">
+    <p class="uk-text-small uk-margin-small-bottom" id="copyrightFooter">
+      © <script>document.getElementById('copyrightFooter').appendChild(document.createTextNode(""+new Date().getFullYear()))</script>&nbsp;William Pansky.
+    </p>
+  </section>
+</footer>
 
 <div id="old">
   <div class="container">
@@ -14,6 +29,8 @@
     </div>
   </div>
 </div>
+
+{{ partial "scripts" . }}
 
 </body>
 </html>

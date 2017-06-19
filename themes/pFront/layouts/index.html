@@ -1,86 +1,13 @@
 {{ partial "header" . }}
 
-<header>
-  <nav>
-    {{ partial "navigation" . }}
-    {{ partial "nav-mobile-top" . }}
-  </nav>
-</header>
-
-<section id="aboutMe">
-  <div class="container">
-
-    <div class="row" id="info">
-      <div class="col">
-        <img src="{{ .Site.BaseURL }}images/pansky.jpg" alt="" class="uk-border-circle" />
-        <span>Based in Dallas, TX</span>
-      </div>
-
-      <div class="col">
-        <img src="{{ .Site.BaseURL }}images/Thehoth-Seo-Seo-web-code.ico" alt="" class="uk-border-circle" />
-        <span>Front-end Developer</span>
-      </div>
-    </div>
-
-  </div>
+<section class="uk-container uk-margin-medium-top uk-margin-large-bottom uk-section uk-section-small">
+  <h1 class="uk-article-title uk-text-bold">William Pansky</h1>
+  <p class="uk-text-lead">Front-end web developer and graphic designer with a desire to solve complex website interface problems through creative and UX-minded solutions.</p>
+  <h3 class="uk-text-bold"><a href="/resume">Resume</a></h3>
 </section>
 
-<section id="contactMe">
-  <div class="container">
+{{ partial "projects" . }}
 
-    <div class="row" id="buttons" data-slideout-ignore>
-      <div class="col">
-        <a href="">
-          <span class="uk-icon-button" uk-icon="icon: phone" id="buttons-phone"></span>
-        </a>
-      </div>
-      <div class="col">
-        <a href="">
-          <span class="uk-icon-button" uk-icon="icon: mail" id="buttons-mail"></span>
-        </a>
-      </div>
-      <div class="col">
-        <a href="">
-          <span class="uk-icon-button" uk-icon="icon: github" id="buttons-github"></span>
-        </a>
-      </div>
-      <div class="col">
-        <a href="">
-          <span class="uk-icon-button" uk-icon="icon: linkedin" id="buttons-linkedin"></span>
-        </a>
-      </div>
-    </div>
+{{ partial "projects-codepens" . }}
 
-  </div>
-</section>
-
-<main id="critiqueMe">
-
-  {{ range (where .Data.Pages.ByPublishDate "Section" "portfolio") }}
-
-  <article id="">
-    <header>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <a href="{{ .Permalink }}" title="{{ .Params.title }}">
-                <img src="{{ .Params.featured }}" alt="{{ .Params.alt }}" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- TODO: Finish html5 semantic layout conversion from index-old  -->
-
-    <footer></footer>
-  </article>
-</main>
-
-<aside>
-  <nav></nav>
-</aside>
-
-<footer>
-  <nav></nav>
-</footer>
+{{ partial "footer-home" . }}

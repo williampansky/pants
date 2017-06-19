@@ -71,6 +71,15 @@ Photography by the talented Krystal Hills.</description>
     </item>
     
     <item>
+      <title>thelunch.info</title>
+      <link>/projects/thelunch.info/</link>
+      <pubDate>Tue, 23 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/thelunch.info/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>The Strangle and The Struggle EP</title>
       <link>/portfolio/the-strangle-and-the-struggle-ep/</link>
       <pubDate>Sat, 29 Mar 2014 00:00:00 +0000</pubDate>
@@ -82,20 +91,20 @@ Cover art by Lango Oliveira.</description>
     
     <item>
       <title>Contact</title>
-      <link>/contact/index/</link>
+      <link>/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/contact/index/</guid>
+      <guid>/contact/</guid>
       <description>Please fill out the form below and I will respond back to you as soon as I can.
-Name  Email address Don&#39;t worry, I don&#39;t sell these things.  Message     Talk to you soon.</description>
+Talk to you soon.</description>
     </item>
     
     <item>
       <title>Digital Design &amp; Front-End Dev</title>
-      <link>/index/</link>
+      <link>/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/index/</guid>
+      <guid>/</guid>
       <description></description>
     </item>
     
@@ -105,8 +114,9 @@ Name  Email address Don&#39;t worry, I don&#39;t sell these things.  Message    
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/resume/</guid>
-      <description>Please fill out the form below and I will respond back to you as soon as I can.
-Talk to you soon.</description>
+      <description>William Pansky 30-year-old front-end web developer and graphic designer living in Dallas, TX. I love art, design, type, and all things visually creative, inspiring, and expressive. Laughing is my primary form of exercise.
+Graphic Designer &amp;amp; Front-end Web Developer — Miller Ad Agency JUN 2014–JUL 2017 (3yr, 1mo) — Dallas, TX Full-service advertising agency.
+ Directed, developed, and managed client web projects; taught and instructed intra-agency team-members on Wordpress content design, creation, and publishing.</description>
     </item>
     
   </channel>

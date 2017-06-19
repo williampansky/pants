@@ -1,0 +1,29 @@
+<!-- Contact Form Powered by https://formingo.co -->
+<form action="https://formspree.io/williampansky@gmail.com" method="post" class="uk-form-stacked">
+	<fieldset class="uk-fieldset" uk-grid>
+		<div>
+			<label class="uk-form-label" for="name">Name</label>
+			<input type="text" name="name" id="name" class="uk-input" placeholder="Who are you?">
+		</div>
+		<div>
+			<label class="uk-form-label" for="email">Email address</label>
+			<input type="text" name="email" id="email" class="uk-input" aria-describedby="emailHelp" placeholder="How can I get back to you?">
+			<p id="emailHelp" class="uk-text-meta uk-margin-remove-top">Don't worry, I don't sell these things.</p>
+		</div>
+		<div>
+			<label class="uk-form-label" for="exampleInputEmail1">Message</label>
+			<textarea name="message" id="message" class="uk-textarea" rows="3" placeholder="What's on your mind?"></textarea>
+		</div>
+		<div>
+			<p class="uk-text-small">
+				<span class="uk-text-uppercase">Note:</span> I use formspree.io for this bit, due to it being a static-site and all. Their site has been loading slowly recently, but it works — just give it a second or two! Also, anyone got any better alternatives? Cheers.
+			</p>
+		</div>
+		<div>
+			<input type="hidden" name="__subject" value="Contact Form Submission">
+			<input type="hidden" name="__redirect" value="http://williampansky.com">
+			<input type="submit" id="submit" value="Submit" class="uk-button uk-button-primary">
+			<input type="reset" id="reset" value="Reset" class="uk-button uk-button-default">
+		</div>
+	</fieldset>
+</form>
