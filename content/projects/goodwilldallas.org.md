@@ -1,6 +1,7 @@
 +++
 draft = false
 title = "GoodwillDallas.org"
+type = "project-good-website"
 description = "Complete overhaul of branding guidelines and website for the Dallas branch of Goodwill."
 keywords = [ "goodwill", "dallas", "non profit", "npo" ]
 featured = "/img/portfolio/goodwill-dallas-website/featured.jpg"
