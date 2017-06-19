@@ -1,23 +1,19 @@
 </main>
 <hr class="uk-nav-divider-small"></hr>
 <footer class="uk-offcanvas-content pansky-project">
-  <section id="contact" class="uk-container uk-section uk-section-small">
-    <h2 class="uk-text-bold">Contact</h2>
-    {{ partial "contact-form" . }}
-  </section>
   <section class="uk-container uk-margin-large-bottom">
     {{ partial "social" . }}
   </section>
   <section class="uk-container">
     {{ partial "projects" . }}
   </section>
-  <section class="uk-container uk-margin-small-bottom">
-    <p class="uk-text-small uk-margin-small-bottom" id="copyrightFooter">
+  <section class="uk-container uk-text-small uk-margin-small-bottom uk-flex uk-flex-between">
+    <span class="uk-margin-small-bottom" id="copyrightFooter">
       © <script>document.getElementById('copyrightFooter').appendChild(document.createTextNode(""+new Date().getFullYear()))</script>&nbsp;William Pansky.
-    </p>
-    <p>
+    </span>
+    <span>
       Powered by <a href="https://gohugo.io" target="_blank" title="Opens new tab" uk-tooltip>Hugo</a>.
-    </p>
+    </span>
   </section>
 </footer>
 

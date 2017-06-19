@@ -4,12 +4,10 @@
 // Styles and adjustments for the site's primary desktop footer
 // ==============================================================
 
-footer {
-  & .uk-button-primary {
-    background-color: $color-accent;
-    &:hover, &:focus {
-      background-color: $color-accent-lighter;
-    }
+.uk-button-primary {
+  background-color: $color-accent;
+  &:hover, &:focus {
+    background-color: $color-accent-lighter;
   }
 }
 
