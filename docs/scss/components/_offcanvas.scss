@@ -12,18 +12,73 @@
 
 .uk-nav-primary {
   & li > a {
+    color: #fff;
     font-size: .875rem;
   }
 }
 
+.uk-offcanvas-bar {
+  padding: 0;
+}
+
 aside {
+  & #navHeader {
+    background: #000;
+    width: 100%;
+    height: 100px;
+    border-bottom: none;
+    margin-bottom: 20px; // .75rem
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & h2 {
+      color: white;
+      font-size: 1.25rem;
+      line-height: 1;
+      margin: 0;
+    }
+  }
+
+  & .pansky-project-list-title {
+    color: #8C8C8C;
+  }
+
+  a {
+    color: #fff;
+    &:hover, &:focus {
+      color: #fff !important;
+      opacity: .65;
+    }
+  }
+
+  & hr {
+    border-top-color: $color-gray-AAlarge;
+  }
+
+  & #breadcrumbs {
+    padding-bottom: 0; // .5rem
+    & ul > li {
+      display: inline-block;
+    }
+    & .uk-icon {
+      position: relative;
+      top: -1px;
+    }
+  }
+
+  & .pansky-offcanvas-section {
+    padding: 0 16px;
+  }
+
   & .uk-container.uk-margin-large-bottom {
     max-width: none;
     padding: 0 !important;
     margin-bottom: 20px!important;
+
     & .uk-text-bold {
       display: none;
     }
+
     & .pansky-project-list-title {
       font-size: 1.1rem;
     }
@@ -36,11 +91,23 @@ aside {
   bottom: 0;
   z-index: 3;
   box-sizing: border-box;
-  background: #fdfdfd;
+  color: $color-gray-AAA-on-primary;
+  background: $color-primary;
   width: 240px !important;
-  padding: 20px 20px 40px;
-  border-right: 1px #e5e5e5 solid;
+  padding: 0;
+  // border-right: 1px #e5e5e5 solid;
   overflow-y: auto;
+  box-shadow: $shadow-material-depth-2;
+  opacity: .15; 
+  transition: $transition-ease-slow;
+  transform: translateX(-140px);
+
+  &:hover, &:focus {
+    box-shadow: $shadow-material-depth-5;
+    opacity: 1;
+    transition: $transition-ease-fast;
+    transform: translateX(0);
+  }
 
   // & .uk-active {
   //   background: #282c34;
@@ -49,6 +116,13 @@ aside {
   //     padding-left: 10px;
   //   }
   // }
+}
+
+.deep-focus {
+  box-shadow: $shadow-material-depth-5;
+  opacity: 1;
+  transition: $transition-ease-fast;
+  transform: translateX(0);
 }
 
 .tm-sidebar-right {

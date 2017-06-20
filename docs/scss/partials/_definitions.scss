@@ -14,6 +14,7 @@
 // ==============================================================
 $color-primary:                 #222    !default;
 $color-accent:                  #f76708 !default;
+$color-accent-AAA:              #F9924D !default; // AAA on #222
 $color-accent-lighter:          mix(white, $color-accent, 30%) !default;
 
 $color-black:                   #000    !default;
@@ -22,3 +23,4 @@ $color-black-alt:               #222    !default;
 $color-gray-light:              #ddd    !default;
 $color-gray-AAlarge:            #949494 !default;
 $color-gray-AAA:                #595959 !default;
+$color-gray-AAA-on-primary:     #adadad !default; // AAA on #222

@@ -3,6 +3,26 @@
 // ==============================================================
 
 .pansky-project-list {
-  &-title { margin: 0 0 4px; }
-  &-description { margin: 0; }
+
+  &-title {
+    margin: 0 0 4px;
+    font-size: 1rem;
+    font-family: Source Sans Pro, sans-serif;
+  }
+
+  &-description {
+    margin: 0;
+  }
+
+  & > li:nth-child(n+2) {
+    border-top-color: $color-gray-AAlarge;
+    padding-top: 10px !important;
+    margin-top: 10px !important;
+  }
+
+  & .uk-icon {
+    position: relative;
+    bottom: 1px;
+    margin: 0 2px;
+  }
 }

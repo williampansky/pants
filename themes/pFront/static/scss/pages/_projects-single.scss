@@ -3,7 +3,7 @@
 // ==============================================================
 
 .pansky-project {
-  @media (min-width: 960px) { margin-left: 240px; }
+  @media (min-width: 960px) { margin-left: 100px; }
   @media (min-width: 1800px) { margin-left: 0; }
 
   &-details {
@@ -38,6 +38,13 @@
     // opacity: 0;
   }
 } // end pansky-project
+
+.pansky-project-vendor-logo {
+  width: 100%;
+  max-width: 130px;
+  height: 100%;
+  opacity: 0;
+}
 
 .pansky-icon-sub {
   transform: rotate(-180deg);
@@ -79,7 +86,7 @@
 
   &-fullwidth {
     padding: 0;
-    @media (min-width: 1800px) { margin-left: 240px; }
+    @media (min-width: 1800px) { margin-left: 100px; }
     @media (min-width: 1024px) {
       // margin-left: calc(-100vw / 2 + 600px / 2);
       // margin-right: calc(-100vw / 2 + 600px / 2);

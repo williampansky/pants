@@ -1,3 +1,13 @@
+<a href="/"><header id="navHeader" class="uk-box-shadow-medium" style="background:url('{{ .Site.BaseURL }}pansky-offcanvas-header.jpg') no-repeat center center; background-size: cover; overflow: hidden;"></header></a>
+<!-- <section class="uk-padding-small" id="breadcrumbs">
+  <ul class="uk-breadcrumb">
+    <li><a href="">Work</a></li>
+    <li>Project Name</li>
+  </ul>
+</section>
+<hr /> -->
 {{ partial "offcanvas-subnav" . }}
-<hr class="uk-divider-small">
-{{ partial "projects" . }}
+<hr />
+<section class="pansky-offcanvas-section">
+  {{ partial "projects" . }}
+</section>

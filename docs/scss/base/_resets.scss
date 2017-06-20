@@ -22,10 +22,19 @@ body {
 
 a {
   color: $color-accent;
-  text-decoration: underline;
   &:hover, &:focus {
     color: $color-accent-lighter;
-    text-decoration: none;
+  }
+}
+
+.pansky-link-external {
+  position: relative;
+  &:after {
+    content: "*";
+    font-size: 80%;
+    position: absolute;
+    top: 0;
+    right: -5px;
   }
 }
 
@@ -39,3 +48,21 @@ a {
 }
 
 .noscroll { height: 100vw; overflow: hidden; }
+
+// body {
+//   &::-webkit-scrollbar {
+//     width: 10px;
+//   }
+// }
+//
+// body::-webkit-scrollbar-track {
+//   -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+// }
+//
+// body,
+// #offcanvas {
+//   &::-webkit-scrollbar-thumb {
+//     background-color: $color-accent;
+//     outline: 1px solid $color-accent;
+//   }
+// }
