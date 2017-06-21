@@ -21,7 +21,7 @@
   padding: 0;
 }
 
-aside {
+.tm-sidebar-left {
   & #navHeader {
     background: #000;
     width: 100%;
@@ -31,6 +31,13 @@ aside {
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 1;
+    transition: $transition-ease-slow;
+
+    &:hover, &:focus {
+      opacity: .35;
+    }
+
     & h2 {
       color: white;
       font-size: 1.25rem;
@@ -43,11 +50,27 @@ aside {
     color: #8C8C8C;
   }
 
+  & .uk-nav-primary > li {
+    & > a {
+      color: #fff;
+      &:hover, &:focus {
+        color: #fff;
+        text-decoration: underline;
+      }
+    }
+  }
+
   a {
     color: #fff;
     &:hover, &:focus {
-      color: #fff !important;
-      opacity: .65;
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+
+  & .uk-text-meta > a {
+    &:hover, &:focus {
+      text-decoration: underline;
     }
   }
 
@@ -98,7 +121,7 @@ aside {
   // border-right: 1px #e5e5e5 solid;
   overflow-y: auto;
   box-shadow: $shadow-material-depth-2;
-  opacity: .15; 
+  opacity: .15;
   transition: $transition-ease-slow;
   transform: translateX(-140px);
 
@@ -126,10 +149,29 @@ aside {
 }
 
 .tm-sidebar-right {
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: calc(100% + 0px);
-    width: 200px;
+    right: 0;
+    width: 200px !important;
+    padding: 10px;
+    background: #fff;
+
+  & .uk-nav-primary {
+    & li > a {
+      color: $color-gray-AAlarge;
+      font-size: .675rem;
+      line-height: 1.1;
+      padding: 4px 0;
+      &:hover, &:focus {
+        color: $color-primary;
+        opacity: .65;
+      }
+    }
+
+    & > li.uk-active > a {
+      color: $color-primary;
+    }
+  }
 }
 
 @media (min-width: 960px) {
@@ -140,7 +182,7 @@ aside {
 
 @media (min-width: 1200px) {
     .tm-sidebar-right {
-        left:calc(100% + 0px);
+        right: 0;
     }
 
     .tm-sidebar-left+.tm-main {
@@ -155,7 +197,7 @@ aside {
     // }
 
     .tm-sidebar-right {
-        left: calc(100% + 60px)
+        right: 0;
     }
 
     .tm-sidebar-left+.tm-main {

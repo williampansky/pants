@@ -7,13 +7,13 @@
 
 
 // remove mobile toggle button on homepage
-$( () => {
-  if ( $( 'section' ).hasClass( 'pansky-home' ) ) {
-    $( '.uk-navbar-toggle' ).remove();
-  } else {
-    null
-  }
-});
+// $( () => {
+//   if ( $( 'section' ).hasClass( 'pansky-home' ) ) {
+//     $( '.uk-navbar-toggle' ).remove();
+//   } else {
+//     null
+//   }
+// });
 
 // load .pansky-project-vendor-logo imgs velocity style!
 $('.pansky-project-vendor-logo').velocity( 'transition.fadeIn', {
