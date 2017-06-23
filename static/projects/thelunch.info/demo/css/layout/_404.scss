@@ -1,0 +1,17 @@
+// main: ../main.scss
+
+#woah404 {
+  height: 75vh;
+  width: 100vw;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  & .col {
+    position: relative;
+    bottom: 4rem;
+  }
+}

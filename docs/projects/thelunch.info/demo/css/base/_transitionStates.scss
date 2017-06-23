@@ -1,0 +1,23 @@
+// main: ../main.scss
+
+.showMe {
+  transform: translateY(0) !important;
+}
+
+// -----------------------------------------
+// ## MM OVERLAY - Stop Mobile Scrolling
+//
+// These classes are applied to both <html> and <body>. They are manipulated
+// by the mm-overlay.js script.
+//
+// When the fixed bottom mobile menu bar button "MENU" is clicked, it
+// activates the mobile overlay nav and swaps the <html>
+// and <body> classes from .scroll to .no-scroll.
+//
+// When the "MENU" button is clicked again, it swaps the classes back. This
+// stops mobile devices from hiding their native URL bars
+// (like Android Chrome) when scrolling.
+
+.noscroll {
+  overflow: hidden;
+}

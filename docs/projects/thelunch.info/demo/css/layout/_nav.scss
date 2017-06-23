@@ -1,0 +1,303 @@
+// main: ../main.scss
+
+// Sticky Slider Navigation (Responsive)
+// http://codepen.io/ettrics/pen/WRbGRN
+.et-hero-tabs,
+.et-slide {
+  font-family: "Century Gothic", 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // height: 100vh;
+  position: relative;
+  // background: #eee;
+	text-align: center;
+	// padding: 0 2em;
+  & a {
+  	text-decoration: none;
+  }
+  & h1 {
+    font-family: $fancy;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    position: relative;
+    & > span {
+      font-size: 40%;
+      position: absolute;
+      top: -25%;
+      right: 0;
+      left: 0;
+    }
+    // margin: 0;
+    // letter-spacing: 1rem;
+  }
+  & h6 {
+    font-size: .8rem;
+  }
+
+  background: url("/images/Goodwill-worn-out-hands-from-working-hard.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  background-color: $accent;
+  background-blend-mode: lighten;
+
+  & #foundationType p {
+    font-family: $script;
+    font-size: 1.45rem;
+    line-height: 1.4rem;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    position: relative;
+    &:before {
+      content: "— Presented by —";
+      font-family: sans-serif;
+      text-transform: uppercase;
+      font-size: 10px;
+      letter-spacing: 8px;
+      position: absolute;
+      top: -25px;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+    }
+  }
+
+  & #foundationLogo {
+    & img {
+      width: 100%;
+      margin: 0 auto 1rem;
+    }
+
+    &:before {
+      content: "Presented by";
+      font-family: inherit;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 8px;
+      position: relative;
+      top: -4px;
+    }
+
+    & .mobile {
+      max-width: 250px;
+      display: block;
+    }
+
+    & .desktop {
+      display: none;
+    }
+  }
+}
+
+.et-hero-tabs {
+  height: 550px;
+  padding: 5rem 0 8rem;
+  & h1, & h2, & h3, & h4, & h5, & h6, & p, & ol, & ul, & li, & span, {
+    color: $white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  & .btn {
+    margin: .25rem;
+    &.btn-primary {
+      color: $white-off;
+      background: $accent-light;
+      &:hover, &:focus {
+        color: $white;
+        background: $accent-lightest;
+      }
+    }
+  }
+}
+
+#pageContent {
+  &.et-main {
+    // padding-top: 1.5rem;
+    & .et-slide {
+      text-align: inherit;
+      // background: none;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 1rem 0 2rem;
+      margin-bottom: 1rem;
+      background: #ffffff;
+      background: -moz-linear-gradient(top,  #ffffff 0%, #f4f4f4 100%);
+      background: -webkit-linear-gradient(top,  #ffffff 0%,#f4f4f4 100%);
+      background: linear-gradient(to bottom,  #ffffff 0%,#f4f4f4 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4f4f4',GradientType=0 );
+      &:last-of-type { background: none; }
+    }
+  } // end .et-main
+
+  & #mainSponsorOpp {
+    // height: 200vh;
+  }
+
+  // & section {
+  //   margin-bottom: 6rem;
+  // }
+}
+
+.et-hero-tabs-container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  transition: 300ms ease-in-out;
+  background: #fff;
+  z-index: 10;
+  & a {
+  	text-decoration: none;
+  }
+  &--top {
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: translateZ(0); // for Android fix
+  }
+}
+
+.et-hero-tab {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+  letter-spacing: 1px;
+	transition: all 0.5s ease;
+	font-size: 0.6rem;
+  line-height: 1.25;
+  margin: 0 .25rem;
+  padding: 0 .5rem;
+  transition: all 0.5s ease;
+  &.et-hero-tab-first {
+    margin: 0 .25rem 0 0;
+  }
+  &.et-hero-tab-last {
+    margin: 0 0 0 .25rem;
+  }
+  & a {
+  	text-decoration: none;
+    transition: all 0.5s ease;
+  }
+  color: $black-light;
+  &:hover, &:focus {
+    color: $white;
+    background: $accent;
+  }
+  &:before {
+    content: attr(data-text1);
+  }
+}
+
+.et-hero-tab-slider {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  background: $accent;
+  transition: left 0.3s ease;
+}
+
+.et-hero-tab {
+  color: $black-light;
+  &:hover, &:focus {
+    color: $white;
+    background: $accent;
+  }
+}
+
+@media (min-width: 425px) {
+  .et-hero-tabs {
+    & h6 {
+      font-size: 1rem;
+    }
+  }
+  .et-hero-tab {
+    font-size: .65rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .et-hero-tabs {
+    & h6 {
+      font-size: 1.25rem;
+    }
+  }
+  .et-hero-tab {
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.et-hero-tabs,
+	.et-slide {
+    // min-height: 100vh;
+    h1 {
+      font-size: 8rem;
+      margin-bottom: 2.25rem;
+    }
+    & h3 {
+      font-size: 1.5rem;
+    }
+    & #foundationType p {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      &:before {
+        top: -35px;
+      }
+    }
+	}
+  .et-hero-tabs {
+    height: 100%;
+    padding: 5rem 5rem 10rem;
+  }
+  .et-hero-tabs h3 {
+    font-size: 1rem;
+  }
+  .et-hero-tabs h6 {
+    margin-bottom: 1rem;
+  }
+	.et-hero-tab {
+		font-size: 1rem;
+    &:before {
+      content: attr(data-text2);
+    }
+	}
+  #pageContent {
+    &.et-main {
+      & .et-slide {
+        text-align: inherit;
+        // background: none;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+    } // end .et-main
+
+    & #mainSponsorOpp {
+      // height: 200vh;
+      justify-content: center;
+    }
+
+    & #mainDonate {
+      height: auto;
+      background: -moz-linear-gradient(top,  rgba(255,255,255,1) 53%, rgba(255,255,255,0.17) 92%, rgba(255,255,255,0) 100%);
+      background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 53%,rgba(255,255,255,0.17) 92%,rgba(255,255,255,0) 100%);
+      background: linear-gradient(to bottom,  rgba(255,255,255,1) 53%,rgba(255,255,255,0.17) 92%,rgba(255,255,255,0) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+    }
+  } // end #pageContent
+}
+
+// .force-100 {
+//   width: 100vw !important;
+//   left: 0 !important;
+// }
+//
+// .flyFree {
+//   width: initial;
+//   left: initial;
+// }

@@ -1,0 +1,175 @@
+// main: ../main.scss
+
+// https://github.com/daneden/animate.css
+
+#bbox-root {
+  display: none;
+  
+  img {
+    width: auto;
+  }
+
+  .BBFormSection, .BBDFormSectionGiftInfo {
+    max-width: 100%;
+  }
+
+  #bboxdonation_BBEmbeddedForm {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .BBFormErrorBlock {
+    // FORM STYLE FIXES
+    max-width: 100%;
+
+    // CARD STYLES
+    transition: box-shadow .25s;
+    padding: $card-padding;
+    margin: $card-top-margin 0 $card-bottom-margin 0;
+    border-radius: 2px;
+    @extend .z-depth-2;
+    background-color: $error;
+  }
+
+  #bboxdonation_gift_fldPledgeAmountWhenNoLevels {
+    padding: 0;
+  }
+
+  #bboxdonation_gift_rdlstGivingLevels {
+    width: 100%;
+  }
+
+  .BBFormRadioLabel, .BBFormRadioLabelGivingLevel {
+    font-size: 1.1rem;
+    padding: 1rem;
+    margin: 0 auto 1rem;
+  }
+
+  .BBFormContainer[data-bbox-part-id="a026e6da-ffc1-4f66-89fc-c029005a8b76"] .BBFormWideButtonGivingLevels .BBFormRadioLabelGivingLevelSelected {
+    background: $primary;
+    border: 1px solid $primary;
+  }
+
+  .BBFormContainer[data-bbox-part-id="a026e6da-ffc1-4f66-89fc-c029005a8b76"] .BBFormFieldLabel {
+    width: 100%;
+    padding-right: 0;
+    float: none;
+    white-space: normal;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  #bboxdonation_gift_fldAmountWithLevels {
+    margin: 0;
+  }
+
+  .BBFormContainer[data-bbox-part-id="a026e6da-ffc1-4f66-89fc-c029005a8b76"] .BBDFormSectionComments .BBFormFieldContainer {
+    margin: 0 0 1rem;
+  }
+
+  .BBFormContainer[data-bbox-part-id="a026e6da-ffc1-4f66-89fc-c029005a8b76"] .BBDFormSectionComments .BBFormFieldLabel {
+    margin-left: 0;
+    text-transform: capitalize;
+    margin-bottom: .5rem;
+  }
+
+  .BBFormContainer[data-bbox-part-id="a026e6da-ffc1-4f66-89fc-c029005a8b76"] .BBDFormSectionComments .BBFormTextArea {
+    min-width: 100%;
+    margin-left: 0;
+  }
+
+  .BBFormContainer[data-bbox-part-id="a026e6da-ffc1-4f66-89fc-c029005a8b76"] .BBFormFieldContainer {
+    margin: 0;
+  }
+
+  .BBFormContainer[data-bbox-part-id="a026e6da-ffc1-4f66-89fc-c029005a8b76"] .BBThreeFields .BBFormSelectList {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 .5rem;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+  }
+
+  .BBFormContainer[data-bbox-part-id="a026e6da-ffc1-4f66-89fc-c029005a8b76"] .BBFormFieldContainer {
+    margin-bottom: 1.5rem;
+  }
+
+  .BBFormContainer[data-bbox-part-id="a026e6da-ffc1-4f66-89fc-c029005a8b76"] .BBThreeFields .BBFormTextbox {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 .5rem;
+    text-transform: capitalize;
+    padding: .75rem;
+  }
+
+  .BBFormContainer[data-bbox-part-id="a026e6da-ffc1-4f66-89fc-c029005a8b76"] :not(:focus).BBFormTextbox {
+    // width: 100%;
+    // max-width: 100%;
+    margin: 0 0 .5rem;
+    text-transform: capitalize;
+    padding: .75rem;
+  }
+
+  .BBFormContainer[data-bbox-part-id="a026e6da-ffc1-4f66-89fc-c029005a8b76"] .BBFormSelectList {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 .5rem;
+    text-transform: capitalize;
+    padding: .75rem;
+  }
+
+  #bboxdonation_payment_divProcessedByBlackbaud {
+    margin: 1.5rem auto;
+  }
+
+  .BBFormContainer[data-bbox-part-id="a026e6da-ffc1-4f66-89fc-c029005a8b76"] .BBLinkSecureInfo {
+    margin-left: 0;
+  }
+
+  #bboxdonation_gift_txtAmountOther {
+    // max-width: 90%;
+  }
+
+  .BBFormContainer[data-bbox-part-id="a026e6da-ffc1-4f66-89fc-c029005a8b76"] .BBCCreditType .BBFormFieldLabel {
+    visibility: inherit;
+  }
+
+  .BBFormContainer[data-bbox-part-id="a026e6da-ffc1-4f66-89fc-c029005a8b76"] .BBFieldExpiration .BBFormFieldLabel, .BBFormContainer[data-bbox-part-id="a026e6da-ffc1-4f66-89fc-c029005a8b76"] .BBFieldSecurityCode .BBFormFieldLabel {
+    margin-left: 0;
+  }
+
+  .BBFormContainer[data-bbox-part-id="a026e6da-ffc1-4f66-89fc-c029005a8b76"] .BBExpirationCSC .BBFormSelectList {
+    width: 100%;
+    max-width: 100%;
+    font-size: 1.2rem;
+    margin: 0 auto 1rem;
+  }
+
+  .BBFormContainer[data-bbox-part-id="a026e6da-ffc1-4f66-89fc-c029005a8b76"] .BBExpirationCSC .BBFormTextbox, .BBFormContainer[data-bbox-part-id="a026e6da-ffc1-4f66-89fc-c029005a8b76"] .BBFormTextbox:focus {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    height: 50px;
+  }
+
+  .BBFormContainer[data-bbox-part-id="a026e6da-ffc1-4f66-89fc-c029005a8b76"] .BBFormSummaryTotal {
+    display: none;
+  }
+
+  .BBFormContainer[data-bbox-part-id="a026e6da-ffc1-4f66-89fc-c029005a8b76"] .BBFormSubmitbutton {
+    width: 100%;
+    background-color: $accent;
+    transition: ease-in-out 300ms;
+  }
+
+  .BBFormContainer[data-bbox-part-id="a026e6da-ffc1-4f66-89fc-c029005a8b76"] .BBFormSubmitbutton:hover {
+    background-color: $black-light;
+    transition: ease-in-out 300ms;
+  }
+
+  .BBFormSectionHeading {
+    margin: 0 auto 1rem;
+  }
+  .BBFormSection {
+    margin: 0 0 2rem;
+  }
+}

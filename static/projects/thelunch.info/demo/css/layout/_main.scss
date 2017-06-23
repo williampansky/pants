@@ -1,0 +1,216 @@
+// main: ../main.scss
+
+#pageContent {
+  padding: 0;
+  z-index: 1;
+
+  // -----------------------------------------
+  // ## top hero section
+  & #lunchHero {
+    min-height: 24rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 4rem;
+    text-align: center;
+    background: url("/images/Goodwill-worn-out-hands-from-working-hard.jpg") no-repeat center center;
+    background-size: cover;
+    background-color: $accent;
+    background-blend-mode: lighten;
+    // material box shadows
+    // https://codepen.io/sdthornton/pen/wBZdXq
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+    & .container-fluid {
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+    }
+
+    & img {
+      margin: 0 auto 1rem;
+    }
+
+    & .mobile {
+      max-width: 250px;
+      display: block;
+    }
+
+    & .desktop {
+      display: none;
+    }
+
+    & h1, & h2, & h3, & h4, & h5, & h6, & p, {
+      color: white;
+      margin-bottom: 1rem;
+    }
+  } // end #lunchHero
+
+  // -----------------------------------------
+  // ## event info
+  & #mainEventInformation {
+    & p.h5 {
+      font-size: 1rem;
+      line-height: 1.5;
+      @media (min-width:768px) { font-size: 1.25rem }
+    }
+    & .chewThis {
+      list-style-type: none;
+      margin-bottom: 2rem;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+      & li {
+        margin: 0 .5rem;
+        max-width: 38%;
+        &:first-child { margin-left: 0;}
+        &:last-child { margin-right: 0;}
+      }
+    }
+  }
+
+  @media (max-width: 424px) {
+    & #mainEventInformation {
+
+    }
+  }
+
+
+  // -----------------------------------------
+  // ## featured guest
+  & #mainFeaturedGuest {
+    // max-width: 70%;
+    // margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    & h4, & h5 {
+      font-family: $display;
+      border-bottom: 1px dotted rgba(0,0,0,.35);
+      padding-bottom: .65rem;
+    }
+
+    & h6 {
+      font-family: $display;
+      line-height: 1.35;
+    }
+
+    & .col-md-4 {
+      text-align: center;
+      @media (min-width:768px) { text-align:inherit; }
+    }
+
+    & img {
+      border: 4px solid white;
+      box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.3);
+      // max-height: 400px;
+      max-width: 100%;
+      margin: 0 auto 1rem;
+    }
+  }
+
+  & section {
+    // margin-bottom: 15rem;
+    // padding-top: 1rem;
+  }
+
+  & .container {
+    max-width: 900px;
+  }
+
+  & p {
+    & a {
+      color: $primary-alt;
+      &:hover, &:focus {
+        color: $primary-dark;
+        text-decoration: none;
+      }
+    }
+  } // end p
+
+  & #mainShare {
+    margin-bottom: 20rem;
+  }
+
+  & #mainDonate {
+    min-height: 2118px;
+    margin: 0;
+  }
+} // end #pageContent
+@media (min-width: 425px) {
+  #pageContent {
+    & #mainDonate {
+      min-height: 1748px;
+    }
+  }
+} // end @media 425
+
+@media (min-width: 768px) {
+  #pageContent {
+    max-width: 100%;
+    margin: 0 auto;
+
+    & #lunchHero {
+      & .mobile {
+        max-width: 300px;
+      }
+    }
+
+    & .container {
+      width: 900px;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    & #mainDonate {
+      min-height: 1315px;
+    }
+  }
+} // end @media 768
+
+@media (min-width: 1024px) {
+  #pageContent {
+    & #lunchHero {
+      position: relative;
+      bottom: 10px;
+
+      & .mobile { display: none; }
+      & .desktop {
+        display: block;
+        max-width: 650px;
+      }
+
+      & h1 {
+        font-size: 5rem;
+      }
+    }
+
+    & #mainDonate {
+      min-height: 1297px;
+    }
+  }
+} // end @media 1024
+
+@media (min-width: 1440px) {
+  #pageContent {
+    & .container {
+      // max-width: 100%;
+    }
+  }
+} // end @media
+
+@media (min-width: 1600px) {
+  #pageContent {
+    & #lunchHero {
+      & .container-fluid {
+
+      }
+    } // end #lunchHero
+  }
+} // end @media

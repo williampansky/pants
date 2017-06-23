@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Volunteer &#8211; Miller Ad Agency</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../../../index.html</link>
+	<description>Your Neighborhood Ad Agency</description>
+	<lastBuildDate>Sun, 11 Jun 2017 14:47:41 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+	<item>
+		<title>﻿Miller Cares</title>
+		<link>./../../../about-miller-ad-agency/blog/miller-cares/index.html</link>
+		<comments>./../../../about-miller-ad-agency/blog/miller-cares/index.html#respond</comments>
+		<pubDate>Thu, 06 Apr 2017 19:45:00 +0000</pubDate>
+		<dc:creator><![CDATA[Danielle Snyder]]></dc:creator>
+				<category><![CDATA[Blogging]]></category>
+		<category><![CDATA[General]]></category>
+		<category><![CDATA[Dec My Room]]></category>
+		<category><![CDATA[Miller Ad Agency]]></category>
+		<category><![CDATA[Volunteer]]></category>
+
+		<guid isPermaLink="false">./../../../about-miller-ad-agency/blog/%ef%bb%bfmiller-cares/index.html</guid>
+		<description><![CDATA[<p>This past January, I participated in Dec My Room, a charity designed to brighten up the lives of long-term hospitalized children by decorating their sterile, white rooms with their wildest dreams. My team was assigned a six-year old girl who was obsessed with Frozen. Her name was La'Miyah.</p>
+<p>The post <a rel="nofollow" href="./../../../about-miller-ad-agency/blog/miller-cares/index.html">﻿Miller Cares</a> appeared first on <a rel="nofollow" href="./../../../index.html">Miller Ad Agency</a>.</p>
+]]></description>
+		<wfw:commentRss>./../../../about-miller-ad-agency/blog/miller-cares/feed/index.html</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

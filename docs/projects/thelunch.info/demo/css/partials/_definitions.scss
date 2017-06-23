@@ -1,0 +1,219 @@
+// main: ../main.scss
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//
+// # IMPORTS
+//
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Roboto:100,400|Domine:400,700|Playfair+Display:400,700,900|Pinyon+Script|Montserrat:400,700');
+
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//
+// # TYPE
+//
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+$headings: Open Sans, "Arial", sans-serif; // headings
+$bodyCopy: Open Sans, "Arial", sans-serif; // body copy
+$display: inherit; // display type
+$ui: "Verdana", sans-serif; // ui type
+$fancy: Playfair Display, Georgia, "Times New Roman", serif;
+$script: Pinyon Script, cursive;
+
+
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//
+// # COLORS
+//
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+$primary: #33499e; // goodwill blue
+$primary-alt: #628cc9; // goodwill alt
+$primary-alt-light: lighten($primary-alt,15%); // goodwill alt-light
+$primary-alt-dark: darken($primary-alt,15%); // goodwill alt-dark
+$primary-light: lighten($primary,15%); // #556dc8
+$primary-lightest: lighten($primary,35%); // #a2afe1
+$primary-dark: darken($primary,15%); // #202e64
+$primary-darkest: darken($primary,35%); // #070b17
+
+// goodwill orange
+$orange: #ff6c2c;
+$orange-light: lighten($orange,15%);
+$orange-dark: darken($orange,15%);
+$orange-darkest: darken($orange,35%);
+
+// the lunch purple
+$accent: #510857;
+$accent-light: lighten($accent,15%);
+$accent-lightest: lighten($accent,35%);
+$accent-dark: darken($accent,8%);
+$accent-darkest: darken($accent,20%);
+
+$green: #90b143; // employment green
+$green-light: lighten($green,15%);
+$green-dark: darken($green,15%);
+$green-darkest: darken($green,35%);
+
+$black: #000; // black-100%
+$black-light: #303030; // off-black
+$black-lightest: #4c4c4c; // light-black
+
+$white: #fff; // white-100%
+$white-off: #fdfdfd; // off-white
+
+$gray: #959595; // primary-gray
+$gray-light: #ddd; // light-gray
+$gray-lightest: #ececec; // lighter-gray
+$gray-lunch: #919191; // from print materials
+
+$headingsColor: #303030; // off-black
+$bodyColor: #595959; // light-black #4c4c4c
+
+$success: blue;
+$error: yellow;
+
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//
+// # Z-DEPTH / MATERIAL SHADOWS
+//
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.z-depth-0 {
+  box-shadow: none !important;
+}
+.z-depth-1 {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+.z-depth-1-half {
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
+.z-depth-2 {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+.z-depth-3 {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+}
+.z-depth-4 {
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+}
+.z-depth-5 {
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+$z-depth-0: none !important;
+$z-depth-1: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+$z-depth-1-half: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+$z-depth-2: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+$z-depth-3: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+$z-depth-4: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+$z-depth-5: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//
+// # FX
+//
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+$vingette-large: inset 0 0 15rem rgba(0,0,0,.35);
+$vingette-card: inset 0 0 5rem rgba(0,0,0,.5);
+
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//
+// # BUTTONS-MATERIAL
+//
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// Shared styles
+$button-border: none !default;
+$button-background-focus: lighten($accent, 4%) !default;
+$button-font-size: .85rem !default;
+$button-height: 36px !default;
+$button-padding: 0 2rem !default;
+$button-radius: 2px !default;
+
+// Disabled styles
+$button-disabled-background: $gray-light !default;
+$button-disabled-color: $black-light !default;
+
+// Raised buttons
+$button-raised-background: $accent !default;
+$button-raised-background-hover: lighten($button-raised-background, 15%) !default;
+$button-raised-color: $white !default;
+
+// Large buttons
+$button-large-icon-font-size: 1.6rem !default;
+$button-large-height: $button-height * 1.5 !default;
+
+// Small buttons
+$button-small-font-size: .65rem !default;
+$button-small-icon-font-size: .65rem !default;
+$button-small-height: $button-height / 1.5 !default;
+
+// Flat buttons
+$button-flat-color: $black !default;
+$button-flat-disabled-color: lighten($button-flat-color, 50%) !default;
+
+// Floating buttons
+$button-floating-background: $accent !default;
+$button-floating-background-hover: $button-floating-background !default;
+$button-floating-color: $white !default;
+$button-floating-size: 40px !default;
+$button-floating-large-size: 56px !default;
+$button-floating-radius: 50% !default;
+
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//
+// # CARDS
+//
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+$card-bg-color: #fff;
+$card-padding: 1rem !default;
+$card-top-margin: 0;
+$card-bottom-margin: 1.5rem;
+$card-link-color: color("$accent") !default;
+$card-link-color-light: lighten($accent, 20%) !default;
+$card-border: 1px solid rgba(160,160,160,.2);
+
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//
+// # ANIMATIONS
+//
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+$ease-fast: 300ms ease-in-out;
+$ease-slow: 600ms ease-in-out;
+$linear-fast: 300ms linear;
+$linear-slow: 600ms linear;

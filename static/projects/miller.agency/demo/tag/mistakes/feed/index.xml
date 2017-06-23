@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>mistakes &#8211; Miller Ad Agency</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../../../index.html</link>
+	<description>Your Neighborhood Ad Agency</description>
+	<lastBuildDate>Sun, 11 Jun 2017 14:47:41 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+	<item>
+		<title>Four Common Marketing Mistakes and How to Avoid Them</title>
+		<link>./../../../about-miller-ad-agency/blog/four-common-marketing-mistakes-and-how-to-avoid-them/index.html</link>
+		<comments>./../../../about-miller-ad-agency/blog/four-common-marketing-mistakes-and-how-to-avoid-them/index.html#respond</comments>
+		<pubDate>Tue, 15 Sep 2015 23:02:00 +0000</pubDate>
+		<dc:creator><![CDATA[Team Miller]]></dc:creator>
+				<category><![CDATA[Advertising]]></category>
+		<category><![CDATA[Business]]></category>
+		<category><![CDATA[Marketing]]></category>
+		<category><![CDATA[mistakes]]></category>
+
+		<guid isPermaLink="false">./../../../about-miller-ad-agency/blog/four-common-marketing-mistakes-and-how-to-avoid-them/index.html</guid>
+		<description><![CDATA[<p>The right marketing will bring more customers your way, but the wrong marketing will leave some great models sitting unsold in your lot. Don't make these four mistakes.</p>
+<p>The post <a rel="nofollow" href="./../../../about-miller-ad-agency/blog/four-common-marketing-mistakes-and-how-to-avoid-them/index.html">Four Common Marketing Mistakes and How to Avoid Them</a> appeared first on <a rel="nofollow" href="./../../../index.html">Miller Ad Agency</a>.</p>
+]]></description>
+		<wfw:commentRss>./../../../about-miller-ad-agency/blog/four-common-marketing-mistakes-and-how-to-avoid-them/feed/index.html</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,122 @@
+// main: ../main.scss
+
+#footer {
+  color: $white;
+  background: $primary-alt;
+  margin-top: 4rem;
+  padding: 0 0 4rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  position: relative;
+  &:before {
+    content: url("/images/skyline.svg");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 110px;
+    right: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  & h4 {
+    font-family: $headings;
+  }
+
+  & p {
+    font-family: $display;
+  }
+
+  & a {
+    color: $white !important;
+    text-decoration: underline;
+    &:hover, &:focus {
+      color: $white !important;
+      text-decoration: none !important;
+    }
+  }
+
+  & img {
+    max-width: 90%;
+    padding: 0 2rem 2rem;
+  }
+} // end #footer
+
+#subFooter {
+  background: $black-light;
+  padding: 1rem 1rem 1.25rem;
+  text-align: center;
+  & .row { justify-content: center; }
+  & a {
+    font-family: $ui;
+    font-size: .6rem;
+    letter-spacing: -.5px;
+    text-transform: uppercase;
+    padding: 0 .15rem;
+    margin: 0 .15rem;
+  }
+
+  & a {
+    color: $gray;
+    &:hover, &:focus {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+} // end #subFooter
+
+.copyright {
+  padding: 2rem 0 0;
+  font-size: .75rem;
+  & a {
+    color: $white !important;
+    text-decoration: underline;
+    &:hover, &:focus {
+      color: $primary-darkest;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: 768px) { // @media min-768
+	#footer {
+    margin-top: 10rem;
+    &:before { bottom: 210px; }
+    & img {
+      max-width: 400px;
+    }
+	}
+}
+
+@media (min-width: 1024px) { // @media min-1024
+  #footer {
+    margin-top: 0;
+    &:before {
+      bottom: 175px;
+      width: 70%;
+      margin: 0 auto;
+    }
+    & img {
+      max-width: 400px;
+    }
+	}
+}
+
+@media (min-width: 1200px) { // @media min-1200
+	.div {
+
+	}
+}
+
+@media (min-width: 1440px) { // @media min-1440
+  #footer {
+    margin-top: 0;
+    &:before { width: auto; height: auto; bottom: 0; }
+    & img {
+      max-width: 400px;
+    }
+	}
+}

@@ -1,0 +1,12 @@
+// main: ../main.scss
+
+// ## FORKS - Tinted Hero
+// ## http://codepen.io/luishj/pen/Exfyh
+.tint {
+  content: "";
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: $primary;
+  opacity: .5;
+  overflow: hidden;
+}

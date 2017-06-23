@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>frisbee &#8211; Miller Ad Agency</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../../../index.html</link>
+	<description>Your Neighborhood Ad Agency</description>
+	<lastBuildDate>Sun, 11 Jun 2017 14:47:41 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+	<item>
+		<title>How to Market a New Sports Franchise</title>
+		<link>./../../../about-miller-ad-agency/blog/how-to-market-a-new-sports-franchise/index.html</link>
+		<comments>./../../../about-miller-ad-agency/blog/how-to-market-a-new-sports-franchise/index.html#respond</comments>
+		<pubDate>Fri, 19 Feb 2016 22:53:00 +0000</pubDate>
+		<dc:creator><![CDATA[Kirk Wooldridge]]></dc:creator>
+				<category><![CDATA[Culture]]></category>
+		<category><![CDATA[Marketing]]></category>
+		<category><![CDATA[audl]]></category>
+		<category><![CDATA[dallas]]></category>
+		<category><![CDATA[dallas rouchnecks]]></category>
+		<category><![CDATA[franchise]]></category>
+		<category><![CDATA[frisbee]]></category>
+		<category><![CDATA[opportunity]]></category>
+		<category><![CDATA[ultimate frisbee]]></category>
+
+		<guid isPermaLink="false">./../../../about-miller-ad-agency/blog/how-to-market-a-new-sports-franchise/index.html</guid>
+		<description><![CDATA[<p>When the opportunity to become part owner of a new Ultimate Frisbee franchise in DFW came up, I bought in without thinking about the countless issues I would have to face.</p>
+<p>The post <a rel="nofollow" href="./../../../about-miller-ad-agency/blog/how-to-market-a-new-sports-franchise/index.html">How to Market a New Sports Franchise</a> appeared first on <a rel="nofollow" href="./../../../index.html">Miller Ad Agency</a>.</p>
+]]></description>
+		<wfw:commentRss>./../../../about-miller-ad-agency/blog/how-to-market-a-new-sports-franchise/feed/index.html</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

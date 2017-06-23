@@ -1,0 +1,254 @@
+// main: ../main.scss
+
+$facebook: #3b5998;
+$pinterest: #bd081c;
+$linkedin: #008cc9;
+$linkedin-alt: #8d6cab;
+$twitter: #3cf;
+$email: #bd081c;
+
+#mobileNav {
+  display: block;
+  position: fixed;
+  bottom: -250px;
+  right: 0;
+  width: 50px;
+  border-radius: 20px 0 0 0;
+  overflow: hidden;
+  padding: 0;
+  z-index: 1;
+  background: $facebook;
+  transition: $ease-fast;
+  box-shadow: 0 0 9px rgba(0,0,0,.05);
+  z-index: 9999999999999;
+  cursor: pointer;
+  &:hover, &:focus {
+    background: lighten($facebook, 20%);
+  }
+
+  &.showMeMore {
+    bottom: -1px;
+    width: 150px;
+    border-radius: 0;
+    background: $black-light;
+    &:hover, &:focus {
+      background: lighten($black-light, 10%);
+    }
+
+    & #mobileNavBars {
+      & i {
+        left: 5px;
+        position: relative;
+      }
+    }
+  }
+
+  & .row {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #mobileNavBar {
+    height: 50px;
+
+    #mobileNavDetails {
+      color: $white-off;
+
+      & p {
+        font-family: $ui;
+        line-height: 1;
+        margin-bottom: .15rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .mobileTitle {
+        font-size: .9rem;
+        text-transform: uppercase;
+      }
+
+      .mobileDetails {
+        font-size: .65rem;
+      }
+    }
+  }
+
+  #mobileNavLinks {
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 250px;
+
+    & .mobileRow {
+      background: $accent;
+      transition: 300ms ease-in-out;
+      &:hover, &:focus {
+        background: $accent-light;
+      }
+    }
+
+    & .mobileNavIcon {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      text-align: center;
+    }
+
+    & .fa {
+      font-size: 1.25rem;
+    }
+
+    & .mobileRow {
+      padding: 1.25rem 0;
+      border-bottom: 1px solid rgba(0,0,0,.35);
+    }
+
+    & .col-11, & .col-10 {
+      padding-left: 0;
+    }
+
+    & p {
+      font-size: .75rem;
+      font-family: $ui;
+      margin-bottom: 0;
+    }
+
+    & h6 {
+      margin-bottom: 0;
+      text-align: center;
+      position: relative;
+      right: -2px;
+      &:after {
+        font-family: "FontAwesome";
+        font-size: 1rem;
+        position: relative;
+        bottom: 0;
+        right: -10px;
+      }
+      &.facebook:after {
+        @extend h6:after;
+        content: "\f09a";
+      }
+      &.tweet:after {
+        @extend h6:after;
+        content: "\f099";
+      }
+      &.linkedin:after {
+        @extend h6:after;
+        content: "\f0e1";
+      }
+      &.email:after {
+        @extend h6:after;
+        content: "\f0e0";
+      }
+    }
+
+    & ul {
+      list-style-type: none;
+      padding: 0;
+      font-size: 1rem;
+
+      & li {
+        font-family: $ui;
+        padding: 9px 0;
+        margin: 9px 0;
+
+        & span {
+          font-size: 80%;
+        }
+      }
+    }
+
+    & a {
+      color: white;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      &:hover, &:focus {
+        text-decoration: none;
+      }
+      &.facebook {
+        background: $facebook;
+        &:hover, &:focus {
+          background: lighten($facebook, 20%);
+        }
+      }
+      &.tweet {
+        background: $twitter;
+        &:hover, &:focus {
+          background: lighten($twitter, 20%);
+        }
+      }
+      &.linkedin {
+        background: $linkedin-alt;
+        &:hover, &:focus {
+          background: lighten($linkedin-alt, 20%);
+        }
+      }
+      &.email {
+        background: $email;
+        &:hover, &:focus {
+          background: lighten($email, 20%);
+        }
+      }
+    }
+  }  // end #mobileNavLinks
+
+  #mobileNavBars {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 0;
+  }
+
+  #mobileNavLogo {
+    display: none;
+  }
+
+  & img {
+    width: 135px;
+    position: relative;
+    left: -4px;
+  }
+} // end mobileNav
+
+#navFade {
+  overflow: hidden;
+  transition: 300ms ease-in-out;
+  &.hidden {
+    visibility: hidden;
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $primary-dark;
+    opacity: 0;
+    z-index: 99;
+    transition: 300ms ease-in-out;
+  }
+  &.visible {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100.99%;
+    background: $primary-dark;
+    opacity: .75;
+    z-index: 99;
+    transition: 300ms ease-in-out;
+  }
+}

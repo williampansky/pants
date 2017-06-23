@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Chrome &#8211; Miller Ad Agency</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../../../index.html</link>
+	<description>Your Neighborhood Ad Agency</description>
+	<lastBuildDate>Sun, 11 Jun 2017 14:47:41 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+	<item>
+		<title>Five Must-Have Google Chrome Extensions for Designers</title>
+		<link>./../../../about-miller-ad-agency/blog/five-must-have-google-chrome-extensions-for-designers/index.html</link>
+		<pubDate>Mon, 31 Oct 2016 18:18:00 +0000</pubDate>
+		<dc:creator><![CDATA[William Pansky]]></dc:creator>
+				<category><![CDATA[Blogging]]></category>
+		<category><![CDATA[Chrome]]></category>
+
+		<guid isPermaLink="false">./../../../about-miller-ad-agency/blog/five-must-have-google-chrome-extensions-for-designers/index.html</guid>
+		<description><![CDATA[<p>The life of a designer can be rough, but Chrome and its extensions are here to make things a little easier.</p>
+<p>The post <a rel="nofollow" href="./../../../about-miller-ad-agency/blog/five-must-have-google-chrome-extensions-for-designers/index.html">Five Must-Have Google Chrome Extensions for Designers</a> appeared first on <a rel="nofollow" href="./../../../index.html">Miller Ad Agency</a>.</p>
+]]></description>
+		</item>
+	</channel>
+</rss>

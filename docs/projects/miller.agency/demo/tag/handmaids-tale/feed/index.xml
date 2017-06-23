@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>handmaid&#8217;s tale &#8211; Miller Ad Agency</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../../../index.html</link>
+	<description>Your Neighborhood Ad Agency</description>
+	<lastBuildDate>Sun, 11 Jun 2017 14:47:41 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+	<item>
+		<title>Upfronts 2017</title>
+		<link>./../../../about-miller-ad-agency/blog/upfronts-2017/index.html</link>
+		<comments>./../../../about-miller-ad-agency/blog/upfronts-2017/index.html#respond</comments>
+		<pubDate>Fri, 26 May 2017 19:14:06 +0000</pubDate>
+		<dc:creator><![CDATA[Zac Wilson]]></dc:creator>
+				<category><![CDATA[Advertising]]></category>
+		<category><![CDATA[Blogging]]></category>
+		<category><![CDATA[General]]></category>
+		<category><![CDATA[abc]]></category>
+		<category><![CDATA[cbs]]></category>
+		<category><![CDATA[cw]]></category>
+		<category><![CDATA[fox]]></category>
+		<category><![CDATA[handmaid's tale]]></category>
+		<category><![CDATA[hulu]]></category>
+		<category><![CDATA[nbc]]></category>
+		<category><![CDATA[networks]]></category>
+		<category><![CDATA[shows]]></category>
+		<category><![CDATA[television]]></category>
+		<category><![CDATA[tv networks]]></category>
+		<category><![CDATA[will and grace]]></category>
+
+		<guid isPermaLink="false">./../../../index.html?p=56213</guid>
+		<description><![CDATA[<p>As summer approaches and more and more season finales begin to air, that means only one thing: the 2016-2017 television season is coming to a close.</p>
+<p>The post <a rel="nofollow" href="./../../../about-miller-ad-agency/blog/upfronts-2017/index.html">Upfronts 2017</a> appeared first on <a rel="nofollow" href="./../../../index.html">Miller Ad Agency</a>.</p>
+]]></description>
+		<wfw:commentRss>./../../../about-miller-ad-agency/blog/upfronts-2017/feed/index.html</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>
