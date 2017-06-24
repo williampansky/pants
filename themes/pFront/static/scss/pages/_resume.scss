@@ -26,4 +26,16 @@
     } // end dd
   } // end skills-list
 
+  &-sublist li {
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: -20px;
+      width: 10px;
+      border-top: 1px solid #bfbfbf;
+    }
+  } // end sublist
+
 } // end .pansky-resume

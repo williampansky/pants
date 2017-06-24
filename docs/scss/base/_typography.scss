@@ -15,7 +15,7 @@
 // ## BODY => paragraph tags
 // Removes the margin from the final <p> tag in a section
 p {
-  font-family: "Source Sans Pro", sans-serif;
+  // font-family: "Source Sans Pro", sans-serif;
   &:last-child {
     margin-bottom: 0;
   }

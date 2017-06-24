@@ -58,7 +58,7 @@ $(document).ready(function() {
 $(function() {
   var readMore = $('.pansky-project-readmore');
   var moreWrapper = $('.uk-accordion-content');
-  var moreContent = $('.uk-accordion-content > div, .uk-accordion-content > p');
+  var moreContent = $('.uk-accordion-content > div');
 
   readMore.on('click', function() {
     if ( $('readMore').parent().hasClass( 'uk-open' ) == false ) {

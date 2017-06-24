@@ -3,8 +3,8 @@
 // ==============================================================
 
 .pansky-project {
-  @media (min-width: 960px) { margin-left: 100px; }
-  @media (min-width: 1800px) { margin-left: 0; }
+  // @media (min-width: 960px) { margin-left: 100px; }
+  // @media (min-width: 1800px) { margin-left: 0; }
 
   &-details {
     & dl {
@@ -61,6 +61,10 @@
   float: left;
 }
 
+.pansky-section-fullwidth {
+  padding: 0 0 0 100px;
+}
+
 .pansky-code {
   background: #282c34;
 
@@ -89,8 +93,8 @@
   }
 
   &-fullwidth {
-    padding: 0;
-    @media (min-width: 1800px) { margin-left: 100px; }
+    padding: 0 0 0 100px;
+    // @media (min-width: 1800px) { margin-left: 100px; }
     @media (min-width: 1024px) {
       // margin-left: calc(-100vw / 2 + 600px / 2);
       // margin-right: calc(-100vw / 2 + 600px / 2);
