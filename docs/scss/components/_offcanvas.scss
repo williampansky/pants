@@ -10,22 +10,27 @@
   }
 }
 
-.uk-nav-primary {
-  & li > a {
-    color: #fff;
-    font-size: .675rem;
-  }
-}
-
 .uk-offcanvas-bar {
   padding: 0;
+
+  & .uk-nav-primary {
+    & li > a {
+      color: $atom-hue-6-2;
+      font-size: .675rem;
+      padding: 10px;
+
+      &:hover, &:focus {
+        color: $atom-hue-6;
+      }
+    }
+  }
 }
 
 .tm-sidebar-left {
   & #navHeader {
-    background: #000;
+    background: $atom-base;
     width: 100%;
-    height: 100px;
+    height: 0;
     border-bottom: none;
     margin-bottom: 20px; // .75rem
     display: flex;
@@ -50,47 +55,60 @@
     }
 
     & h2 {
-      color: white;
+      color: $atom-mono-1;
       font-size: 1.25rem;
       line-height: 1;
       margin: 0;
     }
   } // end #navHeader
 
+  & .uk-offcanvas-bar {
+    color: $atom-mono-1;
+    background: $atom-base;
+
+    & em {
+      color: $atom-mono-1;
+    }
+  } // end .uk-offcanvas-bar
+
+  & .uk-text-meta {
+    color: $atom-mono-1;
+  }
+
   & .uk-nav-default {
     font-size: .75rem;
   }
 
   & .pansky-project-list-title {
-    color: #8C8C8C;
+    color: $atom-mono-2;
   }
 
-  & .uk-nav-primary > li {
-    & > a {
-      color: #fff;
-      &:hover, &:focus {
-        color: #fff;
-        text-decoration: underline;
-      }
-    }
-  }
+  // & .uk-nav-primary > li {
+  //   & > a {
+  //     color: #fff;
+  //     &:hover, &:focus {
+  //       color: #fff;
+  //       text-decoration: underline;
+  //     }
+  //   }
+  // }
 
-  a {
-    color: #fff;
+  & a {
+    color: $atom-hue-6-2;
     &:hover, &:focus {
-      color: #fff;
+      color: $atom-hue-6;
       text-decoration: underline;
     }
   }
 
-  & .uk-text-meta > a {
-    &:hover, &:focus {
-      text-decoration: underline;
-    }
-  }
+  // & .uk-text-meta > a {
+  //   &:hover, &:focus {
+  //     text-decoration: underline;
+  //   }
+  // }
 
   & hr {
-    border-top-color: $color-gray-AAlarge;
+    border-top-color: $atom-mono-3;
   }
 
   & #breadcrumbs {
@@ -130,8 +148,6 @@
     bottom: 0;
     z-index: 3;
     box-sizing: border-box;
-    color: $color-gray-AAA-on-primary;
-    background: $color-primary;
     width: 240px !important;
     padding: 0;
     // border-right: 1px #e5e5e5 solid;
