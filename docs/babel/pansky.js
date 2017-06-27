@@ -23,7 +23,6 @@ $('.pansky-project-vendor-logo').velocity( 'transition.fadeIn', {
 
 
 
-
 // ==============================================================
 //
 // # ALLOW KEYBOARD TO ACTIVE DESKTOP OFFCANVAS SIDEBAR
@@ -44,9 +43,65 @@ var deepFocus = function(element, cls) {
 };
 
 $(document).ready(function() {
-  deepFocus($('#offcanvas-desktop'));
+  deepFocus($('#offcanvas'));
 });
 
+
+
+
+// ==============================================================
+//
+// # VUE CODEPEN LIST
+//
+// ==============================================================
+Vue.config.delimiters = ['[[', ']]'];
+$( ()=> {
+
+  new Vue({
+    el: '#codepens',
+    delimiters: ['[[', ']]'],
+    data: {
+      list: [
+        {
+          title: 'CUTX — megamenu.js',
+          description: 'Megamenu concept for Credit Union of Texas.',
+          link: 'https://codepen.io/williampansky/pen/QvEjaL'
+        },
+        {
+          title: 'CUTX - Better Banking Popin',
+          description: 'Popin info/cta for new banking information for Credit Union of Texas.',
+          link: 'https://codepen.io/williampansky/pen/JNoKqd'
+        },
+        {
+          title: 'CUTX - Locations List',
+          description: 'Development pen for Credit Union of Texas location listing; using: github.com/desandro/masonry.',
+          link: 'https://codepen.io/williampansky/pen/evvwbR'
+        },
+        {
+          title: 'Velocity.js - Mobile Sidebar Menu',
+          description: 'Tinkering with Velocity.js library.',
+          link: 'https://codepen.io/williampansky/pen/ryXRda'
+        },
+        {
+          title: 'Velocity.js — Intro Animations',
+          description: 'Learning the Velocity.js animation styles.',
+          link: 'https://codepen.io/williampansky/pen/yMmxgO'
+        },
+        {
+          title: 'UIKit - Project List',
+          description: 'Experimenting with new ways to display projects on the next iteration of my personal portfolio site; trying to go beyond the ol\' \"image-with-hover-effect\" now that I\'m transitioning from design to development.',
+          link: 'https://codepen.io/williampansky/pen/YZgXyr'
+        },
+        {
+          title: 'MAA - Newsletter Fixed Bottom',
+          description: 'Interactive fixed-footer newsletter signup form via MailChimp for Miller Ad Agency.',
+          link: 'https://codepen.io/williampansky/pen/MpvQQX'
+        }
+      ]
+    }
+  })
+
+});
 
 
 

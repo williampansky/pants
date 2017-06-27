@@ -15,7 +15,7 @@
 
   & .uk-nav-primary {
     & li > a {
-      color: $atom-hue-6-2;
+      color: $color-primary;
       font-size: .675rem;
       padding: 10px;
 
@@ -28,7 +28,7 @@
 
 .tm-sidebar-left {
   & #navHeader {
-    background: $atom-base;
+    background: #fff;
     width: 100%;
     height: 0;
     border-bottom: none;
@@ -55,7 +55,7 @@
     }
 
     & h2 {
-      color: $atom-mono-1;
+      color: #666;
       font-size: 1.25rem;
       line-height: 1;
       margin: 0;
@@ -63,16 +63,16 @@
   } // end #navHeader
 
   & .uk-offcanvas-bar {
-    color: $atom-mono-1;
-    background: $atom-base;
+    color: #666;
+    background: #fff;
 
     & em {
-      color: $atom-mono-1;
+      color: #666;
     }
   } // end .uk-offcanvas-bar
 
   & .uk-text-meta {
-    color: $atom-mono-1;
+    color: #666;
   }
 
   & .uk-nav-default {
@@ -80,7 +80,7 @@
   }
 
   & .pansky-project-list-title {
-    color: $atom-mono-2;
+    color: #666;
   }
 
   // & .uk-nav-primary > li {
@@ -94,7 +94,7 @@
   // }
 
   & a {
-    color: $atom-hue-6-2;
+    color: $color-accent;
     &:hover, &:focus {
       color: $atom-hue-6;
       text-decoration: underline;
@@ -108,7 +108,7 @@
   // }
 
   & hr {
-    border-top-color: $atom-mono-3;
+    border-top-color: #ddd;
   }
 
   & #breadcrumbs {
@@ -153,12 +153,14 @@
     // border-right: 1px #e5e5e5 solid;
     overflow-y: auto;
     box-shadow: $shadow-material-depth-2;
-    opacity: .15;
+    filter: blur(2px);
+    opacity: .35;
     transition: $transition-ease-slow;
-    transform: translateX(-140px);
+    transform: translateX(-200px);
 
     &:hover, &:focus {
       box-shadow: $shadow-material-depth-5;
+      filter: blur(0);
       opacity: 1;
       transition: $transition-ease-fast;
       transform: translateX(0);
@@ -189,6 +191,7 @@
   opacity: 1;
   transition: $transition-ease-fast;
   transform: translateX(0);
+  filter: blur(0);
 }
 
 .tm-sidebar-right {
@@ -205,13 +208,22 @@
       font-size: .675rem;
       line-height: 1.1;
       padding: 4px 0;
+      transition: 200ms ease-in-out;
       &:hover, &:focus {
         color: $color-primary;
       }
     }
 
-    & > li.uk-active > a {
+    & .uk-active > a {
       color: $color-primary;
+      padding: 12px 0;
+      // &:before {
+      //   content: "|";
+      //   position: absolute;
+      //   left: -4px;
+      //   width: 2px;
+      //   background: #222;
+      // }
     }
   }
 }
