@@ -1,0 +1,44 @@
+<div class="wep-code wep-code-fullwidth">
+  <pre><code class="lang-html hljs">
+
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="&#123;&#123; .Site.LanguageCode | default "en-us" &#125;&#125;"&gt;
+    &lt;head&gt;
+    &lt;!-- Microdata markup added by Google Structured Data Markup Helper. --&gt;
+    <a href="#partial-meta" uk-toggle>&#123;&#123; partial "meta.html" . &#125;&#125;</a>
+
+    &lt;!-- Modernizr --&gt;
+    &lt;!-- https://modernizr.com/ --&gt;
+    &lt;script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"&gt;&lt;/script&gt;
+
+    &lt;!-- FontAwesome --&gt;
+    &lt;script src="https://use.fontawesome.com/d559e6066b.js"&gt;&lt;/script&gt;
+
+    &lt;!-- Stylesheets --&gt;
+    &lt;!-- ~/themes/YEAR/layouts/partials/stylesheets.html --&gt;
+    <a href="#partial-stylesheets" uk-toggle>&#123;&#123; partial "stylesheets.html" . &#125;&#125;</a>
+
+    &lt;!-- Google Analytics --&gt;
+    &#123;&#123; template "_internal/google_analytics_async.html" . &#125;&#125;
+
+    &#123;&#123; "&lt;!--[if lt IE 11]&gt;" | safeHTML &#125;&#125;
+    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"&gt;&lt;/script&gt;
+    &#123;&#123; "&lt;![endif]--&gt;" | safeHTML &#125;&#125;
+
+    <a href="#partial-chromeframe" uk-toggle>&#123;&#123; partial "chromeframe.html" . &#125;&#125;</a>
+    &lt;/head&gt;
+    &lt;body&gt;
+    &#123;&#123; "&lt;!--[if lt IE 11]&gt;" | safeHTML &#125;&#125;
+    &lt;p class="chromeframe"&gt;You are using an &lt;strong&gt;outdated&lt;/strong&gt; browser. Please &lt;a href="http://browsehappy.com/"&gt;upgrade your browser&lt;/a&gt; to improve your experience.&lt;/p&gt;
+    &#123;&#123; "&lt;![endif]--&gt;" | safeHTML &#125;&#125;
+
+    &lt;nav class="et-hero-tabs" style="opacity:0;" itemscope itemtype="http://schema.org/Event"&gt;
+      &lt;!-- ~/themes/YEAR/layouts/partials/mobileNav.html --&gt;
+      <a href="#partial-nav" uk-toggle>&#123;&#123; partial "nav.html" . &#125;&#125;</a>
+    &lt;/nav&gt;
+
+    &lt;!-- ~/themes/YEAR/layouts/partials/socialShare.html --&gt;
+    <a href="#partial-socialShare" uk-toggle>&#123;&#123; partial "socialShare.html" . &#125;&#125;</a>
+
+  </code></pre>
+</div>

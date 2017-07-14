@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+  <head>
+    <!-- Microdata markup added by Google Structured Data Markup Helper. -->
+  	{{ partial "meta.html" . }}
+
+  	<!-- Modernizr -->
+  	<!-- https://modernizr.com/ -->
+  	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+  	<!-- Stylesheets -->
+  	{{ partial "stylesheets.html" . }}
+
+  	<!-- Google Analytics -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-25458964-1','auto');ga('send','pageview');
+    </script>
+
+  	{{ "<!--[if lt IE 11]>" | safeHTML }}
+  	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  	{{ "<![endif]-->" | safeHTML }}
+
+    <style>
+      .chromeframe {
+        text-align: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 999;
+        background: white;
+        height: 100%;
+        width: 100%;
+        padding: 35px;
+        opacity: .85;
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body class="noscroll">
+
+  	{{ "<!--[if lt IE 11]>" | safeHTML }}
+  	<p class="chromeframe">You are using an <strong>outdated browser</strong>. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  	{{ "<![endif]-->" | safeHTML }}
+
+    <div id="loader" class="uk-width-1-1 uk-background-default uk-flex uk-flex-center uk-flex-middle" style="box-sizing:border-box; width:100vw; min-width:100vw; height:100vh; min-height:100vh; opacity:1; display:flex; text-align:center; padding:30px; position:fixed; top:0; right:0; bottom:0; left:0; z-index:999; background: #fff; background-color:#fff;">
+      <!-- <progress id="progressbar" class="uk-progress" value="10" max="100" style="max-width:600px;"></progress> -->
+    </div>
+
+    <!-- <main class="" itemscope itemtype="http://schema.org/Person"> -->
+    <main>

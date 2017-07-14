@@ -1,0 +1,26 @@
+// ==============================================================
+// COMPONENTS => RESUME EXPERIENCE LIST
+// ==============================================================
+
+.wep-resume-exp {
+  // padding: 10px;
+
+  &-title {
+    font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: normal;
+    margin: 0 0 .325rem;
+  }
+
+  &-company,
+  &-date,
+  &-geo {
+    font-size: .875rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  &-company {
+    font-weight: bold;
+  }
+} // end project

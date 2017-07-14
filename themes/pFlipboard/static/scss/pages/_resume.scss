@@ -1,0 +1,41 @@
+// ==============================================================
+// RESUME
+// ==============================================================
+
+.pansky-resume {
+  & h2 {
+    font-size: 1.5rem;
+  }
+
+  &-skillslist {
+    & dd {
+      font-size: .875rem;
+      display: inline;
+
+      &:after {
+        content: "|";
+        color: $color-accent;
+        margin: 0 4px 0 8px;
+        // font-size: 1rem;
+        font-family: sans-serif;
+      } // end :after
+
+      &:last-child:after {
+        content: none;
+      }
+    } // end dd
+  } // end skills-list
+
+  &-sublist li {
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: -20px;
+      width: 10px;
+      border-top: 1px solid #bfbfbf;
+    }
+  } // end sublist
+
+} // end .pansky-resume

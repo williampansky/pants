@@ -19,6 +19,11 @@ const babel = require('gulp-babel');
 // npm install gulp-babili --save-dev
 const babili = require("gulp-babili");
 
+// Concat Scripts
+// https://www.npmjs.com/package/gulp-concat
+// npm install --save-dev gulp-concat
+var concat = require('gulp-concat');
+
 // Gulp Rename
 // https://www.npmjs.com/package/gulp-rename
 // npm install gulp-rename --save-dev
@@ -67,7 +72,7 @@ var autoprefixer = require('autoprefixer');
 // -----------------------------------------
 // ## RUN CMD 'gulp' TO COMPILE SCSS
 gulp.task('default', () => {
-  return gulp.src('themes/pFront/static/scss/main.scss')
+  return gulp.src('themes/pFlipboard/static/scss/main.scss')
     .pipe(sourcemaps.init())
     .pipe(sass()) // using gulp-sass
     .pipe(postcss([
@@ -83,13 +88,14 @@ gulp.task('default', () => {
     .pipe(nano())
     .pipe(rename('pants.min.css'))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('themes/pFront/static/css'))
+    .pipe(gulp.dest('themes/pFlipboard/static/css'))
 });
 
 // -----------------------------------------
 // ## WATCH SCSS, COMPILE AND MINIFY ON SAVE
 gulp.task('watch', () => {
-  gulp.watch('themes/pFront/static/scss/**/*.scss', ['default']);
+  gulp.watch('themes/pFlipboard/static/scss/**/*.scss', ['default']);
+  // gulp.watch('themes/pFlipboard/static/babel/*.js', ['concat']);
 });
 
 // -----------------------------------------
@@ -145,9 +151,18 @@ gulp.task('deploy', function() {
 });
 
 // -----------------------------------------
-// ## RUN CMD 'gulp babel' TO MINIFY JS
+// ## RUN CMD 'gulp babel'
+// TO BABEL & CONCATENATE JAVASCRIPT FILES
 gulp.task('babel', () => {
-  return gulp.src('themes/pFront/static/babel/pansky.js')
+  var src = 'themes/pFlipboard/static/babel/';
+  return gulp.src([
+      src + 'interaction-pens.js',
+      src + 'bar.js',
+      src + 'accordions.js',
+      src + 'util-deepFocus.js',
+      src + 'lightbox.js',
+      src + 'pageLoad.js'
+    ])
     .pipe(babel({
       presets: ['es2015']
     }))
@@ -156,10 +171,44 @@ gulp.task('babel', () => {
         keepClassNames: true
       }
     }))
-    .pipe(rename('pansky.min.js'))
-    .pipe(gulp.dest('themes/pFront/static/js'));
+    .pipe(concat('all.js'))
+    .pipe(rename('app.min.js'))
+    .pipe(gulp.dest('themes/pFlipboard/static/js'));
 });
 
-gulp.task('babel watch', () => {
-  gulp.watch('themes/pFront/static/babel/*.js', ['babel']);
+// -----------------------------------------
+// ## RUN CMD 'gulp vue'
+// TO BABEL & CONCATENATE VUE JS FILES
+gulp.task('vue', () => {
+  var src = 'themes/pFlipboard/static/babel/';
+  return gulp.src([
+      src + 'vue-pens.js'
+    ])
+    .pipe(babel({
+      presets: ['es2015']
+    }))
+    .pipe(babili({
+      mangle: {
+        keepClassNames: true
+      }
+    }))
+    .pipe(concat('vue.js'))
+    .pipe(rename('vue.min.js'))
+    .pipe(gulp.dest('themes/pFlipboard/static/js'));
+});
+
+// -----------------------------------------
+// ## RUN CMD 'gulp webpack' TO MINIFY WEBPACK
+gulp.task('webpack', () => {
+  return gulp.src('themes/pFlipboard/static/babel/bundle.js')
+    .pipe(babel({
+      presets: ['es2015']
+    }))
+    .pipe(babili({
+      mangle: {
+        keepClassNames: true
+      }
+    }))
+    .pipe(rename('bundle.min.js'))
+    .pipe(gulp.dest('themes/pFlipboard/static/js'));
 });

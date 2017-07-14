@@ -1,0 +1,49 @@
+{{ partial "header" . }}
+
+<article class="wep-article uk-article uk-section-small">
+  <header class="uk-container uk-container-small">
+
+    {{ if (isset .Params "avatar") | and (isset .Params "client") | and (isset .Params "clientdescription") }}
+      <div class="top">
+        <img src="{{ .Params.avatar }}" class="avatar" alt="{{ .Params.client }}">
+        <div class="client uk-text-meta">
+          <p>{{ .Params.client }}</p>
+          <p>{{ .Params.clientdescription }}</p>
+        </div>
+      </div>
+    {{ end }}
+
+    <h1>{{ .Title }}</h1>
+
+    {{ if (isset .Params "name") | and (isset .Params "tag") }}
+      <p class="info uk-article-meta">
+        {{ .Params.name }} | {{ .Params.tag }}
+      </p>
+    {{ end }}
+
+  </header>
+
+  {{ if (isset .Params "image") and (isset .Params "caption") }}
+    <section class="hero uk-section-small uk-padding-remove-bottom">
+      <figure class="caption caption-uk-box-shadow-medium">
+        <img src="{{ .Params.image }}" alt="{{ .Params.client }}">
+          <figcaption>
+            <h4>{{ .Params.caption }}</h4>
+          </figcaption>
+      </figure>
+    </section>
+  {{ end }}
+
+  <section class="content uk-section-small">
+    <div class="wep-container uk-container">
+      {{ .Content }}
+    </div>
+  </section>
+  <footer class="uk-section-small">
+    <div class="wep-container uk-container">
+
+    </div>
+  </footer>
+</article>
+
+{{ partial "footer" . }}

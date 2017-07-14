@@ -1,0 +1,55 @@
+// ==============================================================
+// # DEFINITIONS
+//
+// Here are all the variable definitions to use throughout our SCSS
+// ==============================================================
+
+
+
+
+// ==============================================================
+// # COLORS
+// ==============================================================
+$color-primary:                 #222    !default;
+$color-accent:                  #0076D6 !default;
+$color-accent-AAA:              #0076D6 !default; // AAA on #222
+$color-accent-lighter:          mix(white, $color-accent, 30%) !default;
+
+$color-black:                   #000    !default;
+$color-black-alt:               #222    !default;
+
+$color-gray-light:              #ddd    !default;
+$color-gray-AAlarge:            #949494 !default;
+$color-gray-AAA:                #595959 !default;
+$color-gray-AAA-on-primary:     #adadad !default; // AAA on #222
+
+// -----------------------------------------
+// ## COLORS => Atom One Dark
+$atom-base:    #282c34;
+$atom-mono-1:  #abb2bf;
+$atom-mono-2:  #818896;
+$atom-mono-3:  #5c6370;
+$atom-hue-1:   #56b6c2;
+$atom-hue-2:   #61aeee;
+$atom-hue-3:   #c678dd;
+$atom-hue-4:   #98c379;
+$atom-hue-5:   #e06c75;
+$atom-hue-5-2: #be5046;
+$atom-hue-6:   #d19a66;
+$atom-hue-6-2: #e6c07b;
+
+// -----------------------------------------
+// ## COLORS => Projects/Clients
+$color-dgwc-primary:            #f6b2d0 !default;
+$color-maa-primary:             #0053a0 !default;
+$color-maa-alt:                 #0e75dd !default;
+$color-good-primary:            #1A06D0 !default;
+$color-good-alt:                #628cc9 !default;
+$color-lunch-primary:           #920e9d !default;
+
+
+
+
+// ==============================================================
+// # TYPOGRAPHY
+// ==============================================================

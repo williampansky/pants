@@ -1,0 +1,20 @@
+// ==============================================================
+// COMPONENTS => SOCIALS
+// ==============================================================
+.wep-socials {
+
+  & a,
+  & a:link,
+  & a:visited {
+    // remove border-bottom link style from gist links
+    &:before, &:after { content: none; }
+
+    &:hover, &:focus {
+      transform: translateY(-4px);
+    }
+  } // end a
+
+  &.uk-icon-nav {
+
+  }
+} // end socials

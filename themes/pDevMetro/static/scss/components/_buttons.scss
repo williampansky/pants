@@ -1,0 +1,42 @@
+// ==============================================================
+// COMPONENTS => BUTTONS
+// ==============================================================
+
+.uk-button {
+  transition: 200ms ease-in-out;
+}
+
+.uk-button-default {
+  &:hover, &:focus {
+    color: #fff;
+    background-color: $color-primary;
+    border-color: $color-primary;
+  }
+}
+
+.uk-button-secondary,
+input#submit.uk-button.uk-button-primary {
+  background-color: $color-accent;
+  &:hover, &:focus {
+    background-color: $color-primary;
+  }
+}
+
+.wep-button-icon {
+  padding: 0 20px 0 30px;
+  & span {
+    position: relative;
+    bottom: 1px;
+    left: 0;
+    transition: 200ms ease-in-out;
+  }
+
+  &:hover, &:focus {
+    padding: 0 20px 0 48px;
+    & span {
+      color: #222;
+      left: 39px;
+      transform: scale(4.05);
+    }
+  }
+}

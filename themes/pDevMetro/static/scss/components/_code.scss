@@ -1,0 +1,38 @@
+// ==============================================================
+// COMPONENTS
+//
+// Resuable / independant module components (buttons, sliders, etc.)
+// ==============================================================
+
+.wep-code {
+
+  & .pansky-link-external {
+    color: #fff;
+    text-decoration: underline;
+    &:hover, &:focus {
+      text-decoration: none;
+    }
+  }
+
+  & a {
+    @extend .pansky-link-external;
+    & span { color: #fff; }
+  }
+
+  & pre {
+    color: inherit;
+    background: $atom-base;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  & .uk-modal-dialog {
+    background: $atom-base;
+  }
+
+  & .uk-modal-body {
+    padding: 0;
+  }
+} // end wep-code

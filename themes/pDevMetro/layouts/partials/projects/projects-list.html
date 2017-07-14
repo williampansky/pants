@@ -1,0 +1,40 @@
+<section id="projectList" class="uk-grid-collapse uk-grid-match uk-child-width-1-2@s uk-child-width-1-3@l uk-child-width-1-6@xl" uk-grid>
+
+  {{ range (where .Data.Pages.ByPublishDate "Section" "projects") }}
+
+  <article class="wep-project">
+    <header class="wep-project-header {{ .Params.style }} uk-height-medium uk-card uk-card-body uk-text-center uk-flex uk-flex-column uk-flex-center uk-flex-middle">
+      <!-- <a href="#"> -->
+      <span class="wep-project-tag">{{ .Params.tag }}</span>
+      <h1 class="wep-project-title">{{ .Title }}</h1>
+      <!-- </a> -->
+    </header>
+    <div class="wep-project-bg">
+      <div class="wep-project-details">
+        <h2 class="wep-project-details-title uk-h1">{{ .Title }}</h2>
+        <p class="wep-project-details-text">
+          {{ .Params.description }}
+        </p>
+        <a class="wep-project-details-button wep-button-icon uk-button uk-button-default" href="{{ .Permalink }}" title="{{ .Params.title }}">
+          View project <span uk-icon="triangle-right"></span>
+        </a>
+        <div class="wep-project-details-image uk-position-bottom-center">
+          <img src="{{ .Params.image }}" alt="{{ .Params.description }}" />
+        </div>
+      </div>
+    </div>
+    <!-- <div class="wep-project-open"> -->
+      <!-- <a href="#" class="wep-project-open">
+        <span uk-icon="icon: plus"></span>
+        <span class="uk-text-uppercase">More</span>
+      </a> -->
+    <!-- </div> -->
+  </article>
+
+  {{ end }}
+
+  <!-- <button class="wep-project-close uk-position-top-right" type="button" uk-close></button> -->
+
+</section>
+
+<!-- <div class="overlay"></div> -->

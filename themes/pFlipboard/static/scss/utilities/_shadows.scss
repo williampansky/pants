@@ -1,0 +1,49 @@
+// ======================================================
+// # SHADOWS
+// ======================================================
+// ## SHADOWS => Material Design Box Shadows
+// https://codepen.io/sdthornton/pen/wBZdXq
+.z-depth-1 {
+  box-shadow: $shadow-material-depth-1;
+  transition: $shadow-material-transition;
+}
+
+.z-depth-2 {
+  box-shadow: $shadow-material-depth-2;
+  transition: $shadow-material-transition;
+}
+
+.z-depth-3 {
+  box-shadow: $shadow-material-depth-3;
+  transition: $shadow-material-transition;
+}
+
+.z-depth-4 {
+  box-shadow: $shadow-material-depth-4;
+  transition: $shadow-material-transition;
+}
+
+.z-depth-5 {
+  box-shadow: $shadow-material-depth-5;
+  transition: $shadow-material-transition;
+}
+
+// -----------------------------------
+// ## <figure> IMG BOX SHADOWS
+// This is to avoid wrapping the entire figure (including the
+// caption) in the box shadow; this targets the image itself.
+.caption {
+
+  // ## SHADOWS => Material Design Box Shadows
+  &-z-depth-1 { & img { @extend .z-depth-1; } }
+  &-z-depth-2 { & img { @extend .z-depth-2; } }
+  &-z-depth-3 { & img { @extend .z-depth-3; } }
+  &-z-depth-4 { & img { @extend .z-depth-4; } }
+  &-z-depth-5 { & img { @extend .z-depth-5; } }
+
+  // ## SHADOWS => UIkit Shadows
+  &-uk-box-shadow-small { & img { box-shadow: 0 2px 8px rgba(0,0,0,0.08); } }
+  &-uk-box-shadow-medium { & img { box-shadow: 0 5px 15px rgba(0,0,0,0.08); } }
+  &-uk-box-shadow-large { & img { box-shadow: 0 14px 25px rgba(0,0,0,0.16); } }
+  &-uk-box-shadow-xlarge { & img { box-shadow: 0 28px 50px rgba(0,0,0,0.16); } }
+}

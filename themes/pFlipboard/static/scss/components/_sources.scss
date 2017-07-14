@@ -1,0 +1,18 @@
+// ==============================================================
+// COMPONENTS => PROJECT SOURCES
+// ==============================================================
+.wep-sources {
+  font-family: sans-serif;
+
+  .uk-accordion-title { font-style: normal; }
+
+  & li {
+    font-style: italic;
+  }
+
+  a,
+  a:link,
+  a:visited {
+    font-style: normal;
+  }
+}

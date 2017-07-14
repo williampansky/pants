@@ -1,0 +1,67 @@
+</main>
+
+<footer class="uk-section-small">
+
+  <section class="uk-margin-medium-bottom">
+    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+      <div class="uk-navbar-center">
+        <ul class="uk-navbar-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/resume">Resume</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+  <section class="uk-margin-medium-bottom">
+    <div class="uk-flex uk-flex-center uk-flex-middle uk-text-center">
+      {{ partial "social" . }}
+    </div>
+  </section>
+
+  <section>
+    <div class="wep-container uk-container uk-text-center">
+      <p id="copyrightFooter">
+        © <script>document.getElementById('copyrightFooter').appendChild(document.createTextNode(""+new Date().getFullYear()))</script>&nbsp;William Pansky
+      </p>
+      <p class="uk-text-small">
+        Powered by <a href="https://gohugo.io">Hugo</a>, <a href="https://getuikit.com">UIkit</a>, &amp; <a href="http://velocityjs.org/">VelocityJS</a>.
+      </p>
+    </div>
+  </section>
+
+</footer>
+
+<div id="wep-bar" class="scrolling">
+  <div class="left">
+    <a href="" class="heart">
+      <span class="heart-icon" uk-icon="icon: heart; ratio: .8;"></span>
+      <span class="heart-text">120</span>
+    </a>
+    <a href="" class="convo">
+      <span class="convo-icon" uk-icon="icon: comment; ratio: .8;"></span>
+      <span class="convo-text">4</span>
+    </a>
+  </div>
+  <div class="right">
+    <ul class="uk-iconnav">
+      <li><a href="" class="twitter" uk-icon="icon: twitter"></a></li>
+      <li><a href="" class="twitter" uk-icon="icon: facebook"></a></li>
+      <li><a href="" class="twitter" uk-icon="icon: bookmark"></a></li>
+    </ul>
+    <div class="next uk-visible@s">
+      <a href="">
+        <span>Next story</span>
+        <p class="uk-truncate">How to inspect the memory usag...</p>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div id="fader"></div>
+
+{{ partial "scripts" . }}
+
+</body>
+</html>
