@@ -1,5 +1,5 @@
 +++
-draft = false
+draft = true
 title = "Serendipitax"
 description = "Key promotional art and design for indie film, Serendipitax."
 keywords = [ "key art", "indie film", "serendipitax" ]
@@ -17,8 +17,8 @@ Collaboration with the same crew of [Estranged](http://williampansky.com/portfol
 
 Photography by the talented [Krystal Hills](https://www.facebook.com/KrystalHills).
 
-![image](/img/portfolio/serendipitax/seren-type.png)
-![image](/img/portfolio/serendipitax/seren-detail-01.jpg)
-![image](/img/portfolio/serendipitax/seren-detail-02.jpg)
-![image](/img/portfolio/serendipitax/seren-detail-03.jpg)
-![image](/img/portfolio/serendipitax/seren-detail-04.jpg)
+![Serendipitax typography](/img/portfolio/serendipitax/seren-type.png)
+![Serendipitax details](/img/portfolio/serendipitax/seren-detail-01.jpg)
+![Serendipitax details](/img/portfolio/serendipitax/seren-detail-02.jpg)
+![Serendipitax details](/img/portfolio/serendipitax/seren-detail-03.jpg)
+![Serendipitax details](/img/portfolio/serendipitax/seren-detail-04.jpg)

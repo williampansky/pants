@@ -1,6 +1,7 @@
 +++
 draft = false
-date = "2017-06-06"
+publishdate = "2017-06-06"
+Lastmod = "2017-07-15"
 keywords = [ "wordpress", "javascript", "dallas", "gift wrapping" ]
 
 avatar = "/projects/giftwrapcreations.com/demo/wp-content/uploads/dgwc.png"

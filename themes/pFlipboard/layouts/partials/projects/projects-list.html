@@ -4,7 +4,7 @@
   <div class="uk-container uk-container-small uk-margin-large-bottom">
     <div class="uk-child-width-1-1 uk-grid-large" uk-grid>
 
-      {{ range first 1 (where .Data.Pages.ByPublishDate "Section" "projects") }}
+      {{ range first 1 (where .Data.Pages "Section" "projects") }}
 
       <article class="wep-project uk-card">
 
@@ -20,7 +20,7 @@
           </div>
         </div>
 
-        <div class="wep-project-image-container uk-height-medium">
+        <div class="wep-project-image-container uk-height-medium uk-box-shadow-xlarge">
           <a href="{{ .Permalink }}" title="{{ .Params.title }}">
             <div class="wep-project-image uk-background-cover" style="background-image:url('{{ .Params.image }}')"></div>
           </a>
@@ -46,11 +46,13 @@
           </p>
         </div>
 
-        <footer class="wep-project-footer">
-          <!-- <a href="{{ .Permalink }}" title="{{ .Params.title }}" uk-icon="icon: triangle-right" class="wep-project-button wep-button wep-button-icon uk-button uk-button-default">
-            View project
-          </a> -->
+        <hr />
 
+        <footer class="wep-project-footer">
+          <p class="wep-project-details uk-article-meta" style="font-size:12px;">
+            {{/* <strong>{{ .ReadingTime }} minute read.</strong> */}}
+            {{ .Keywords }}
+          </p>
         </footer>
 
       </article>
@@ -64,7 +66,7 @@
   <div class="uk-container uk-container-small uk-margin-large-bottom">
     <div class="uk-child-width-1-2@s uk-grid-large" uk-grid>
 
-      {{ range first 2 (after 1 (where .Data.Pages.ByPublishDate "Section" "projects")) }}
+      {{ range first 2 (after 1 (where .Data.Pages "Section" "projects")) }}
 
       <article class="wep-project uk-card">
 
@@ -80,7 +82,7 @@
           </div>
         </div>
 
-        <div class="wep-project-image-container uk-height-small">
+        <div class="wep-project-image-container uk-height-small uk-box-shadow-medium">
           <a href="{{ .Permalink }}" title="{{ .Params.title }}">
             <div class="wep-project-image uk-background-cover" style="background-image:url('{{ .Params.image }}')"></div>
           </a>
@@ -95,8 +97,9 @@
               {{ .Title }}
             </a>
           </h1>
-          <p class="wep-project-name uk-text-meta">
-            {{ .Params.name }}
+          <p class="wep-project-details uk-text-meta">
+            {{/* {{ .Params.name }} */}}
+            Published on <time>{{ .PublishDate.Format "January 2, 2006" }}</time>.
           </p>
         </header>
 
@@ -106,10 +109,13 @@
           </p>
         </div>
 
+        <hr />
+
         <footer class="wep-project-footer">
-          <!-- <a href="{{ .Permalink }}" title="{{ .Params.title }}" uk-icon="icon: triangle-right" class="wep-project-button wep-button wep-button-icon uk-button uk-button-default">
-            View project
-          </a> -->
+          <p class="wep-project-details uk-article-meta" style="font-size:12px;">
+            {{/* <strong>{{ .ReadingTime }} minute read.</strong> */}}
+            {{ .Keywords }}
+          </p>
         </footer>
 
       </article>
@@ -123,22 +129,22 @@
   <div class="uk-container-expand uk-margin-large-bottom">
     <div class="uk-width-1-1">
 
-      {{ range first 1 (after 3 (where .Data.Pages.ByPublishDate "Section" "projects")) }}
+      {{ range first 1 (after 3 (where .Data.Pages "Section" "projects")) }}
 
       <article class="wep-project uk-card">
 
-        <div class="wep-project-image-container" uk-height-viewport="offset-bottom: 30">
+        <div class="wep-project-image-container" uk-height-viewport="offset-bottom: 0">
 
           {{ if isset .Params "hero" }}
-            <div class="wep-project-image wep-project-image-fullwidth uk-background-cover" style="background-image:url('{{ .Params.hero }}')"  uk-parallax="viewport: 0.35; opacity:0,1;"></div>
+            <div class="wep-project-image wep-project-image-fullwidth uk-background-cover" style="background-image:url('{{ .Params.hero }}')" uk-parallax="viewport: 0.35; opacity:0,1;"></div>
 
           {{ else if isset .Params "image" }}
-            <div class="wep-project-image wep-project-image-fullwidth uk-background-cover" style="background-image:url('{{ .Params.image }}')"></div>
+            <div class="wep-project-image wep-project-image-fullwidth uk-background-cover" style="background-image:url('{{ .Params.image }}')" uk-parallax="viewport: 0.35; opacity:0,1;"></div>
           {{ end }}
 
         </div>
 
-        <div id="fwText" class="wep-project-fullwidth-info uk-position-top-left uk-width-1-2@s uk-width-1-3@m uk-width-1-3@l uk-width-1-4@xl uk-width-1-5@xxl uk-width-1-6@xxxl uk-padding" uk-parallax="y: 80,0">
+        <div id="fwText" class="wep-project-fullwidth-info wep-project-fullwidth-info-light-bg uk-position-top-left uk-width-1-2@s uk-width-1-3@m uk-width-1-3@l uk-width-1-4@xl uk-width-1-5@xxl uk-width-1-6@xxxl uk-padding" uk-parallax="viewport: 0.85; y: 80,0">
           <div class="wep-project-client">
             <div class="wep-project-client-avatar" style="background-image:url('{{ .Params.avatar }}')"></div>
             <div class="wep-project-client-info">
@@ -171,10 +177,13 @@
             </p>
           </div>
 
+          <hr />
+
           <footer class="wep-project-footer">
-            <!-- <a href="{{ .Permalink }}" title="{{ .Params.title }}" uk-icon="icon: triangle-right" class="wep-project-button wep-button wep-button-icon uk-button uk-button-default">
-              View project
-            </a> -->
+            <p class="wep-project-details uk-article-meta" style="font-size:12px;">
+              {{/* <strong>{{ .ReadingTime }} minute read.</strong> */}}
+              {{ .Keywords }}
+            </p>
           </footer>
         </div>
 
@@ -189,7 +198,7 @@
   <div class="uk-container uk-container-small uk-margin-large-bottom">
     <div class="uk-child-width-1-2@s uk-grid-large" uk-grid>
 
-      {{ range first 2 (after 4 (where .Data.Pages.ByPublishDate "Section" "projects")) }}
+      {{ range first 2 (after 4 (where .Data.Pages "Section" "projects")) }}
 
       <article class="wep-project uk-card">
 
@@ -205,7 +214,7 @@
           </div>
         </div>
 
-        <div class="wep-project-image-container uk-height-small">
+        <div class="wep-project-image-container uk-height-small uk-box-shadow-medium">
           <a href="{{ .Permalink }}" title="{{ .Params.title }}">
             <div class="wep-project-image uk-background-cover" style="background-image:url('{{ .Params.image }}')"></div>
           </a>
@@ -231,10 +240,13 @@
           </p>
         </div>
 
+        <hr />
+
         <footer class="wep-project-footer">
-          <!-- <a href="{{ .Permalink }}" title="{{ .Params.title }}" uk-icon="icon: triangle-right" class="wep-project-button wep-button wep-button-icon uk-button uk-button-default">
-            View project
-          </a> -->
+          <p class="wep-project-details uk-article-meta" style="font-size:12px;">
+            {{/* <strong>{{ .ReadingTime }} minute read.</strong> */}}
+            {{ .Keywords }}
+          </p>
         </footer>
 
       </article>

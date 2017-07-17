@@ -1,12 +1,8 @@
 +++
 draft = false
-date = "2017-06-13"
-keywords = [
-  "wordpress",
-  "woocommerce",
-  "dallas",
-  "apparel"
-]
+publishdate = "2017-06-13"
+Lastmod = "2017-07-15"
+keywords = [ "wordpress", "woocommerce", "dallas", "apparel" ]
 
 avatar = "/projects/illusiveapparel.website/demo/wp-content/uploads/2017/06/ilsv-logo-png.png"
 tag = "Wordpress"
@@ -22,4 +18,4 @@ description = "Wordpress website powered by WooCommerce for Dallas apparel bouti
 summary = "At Illusive Apparel, our onsite factory gives us an advantage when creating your custom screen printed and dye sublimated garments. Our award-winning graphic artists create ..."
 +++
 
- fresh and cutting edge designs, our quality control managers ensure only the most superior products get out the door, and the rest of our staff is always available to make sure you’re treated like family.
+At Illusive Apparel, our onsite factory gives us an advantage when creating your custom screen printed and dye sublimated garments. Our award-winning graphic artists create fresh and cutting edge designs, our quality control managers ensure only the most superior products get out the door, and the rest of our staff is always available to make sure you’re treated like family.

@@ -1,18 +1,3 @@
-<!-- VUE RENDER -->
-<!-- <section>
-  <h2>CodePens</h2>
-  <ul id="codepens" class="">
-    <li v-for="item in list">
-      <h5 class=""><a v-bind:href="[[ item.link ]]">
-        [[ item.title ]]
-      </a></h5>
-      <p class="">
-        [[ item.description ]]
-      </p>
-    </li>
-  </ul>
-</section> -->
-
 <!-- VUE RENDER FROM GET API v2 -->
 <!-- http://cpv2api.com/ -->
 <!-- @click="$event.target.classList.toggle('wep-display-block') -->
@@ -64,27 +49,66 @@
 </template> -->
 
 <!-- HUGO RENDER -->
-<section class="wep-codepens" >
+<!-- SIX CODEPENS -->
+<section id="codepenList" class="uk-section-small">
+  <div class="uk-container uk-container-small uk-margin-large-bottom">
+    <div class="uk-child-width-1-3@s uk-grid-large" uk-grid>
 
-  {{ range (where .Data.Pages.ByPublishDate "Section" "codepens") }}
+      {{ range (where .Data.Pages "Section" "codepens") }}
 
-    <div class="wep-codepens-item">
-      <div class="wep-codepens-item-inner">
-        <h1 class="pansky-home-project-title">
-            {{ .Title }}
-        </h1>
-        <p class="pansky-home-project-description">
-          {{ .Params.description }}
-        </p>
-      </div>
-      <div class="wep-codepens-item-under">
-        <a href="{{ .Params.link }}" title="{{ .Params.description }}" class="wep-codepens-item-link">
-          <span class="wep-codepens-item-link-text">View on</span>
-          <img src="{{ .Site.BaseURL }}images/codepen-type.svg" alt="Codepen logo" />
-        </a>
-      </div>
+      <article class="wep-project uk-card">
+
+        <div class="wep-project-client">
+          <div class="wep-project-client-avatar" style="background-image:url('{{ .Params.avatar }}')"></div>
+          <div class="wep-project-client-info">
+            <div class="wep-project-client-info-top">
+              {{ .Params.tag }}
+            </div>
+            <div class="wep-project-client-info-bottom">
+              {{ .Params.client }}
+            </div>
+          </div>
+        </div>
+
+        <div class="wep-project-image-container uk-height-small uk-box-shadow-medium">
+          <a href="{{ .Permalink }}" title="{{ .Params.title }}">
+            <div class="wep-project-image uk-background-cover" style="background-image:url('{{ .Params.image }}')"></div>
+          </a>
+        </div>
+
+        <header class="wep-project-header">
+          <p class="wep-project-category">
+            {{ .Params.category }}
+          </p>
+          <h1 class="wep-project-title">
+            <a href="{{ .Permalink }}" title="{{ .Params.title }}">
+              {{ .Title }}
+            </a>
+          </h1>
+          <p class="wep-project-name uk-text-meta">
+            {{ .Params.name }}
+          </p>
+        </header>
+
+        <div class="wep-project-body">
+          <p>
+            {{ .Params.summary }}  <a href="{{ .Permalink }}" title="{{ .Params.title }}" uk-icon="icon: triangle-right" class="">read more</a>
+          </p>
+        </div>
+
+        <hr />
+
+        <footer class="wep-project-footer">
+          <p class="wep-project-details uk-article-meta" style="font-size:12px;">
+            {{/* <strong>{{ .ReadingTime }} minute read.</strong> */}}
+            {{ .Keywords }}
+          </p>
+        </footer>
+
+      </article>
+
+      {{ end }}
+
     </div>
-
-  {{ end }}
-
+  </div>
 </section>

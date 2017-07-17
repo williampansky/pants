@@ -1,5 +1,5 @@
 +++
-draft = false
+draft = true
 date = "2017-04-10"
 title = "Velocity.js — Intro Animations"
 description = "Learning the Velocity.js animation styles."

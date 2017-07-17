@@ -1,5 +1,5 @@
 +++
-draft = false
+draft = true
 title = "Self-Titled EP"
 description = "Album artwork and design for local Fort Worth, TX, alternative rock band Tungsten Wake."
 keywords = [ "album art", "music packaging", "tungsten wake" ]

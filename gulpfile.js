@@ -156,12 +156,13 @@ gulp.task('deploy', function() {
 gulp.task('babel', () => {
   var src = 'themes/pFlipboard/static/babel/';
   return gulp.src([
-      src + 'interaction-pens.js',
       src + 'bar.js',
       src + 'accordions.js',
       src + 'util-deepFocus.js',
       src + 'lightbox.js',
+      src + 'readingProgress.js',
       src + 'pageLoad.js'
+      // src + 'slideoutInit.js'
     ])
     .pipe(babel({
       presets: ['es2015']

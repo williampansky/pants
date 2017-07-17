@@ -14,7 +14,8 @@
     }
   } // end a
 
-  &.uk-icon-nav {
-
+  &.uk-iconnav {
+    margin-left: -15px;
+    @media (min-width: 1200px) { margin-left: auto; margin-right: auto; }
   }
 } // end socials

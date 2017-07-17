@@ -3,15 +3,7 @@
 <footer class="uk-section-small">
 
   <section class="uk-margin-medium-bottom">
-    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-      <div class="uk-navbar-center">
-        <ul class="uk-navbar-nav">
-          <li><a href="/">Home</a></li>
-          <li><a href="/resume">Resume</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+    {{ partial "nav" }}
   </section>
 
   <section class="uk-margin-medium-bottom">
@@ -26,7 +18,7 @@
         © <script>document.getElementById('copyrightFooter').appendChild(document.createTextNode(""+new Date().getFullYear()))</script>&nbsp;William Pansky
       </p>
       <p class="uk-text-small">
-        Powered by <a href="https://gohugo.io">Hugo</a>, <a href="https://getuikit.com">UIkit</a>, &amp; <a href="http://velocityjs.org/">VelocityJS</a>.
+        Powered by <a href="https://gohugo.io">Hugo</a> v{{ .Hugo.Version }}, <a href="https://getuikit.com">UIkit</a>, &amp; <a href="http://velocityjs.org/">VelocityJS</a>.
       </p>
     </div>
   </section>
@@ -35,27 +27,55 @@
 
 <div id="wep-bar" class="scrolling">
   <div class="left">
-    <a href="" class="heart">
-      <span class="heart-icon" uk-icon="icon: heart; ratio: .8;"></span>
-      <span class="heart-text">120</span>
-    </a>
-    <a href="" class="convo">
-      <span class="convo-icon" uk-icon="icon: comment; ratio: .8;"></span>
-      <span class="convo-text">4</span>
-    </a>
+    {{/* <a href="#tableContents" id="openContents" uk-icon="icon: thumbnails" uk-toggle></a> */}}
+    <ul class="uk-iconnav">
+      <li>
+        <a href="" class="twitter" uk-icon="icon: twitter" title="Hello World" uk-tooltip>
+        </a>
+      </li>
+      <li>
+        <a href="" class="facebook" uk-icon="icon: facebook">
+        </a>
+      </li>
+      <li>
+        <a href="#" class="bookmark" uk-icon="icon: bookmark"></a>
+      </li>
+    </ul>
   </div>
   <div class="right">
-    <ul class="uk-iconnav">
-      <li><a href="" class="twitter" uk-icon="icon: twitter"></a></li>
-      <li><a href="" class="twitter" uk-icon="icon: facebook"></a></li>
-      <li><a href="" class="twitter" uk-icon="icon: bookmark"></a></li>
-    </ul>
-    <div class="next uk-visible@s">
-      <a href="">
-        <span>Next story</span>
-        <p class="uk-truncate">How to inspect the memory usag...</p>
-      </a>
+
+    <div class="mobile-menu-btn uk-hidden@s">
+      <a href="#" id="slideOut" uk-icon="icon: menu"></a>
     </div>
+
+    {{ if .IsHome }}
+
+      <div class="next uk-visible@s">
+        {{ range first 1 (where .Data.Pages.ByWeight "Section" "projects") }}
+          <a href="{{ .Next.Permalink }}">
+            <span class="uk-text-uppercase" style="color:#595959; margin-bottom:-2px;">
+              Next article:
+            </span>
+            <p class="uk-truncate">{{ .Next.Title }}</p>
+          </a>
+        {{ end }}
+      </div>
+
+    {{ else }}
+
+      <div class="next uk-visible@s">
+        {{ range first 1 (where .Data.Pages "Section" "projects") }}
+          <a href="{{ .Permalink }}">
+            <span class="uk-text-uppercase" style="color:#595959; margin-bottom:-2px;">
+              Next article:
+            </span>
+            <p class="uk-truncate">{{ .Title }}</p>
+          </a>
+        {{ end }}
+      </div>
+
+    {{ end }}
+
   </div>
 </div>
 

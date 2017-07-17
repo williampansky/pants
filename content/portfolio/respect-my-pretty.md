@@ -1,5 +1,5 @@
 +++
-draft = false
+draft = true
 title = "Respect My Pretty"
 description = "Apparel design for local Dallas vendor."
 keywords = [ "apparel", "clothing", "t-shirt" ]

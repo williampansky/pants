@@ -1,5 +1,5 @@
 +++
-draft = false
+draft = true
 title = "The Struggle EP"
 description = "Single EP release artwork and design for local Fort Worth, TX, alternative rock band Tungsten Wake."
 keywords = [ "album art", "music packaging", "tungsten wake" ]

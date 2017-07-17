@@ -8,18 +8,62 @@
 <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/vue-router/2.6.0/vue-router.min.js"></script> -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit-icons.min.js"></script>
-<script src="{{ .Site.BaseURL }}js/highlight.pack.js"></script>
+<script src="{{ .Site.BaseURL }}js/slideout.min.js"></script>
 <script>
-$(document).ready(function() {
-  $('pre code').each(function(i, block) {
-    hljs.highlightBlock(block);
+  $('a#slideOut').on('click', function() {
+    // $(this).preventDefault();
+    return false;
   });
 
-  hljs.configure({useBR: true});
-  $('div.code').each(function(i, block) {
-    hljs.highlightBlock(block);
+  var slideout = new Slideout({
+    'panel': document.getElementById('panel'),
+    'menu': document.getElementById('menu'),
+    'padding': 256,
+    'tolerance': 70,
+    'easing': 'cubic-bezier',
+    'side': 'right',
   });
-});
+
+  // overlay
+  function close(eve) {
+    eve.preventDefault();
+    slideout.close();
+  }
+
+  slideout
+    .on('beforeopen', function() {
+      this.panel.classList.add('panel-open');
+      $('#wep-bar').addClass('scrolling');
+    })
+    .on('open', function() {
+      this.panel.addEventListener('click', close);
+    })
+    .on('beforeclose', function() {
+      this.panel.classList.remove('panel-open');
+      this.panel.removeEventListener('click', close);
+      $('#wep-bar').removeClass('scrolling');
+    });
+</script>
+<script>
+  // slideout toggle
+  document
+    .querySelector('#slideOut')
+    .addEventListener('click', function() {
+      slideout.toggle();
+  });
+</script>
+<script src="{{ .Site.BaseURL }}js/highlight.pack.js"></script>
+<script>
+  $(document).ready(function() {
+    $('pre code').each(function(i, block) {
+      hljs.highlightBlock(block);
+    });
+
+    hljs.configure({useBR: true});
+    $('div.code').each(function(i, block) {
+      hljs.highlightBlock(block);
+    });
+  });
 </script>
 <script src="{{ .Site.BaseURL}}js/app.min.js"></script>
 <!-- <script src="{{ .Site.BaseURL}}js/vue.min.js"></script> -->

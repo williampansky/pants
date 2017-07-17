@@ -15,12 +15,19 @@
   &-company,
   &-date,
   &-geo {
-    font-size: .875rem;
+    line-height: 1.275;
     padding: 0;
     margin: 0;
   }
 
   &-company {
+    font-size: .815rem;
     font-weight: bold;
+  }
+
+  &-date,
+  &-geo {
+    font-family: sans-serif;
+    font-size: .675rem;
   }
 } // end project

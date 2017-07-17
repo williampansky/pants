@@ -1,5 +1,5 @@
 +++
-draft = false
+draft = true
 title = "The Strangle and The Struggle EP"
 description = "Album design for premiere guitarist and vocalist, Monique Hernandez-Fuentes."
 keywords = [ "album design", "music packaging", "monique hernandez-fuentes" ]

@@ -1,6 +1,7 @@
 +++
 draft = false
-date = "2017-03-25"
+publishdate = "2017-03-25"
+Lastmod = "2017-07-15"
 weight = 1
 keywords = [ "goodwill", "dallas", "lunch", "fundraising" ]
 
@@ -18,13 +19,9 @@ summary = "The Lunch, Goodwill Industries of Dallas' annual fundraising event, f
 
 +++
 
-<!-- ### Introduction -->
+### Introduction
 
-<div class="wep-sticky-header" style="z-index: 980;" uk-sticky="bottom: #objective">
-  <h3 class="wep-container uk-container">Introduction</h3>
-</div>
-
-<p class="uk-text-lead">The Lunch, Goodwill Industries of Dallas' annual fundraising event, found wonderful success for its first two years – securing over $1.5m each year to, <em>“... expand and enhance job training services.”</em></p>
+<p class="uk-text-lead uk-margin-remove-bottom">The Lunch, Goodwill Industries of Dallas' annual fundraising event, found wonderful success for its first two years – securing over $1.5m each year to, <em>“... expand and enhance job training services.”</em></p>
 
 <div class="uk-text-center uk-padding-large"><img class="uk-border-circle" src="/img/projects/good-lunch/good-face-block.jpg" width="100px" alt="Goodwill face" style="width:200px;"></div>
 

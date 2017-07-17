@@ -1,6 +1,7 @@
 +++
 draft = false
-date = "2017-05-18"
+publishdate = "2017-02-01"
+Lastmod = "2017-07-15"
 keywords = [ "wordpress", "dallas", "ad agency" ]
 
 avatar = "/projects/miller.agency/demo/apple-touch-icon.png"
@@ -16,5 +17,4 @@ name = "miller.agency"
 description = "Wordpress website powered by WooCommerce for Dallas apparel boutique"
 
 summary = "For more than 30 years, Miller Ad Agency has earned a reputation as experts in advertising. We use our unique approach to marketing and advertising to ..."
-
 +++
