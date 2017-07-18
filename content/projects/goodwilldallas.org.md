@@ -1,6 +1,6 @@
 +++
 draft = false
-publishdate = "2015-12-10"
+publishDate = "2015-12-10"
 Lastmod = "2017-07-15"
 keywords = [ "goodwill", "dallas", "non profit", "npo" ]
 

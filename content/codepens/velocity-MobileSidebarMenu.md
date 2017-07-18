@@ -1,7 +1,23 @@
 +++
 draft = false
-date = "2017-04-10"
-title = "Velocity.js — Mobile Sidebar Menu"
-description = "Popin info/CTA for new banking information for Credit Union of Texas."
+publishDate = "2017-04-10"
+Lastmod = "2017-07-02"
+keywords = [ "codepen", "velocityJS", "animation", "sidebar" ]
+
+avatar = "https://production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg"
+tag = "A Pen by"
+client = "by William Pansky"
+clientdescription = ""
+image = "/img/codepens/velocityjsSidebarMenu.jpg"
+hero = ""
+caption = ""
+category = "Codepen"
+title = "VelocityJS mobile sidebar menu experiment"
+name = "Flipboard-esque Article Cards"
+
+description = ""
+
+summary = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam ..."
+
 link = "https://codepen.io/williampansky/pen/ryXRda"
 +++

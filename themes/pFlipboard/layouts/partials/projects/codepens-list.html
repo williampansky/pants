@@ -49,12 +49,18 @@
 </template> -->
 
 <!-- HUGO RENDER -->
-<!-- SIX CODEPENS -->
-<section id="codepenList" class="uk-section-small">
+<!-- THREE CODEPENS (standard) -->
+<!-- <section id="codepenList" class="uk-section-small">
   <div class="uk-container uk-container-small uk-margin-large-bottom">
+    <div class="uk-text-center@l uk-margin-bottom">
+      <h3 class="uk-margin-remove-bottom">CodePens</h3>
+      <p class="uk-article-meta" style="font-family:sans-serif; font-size:12px;">
+        <strong>Note:</strong> CodePen links open in a new tab.
+      </p>
+    </div>
     <div class="uk-child-width-1-3@s uk-grid-large" uk-grid>
 
-      {{ range (where .Data.Pages "Section" "codepens") }}
+      {{ range first 6 (where .Data.Pages "Section" "codepens") }}
 
       <article class="wep-project uk-card">
 
@@ -71,39 +77,82 @@
         </div>
 
         <div class="wep-project-image-container uk-height-small uk-box-shadow-medium">
-          <a href="{{ .Permalink }}" title="{{ .Params.title }}">
+          <a href="{{ .Params.link }}" title="{{ .Params.title }}" target="_blank">
             <div class="wep-project-image uk-background-cover" style="background-image:url('{{ .Params.image }}')"></div>
           </a>
         </div>
 
         <header class="wep-project-header">
-          <p class="wep-project-category">
-            {{ .Params.category }}
-          </p>
           <h1 class="wep-project-title">
-            <a href="{{ .Permalink }}" title="{{ .Params.title }}">
+            <a href="{{ .Params.link }}" title="{{ .Params.title }}" target="_blank">
               {{ .Title }}
             </a>
           </h1>
-          <p class="wep-project-name uk-text-meta">
-            {{ .Params.name }}
-          </p>
         </header>
 
         <div class="wep-project-body">
           <p>
-            {{ .Params.summary }}  <a href="{{ .Permalink }}" title="{{ .Params.title }}" uk-icon="icon: triangle-right" class="">read more</a>
+            <a href="{{ .Params.link }}" title="{{ .Params.title }}" uk-icon="icon: triangle-right" class="">View pen</a>
           </p>
         </div>
 
-        <hr />
+      </article>
 
-        <footer class="wep-project-footer">
-          <p class="wep-project-details uk-article-meta" style="font-size:12px;">
-            {{/* <strong>{{ .ReadingTime }} minute read.</strong> */}}
-            {{ .Keywords }}
+      {{ end }}
+
+    </div>
+  </div>
+</section> -->
+
+<!-- HUGO RENDER -->
+<!-- THREE CODEPENS (background boxes) -->
+<section id="codepenList" class="uk-section-small">
+  <div class="uk-container uk-container-small uk-margin-large-bottom">
+    <div class="uk-text-center@l uk-margin-bottom">
+      <h3 class="uk-margin-remove-bottom">CodePens</h3>
+      <p class="uk-article-meta" style="font-family:sans-serif; font-size:12px;">
+        <strong>Note:</strong> CodePen links open in a new tab.
+      </p>
+    </div>
+    <div class="uk-child-width-1-3@s uk-grid-collapse" uk-grid>
+
+      {{ range first 3 (where .Data.Pages "Section" "codepens") }}
+
+      <article class="wep-pen uk-card">
+
+        <div class="wep-pen-image-container">
+
+          {{ if isset .Params "gif" }}
+            <div class="wep-pen-image uk-background-cover" style="background-image:url('{{ .Params.gif }}')"></div>
+          {{ else if isset .Params "image" }}
+            <div class="wep-pen-image uk-background-cover" style="background-image:url('{{ .Params.image }}')"></div>
+          {{ end }}
+
+        </div>
+
+        <!-- <div class="wep-project-client uk-position-top-left uk-padding-small">
+          <div class="wep-project-client-avatar" style="background-image:url('{{ .Params.avatar }}'); background-color:#fff;"></div>
+        </div> -->
+
+        <!-- <div class="wep-project-image-container uk-height-small uk-box-shadow-medium">
+          <a href="{{ .Params.link }}" title="{{ .Params.title }}" target="_blank">
+            <div class="wep-project-image uk-background-cover" style="background-image:url('{{ .Params.image }}')"></div>
+          </a>
+        </div> -->
+
+        <header class="wep-pen-header uk-position-bottom-left uk-padding-small">
+          <a href="{{ .Params.link }}" title="{{ .Params.title }}" target="_blank">
+            <h1 class="wep-pen-title">
+              {{ .Title }}
+            </h1>
+          </a>
+        </header>
+
+        <!-- <div class="wep-project-body">
+          <p>
+            <a href="{{ .Params.link }}" title="{{ .Params.title }}" uk-icon="icon: triangle-right" class="">View pen</a>
           </p>
-        </footer>
+        </div> -->
 
       </article>
 

@@ -1,6 +1,6 @@
 +++
 draft = false
-publishdate = "2017-01-11"
+publishDate = "2017-01-11"
 Lastmod = "2017-07-15"
 keywords = [ "github", "boilerplate", "web development" ]
 

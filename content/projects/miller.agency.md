@@ -1,6 +1,6 @@
 +++
 draft = false
-publishdate = "2017-02-01"
+publishDate = "2017-02-01"
 Lastmod = "2017-07-15"
 keywords = [ "wordpress", "dallas", "ad agency" ]
 

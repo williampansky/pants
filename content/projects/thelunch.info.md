@@ -1,6 +1,6 @@
 +++
 draft = false
-publishdate = "2017-03-25"
+publishDate = "2017-03-25"
 Lastmod = "2017-07-15"
 weight = 1
 keywords = [ "goodwill", "dallas", "lunch", "fundraising" ]
@@ -428,7 +428,7 @@ There's always issues, *always*. Tracked 'em on on the repo; the following is a 
 <ul uk-accordion="multiple: false; duration: 400; transition: ease-in-out">
   <li>
     <div class="uk-accordion-title uk-text-small">
-      <span uk-icon="icon: github"></span> <strong>#11:</strong> win7 ie10.0,11.0 - Header, sticky nav, &amp; sponOpps
+      <span uk-icon="icon: github"></span> <strong>#11:</strong> win7 ie10/11 - Header, sticky, &amp; sponOpps
     </div>
     <div class="uk-accordion-content">
       <p>
@@ -514,7 +514,7 @@ if(/(iPhone|iPad|iPod)\sOS\s9/.test(navigator.userAgent)) {
 
 Ahh, going live... such a terrifying and exhilarating time! The project hit v1.0.0 and the Deployment milestone was completed. Although, I guess I forgot to actually close the milestone – *hence the date of closure*.
 
-<!-- SPONSORSHIP CARDS -->
+<!-- DEPLOYMENT -->
 {{< figureModal src="/img/projects/good-lunch/good-lunch-milestone-deployment.jpg" title="THE LUNCH deployment milestone on GitHub" class="caption caption-uk-box-shadow-large" link="milestone" >}}
 
 ### Post-release

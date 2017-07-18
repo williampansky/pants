@@ -156,25 +156,26 @@ gulp.task('deploy', function() {
 gulp.task('babel', () => {
   var src = 'themes/pFlipboard/static/babel/';
   return gulp.src([
-      src + 'bar.js',
-      src + 'accordions.js',
-      src + 'util-deepFocus.js',
-      src + 'lightbox.js',
-      src + 'readingProgress.js',
-      src + 'pageLoad.js'
-      // src + 'slideoutInit.js'
-    ])
-    .pipe(babel({
-      presets: ['es2015']
-    }))
-    .pipe(babili({
-      mangle: {
-        keepClassNames: true
-      }
-    }))
-    .pipe(concat('all.js'))
-    .pipe(rename('app.min.js'))
-    .pipe(gulp.dest('themes/pFlipboard/static/js'));
+    src + 'ignoreSlideout.js',
+    src + 'bar.js',
+    src + 'accordions.js',
+    src + 'util-deepFocus.js',
+    src + 'lightbox.js',
+    src + 'readingProgress.js',
+    src + 'pageLoad.js'
+    // src + 'slideoutInit.js'
+  ])
+  .pipe(babel({
+    presets: ['es2015']
+  }))
+  .pipe(babili({
+    mangle: {
+      keepClassNames: true
+    }
+  }))
+  .pipe(concat('all.js'))
+  .pipe(rename('app.min.js'))
+  .pipe(gulp.dest('themes/pFlipboard/static/js'));
 });
 
 // -----------------------------------------
