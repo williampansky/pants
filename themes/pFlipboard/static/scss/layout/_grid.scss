@@ -10,6 +10,17 @@
   box-sizing: border-box;
 }
 
+// .wep-article {
+//   & .content {
+//     & h3, & h4, & h5, & h6,
+//     & p, & dl, & blockquote {
+//       max-width: 740px;
+//       padding: 0 20px;
+//       margin: 0 auto 20px;
+//       box-sizing: border-box;
+//     }
+//   }
+// }
 
 @media (min-width:2000px) {
   .uk-width-1-5\@xxl { width: calc(100% * 1 / 5.001); }

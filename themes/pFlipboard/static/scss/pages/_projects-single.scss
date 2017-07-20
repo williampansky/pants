@@ -93,6 +93,57 @@
   }
 } // end -article
 
+.styleguide {
+
+  &-colors {
+    font-family: sans-serif;
+    font-weight: bold;
+    list-style-type: none;
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // align-items: flex-start;
+    // justify-content: space-between;
+    padding: 0;
+    margin: 0 0 1rem;
+
+    & ul { padding: 0; }
+
+    & li {
+      // &:first-of-type {
+      //   min-width: 150px;
+      //   min-height: 150px;
+      // }
+      // min-width: 100px;
+      // min-height: 100px;
+      // margin-right: 20px;
+      &:last-of-type { margin-right: 0; }
+    }
+
+    & #colorsPrimary { background: #0e75dd; }
+    & #colorsPrimaryLight1 { background: mix(white, #0e75dd, 15%); }
+    & #colorsPrimaryLight2 { background: mix(white, #0e75dd, 35%); }
+    & #colorsPrimaryDark1 { background: mix(black, #0e75dd, 15%); }
+    & #colorsPrimaryDark2 { background: mix(black, #0e75dd, 35%); }
+
+    & #colorsAccent { background: #f49200; }
+    & #colorsAccentLight1 { background: mix(white, #f49200, 15%); }
+    & #colorsAccentLight2 { background: mix(white, #f49200, 35%); }
+    & #colorsAccentDark1 { background: mix(black, #f49200, 15%); }
+    & #colorsAccentDark2 { background: mix(black, #f49200, 35%); }
+
+    & #colorsBlack { background: #222; }
+    & #colorsGray1 { background: #666; }
+    & #colorsGray2 { background: #959595; }
+    & #colorsWhite1 { background: #e5e5e5; color: #666; }
+    & #colorsWhite2 { background: #fdfdfd; color: #666; }
+  }
+
+} // end styleguide
+
+
+
+
 
 // .wep-modal-full {
 //   & .uk-close {

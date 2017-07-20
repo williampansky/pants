@@ -1,5 +1,5 @@
 +++
-draft = true
+draft = false
 title = "Evol World"
 description = "Album art and design for a music single release of Evol World by Alex the Great."
 keywords = [ "album design", "music packaging", "alex the great" ]

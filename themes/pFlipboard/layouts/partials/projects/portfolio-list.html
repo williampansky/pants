@@ -1,16 +1,66 @@
-<section id="portfolioList" class="uk-grid-collapse uk-grid-match uk-child-width-1-2@s uk-child-width-1-6@l" uk-grid>
+<section id="portfolioList" class="uk-section-small">
 
-  {{ range (where .Data.Pages.ByPublishDate "Section" "portfolio") }}
+<!-- TWO PROJECTS -->
+<section class="uk-container uk-container-small uk-margin-large-bottom">
+  <div class="uk-child-width-1-2@s uk-grid-large" uk-grid>
 
-  <article class="wep-portfolio">
-    <div class="wep-portfolio-content uk-background-cover uk-height-small uk-panel uk-text-center uk-flex uk-flex-center uk-flex-middle" style="background-image:url( '{{ .Params.featured }}' );">
-      <a href="{{ .Permalink }}" title="{{ .Params.title }}">
-        <span class="wep-portfolio-tag">{{ .Params.category }}</span>
-        <h1 class="wep-portfolio-title">{{ .Title }}</h1>
-      </a>
-    </div>
-  </article>
+    {{ range first 4 (where .Data.Pages "Section" "portfolio") }}
 
-  {{ end }}
+    <article class="wep-project uk-card">
+
+      <div class="wep-project-client">
+        <div class="wep-project-client-avatar" style="background-image:url('{{ .Params.avatar }}')"></div>
+        <div class="wep-project-client-info">
+          <div class="wep-project-client-info-top">
+            {{ .Params.tag }}
+          </div>
+          <div class="wep-project-client-info-bottom">
+            {{ .Params.client }}
+          </div>
+        </div>
+      </div>
+
+      <div class="wep-project-image-container uk-height-medium uk-box-shadow-medium">
+        <a href="{{ .Permalink }}" title="{{ .Params.title }}">
+          <div class="wep-project-image uk-background-cover" style="background-image:url('{{ .Params.image }}')"></div>
+        </a>
+      </div>
+
+      <header class="wep-project-header">
+        <p class="wep-project-category">
+          {{ .Params.category }}
+        </p>
+        <h1 class="wep-project-title">
+          <a href="{{ .Permalink }}" title="{{ .Params.title }}">
+            {{ .Title }}
+          </a>
+        </h1>
+        <p class="wep-project-details uk-text-meta">
+          {{/* {{ .Params.name }} */}}
+          Published on <time>{{ .PublishDate.Format "January 2, 2006" }}</time>.
+        </p>
+      </header>
+
+      <div class="wep-project-body">
+        <p>
+          {{ .Params.summary }} <a href="{{ .Permalink }}" title="{{ .Params.title }}" uk-icon="icon: triangle-right" class="">read more</a>
+        </p>
+      </div>
+
+      <hr />
+
+      <footer class="wep-project-footer">
+        <p class="wep-project-details uk-article-meta" style="font-size:12px;">
+          {{/* <strong>{{ .ReadingTime }} minute read.</strong> */}}
+          {{ .Keywords }}
+        </p>
+      </footer>
+
+    </article>
+
+    {{ end }}
+
+  </div>
+</section>
 
 </section>

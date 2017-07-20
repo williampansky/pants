@@ -24,8 +24,9 @@ Let's just, like, plop in some of my resume bulletpoints here and move on with o
 - Create countless ads for clients including, but not limited to: websites, email marketing, web and retargeting banners, direct mail, logos and branding, print and newspapers, billboards, etc.
 - Researched, initiated, and implemented new to-do job tracking workflow for the creative department.
 
-![image](/img/portfolio/goodwill-dallas-website/good-002.jpg)
-![image](/img/portfolio/goodwill-dallas-website/good-020.jpg)
+![goodwill-dallas-website](/img/portfolio/goodwill-dallas-website/good-002.jpg)
+
+![goodwill-dallas-website](/img/portfolio/goodwill-dallas-website/good-020.jpg)
 
 #### My roles
 My part revolved around the website. Everything from structure to wireframing to conceptual mockups to production assets to HTML and vanilla CSS (not discovering Sass until well after this project’s completion).

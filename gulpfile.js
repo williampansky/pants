@@ -1,7 +1,7 @@
 // Gulp
 // http://gulpjs.com/
 // npm install gulp
-// npm install --only=dev
+// npm install --only-dev
 var gulp = require('gulp');
 
 // Gulp Util

@@ -47,3 +47,24 @@
   &-uk-box-shadow-large { & img { box-shadow: 0 14px 25px rgba(0,0,0,0.16); } }
   &-uk-box-shadow-xlarge { & img { box-shadow: 0 28px 50px rgba(0,0,0,0.16); } }
 }
+
+// -----------------------------------
+// ## BOX SHADOW BOTTOM
+.wep-box-shadow-bottom {
+  display: inline-block;
+  position: relative;
+  max-width: 100%;
+  vertical-align: middle;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    right: 10px;
+    height: 30px;
+    border-radius: 100%;
+    background: #999;
+    filter: blur(6px);
+  }
+}

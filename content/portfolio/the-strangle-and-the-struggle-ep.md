@@ -1,5 +1,5 @@
 +++
-draft = true
+draft = false
 title = "The Strangle and The Struggle EP"
 description = "Album design for premiere guitarist and vocalist, Monique Hernandez-Fuentes."
 keywords = [ "album design", "music packaging", "monique hernandez-fuentes" ]
@@ -15,14 +15,22 @@ execution = "The cover art, presented a chaotic and interesting visual appeal. T
 
 [Monique Hernandez-Fuentes](http://moniquehernandezfuentes.com/), an old friend of mine, presented me with the opportunity to design her EP album, The Strangle & the Struggle. You can listen to the entire EP for free online at [SoundCloud](https://soundcloud.com/mosahefu) and purchase the physical copy at [StoreEnvy](http://mosahefu.storenvy.com/).
 
-![image](/img/portfolio/the-strangle-and-the-struggle-ep/s&s-002.jpg)
-![image](/img/portfolio/the-strangle-and-the-struggle-ep/s&s-003.jpg)
-![image](/img/portfolio/the-strangle-and-the-struggle-ep/s&s-004.jpg)
-![image](/img/portfolio/the-strangle-and-the-struggle-ep/s&s-005.jpg)
-![image](/img/portfolio/the-strangle-and-the-struggle-ep/s&s-006.jpg)
-![image](/img/portfolio/the-strangle-and-the-struggle-ep/s&s-007.jpg)
-![image](/img/portfolio/the-strangle-and-the-struggle-ep/s&s-008.jpg)
-![image](/img/portfolio/the-strangle-and-the-struggle-ep/s&s-009.jpg)
-![image](/img/portfolio/the-strangle-and-the-struggle-ep/s&s-010.jpg)
+![Monique Fuentes](/img/portfolio/the-strangle-and-the-struggle-ep/s&s-002.jpg)
+
+![Monique Fuentes](/img/portfolio/the-strangle-and-the-struggle-ep/s&s-003.jpg)
+
+![Monique Fuentes](/img/portfolio/the-strangle-and-the-struggle-ep/s&s-004.jpg)
+
+![Monique Fuentes](/img/portfolio/the-strangle-and-the-struggle-ep/s&s-005.jpg)
+
+![Monique Fuentes](/img/portfolio/the-strangle-and-the-struggle-ep/s&s-006.jpg)
+
+![Monique Fuentes](/img/portfolio/the-strangle-and-the-struggle-ep/s&s-007.jpg)
+
+![Monique Fuentes](/img/portfolio/the-strangle-and-the-struggle-ep/s&s-008.jpg)
+
+![Monique Fuentes](/img/portfolio/the-strangle-and-the-struggle-ep/s&s-009.jpg)
+
+![Monique Fuentes](/img/portfolio/the-strangle-and-the-struggle-ep/s&s-010.jpg)
 
 Cover art  by [Lango Oliveira](http://theskullandsword.com/).

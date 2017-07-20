@@ -1,4 +1,4 @@
-<section id="projectList">
+<section id="projectList" class="uk-section-small">
 
   <!-- FEATURED PROJECT -->
   <section class="uk-container uk-container-small uk-margin-large-bottom">
@@ -20,7 +20,7 @@
           </div>
         </div>
 
-        <div class="wep-project-image-container uk-height-medium uk-box-shadow-xlarge">
+        <div class="wep-project-image-container uk-height-large uk-box-shadow-xlarge">
           <a href="{{ .Permalink }}" title="{{ .Params.title }}">
             <div class="wep-project-image uk-background-cover" style="background-image:url('{{ .Params.image }}')"></div>
           </a>
@@ -267,7 +267,7 @@
   </section>
 
   <!-- TWO PROJECTS -->
-  <section class="uk-container uk-container-small uk-margin-large-bottom">
+  <section class="uk-container uk-container-small">
     <div class="uk-child-width-1-2@s uk-grid-large" uk-grid>
 
       {{ range first 2 (after 4 (where .Data.Pages "Section" "projects")) }}

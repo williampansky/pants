@@ -1,7 +1,7 @@
 +++
-draft = true
+draft = false
 title = "The Struggle EP"
-description = "Single EP release artwork and design for local Fort Worth, TX, alternative rock band Tungsten Wake."
+summary = "Single EP release artwork and design for local Fort Worth, TX, alternative rock band Tungsten Wake ..."
 keywords = [ "album art", "music packaging", "tungsten wake" ]
 featured = "/img/portfolio/the-struggle-ep/featured.jpg"
 image = "/img/portfolio/the-struggle-ep/wake-struggle-001.jpg"
@@ -15,7 +15,10 @@ execution = "The client wanted to feature a businessman plunging his head into t
 
 [Tungsten Wake](/portfolio/tungsten-wake-ep/), man; they hit me up again! This time for a single ep release they had coming out soon. I love the final turnout of this one.
 
-![image](/img/portfolio/the-struggle-ep/wake-struggle-002.jpg)
-![image](/img/portfolio/the-struggle-ep/wake-struggle-003.jpg)
-![image](/img/portfolio/the-struggle-ep/wake-struggle-004.jpg)
-![image](/img/portfolio/the-struggle-ep/wake-struggle-005.jpg)
+![Tungsten Wake](/img/portfolio/the-struggle-ep/wake-struggle-002.jpg)
+
+![Tungsten Wake](/img/portfolio/the-struggle-ep/wake-struggle-003.jpg)
+
+![Tungsten Wake](/img/portfolio/the-struggle-ep/wake-struggle-004.jpg)
+
+![Tungsten Wake](/img/portfolio/the-struggle-ep/wake-struggle-005.jpg)

@@ -30,16 +30,16 @@
 
     {{ if (isset .Params "name") | and (isset .Params "tag") }}
       <p class="uk-text-lead uk-margin-bottom">
-        {{ .Params.name }} / {{ .Params.tag }}
+        {{ .Params.category }} / {{ .Params.name }}
       </p>
     {{ end }}
 
     <p class="info uk-article-meta uk-margin-small-bottom" style="font-size:12px;">
-      <strong>{{ .ReadingTime }} minute read.</strong> Word count: {{ .WordCount  }}.
+      Published on <time>{{ .PublishDate.Format "January 2, 2006" }}</time>. Last modified on <time>{{ .Lastmod.Format "January 2, 2006" }}</time>.
     </p>
 
     <p class="info uk-article-meta" style="font-size:12px;">
-      Published on <time>{{ .PublishDate.Format "January 2, 2006" }}</time>. Last modified on <time>{{ .Lastmod.Format "January 2, 2006" }}</time>.
+      <strong>{{ .ReadingTime }} minute read.</strong> Word count: {{ .WordCount  }}.
     </p>
 
   </header>
