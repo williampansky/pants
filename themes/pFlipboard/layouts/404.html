@@ -1,9 +1,15 @@
 {{ partial "header" . }}
 
-<section>
-  <h1>Oopsies — 404</h1>
-  <p>I probably messed up, right?</p>
-  <h3><a href="/">williampansky.com</a></h3>
+<section class="uk-section-xlarge">
+  <div class="wep-container uk-container uk-text-center">
+    <h1 class="uk-heading-hero">404</h1>
+    <p>I probably messed up, right? Oops.</p>
+    <h3><a href="/">williampansky.com</a></h3>
+  </div>
 </section>
+
+<style>
+  #panel footer, #wep-bar { display: none !important; }
+</style>
 
 {{ partial "footer" . }}

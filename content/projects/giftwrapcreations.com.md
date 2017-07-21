@@ -17,3 +17,7 @@ name = "giftwrapcreations.com"
 summary = "Dallas Gift Wrap Creations manages everything from the design, recipient list, gift receipts, wrapping paper, tissue, ribbon patterns, toppers, monogramming and down to ..."
 
 +++
+
+Case study coming soon.
+
+To view the demo site, [click here](/projects/giftwrapcreations.com/demo).

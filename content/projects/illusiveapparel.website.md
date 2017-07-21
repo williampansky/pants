@@ -15,7 +15,11 @@ name = "illusiveapparel.website"
 
 description = "Wordpress website powered by WooCommerce for Dallas apparel boutique"
 
-summary = "At Illusive Apparel, our onsite factory gives us an advantage when creating your custom screen printed and dye sublimated garments. Our award-winning graphic artists create ..."
+summary = "Illusive Apparel delivers award-winning graphic artists create fresh and cutting edge designs ..."
 +++
 
-At Illusive Apparel, our onsite factory gives us an advantage when creating your custom screen printed and dye sublimated garments. Our award-winning graphic artists create fresh and cutting edge designs, our quality control managers ensure only the most superior products get out the door, and the rest of our staff is always available to make sure you’re treated like family.
+Illusive Apparel delivers award-winning graphic artists create fresh and cutting edge designs.
+
+Case study coming soon.
+
+To view the demo site, [click here](/projects/illusiveapparel.website/demo).

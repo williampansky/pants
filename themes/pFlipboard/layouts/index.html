@@ -1,19 +1,6 @@
 {{ partial "header" . }}
 
-<section class="uk-section uk-text-center@l uk-flex@l uk-flex-center@l uk-flex-middle@l">
-  <div class="uk-container" style="max-width:640px;">
-    <h1 class="uk-heading-primary">William Pansky</h1>
-    <p class="uk-text-lead" style="margin-bottom:8px;">Front-end web developer and graphic designer with ability to solve complex website interface problems through creative and UX-minded solutions.</p>
-    <!-- <div class="uk-flex uk-flex-center@l uk-flex-middle@l uk-text-center@l">
-      {{ partial "social" . }}
-    </div> -->
-    <div class="uk-flex uk-flex-center@l uk-flex-middle@l uk-text-center@l">
-      {{ partial "nav" }}
-    </div>
-    <!-- <a href="/resume" class="wep-button wep-button-icon uk-button uk-button-default" uk-icon="icon: triangle-right">Resume</a> -->
-  </div>
-</section>
-
+{{ partial "intro" . }}
 {{ partial "projects/projects-list" . }}
 {{ partial "work/experience" . }}
 {{ partial "projects/codepens-list" . }}

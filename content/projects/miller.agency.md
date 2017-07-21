@@ -438,11 +438,21 @@ Here is an example of said element:
 
 <h6 class="uk-background-default" style="z-index: 5;" uk-sticky="bottom: #header-nav-footer-mobilemenu-end;">Header, nav, footer, &amp; mobile menu</h6>
 
-{{< centerImage src="/img/projects/maa-website/site-topNav.jpg" title="Desktop navbar" class="caption wep-box-shadow-bottom" >}}
+{{< centerImage src="/img/projects/maa-website/site-topNav.jpg" title="" class="" >}}
+
+{{< centerImage src="/img/projects/maa-website/site-footer.jpg" title="Desktop header & footer" class="caption wep-box-shadow-bottom" >}}
+
+<div class="uk-text-center uk-position-relative uk-section">
+  <img src="/img/projects/maa-website/maaMobile.gif" alt="Mobile bar &amp; nav menu" class="" style="width: 40%; position: absolute; padding: 2.1%; top: 15.5%; margin: 0 auto; z-index: 1;">
+  <img src="/img/projects/maa-website/iphone6plus.png" alt="" class="" style="width:40%; position: relative; z-index: 2;">
+  <span class="caption">Mobile bar &amp; nav</span>
+</div>
+
+{{< centerImage src="/img/projects/maa-website/site-mobileBar.jpg" title="Smartphone mobile bar" class="caption wep-box-shadow-bottom" >}}
 
 <div id="header-nav-footer-mobilemenu-end"></div>
 
-<h6 class="uk-background-default" style="z-index: 5;" uk-sticky="bottom: #bloglist-and-singleposts-end;">Blog list and single posts</h6>
+<!-- <h6 class="uk-background-default" style="z-index: 5;" uk-sticky="bottom: #bloglist-and-singleposts-end;">Blog list and single posts</h6>
 
 
 
@@ -476,16 +486,20 @@ Here is an example of said element:
 
 
 
-<div id="newsletters-end"></div>
+<div id="newsletters-end"></div> -->
 
 <h6 class="uk-background-default" style="z-index: 5;" uk-sticky="bottom: #singleLanding-end;">Single-item landing pages</h6>
 
-
+{{< centerImage src="/img/projects/maa-website/site-pandora.jpg" title="Pandora landing page" class="caption" >}}
 
 <div id="singleLanding-end"></div>
 
-<h6 class="uk-background-default" style="z-index: 5;" uk-sticky="bottom: #quizes-end;">Quizes &mp; leads</h6>
+<!-- <h6 class="uk-background-default" style="z-index: 5;" uk-sticky="bottom: #quizes-end;">Quizes &amp; leads</h6>
 
 
 
-<div id="quizes-end"></div>
+<div id="quizes-end"></div> -->
+
+### Demo
+
+To view the miller.agency demo, [click here](/projects/miller.agency/demo).

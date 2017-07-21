@@ -4,47 +4,43 @@
   <section class="uk-container uk-container-small uk-margin-large-bottom">
     <div class="uk-child-width-1-1 uk-grid-large" uk-grid>
 
-      {{ range first 1 (where .Data.Pages "Section" "projects") }}
+      {{ range first 1 (where .Data.Pages "Section" "projectsFeatured") }}
 
-      <article class="wep-project uk-card">
+      <article class="wep-project uk-card" itemscope itemtype="http://schema.org/CreativeWork">
 
         <div class="wep-project-client">
-          <div class="wep-project-client-avatar" style="background-image:url('{{ .Params.avatar }}')"></div>
+          <div class="wep-project-client-avatar" style="background-image:url('{{ .Params.avatar }}')" title="{{ .Params.client }}" itemprop="producer" itemprop="image"></div>
           <div class="wep-project-client-info">
-            <div class="wep-project-client-info-top">
-              {{ .Params.tag }}
-            </div>
-            <div class="wep-project-client-info-bottom">
-              {{ .Params.client }}
+            <div class="wep-project-client-info-top" itemprop="provider">{{ .Params.tag }}</div>
+            <div class="wep-project-client-info-bottom" itemscope itemtype="http://schema.org/Organization">
+              <span itemprop="producer" itemprop="brand">{{ .Params.client }}</span>
+              <link itemprop="sameAs" href="{{ .Params.clientsame }}" />
+              <meta itemprop="address" content="{{ .Params.clientlocation }}" />
+              <meta itemprop="contributor" content="{{ .Params.workfor }}" />
             </div>
           </div>
         </div>
 
         <div class="wep-project-image-container uk-height-large uk-box-shadow-xlarge">
-          <a href="{{ .Permalink }}" title="{{ .Params.title }}">
-            <div class="wep-project-image uk-background-cover" style="background-image:url('{{ .Params.image }}')"></div>
+          <a href="{{ .Permalink }}" title="{{ .Params.title }}" itemprop="url">
+            <div class="wep-project-image uk-background-cover" style="background-image:url('{{ .Params.image }}')" itemprop="image" itemprop="thumbnailUrl"></div>
           </a>
         </div>
 
         <header class="wep-project-header">
-          <p class="wep-project-category">
-            {{ .Params.category }}
-          </p>
-          <h1 class="wep-project-title">
-            <a href="{{ .Permalink }}" title="{{ .Params.title }}">
-              {{ .Title }}
-            </a>
+          <p class="wep-project-category">{{ .Params.category }}</p>
+          <h1 class="wep-project-title" itemprop="headline" itemprop="name" itemprop="alternateName">
+            <a href="{{ .Permalink }}" title="{{ .Params.title }}" itemprop="url">{{ .Title }}</a>
           </h1>
-          <p class="wep-project-details uk-text-meta">
-            {{/* {{ .Params.name }} */}}
-            Published on <time>{{ .PublishDate.Format "January 2, 2006" }}</time>.
-          </p>
+          <div itemprop="creator" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="name" content="William Pansky"/>
+            <link itemprop="sameAs" href="https://williampansky.com"/>
+          </div>
+          <p class="wep-project-details uk-text-meta">Published on <time itemprop="datePublished">{{ .PublishDate.Format "January 2, 2006" }}</time>.</p>
         </header>
 
         <div class="wep-project-body">
-          <p>
-            {{ .Params.summary }} <a href="{{ .Permalink }}" title="{{ .Params.title }}" uk-icon="icon: triangle-right" class="">view project</a>
-          </p>
+          <p itemprop="description">{{ .Params.summary }} <a href="{{ .Permalink }}" title="{{ .Params.title }}" uk-icon="icon: triangle-right" itemprop="url">view project</a></p>
         </div>
 
         <hr />
@@ -52,7 +48,10 @@
         <footer class="wep-project-footer">
           <p class="wep-project-details uk-article-meta" style="font-size:12px;">
             {{/* <strong>{{ .ReadingTime }} minute read.</strong> */}}
-            {{ .Keywords }}
+            <span itemprop="name">
+              <strong>{{ .Params.name }}</strong>
+              <link itemprop="sameAs" href="{{ .Params.projecturl }}" />
+            </span> / <span itemprop="keywords">{{ .Keywords }}</span>
           </p>
         </footer>
 
@@ -67,7 +66,7 @@
   <section class="uk-container uk-container-small uk-margin-large-bottom">
     <div class="uk-child-width-1-2@s uk-grid-large" uk-grid>
 
-      {{ range first 2 (after 1 (where .Data.Pages "Section" "projects")) }}
+      {{ range first 2 (after 1 (where .Data.Pages.ByDate.Reverse "Section" "projects")) }}
 
       <article class="wep-project uk-card">
 
@@ -130,7 +129,7 @@
   <section class="uk-container-expand uk-margin-large-bottom uk-visible@m">
     <div class="uk-width-1-1">
 
-      {{ range first 1 (after 3 (where .Data.Pages "Section" "projects")) }}
+      {{ range first 1 (after 3 (where .Data.Pages.ByDate.Reverse "Section" "projects")) }}
 
       <article class="wep-project uk-card">
 
@@ -199,7 +198,7 @@
   <section class="uk-container uk-container-small uk-margin-large-bottom uk-hidden@m">
     <div class="uk-child-width-1-1 uk-grid-large" uk-grid>
 
-      {{ range first 1 (after 3 (where .Data.Pages "Section" "projects")) }}
+      {{ range first 1 (after 3 (where .Data.Pages.ByDate.Reverse "Section" "projects")) }}
 
       <article class="wep-project uk-card">
 
@@ -266,11 +265,11 @@
     </div>
   </section>
 
-  <!-- TWO PROJECTS -->
+  <!-- TWO PROJECTS OR ONE PROJECT -->
   <section class="uk-container uk-container-small">
-    <div class="uk-child-width-1-2@s uk-grid-large" uk-grid>
+    <div class="uk-child-width-1-1@s uk-grid-large" uk-grid>
 
-      {{ range first 2 (after 4 (where .Data.Pages "Section" "projects")) }}
+      {{ range first 2 (after 4 (where .Data.Pages.ByDate.Reverse "Section" "projects")) }}
 
       <article class="wep-project uk-card">
 

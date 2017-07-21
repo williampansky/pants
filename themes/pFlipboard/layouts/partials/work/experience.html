@@ -1,90 +1,38 @@
-<section id="resumeExp" class="wep-resume-exp uk-background-secondary uk-light">
+<section id="resumeExp" class="wep-resume-exp uk-background-secondary uk-light uk-margin-large">
   <div class="uk-grid-collapse uk-child-width-1-4@m" uk-grid>
-  <!-- <div class="uk-card uk-card-body uk-flex uk-flex-middle">
-    <h3 class="uk-heading-line">
-      <span>Experience</span>
-    </h3>
-  </div> -->
 
-  <div class="uk-card uk-card-body">
-    <h4 class="wep-resume-exp-title">
-      Front-end Web Developer
-    </h4>
-    <p class="wep-resume-exp-company">
-      Sabre Corporation
-    </p>
-    <p class="wep-resume-exp-date">
-      AUG 2017–Present
-    </p>
-    <p class="wep-resume-exp-geo">
-      Dallas, TX
-    </p>
-  </div>
+    {{ range first 4 (where .Data.Pages.ByWeight "Section" "resume") }}
 
-  <div class="uk-card uk-card-body">
-    <h4 class="wep-resume-exp-title">
-      Graphic Designer <br />&amp; Front-end Web Developer
-    </h4>
-    <p class="wep-resume-exp-company">
-      Miller Ad Agency
-    </p>
-    <p class="wep-resume-exp-date">
-      JUN 2014–JUL 2017 (3yr, 2mo)
-    </p>
-    <p class="wep-resume-exp-geo">
-      Dallas, TX
-    </p>
-  </div>
+      <section class="uk-card uk-card-body">
+        <div>
+          <h4 class="wep-resume-exp-title">{{ .Params.jobtitle }}</h4>
+          <meta itemprop="jobTitle" content="{{ .Params.jobtitle }}"/>
+        </div>
+        <div itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+          <p class="wep-resume-exp-company" itemprop="name">
+            {{ .Params.compname }}
+            <meta itemprop="url" content="{{ .Params.compurl1 }}"/>
+          </p>
+          <p class="wep-resume-exp-date uk-text-uppercase" itemprop="event" itemscope itemtype="http://schema.org/Event">
+            <time itemprop="startDate" content="{{ .Params.startdate }}">{{ .Params.startdate }}</time>–<time itemprop="endDate" content="{{ .Params.enddate }}">{{ .Params.enddate }}</time>
+            {{ if isset .Params "dateabbr" }}
+              <span class="uk-text-lowercase">({{ .Params.dateabbr }})</span>
+            {{ end }}
+          </p>
+          <div class="wep-resume-exp-geo">
+            <span itemprop="addressLocality">{{ .Params.addcity }}</span>, <span itemprop="addressRegion">{{ .Params.addstate }}</span>
+            <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" style="display:none;">
+              <meta itemprop="streetAddress" content="{{ .Params.addstreet }}" />
+              <meta itemprop="addressLocality" content="{{ .Params.addcity }}" />
+              <meta itemprop="addressRegion" content="{{ .Params.addstate }}" />
+              <meta itemprop="postalCode" content="{{ .Params.addzip }}" />
+              <meta itemprop="addressCountry" content="{{ .Params.addcountry }}" />
+            </address>
+          </div>
+        </div>
+      </section>
 
-  <div class="uk-card uk-card-body">
-    <h4 class="wep-resume-exp-title">
-      Graphic Designer
-    </h4>
-    <p class="wep-resume-exp-company">
-      ONE World Sports
-    </p>
-    <p class="wep-resume-exp-date">
-      OCT 2010–MAR 2014 (3yr, 6mo)
-    </p>
-    <p class="wep-resume-exp-geo">
-      Ft. Worth, TX
-    </p>
-  </div>
+    {{ end }}
 
-  <div class="uk-card uk-card-body">
-    <h4 class="wep-resume-exp-title">
-      Founder, Writer, Editor, Podcast Host
-    </h4>
-    <p class="wep-resume-exp-company">
-      The Nerdemic
-    </p>
-    <p class="wep-resume-exp-date">
-      NOV 2009–NOV 2011 (2yr)
-    </p>
-    <p class="wep-resume-exp-geo">
-      Local &amp; Remote
-    </p>
-  </div>
-
-  {{/* <div class="uk-card uk-card-body">
-    <h4 class="wep-resume-exp-title">
-      Graphic Designer
-    </h4>
-    <p class="wep-resume-exp-company">
-      Blue Moose Tees
-    </p>
-    <p class="wep-resume-exp-date">
-      OCT 2009–JUN 2010 (9mo)
-    </p>
-    <p class="wep-resume-exp-geo">
-      Arlington, TX
-    </p>
-  </div> */}}
-
-  {{/* <div class="uk-card uk-card-body uk-flex uk-flex-middle">
-    <a class="wep-button-icon uk-button uk-button-secondary" href="/resume" title="View William's resume">
-      View resume <span uk-icon="triangle-right"></span>
-    </a>
-  </div> */}}
   </div>
 </section>

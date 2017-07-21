@@ -10,17 +10,27 @@
 }
 
 .uk-button-default {
+  color: #666;
   &:hover, &:focus {
-    color: #fff;
+    color: #222;
     background-color: transparent;
     border-color: $color-primary;
   }
 }
 
 input#submit.uk-button.uk-button-primary {
+  @extend .wep-button;
   background-color: $color-accent;
   &:hover, &:focus {
     background-color: $color-primary;
+  }
+}
+
+input#reset.uk-button {
+  @extend .wep-button;
+
+  &:hover, &:focus {
+    // background-color: $color-primary;
   }
 }
 

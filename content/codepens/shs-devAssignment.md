@@ -8,9 +8,10 @@ avatar = "https://production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c
 tag = "A Pen by"
 client = "by William Pansky"
 clientdescription = ""
+clientsame = "https://codepen.io"
 image = "/img/codepens/shs-devAssignment.jpg" 
 caption = ""
-category = "Codepen"
+category = "CodePen"
 title = "Writing a contact form as development assessment"
 name = "SHS — Development Assignment"
 
