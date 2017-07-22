@@ -124,7 +124,7 @@ I also needed the site to be easily updatedable and maintanable by those who don
 
 After trying various frameworks, like [Materialize](http://materializecss.com/) and Bootstrap v4, I decided UIkit was my go-to for this project. I freakin' love [UIkit](https://getuikit.com/) – it offers lots of creative freedom and a solid foundation to build off of.
 
-<div class="uk-text-center"><img src="//localhost:1313/img/vendors/uikit.svg" alt="UIkit"></div>
+<div class="uk-text-center"><img src="/img/vendors/uikit.svg" alt="UIkit"></div>
 
 > A lightweight and modular front-end framework for developing fast and powerful web interfaces. —[[UIkit](https://getuikit.com/)]
 
