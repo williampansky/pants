@@ -10,7 +10,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,IE=11">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
-<meta name="generator" content="Hugo 0.23" />
+<meta name="generator" content="Hugo 0.25.1" />
 
 <meta name="description" content="Dallas, TX; Graphic designer &amp; aspiring front-end webdev.">
 <meta name="keywords" content="william pansky, web development, graphic design, dallas">
@@ -34,7 +34,7 @@
 <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#303030">
-<meta name="theme-color" content="#f76708">
+<meta name="theme-color" content="#0076D6">
 
 
 
@@ -50,16 +50,10 @@
 
   	
   	
+<link href="//cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/css/uikit.min.css" rel="stylesheet">
 
 
-
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/css/uikit.min.css" />
-
-
-<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700|Source+Sans+Pro:400,400i,700,700i" rel="stylesheet">
-
-
-<link rel="stylesheet" href="/css/atom-one-dark.css">
+<link href="//fonts.googleapis.com/css?family=Lato:700|Lora:400,400i,700,700i" rel="stylesheet">
 
 
 <link rel="stylesheet" href="/css/pants.min.css">
@@ -67,12 +61,12 @@
 
   	
     <script>
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='https://www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-25458964-1','auto');ga('send','pageview');
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-25458964-1','auto');ga('send','pageview');
     </script>
 
   	<!--[if lt IE 11]>
@@ -97,303 +91,294 @@
       }
     </style>
   </head>
-  <body>
+  <body class="noscroll">
 
   	<!--[if lt IE 11]>
   	<p class="chromeframe">You are using an <strong>outdated browser</strong>. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   	<![endif]-->
 
-    <header class="uk-navbar-container uk-margin-large-bottom uk-offcanvas-content uk-hidden@m pansky-nav" uk-sticky>
-      <nav class="uk-container" uk-navbar>
-        <div class="uk-navbar-left">
-          <a class="uk-navbar-item uk-logo" href="/">William Pansky</a>
+    <div id="loader" class="uk-width-1-1 uk-background-default uk-flex uk-flex-center uk-flex-middle" style="box-sizing:border-box; width:100vw; min-width:100vw; height:100vh; min-height:100vh; opacity:1; display:flex; text-align:center; padding:30px; position:fixed; top:0; right:0; bottom:0; left:0; z-index:999; background: #fff; background-color:#fff;">
+      
+    </div>
+
+    <nav id="menu">
+      <header class="uk-text-center">
+        <div class="uk-padding-small uk-padding-remove-bottom">
+          <img class="uk-border-circle" src="/apple-touch-icon.png" alt="William Pansky's illustrated avatar" style="max-width:85px;">
         </div>
-        <div class="uk-navbar-right">
-          <ul class="uk-navbar-nav uk-visible@m">
-              <li class="uk-active"><a href="/">Projects</a></li>
-              <li><a href="/resume">Resume</a></li>
-              <li><a href="/contact">Contact</a></li>
-          </ul>
-          <a uk-navbar-toggle-icon="" href="#offcanvas" uk-toggle="target: #offcanvas" class="uk-navbar-toggle uk-hidden@m uk-navbar-toggle-icon uk-icon"></a></div>
+        <div class="uk-padding-small">
+          <p>William Pansky</p>
+          <p class="uk-text-small">Currently working as a front-end developer on the digital experience team at Sabre Corporation.</p>
         </div>
-    	</nav>
-    </header>
-
-    
-
-    <main class="uk-offcanvas-content" itemscope itemtype="http://schema.org/Person">
-
-
-
-
-<aside id="offcanvas" class="tm-sidebar-left" uk-offcanvas="overlay: true">
-  <div class="uk-offcanvas-bar">
-    <ul uk-scrollspy-nav="closest: li; scroll: true; offset: 90" class="uk-nav uk-nav-default tm-nav uk-nav-parent-icon">
-      <header id="navHeader" class="uk-box-shadow-medium" style="background:url('/pansky-offcanvas-header.jpg') no-repeat center center; background-size: cover; overflow: hidden;" tabindex="-1"><a href="/"></a></header>
-
-<section class="pansky-offcanvas-section">
-  <h3 class="pansky-project-list-title"><a href="/">William Pansky</a></h3>
-  <p class="uk-margin-remove-top uk-margin-small-bottom">Front-end web developer and graphic designer with ability to solve complex website interface problems through creative and UX-minded solutions.</p>
-  <ul class="uk-nav uk-nav-primary uk-margin-auto-vertical uk-flex uk-flex-between uk-text-center uk-flex-nowrap">
-    <li><a href="/">
-      <span uk-icon="icon: bolt" class="uk-icon"></span><br />
-      Projects</a>
-    </li>
-    <li><a href="/resume">
-      <span uk-icon="icon: copy" class="uk-icon"></span><br />
-      Resume</a>
-    </li>
-    <li><a href="/contact">
-      <span uk-icon="icon: mail" class="uk-icon"></span><br />
-      Contact</a>
-    </li>
-  </ul>
-</section>
-
-<hr />
-<section class="pansky-offcanvas-section">
-  
-<section class="uk-container uk-margin-large-bottom">
-  <h2 class="uk-text-bold">Projects</h2>
-  <ul class="uk-list uk-list-divider uk-list-large pansky-project-list">
-    <li>
-      <h3 class="pansky-project-list-title"><a href="/projects/thelunch.info/">
-        thelunch.info
-      </a></h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        GoHugo.io stand-alone site for Goodwill Dallas' annual fundraising event, THE LUNCH.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title"><a href="/projects/pansky-boilerplate/">
-        Pansky Boilerplate
-      </a></h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        Simple boilerplate repo for how I generally organize my project assets; installable via Bower CLI.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title"><a href="/projects/goodwilldallas.org/">
-        goodwilldallas.org
-      </a></h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        DNN website for the Dallas branch of national NPO, Goodwill Industries.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title">
-        miller.agency
-      </h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        Wordpress website for Dallas full-service ad agency, Miller Ad Agency. <em>(Case study coming soon; view the <a href="/projects/miller.agency/demo" target="_blank" class="pansky-link-external" title="Opens new tab" uk-tooltip>local static version</a>)</em> of the project.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title"><a href="https://www.behance.net/williampansky" target="_blank" class="pansky-link-external" class="pansky-link-external" title="Opens new tab" uk-tooltip>
-        Graphic design projects
-      </a></h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        A plethora of designs hosted externally on my <span uk-icon="icon: behance; ratio: .75"></span> Behance profile.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title">
-        illusiveapparel.website
-      </h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        Wordpress website powered by WooCommerce for Dallas apparel boutique. <em>(Case study coming soon; view the <a href="/projects/illusiveapparel.website/demo" target="_blank" class="pansky-link-external" title="Opens new tab" uk-tooltip>local static version</a>)</em> of the project.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title">
-        giftwrapcreations.com
-      </h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        Wordpress website for Dallas gift wrapping artist, Anita Ivancevic. <em>(Case study coming soon; view the <a href="/projects/giftwrapcreations.com/demo" target="_blank" class="pansky-link-external" title="Opens new tab" uk-tooltip>local static version</a>)</em> of the project.
-      </p>
-    </li>
-  </ul>
-</section>
-
-<section class="uk-container uk-margin-large-bottom" id="github">
-
-</section>
-
-</section>
-
+      </header>
+      <nav class="wep-navbar uk-navbar-container uk-navbar-transparent" uk-navbar itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="uk-navbar-center">
+    <ul class="uk-navbar-nav">
+      <li><a href="/">Projects</a></li>
+      <li><a href="/resume">Resume</a></li>
+      <li><a href="/contact">Contact</a></li>
     </ul>
   </div>
+</nav>
 
-</aside>
+      <ul class="wep-socials uk-iconnav">
+  <li>
+    <a href="https://linkedin.com/in/williampansky" class="uk-padding-small" uk-icon="icon:linkedin; ratio:1.5;">
+      
+    </a>
+  </li>
+  <li>
+    <a href="https://github.com/williampansky" class="uk-padding-small" uk-icon="icon:github; ratio:1.5;">
+      
+    </a>
+  </li>
+  <li>
+    <a href="https://www.behance.net/williampansky" class="uk-padding-small" uk-icon="icon:behance; ratio:1.5;">
+      
+    </a>
+  </li>
+</ul>
+
+    </nav>
+
+    
+    <main id="panel">
 
 
-<article class="uk-margin-large-bottom">
-  <header class="uk-container uk-margin-large-bottom uk-section uk-section-small">
-    <h1 class="uk-article-title uk-text-bold">William Pansky</h1>
-    <p class="uk-text-lead">Front-end web developer and graphic designer with ability to solve complex website interface problems through creative and UX-minded solutions.</p>
-  </header>
-  <section id="contact" class="uk-container">
+<section class="uk-section uk-text-center@l uk-flex@l uk-flex-center@l uk-flex-middle@l">
+  <div class="uk-container" itemscope itemtype="http://schema.org/Person" style="max-width:640px;">
+    <h1 class="uk-heading-primary" itemprop="name" content="William Pansky">William Pansky</h1>
+    <p class="uk-text-lead" style="margin-bottom:8px;" itemprop="description">Front-end web developer and graphic designer with ability to solve complex website interface problems through creative and UX-minded solutions.</p>
+    
+    <div class="uk-flex uk-flex-center@l uk-flex-middle@l uk-text-center@l">
+      <nav class="wep-navbar uk-navbar-container uk-navbar-transparent" uk-navbar itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="uk-navbar-center">
+    <ul class="uk-navbar-nav">
+      <li><a href="/">Projects</a></li>
+      <li><a href="/resume">Resume</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+    </div>
+    
+  </div>
+</section>
+
+
+<section id="contact" class="uk-section-small">
+  <div class="wep-container uk-container">
     <h2 class="uk-text-bold">Contact</h2>
     
-<form action="https://formspree.io/williampansky@gmail.com" method="post" class="uk-form-stacked">
+<form action="https://formspree.io/williampansky@gmail.com" method="post" autocomplete="on" class="uk-form-stacked" itemscope itemtype="http://schema.org/ContactPage">
 	<fieldset class="uk-fieldset" uk-grid>
 		<div>
 			<label class="uk-form-label" for="name">Name</label>
-			<input type="text" name="name" id="name" class="uk-input" placeholder="Who are you?">
+			<input type="text" name="name" id="name" class="uk-input" tabindex="1" placeholder="Who are you?" required aria-required="true" autofocus>
 		</div>
 		<div>
 			<label class="uk-form-label" for="email">Email address</label>
-			<input type="text" name="email" id="email" class="uk-input" aria-describedby="emailHelp" placeholder="How can I get back to you?">
-			<p id="emailHelp" class="uk-text-meta uk-margin-remove-top">Don't worry, I don't sell these things.</p>
+			<input type="text" name="email" id="email" class="uk-input" tabindex="2" aria-describedby="emailHelp" placeholder="How can I get back to you?" required aria-required="true">
+			<p id="emailHelp" class="uk-text-meta uk-margin-remove-top" style="font:normal 13px/1.3 sans-serif; padding: 4px 0;">Don't worry, I don't sell these things.</p>
 		</div>
 		<div>
 			<label class="uk-form-label" for="exampleInputEmail1">Message</label>
-			<textarea name="message" id="message" class="uk-textarea" rows="3" placeholder="What's on your mind?"></textarea>
+			<textarea name="message" id="message" class="uk-textarea" tabindex="3" rows="3" placeholder="What's on your mind?" required aria-required="true"></textarea>
 		</div>
 		<div>
 			<p class="uk-text-small">
 				<span class="uk-text-uppercase">Note:</span> I use formspree.io for this bit, due to it being a static-site and all. Their site has been loading slowly recently, but it works — just give it a second or two! Also, anyone got any better alternatives? Cheers.
 			</p>
 		</div>
+		<div id="formHoney" class="form-group width-1-1">
+      
+      <input type="checkbox" name="contact_me_by_fax_only" style="display:none !important" tabindex="-1" autocomplete="off">
+    </div>
 		<div>
 			<input type="hidden" name="__subject" value="Contact Form Submission">
 			<input type="hidden" name="__redirect" value="http://williampansky.com">
-			<input type="submit" id="submit" value="Submit" class="uk-button uk-button-primary">
-			<input type="reset" id="reset" value="Reset" class="uk-button uk-button-default">
+			<input type="submit" id="submit" value="Submit" class="uk-button uk-button-primary" tabindex="4" itemprop="significantLink">
+			<input type="reset" id="reset" value="Reset" class="uk-button uk-button-default" tabindex="5">
 		</div>
 	</fieldset>
 </form>
 
+  </div>
+</section>
+
+<footer class="uk-section-small">
+
+  <section class="uk-margin-medium-bottom">
+    <nav class="wep-navbar uk-navbar-container uk-navbar-transparent" uk-navbar itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="uk-navbar-center">
+    <ul class="uk-navbar-nav">
+      <li><a href="/">Projects</a></li>
+      <li><a href="/resume">Resume</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
   </section>
-</article>
+
+  <section class="uk-margin-medium-bottom">
+    <div class="uk-flex uk-flex-center uk-flex-middle uk-text-center">
+      <ul class="wep-socials uk-iconnav">
+  <li>
+    <a href="https://linkedin.com/in/williampansky" class="uk-padding-small" uk-icon="icon:linkedin; ratio:1.5;">
+      
+    </a>
+  </li>
+  <li>
+    <a href="https://github.com/williampansky" class="uk-padding-small" uk-icon="icon:github; ratio:1.5;">
+      
+    </a>
+  </li>
+  <li>
+    <a href="https://www.behance.net/williampansky" class="uk-padding-small" uk-icon="icon:behance; ratio:1.5;">
+      
+    </a>
+  </li>
+</ul>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="wep-container uk-container uk-text-center">
+      <p id="copyrightFooter">
+        © <script>document.getElementById('copyrightFooter').appendChild(document.createTextNode(""+new Date().getFullYear()))</script>&nbsp;William Pansky
+      </p>
+      <p class="uk-text-small">
+        Powered by <a href="https://gohugo.io">Hugo</a> v0.25.1, <a href="https://getuikit.com">UIkit</a>, &amp; <a href="http://velocityjs.org/">VelocityJS</a>.
+      </p>
+    </div>
+  </section>
+
+</footer>
 
 </main>
 
-<footer class="uk-offcanvas-content pansky-project">
-  <section class="uk-container uk-margin-large-bottom">
-    <hr class="uk-nav-divider-small"></hr>
-    <ul class="uk-iconnav uk-flex-around pansky-social">
-  <li><a href="https://linkedin.com/in/williampansky" target="_blank" title="Opens new tab" uk-tooltip uk-icon="icon: linkedin; ratio: 1.5"></a></li>
-  <li><a href="https://github.com/williampansky" target="_blank" title="Opens new tab" uk-tooltip uk-icon="icon: github; ratio: 1.5"></a></li>
-  <li><a href="https://www.behance.net/williampansky" target="_blank" title="Opens new tab" uk-tooltip uk-icon="icon: behance; ratio: 1.5"></a></li>
-</ul>
-
-  </section>
-  <section class="uk-container">
+<div id="wep-bar" class="scrolling">
+  <div class="left">
     
-<section class="uk-container uk-margin-large-bottom">
-  <h2 class="uk-text-bold">Projects</h2>
-  <ul class="uk-list uk-list-divider uk-list-large pansky-project-list">
-    <li>
-      <h3 class="pansky-project-list-title"><a href="/projects/thelunch.info/">
-        thelunch.info
-      </a></h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        GoHugo.io stand-alone site for Goodwill Dallas' annual fundraising event, THE LUNCH.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title"><a href="/projects/pansky-boilerplate/">
-        Pansky Boilerplate
-      </a></h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        Simple boilerplate repo for how I generally organize my project assets; installable via Bower CLI.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title"><a href="/projects/goodwilldallas.org/">
-        goodwilldallas.org
-      </a></h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        DNN website for the Dallas branch of national NPO, Goodwill Industries.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title">
-        miller.agency
-      </h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        Wordpress website for Dallas full-service ad agency, Miller Ad Agency. <em>(Case study coming soon; view the <a href="/projects/miller.agency/demo" target="_blank" class="pansky-link-external" title="Opens new tab" uk-tooltip>local static version</a>)</em> of the project.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title"><a href="https://www.behance.net/williampansky" target="_blank" class="pansky-link-external" class="pansky-link-external" title="Opens new tab" uk-tooltip>
-        Graphic design projects
-      </a></h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        A plethora of designs hosted externally on my <span uk-icon="icon: behance; ratio: .75"></span> Behance profile.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title">
-        illusiveapparel.website
-      </h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        Wordpress website powered by WooCommerce for Dallas apparel boutique. <em>(Case study coming soon; view the <a href="/projects/illusiveapparel.website/demo" target="_blank" class="pansky-link-external" title="Opens new tab" uk-tooltip>local static version</a>)</em> of the project.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title">
-        giftwrapcreations.com
-      </h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        Wordpress website for Dallas gift wrapping artist, Anita Ivancevic. <em>(Case study coming soon; view the <a href="/projects/giftwrapcreations.com/demo" target="_blank" class="pansky-link-external" title="Opens new tab" uk-tooltip>local static version</a>)</em> of the project.
-      </p>
-    </li>
-  </ul>
-</section>
+    <ul class="uk-iconnav">
+      <li>
+        <a href="" class="twitter" uk-icon="icon: twitter" title="Hello World" uk-tooltip>
+        </a>
+      </li>
+      <li>
+        <a href="" class="facebook" uk-icon="icon: facebook">
+        </a>
+      </li>
+      <li>
+        <a href="#" class="bookmark" uk-icon="icon: bookmark"></a>
+      </li>
+    </ul>
+  </div>
+  <div class="right">
 
-<section class="uk-container uk-margin-large-bottom" id="github">
-
-</section>
-
-  </section>
-  <section class="uk-container uk-text-small uk-flex uk-flex-between">
-    <span class="uk-margin-small-bottom" id="copyrightFooter">
-      © <script>document.getElementById('copyrightFooter').appendChild(document.createTextNode(""+new Date().getFullYear()))</script>&nbsp;William Pansky.
-    </span>
-    <span>
-      Powered by <a href="https://gohugo.io" target="_blank" class="pansky-link-external" title="Opens new tab" uk-tooltip>Hugo</a>.
-    </span>
-  </section>
-</footer>
-
-<div id="old">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <p>
-          Sorry, we don't support screens below 320px.
-        </p>
-      </div>
+    <div class="mobile-menu-btn uk-hidden@s">
+      <a href="#" id="slideOut" uk-icon="icon: menu"></a>
     </div>
+
+    
+
+      
+
+      <div class="next navi uk-visible@s">
+        <nav class="wep-navbar uk-navbar-container uk-navbar-transparent" uk-navbar itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="uk-navbar-center">
+    <ul class="uk-navbar-nav">
+      <li><a href="/">Projects</a></li>
+      <li><a href="/resume">Resume</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+
+    
+
   </div>
 </div>
 
-<script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/vue-resource/1.3.4/vue-resource.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/vue-router/2.6.0/vue-router.min.js"></script>
+<div id="fader"></div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.ui.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit-icons.min.js"></script>
-<script src="/js/highlight.pack.js"></script>
+
+
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit-icons.min.js"></script>
+<script src="/js/slideout.min.js"></script>
 <script>
-$(document).ready(function() {
-  $('pre code').each(function(i, block) {
-    hljs.highlightBlock(block);
+  $('a#slideOut').on('click', function() {
+    
+    return false;
   });
 
-  hljs.configure({useBR: true});
-  $('div.code').each(function(i, block) {
-    hljs.highlightBlock(block);
+  var slideout = new Slideout({
+    'panel': document.getElementById('panel'),
+    'menu': document.getElementById('menu'),
+    'padding': 256,
+    'tolerance': 70,
+    'easing': 'cubic-bezier',
+    'side': 'right',
   });
-});
+
+  
+  function close(eve) {
+    eve.preventDefault();
+    slideout.close();
+  }
+
+  slideout
+    .on('beforeopen', function() {
+      this.panel.classList.add('panel-open');
+      $('#wep-bar').addClass('scrolling');
+    })
+    .on('open', function() {
+      this.panel.addEventListener('click', close);
+    })
+    .on('beforeclose', function() {
+      this.panel.classList.remove('panel-open');
+      this.panel.removeEventListener('click', close);
+      $('#wep-bar').removeClass('scrolling');
+    });
 </script>
-<script async src="/js/pansky.min.js"></script>
+<script>
+  
+  document
+    .querySelector('#slideOut')
+    .addEventListener('click', function() {
+      slideout.toggle();
+  });
+</script>
+<script src="/js/highlight.pack.js"></script>
+<script>
+  $(document).ready(function() {
+    $('pre code').each(function(i, block) {
+      hljs.highlightBlock(block);
+    });
+
+    hljs.configure({useBR: true});
+    $('div.code').each(function(i, block) {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+<script src="/js/app.min.js"></script>
+
 
 
 </body>
 </html>
+
 

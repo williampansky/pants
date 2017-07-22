@@ -1,103 +1,312 @@
-// ==============================================================
+// ======================================================
 // # TYPOGRAPHY
 //
 // Global typographic styles for giftwrapcreations.com
-// ==============================================================
+// ======================================================
 
 
 
 
-// ==============================================================
+// ======================================================
+// # SCALING / RESPONSIVE TYPE
+// https://codepen.io/MadeByMike/pen/YPJJYv
+// ======================================================
+// ## SCALING => ROOT
+// These values are the minimum and maximum viewport
+// sizes to apply the font scaling
+$min_width: 400;
+$max_width: 740;
+
+// These values represent the range of fon-tsize to apply
+// These values effect the base font-size, headings and
+// other elements will scale proportionally
+$min_font: 16;
+$max_font: 19;
+
+:root { font-size: #{$min_font}px; }
+
+// This part is a little bit ugly
+@media (min-width: #{$min_width}px) and (max-width: #{$max_width}px){
+  :root {
+    font-size: calc( #{$min_font}px + (#{$max_font} - #{$min_font}) * ( (100vw - #{$min_width}px) / ( #{$max_width} - #{$min_width}) ));
+  }
+}
+
+@media (min-width: #{$max_width}px){
+   :root {
+     font-size: #{$max_font}px;
+   }
+}
+
+// -----------------------------------
+// ## SCALING => <h1>
+$h1_min_font: 26;
+$h1_max_font: 46;
+
+h1 { font-size: #{$h1_min_font}px; };
+
+@media (min-width: #{$min_width}px) and (max-width: #{$max_width}px){
+  h1 {
+    font-size: calc( #{$h1_min_font}px + (#{$h1_max_font} - #{$h1_min_font}) * ( (100vw - #{$min_width}px) / ( #{$max_width} - #{$min_width}) ));
+  }
+}
+
+@media (min-width: #{$max_width}px){
+   h1 {
+     font-size: #{$h1_max_font}px;
+   }
+}
+
+
+
+// ======================================================
+// # FLUID LINE HEIGHT
+// forked via — https://codepen.io/MadeByMike/pen/vXvQjY
+// codepen.io/MadeByMike/pen/7744b5fc445e2b34a9e2bb1e21e8b09c
+// ======================================================
+@mixin fluid-type($properties, $min-screen, $max-screen, $min-value, $max-value) {
+  & {
+    @each $property in $properties {
+      #{$property}: $min-value;
+    }
+
+    @media screen and (min-width: $min-screen) {
+      @each $property in $properties {
+        #{$property}: calc-interpolation($min-screen, $min-value, $max-screen, $max-value);
+      }
+    }
+
+    @media screen and (min-width: $max-screen) {
+      @each $property in $properties {
+        #{$property}: $max-value;
+      }
+    }
+  }
+}
+
+@function calc-interpolation($min-screen, $min-value, $max-screen, $max-value) {
+	$a: ($max-value - $min-value) / ($max-screen - $min-screen);
+	$b: $min-value - $a * $min-screen;
+
+	$sign: "+";
+
+	@if ( $b < 0 ) {
+		$sign: "-";
+		$b: abs($b);
+	}
+
+	@return calc( #{$a*100}vw #{$sign} #{$b} );
+}
+
+
+
+
+// ======================================================
 //
 // # BODY
 //
-// ==============================================================
-// ## BODY => paragraph tags
-// Removes the margin from the final <p> tag in a section
+// ======================================================
+// ## BODY => BASE SETTINGS
+body {
+  @include fluid-type('line-height', 22em, 45em, 1.45em, 1.65em);
+  color: rgba(0,0,0,.695);
+  font-family: "Lora", Georgia, serif;
+  // font-family: "Merriweather", Georgia, serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.68;
+  letter-spacing: -.003em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+// -----------------------------------
+// ## BODY => Margins
+// Removes the margin from the final <element> tag in a section
+address, dl, fieldset, figure, ol, p, pre, ul {
+  margin: 0 0 calc(#{$min_font}px * .875) 0;
+}
+
+// This part is a little bit ugly
+@media (min-width: #{$min_width}px) and (max-width: #{$max_width}px){
+  address, dl, fieldset, figure, ol, p, pre, ul {
+    margin: 0 0 calc( #{$min_font}px
+    + (#{$max_font} - #{$min_font})
+    * ( (100vw - #{$min_width}px)
+    / ( #{$max_width} - #{$min_width}) )) 0;
+  }
+}
+
+@media (min-width: #{$max_width}px){
+   address, dl, fieldset, figure, ol, p, pre, ul {
+     margin: 0 0 calc(#{$min_font}px * 2) 0;
+   }
+}
+
+*+address, *+dl, *+fieldset, *+figure, *+ol, *+p, *+pre, *+ul {
+  margin-top: 0;
+}
+
 p {
-  // font-family: "Source Sans Pro", sans-serif;
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+::selection {
+  background-color: $color-accent;
+}
+
+
+
+// ======================================================
+// # HEADINGS
+// ======================================================
+// ## HEADINGS => GLOBALS
+// Because we're using EMs for line-height, the H1 (and other elements)
+// need their own declaration – otherwise they inherrit the line-height
+// from the html element where 1em is 16px.
+h1, h2, h3, h4, h5, h6 {
+  @include fluid-type('line-height', 22em, 45em, 1.14em, 1.25em);
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.04;
+  letter-spacing: -.028em;
+  padding: 4px 0;
+  margin-left: -2.5px;
+}
+
+// Fixes the left margin for uk-sticky items
+.uk-sticky-fixed {
+  margin: 0 0 0 -2.5px !important;
+}
+
+// *+.uk-h1, *+.uk-h2, *+.uk-h3, *+.uk-h4, *+.uk-h5, *+.uk-h6, *+h1, *+h2, *+h3, *+h4, *+h5, *+h6 {
+//   margin-top: 0;
+// }
+
+// -----------------------------------
+// ## HEADINGS => h1
+// h1 {
+//   font-size: $type-headings-h1-size;
+//   line-height: $type-headings-h1-line-height;
+//   font-weight: $type-headings-h1-font-weight;
+//   letter-spacing: $type-headings-h1-letter-spacing;
+// }
+
+// -----------------------------------
+// ## HEADINGS => h2
+// h2 {
+//   font-size: $type-headings-h2-size;
+//   line-height: $type-headings-h2-line-height;
+// }
+
+// -----------------------------------
+// ## HEADINGS => h3
+// h3 {
+//   font-size: $type-headings-h3-size;
+//   line-height: $type-headings-h3-line-height;
+// }
+
+// -----------------------------------
+// ## HEADINGS => h4
+// h4 {
+//   font-size: $type-headings-h4-size;
+//   line-height: $type-headings-h4-line-height;
+// }
+
+// -----------------------------------
+// ## HEADINGS => h5
+h5 {
+  font-size: inherit;
+  // font-size: $type-headings-h5-size;
+  // line-height: $type-headings-h5-line-height;
+}
+
+
+// -----------------------------------
+// ## HEADINGS => h6
+// h6 {
+//   font-size: $type-headings-h6-size;
+//   line-height: $type-headings-h6-line-height;
+// }
+
+
+
+
+// ======================================================
+// # DEFINITION LISTS
+// ======================================================
+.uk-description-list {
+  & > dt,
+  & dd {
+    font-family: sans-serif;
+  }
+
+  & dd {
+    color: #666;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.35;
+    letter-spacing: .125px;
   }
 }
 
 
 
 
-// ==============================================================
-//
-// # HEADINGS
-//
-// ==============================================================
-// ## HEADINGS => GLOBALS
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Droid Serif", sans-serif;
-  color: $type-headings-color;
-  // font-weight: $type-headings-font-weight;
-  // text-transform: $type-headings-text-transform;
-}
-
-*+.uk-h1, *+.uk-h2, *+.uk-h3, *+.uk-h4, *+.uk-h5, *+.uk-h6, *+h1, *+h2, *+h3, *+h4, *+h5, *+h6 {
-  margin-top: 0;
-}
-
-// -----------------------------------------
-// ## HEADINGS => h1
-h1 {
-  // font-size: $type-headings-h1-size;
-  line-height: $type-headings-h1-line-height;
-}
-
-// -----------------------------------------
-// ## HEADINGS => h2
-h2 {
-  // font-size: $type-headings-h2-size;
-  line-height: $type-headings-h2-line-height;
-}
-
-// -----------------------------------------
-// ## HEADINGS => h3
-h3 {
-  // font-size: $type-headings-h3-size;
-  line-height: $type-headings-h3-line-height;
-}
-
-// -----------------------------------------
-// ## HEADINGS => h4
-h4 {
-  // font-size: $type-headings-h4-size;
-  line-height: $type-headings-h4-line-height;
-}
-
-// -----------------------------------------
-// ## HEADINGS => h5
-h5 {
-  // font-size: $type-headings-h5-size;
-  line-height: $type-headings-h5-line-height;
-}
-
-// -----------------------------------------
-// ## HEADINGS => h6
-h6 {
-  // font-size: $type-headings-h6-size;
-  line-height: $type-headings-h6-line-height;
-}
-
-
-
-
-// ==============================================================
-//
+// ======================================================
 // # UTILITIES
-//
-// ==============================================================
+// ======================================================
 // ## UTILITIES => TEXT LEAD
-.text-lead {
-  font-size: $type-text-lead-font-size;
-  font-weight: $type-text-lead-font-weight;
-  text-transform: $type-text-lead-text-transform;
+// .wep-text-lead {
+//   font-size: $type-text-lead-font-size;
+//   font-weight: $type-text-lead-font-weight;
+//   line-height: $type-text-lead-line-height;
+//   letter-spacing: $type-text-lead-letter-spacing;
+//   text-transform: $type-text-lead-text-transform;
+// }
+.uk-text-lead {
+  font-family: sans-serif;
+  font-weight: 300;
+  line-height: 1.3454;
+  letter-spacing: -.865px;
 }
 
-em {
+// -----------------------------------
+// ## UTILITIES => MISC TEXT STYLES
+em { color: inherit; }
+strong { color: #222; }
+.uk-article-meta { color: #757575; } // lowest AA on #fff;
+
+// -----------------------------------
+// ## UTILITIES => PRE & CODE
+pre {
+  background: rgba(0,0,0,.05);
+  padding: 20px;
+  // white-space: pre-wrap;
+}
+
+:not(pre) > code,
+:not(pre) > kbd,
+:not(pre) > samp {
   color: inherit;
+  word-break: break-word;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+// -----------------------------------
+// ## UTILITIES => BLOCKQUOTES
+blockquote {
+  font-size: 1.05rem;
+  letter-spacing: .01rem;
+  border-left: 3px solid rgba(0,0,0,.8);
+  padding: 0 0 2px 20px;
+  margin-left: 4px;
+
+  @media (min-width:740px) {
+    margin-left: -23px;
+  }
 }

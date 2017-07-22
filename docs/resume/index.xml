@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Resumes on William Pansky | Dallas, TX</title>
+    <link>/resume/</link>
+    <description>Recent content in Resumes on William Pansky | Dallas, TX</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2017 William Pansky.</copyright>
+    
+	<atom:link href="/resume/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/resume/sabrecorp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resume/sabrecorp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/resume/milleragency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resume/milleragency/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/resume/onemedia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resume/onemedia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/resume/bluemoose/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resume/bluemoose/</guid>
+      <description> Managed company’s online portfolio. Designed client-specific graphic t-shirt orders ready for print. Recreated low-resolution and pixelated high school logos in Illustrator for use.  </description>
+    </item>
+    
+    <item>
+      <title>Resume</title>
+      <link>/resume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resume/</guid>
+      <description>Graphic designer &amp;amp; front-end web developer Miller Ad Agency JUN 2014–JUL 2017 (3.2yr) — Dallas, TX
+Full-service advertising agency.
+ Constructed developmental workflow systems for proper SemVer codebase management using industry-standard build tools and software, including: SCSS/SASS, PostCSS, Gulp, Babel, &amp;amp; Git. Deployed Wordpress websites using popular plugins, like WooCommerce and Elementor Page Builder. Assembled projects with custom PHP code and Wordpress syntax for efficient ecosystems, including: conditional style and script enqueuing, dynamically-updated author profiles, custom post taxonomies, etc.</description>
+    </item>
+    
+  </channel>
+</rss>

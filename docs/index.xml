@@ -7,18 +7,55 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2017 William Pansky.</copyright>
-    <lastBuildDate>Thu, 15 Sep 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 Jul 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>The Struggle EP</title>
-      <link>/portfolio/the-struggle-ep/</link>
-      <pubDate>Thu, 15 Sep 2016 00:00:00 +0000</pubDate>
+      <title></title>
+      <link>/resume/sabrecorp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/portfolio/the-struggle-ep/</guid>
-      <description>Tungsten Wake, man; they hit me up again! This time for a single ep release they had coming out soon. I love the final turnout of this one.</description>
+      <guid>/resume/sabrecorp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deploying a standalone landing page site for Goodwill Dallas&#39; annual fundraising event, THE LUNCH, with GoHugo.io</title>
+      <link>/projectsfeatured/thelunch.info/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projectsfeatured/thelunch.info/</guid>
+      <description>Introduction The Lunch, Goodwill Industries of Dallas&#39; annual fundraising event, found wonderful success for its first two years – securing over $1.5m each year to, “... expand and enhance job training services.”
+ For 2017, I suggested a revamp of how to present the event and guest speaker information to visitors and donors that would match the high level of importance that Goodwill Dallas places on the event. Prior year information was housed in a subpage of goodwilldallas.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/resume/milleragency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resume/milleragency/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/resume/onemedia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resume/onemedia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/resume/bluemoose/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resume/bluemoose/</guid>
+      <description> Managed company’s online portfolio. Designed client-specific graphic t-shirt orders ready for print. Recreated low-resolution and pixelated high school logos in Illustrator for use.  </description>
     </item>
     
     <item>
@@ -29,28 +66,6 @@
       <guid>/portfolio/respect-my-pretty/</guid>
       <description> Shana Mcmillan approached me, thanks to a tip via our mutual friend Krystal René with an opportunity to go wild and create some really interesting and visually exciting t-shirt designs. Respect My Pretty is the movement &amp;rdquo;&amp;hellip;of girls, women demanding respect for our individuality as well as embracing the individuality of others-&amp;rdquo; and Shana really wanted to have that driven home in the art.
 Speak No Ugly HANDSOME </description>
-    </item>
-    
-    <item>
-      <title>GoodwillDallas.org</title>
-      <link>/projects/goodwilldallas.org/</link>
-      <pubDate>Thu, 10 Dec 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/goodwilldallas.org/</guid>
-      <description>For over 90 years Goodwill Dallas has been committed to providing job training and employment to those with disabilities and disadvantaging conditions.
-As part of the creative department of Miller Ad Agency, we collaborated and worked to bring Goodwill Dallas the new life it came looking for.
-Goodwill Dallas prides itself on the success of its clients, the disadvantaged individuals that find new life from Goodwill’s humanitarian efforts. To emphasize this, we hired a top-tier local professional photographer to capture Goodwill Dallas in its everyday life.</description>
-    </item>
-    
-    <item>
-      <title>Pansky Boilerplate</title>
-      <link>/projects/pansky-boilerplate/</link>
-      <pubDate>Thu, 10 Dec 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/pansky-boilerplate/</guid>
-      <description>For over 90 years Goodwill Dallas has been committed to providing job training and employment to those with disabilities and disadvantaging conditions.
-As part of the creative department of Miller Ad Agency, we collaborated and worked to bring Goodwill Dallas the new life it came looking for.
-Goodwill Dallas prides itself on the success of its clients, the disadvantaged individuals that find new life from Goodwill’s humanitarian efforts. To emphasize this, we hired a top-tier local professional photographer to capture Goodwill Dallas in its everyday life.</description>
     </item>
     
     <item>
@@ -82,15 +97,6 @@ Photography by the talented Krystal Hills.</description>
     </item>
     
     <item>
-      <title>thelunch.info</title>
-      <link>/projects/thelunch.info/</link>
-      <pubDate>Tue, 23 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/thelunch.info/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>The Strangle and The Struggle EP</title>
       <link>/portfolio/the-strangle-and-the-struggle-ep/</link>
       <pubDate>Sat, 29 Mar 2014 00:00:00 +0000</pubDate>
@@ -98,6 +104,15 @@ Photography by the talented Krystal Hills.</description>
       <guid>/portfolio/the-strangle-and-the-struggle-ep/</guid>
       <description>Monique Hernandez-Fuentes, an old friend of mine, presented me with the opportunity to design her EP album, The Strangle &amp;amp; the Struggle. You can listen to the entire EP for free online at SoundCloud and purchase the physical copy at StoreEnvy.
 Cover art by Lango Oliveira.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/archetypes/resume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/archetypes/resume/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -111,6 +126,26 @@ Talk to you soon.</description>
     </item>
     
     <item>
+      <title>Creating a Flipboard.com style article layout using UIkit &amp; VelocityJS</title>
+      <link>/codepens/self-flipboardcards/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/codepens/self-flipboardcards/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DNN website for the Dallas branch of national NPO, Goodwill Industries</title>
+      <link>/projects/goodwilldallas.org/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/goodwilldallas.org/</guid>
+      <description>Introduction For over 90 years Goodwill Dallas has been committed to providing job training and employment to those with disabilities and disadvantaging conditions.
+As part of the creative department of Miller Ad Agency, we collaborated and worked to bring Goodwill Dallas the new life it came looking for.
+Objective Establish and implement a new identity for Goodwill Dallas; a fresh look to update their brand and bring the Dallas branch, with it’s 15+ store locations, up to the modern age.</description>
+    </item>
+    
+    <item>
       <title>Digital Design &amp; Front-End Dev</title>
       <link>/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -120,14 +155,101 @@ Talk to you soon.</description>
     </item>
     
     <item>
+      <title>Faking load with setTimeout and UIkit&#39;s &lt;progress&gt; element</title>
+      <link>/codepens/uikit-psuedoload/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/codepens/uikit-psuedoload/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How I organize my project assets; installable via Bower</title>
+      <link>/projects/pansky-boilerplate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/pansky-boilerplate/</guid>
+      <description>Installation If you&amp;rsquo;re a crazy person and, for some odd reason, want to download and tinker then be my guest. You can install with the Bower package manager.
+bower install pansky-boilerplate --save  Primary tools - SCSS - Gulp - Babel - Babili - PostCSS - CSSnano - AutoPrefixer - Stylelint - Rename - SASS - SourceMaps - Util - Vinyl FTP  SCSS file structure I compartmentalize my SCSS partial files into the following structure:</description>
+    </item>
+    
+    <item>
       <title>Resume</title>
       <link>/resume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/resume/</guid>
-      <description>William Pansky 30-year-old front-end web developer and graphic designer living in Dallas, TX. I love art, design, type, and all things visually creative, inspiring, and expressive. Laughing is my primary form of exercise.
-Graphic Designer &amp;amp; Front-end Web Developer — Miller Ad Agency JUN 2014–JUL 2017 (3yr, 1mo) — Dallas, TX Full-service advertising agency.
- Directed, developed, and managed client web projects; taught and instructed intra-agency team-members on Wordpress content design, creation, and publishing.</description>
+      <description>Graphic designer &amp;amp; front-end web developer Miller Ad Agency JUN 2014–JUL 2017 (3.2yr) — Dallas, TX
+Full-service advertising agency.
+ Constructed developmental workflow systems for proper SemVer codebase management using industry-standard build tools and software, including: SCSS/SASS, PostCSS, Gulp, Babel, &amp;amp; Git. Deployed Wordpress websites using popular plugins, like WooCommerce and Elementor Page Builder. Assembled projects with custom PHP code and Wordpress syntax for efficient ecosystems, including: conditional style and script enqueuing, dynamically-updated author profiles, custom post taxonomies, etc.</description>
+    </item>
+    
+    <item>
+      <title>The Struggle EP</title>
+      <link>/portfolio/the-struggle-ep/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/portfolio/the-struggle-ep/</guid>
+      <description>Tungsten Wake, man; they hit me up again! This time for a single ep release they had coming out soon. I love the final turnout of this one.</description>
+    </item>
+    
+    <item>
+      <title>Tinkering with Apple-esque fullscreen accordions</title>
+      <link>/codepens/misc-fullscreenaccordion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/codepens/misc-fullscreenaccordion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VelocityJS mobile sidebar menu experiment</title>
+      <link>/codepens/velocity-mobilesidebarmenu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/codepens/velocity-mobilesidebarmenu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wordpress CMS platform built with Elementor Pro for Dallas full-service ad agency</title>
+      <link>/projects/miller.agency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/miller.agency/</guid>
+      <description>Introduction Over the course of my third year at Miller Ad Agency I became increasingly infatuated with front-end web development.
+I learned as much as I could, I dreamt about UI and UX before falling asleep, I carved out a (basically) web-only position for myself; if it were possible to eat web dev – I&amp;rsquo;d have probably done that too.
+My awesome art director and good friend, Sasha Gelemanovic, knew he needed a way to keep me interested in the day-to-day workload.</description>
+    </item>
+    
+    <item>
+      <title>Wordpress powered by WooCommerce for Dallas apparel boutique website</title>
+      <link>/projects/illusiveapparel.website/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/illusiveapparel.website/</guid>
+      <description>Illusive Apparel delivers award-winning graphic artists create fresh and cutting edge designs.
+Case study coming soon.
+To view the demo site, click here.</description>
+    </item>
+    
+    <item>
+      <title>Wordpress website for Dallas gift wrapping artist, Anita Ivancevic</title>
+      <link>/projects/giftwrapcreations.com/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/giftwrapcreations.com/</guid>
+      <description>Case study coming soon.
+To view the demo site, click here.</description>
+    </item>
+    
+    <item>
+      <title>Writing a contact form as development assessment</title>
+      <link>/codepens/shs-devassignment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/codepens/shs-devassignment/</guid>
+      <description></description>
     </item>
     
   </channel>

@@ -3,23 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/portfolio/the-struggle-ep/</loc>
-    <lastmod>2016-09-15T00:00:00+00:00</lastmod>
+    <loc>/resume/sabrecorp/</loc>
+    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/projectsfeatured/thelunch.info/</loc>
+    <lastmod>2017-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/resume/milleragency/</loc>
+    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/resume/onemedia/</loc>
+    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/resume/bluemoose/</loc>
+    <lastmod>2017-07-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/portfolio/respect-my-pretty/</loc>
     <lastmod>2016-07-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/projects/goodwilldallas.org/</loc>
-    <lastmod>2015-12-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/projects/pansky-boilerplate/</loc>
-    <lastmod>2015-12-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -38,13 +48,19 @@
   </url>
   
   <url>
-    <loc>/projects/thelunch.info/</loc>
-    <lastmod>2015-06-23T00:00:00+00:00</lastmod>
+    <loc>/portfolio/the-strangle-and-the-struggle-ep/</loc>
+    <lastmod>2014-03-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/portfolio/the-strangle-and-the-struggle-ep/</loc>
-    <lastmod>2014-03-29T00:00:00+00:00</lastmod>
+    <loc>/archetypes/resume/</loc>
+    <lastmod>2017-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/archetypes/</loc>
+    <lastmod>2017-07-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -53,12 +69,28 @@
   </url>
   
   <url>
+    <loc>/codepens/</loc>
+    <lastmod>2017-07-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/contact/</loc>
   </url>
   
   <url>
     <loc>/contact/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/codepens/self-flipboardcards/</loc>
+    <lastmod>2017-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/projects/goodwilldallas.org/</loc>
+    <lastmod>2017-07-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -66,19 +98,42 @@
   </url>
   
   <url>
+    <loc>/codepens/uikit-psuedoload/</loc>
+    <lastmod>2017-07-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/projects/pansky-boilerplate/</loc>
+    <lastmod>2017-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/portfolio/</loc>
-    <lastmod>2016-09-15T00:00:00+00:00</lastmod>
+    <lastmod>2016-07-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/projects/</loc>
-    <lastmod>2015-12-10T00:00:00+00:00</lastmod>
+    <lastmod>2017-07-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/projectsfeatured/</loc>
+    <lastmod>2017-07-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/resume/</loc>
+    <lastmod>2017-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/resume/</loc>
+    <lastmod>2017-07-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -87,9 +142,44 @@
   </url>
   
   <url>
+    <loc>/portfolio/the-struggle-ep/</loc>
+    <lastmod>2017-07-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/codepens/misc-fullscreenaccordion/</loc>
+    <lastmod>2017-07-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/codepens/velocity-mobilesidebarmenu/</loc>
+    <lastmod>2017-07-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/</loc>
-    <lastmod>2016-09-15T00:00:00+00:00</lastmod>
+    <lastmod>2016-07-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/projects/miller.agency/</loc>
+    <lastmod>2017-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/projects/illusiveapparel.website/</loc>
+    <lastmod>2017-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/projects/giftwrapcreations.com/</loc>
+    <lastmod>2017-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/codepens/shs-devassignment/</loc>
+    <lastmod>2017-07-03T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>

@@ -2,6 +2,7 @@
 draft = false
 title = "Self-Titled EP"
 description = "Album artwork and design for local Fort Worth, TX, alternative rock band Tungsten Wake."
+avatar = "/img/behance/avatar.jpg"
 keywords = [ "album art", "music packaging", "tungsten wake" ]
 featured = "/img/portfolio/tungsten-wake-ep/featured.jpg"
 image = "/img/portfolio/tungsten-wake-ep/wake-001.jpg"
@@ -12,6 +13,9 @@ category = "Packaging"
 project = "Album artwork and design."
 summary = "The boys liked epic scenery. They told me to make something that simply looked beautiful, so I ..."
 hashtag = "Packaging"
+
+link = "https://www.behance.net/gallery/54194585/Tungsten-Wake-EP"
+same = "https://www.behance.net/"
 +++
 
 Many years ago I created an album for a local band named Solcide; they loved the work. They enjoyed it so much that contacted me again, years later, and hired me to whip them up something new for their latest project - Tungsten Wake.

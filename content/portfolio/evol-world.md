@@ -1,6 +1,7 @@
 +++
 draft = false
 title = "Evol World"
+avatar = "/img/behance/avatar.jpg"
 description = "Album art and design for a music single release of Evol World by Alex the Great."
 keywords = [ "album design", "music packaging", "alex the great" ]
 featured = "/img/portfolio/evol-world/featured.jpg"
@@ -11,6 +12,9 @@ client = "Alex the Great"
 category = "Packaging"
 project = "Art direction and design for an independent short film."
 execution = "I took the photographs provided and chose the best one to fit a squared design. Alex's original drawing for Evol World was simple to follow in concept, though difficult in execution. The most critical difference between the original and this recreation are the objects encasing the subjects mouth. I found the metallic latch proved stressful, so I opted for a zipper-like mechanism that produced a devious tone around the image."
+
+link = "https://www.behance.net/gallery/28656453/EVOL-World"
+same = "https://www.behance.net/"
 +++
 
 Alex the Great's original Evol World art.

@@ -8,13 +8,11 @@
 
 
 // ==============================================================
-//
 // # COLORS
-//
 // ==============================================================
 $color-primary:                 #222    !default;
-$color-accent:                  #f76708 !default;
-$color-accent-AAA:              #F9924D !default; // AAA on #222
+$color-accent:                  #0076D6 !default;
+$color-accent-AAA:              #0076D6 !default; // AAA on #222
 $color-accent-lighter:          mix(white, $color-accent, 30%) !default;
 
 $color-black:                   #000    !default;
@@ -39,3 +37,19 @@ $atom-hue-5:   #e06c75;
 $atom-hue-5-2: #be5046;
 $atom-hue-6:   #d19a66;
 $atom-hue-6-2: #e6c07b;
+
+// -----------------------------------------
+// ## COLORS => Projects/Clients
+$color-dgwc-primary:            #f6b2d0 !default;
+$color-maa-primary:             #0053a0 !default;
+$color-maa-alt:                 #0e75dd !default;
+$color-good-primary:            #1A06D0 !default;
+$color-good-alt:                #628cc9 !default;
+$color-lunch-primary:           #920e9d !default;
+
+
+
+
+// ==============================================================
+// # TYPOGRAPHY
+// ==============================================================

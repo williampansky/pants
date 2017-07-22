@@ -4,7 +4,7 @@ publishDate = "2017-04-10"
 Lastmod = "2017-07-02"
 keywords = [ "codepen", "velocityJS", "animation", "sidebar" ]
 
-avatar = "https://production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg"
+avatar = "/img/codepens/codepenlogo.svg"
 tag = "A Pen by"
 client = "by William Pansky"
 clientdescription = ""

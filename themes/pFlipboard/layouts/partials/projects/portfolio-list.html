@@ -1,7 +1,7 @@
 <section id="portfolioList" class="uk-section-small">
 
 <!-- TWO PROJECTS -->
-<section class="uk-container uk-container-small uk-margin-large-bottom">
+<!-- <section class="uk-container uk-container-small uk-margin-large-bottom">
   <div class="uk-child-width-1-2@s uk-grid-large" uk-grid>
 
     {{ range first 4 (where .Data.Pages "Section" "portfolio") }}
@@ -63,4 +63,52 @@
   </div>
 </section>
 
+</section> -->
+
+<!-- HUGO RENDER w/ SCHEMA -->
+<section id="portfolioList" class="uk-section-small">
+  <div class="uk-container uk-container-small">
+    <div class="uk-text-center@l uk-margin-bottom">
+      <h3 class="uk-margin-remove-bottom">Design projects</h3>
+      <p class="uk-article-meta" style="font-family:sans-serif; font-size:12px;">
+        <strong>Note:</strong> Behance links open in a new tab.
+      </p>
+    </div>
+    <div class="uk-child-width-1-3@s uk-grid-collapse" uk-grid>
+
+      {{ range first 6 (where .Data.Pages.ByDate.Reverse "Section" "portfolio") }}
+
+        <article class="wep-pen uk-card" itemscope itemtype="http://schema.org/CreativeWork">
+
+          <div class="wep-pen-image-container">
+            {{ if isset .Params "gif" }}
+              <div class="wep-pen-image uk-background-cover" style="background-image:url('{{ .Params.gif }}')" itemprop="image" itemprop="thumbnailUrl" uk-gif></div>
+            {{ else if isset .Params "image" }}
+              <div class="wep-pen-image uk-background-cover" style="background-image:url('{{ .Params.image }}')" itemprop="image" itemprop="thumbnailUrl"></div>
+            {{ end }}
+          </div>
+
+          <div class="wep-portfolio-avatar uk-position-top-left" itemprop="provider">
+            <img class="uk-border-circle z-depth-1" src="{{ .Params.avatar }}" alt="{{ .Params.category }}" itemprop="image" />
+            <link itemprop="sameAs" href="{{ .Params.same }}" />
+          </div>
+
+          <header class="wep-pen-header uk-position-bottom-left uk-padding-small" itemprop="headline" itemprop="name">
+            <h1 class="wep-pen-title">{{ .Title }}</h1>
+            <div itemprop="creator" itemscope itemtype="http://schema.org/Person">
+              <meta itemprop="name" content="William Pansky" />
+              <link itemprop="sameAs" href="https://www.behance.net/williampansky" />
+            </div>
+          </header>
+
+          <footer class="wep-pen-footer uk-padding-small">
+            <a href="{{ .Params.link }}" title="{{ .Params.title }}" target="_blank" itemprop="url">View project</a>
+          </footer>
+
+        </article>
+
+      {{ end }}
+
+    </div>
+  </div>
 </section>

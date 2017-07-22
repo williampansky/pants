@@ -4,18 +4,15 @@
 // Styles and adjustments for the site's primary desktop footer
 // ==============================================================
 
-.uk-button.uk-button-primary,
-.uk-button-primary,
-input#submit.uk-button.uk-button-primary {
-  background-color: $color-accent;
-  &:hover, &:focus {
-    background-color: $color-accent-lighter;
-  }
-}
-
 .pansky-social {
   & li { padding: 0; }
   & a {
     padding: 24px;
+  }
+}
+
+footer {
+  & .uk-text-small {
+    font-family: sans-serif;
   }
 }

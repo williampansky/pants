@@ -22,20 +22,3 @@
   LinkedIn:    linkedin.com/in/williampansky
   Behance:     behance.net/williampansky
   Facebook:    facebook.com/williampansky
-
-/* SKILLS */
-
-/* MOST RECENT EXPERIENCE */
-
-  Employer:    Miller Ad Agency
-  Title:       Graphic Designer & Front-end Web Developer
-  Duration:    Jun 2014 – Present
-  Location:    Dallas/Fort Worth Area
-  Description:
-  - Directed, developed, and managed client web projects. Taught and instructed intra-agency team-members on Wordpress content design, creation, and publishing.
-  - Worked under the direction of the Creative Director and Art Director to design and produce advertisements for clients. Categories included, but not limited to: websites, email marketing, web and retargeting banners, direct mail, logos and branding, print materials and newspapers, billboards, commercial television graphics, etc.
-  - Constructed developmental workflow systems for proper SemVer codebase management using industry-standard build tools and software, including: SCSS/SASS, PostCSS, Gulp, Babel, &amp; Git.
-  - Designed and developed, with the agency Art Director, the website redesign for GoodwillDallas.org on Microsoft’s CMS platform, DotNetNuke (DNN).
-  - Cooperated with Account Executives to construct advertisements for clients following specific and extremely detailed guidelines, primarily in the T2/T3 automotive industry.
-  - Collaborated with fellow creatives in the art dept. to build creative campaigns.
-  - Researched, pitched, and implemented a new job tracking workflow for the creative department using Todoist.

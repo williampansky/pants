@@ -10,7 +10,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,IE=11">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
-<meta name="generator" content="Hugo 0.23" />
+<meta name="generator" content="Hugo 0.25.1" />
 
 <meta name="description" content="Dallas, TX; Graphic designer &amp; aspiring front-end webdev.">
 <meta name="keywords" content="william pansky, web development, graphic design, dallas">
@@ -34,7 +34,7 @@
 <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#303030">
-<meta name="theme-color" content="#f76708">
+<meta name="theme-color" content="#0076D6">
 
 
 
@@ -50,16 +50,10 @@
 
   	
   	
+<link href="//cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/css/uikit.min.css" rel="stylesheet">
 
 
-
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/css/uikit.min.css" />
-
-
-<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700|Source+Sans+Pro:400,400i,700,700i" rel="stylesheet">
-
-
-<link rel="stylesheet" href="/css/atom-one-dark.css">
+<link href="//fonts.googleapis.com/css?family=Lato:700|Lora:400,400i,700,700i" rel="stylesheet">
 
 
 <link rel="stylesheet" href="/css/pants.min.css">
@@ -67,12 +61,12 @@
 
   	
     <script>
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='https://www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-25458964-1','auto');ga('send','pageview');
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-25458964-1','auto');ga('send','pageview');
     </script>
 
   	<!--[if lt IE 11]>
@@ -97,319 +91,1171 @@
       }
     </style>
   </head>
-  <body>
+  <body class="noscroll">
 
   	<!--[if lt IE 11]>
   	<p class="chromeframe">You are using an <strong>outdated browser</strong>. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   	<![endif]-->
 
-    <header class="uk-navbar-container uk-margin-large-bottom uk-offcanvas-content uk-hidden@m pansky-nav" uk-sticky>
-      <nav class="uk-container" uk-navbar>
-        <div class="uk-navbar-left">
-          <a class="uk-navbar-item uk-logo" href="/">William Pansky</a>
+    <div id="loader" class="uk-width-1-1 uk-background-default uk-flex uk-flex-center uk-flex-middle" style="box-sizing:border-box; width:100vw; min-width:100vw; height:100vh; min-height:100vh; opacity:1; display:flex; text-align:center; padding:30px; position:fixed; top:0; right:0; bottom:0; left:0; z-index:999; background: #fff; background-color:#fff;">
+      
+    </div>
+
+    <nav id="menu">
+      <header class="uk-text-center">
+        <div class="uk-padding-small uk-padding-remove-bottom">
+          <img class="uk-border-circle" src="/apple-touch-icon.png" alt="William Pansky's illustrated avatar" style="max-width:85px;">
         </div>
-        <div class="uk-navbar-right">
-          <ul class="uk-navbar-nav uk-visible@m">
-              <li class="uk-active"><a href="/">Projects</a></li>
-              <li><a href="/resume">Resume</a></li>
-              <li><a href="/contact">Contact</a></li>
-          </ul>
-          <a uk-navbar-toggle-icon="" href="#offcanvas" uk-toggle="target: #offcanvas" class="uk-navbar-toggle uk-hidden@m uk-navbar-toggle-icon uk-icon"></a></div>
+        <div class="uk-padding-small">
+          <p>William Pansky</p>
+          <p class="uk-text-small">Currently working as a front-end developer on the digital experience team at Sabre Corporation.</p>
         </div>
-    	</nav>
-    </header>
-
-    
-
-    <main class="uk-offcanvas-content" itemscope itemtype="http://schema.org/Person">
-
-
-
-
-<aside id="offcanvas" class="tm-sidebar-left" uk-offcanvas="overlay: true">
-  <div class="uk-offcanvas-bar">
-    <ul uk-scrollspy-nav="closest: li; scroll: true; offset: 90" class="uk-nav uk-nav-default tm-nav uk-nav-parent-icon">
-      <header id="navHeader" class="uk-box-shadow-medium" style="background:url('/pansky-offcanvas-header.jpg') no-repeat center center; background-size: cover; overflow: hidden;" tabindex="-1"><a href="/"></a></header>
-
-<section class="pansky-offcanvas-section">
-  <h3 class="pansky-project-list-title"><a href="/">William Pansky</a></h3>
-  <p class="uk-margin-remove-top uk-margin-small-bottom">Front-end web developer and graphic designer with ability to solve complex website interface problems through creative and UX-minded solutions.</p>
-  <ul class="uk-nav uk-nav-primary uk-margin-auto-vertical uk-flex uk-flex-between uk-text-center uk-flex-nowrap">
-    <li><a href="/">
-      <span uk-icon="icon: bolt" class="uk-icon"></span><br />
-      Projects</a>
-    </li>
-    <li><a href="/resume">
-      <span uk-icon="icon: copy" class="uk-icon"></span><br />
-      Resume</a>
-    </li>
-    <li><a href="/contact">
-      <span uk-icon="icon: mail" class="uk-icon"></span><br />
-      Contact</a>
-    </li>
-  </ul>
-</section>
-
-<hr />
-<section class="pansky-offcanvas-section">
-  
-<section class="uk-container uk-margin-large-bottom">
-  <h2 class="uk-text-bold">Projects</h2>
-  <ul class="uk-list uk-list-divider uk-list-large pansky-project-list">
-    <li>
-      <h3 class="pansky-project-list-title"><a href="/projects/thelunch.info/">
-        thelunch.info
-      </a></h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        GoHugo.io stand-alone site for Goodwill Dallas' annual fundraising event, THE LUNCH.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title"><a href="/projects/pansky-boilerplate/">
-        Pansky Boilerplate
-      </a></h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        Simple boilerplate repo for how I generally organize my project assets; installable via Bower CLI.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title"><a href="/projects/goodwilldallas.org/">
-        goodwilldallas.org
-      </a></h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        DNN website for the Dallas branch of national NPO, Goodwill Industries.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title">
-        miller.agency
-      </h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        Wordpress website for Dallas full-service ad agency, Miller Ad Agency. <em>(Case study coming soon; view the <a href="/projects/miller.agency/demo" target="_blank" class="pansky-link-external" title="Opens new tab" uk-tooltip>local static version</a>)</em> of the project.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title"><a href="https://www.behance.net/williampansky" target="_blank" class="pansky-link-external" class="pansky-link-external" title="Opens new tab" uk-tooltip>
-        Graphic design projects
-      </a></h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        A plethora of designs hosted externally on my <span uk-icon="icon: behance; ratio: .75"></span> Behance profile.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title">
-        illusiveapparel.website
-      </h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        Wordpress website powered by WooCommerce for Dallas apparel boutique. <em>(Case study coming soon; view the <a href="/projects/illusiveapparel.website/demo" target="_blank" class="pansky-link-external" title="Opens new tab" uk-tooltip>local static version</a>)</em> of the project.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title">
-        giftwrapcreations.com
-      </h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        Wordpress website for Dallas gift wrapping artist, Anita Ivancevic. <em>(Case study coming soon; view the <a href="/projects/giftwrapcreations.com/demo" target="_blank" class="pansky-link-external" title="Opens new tab" uk-tooltip>local static version</a>)</em> of the project.
-      </p>
-    </li>
-  </ul>
-</section>
-
-<section class="uk-container uk-margin-large-bottom" id="github">
-
-</section>
-
-</section>
-
+      </header>
+      <nav class="wep-navbar uk-navbar-container uk-navbar-transparent" uk-navbar itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="uk-navbar-center">
+    <ul class="uk-navbar-nav">
+      <li><a href="/">Projects</a></li>
+      <li><a href="/resume">Resume</a></li>
+      <li><a href="/contact">Contact</a></li>
     </ul>
   </div>
+</nav>
 
-</aside>
-
-
-<section class="uk-container uk-margin-large-bottom uk-section uk-section-small pansky-home">
-  <h1 class="uk-article-title uk-text-bold">William Pansky</h1>
-  <p class="uk-text-lead">Front-end web developer and graphic designer with ability to solve complex website interface problems through creative and UX-minded solutions.</p>
-  <h3 class="uk-text-bold"><a href="/resume">Resume</a></h3>
-</section>
-
-
-
-
-<section class="uk-container uk-margin-large-bottom">
-  <h2 class="uk-text-bold">Projects</h2>
-  <ul class="uk-list uk-list-divider uk-list-large pansky-project-list">
-    <li>
-      <h3 class="pansky-project-list-title"><a href="/projects/thelunch.info/">
-        thelunch.info
-      </a></h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        GoHugo.io stand-alone site for Goodwill Dallas' annual fundraising event, THE LUNCH.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title"><a href="/projects/pansky-boilerplate/">
-        Pansky Boilerplate
-      </a></h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        Simple boilerplate repo for how I generally organize my project assets; installable via Bower CLI.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title"><a href="/projects/goodwilldallas.org/">
-        goodwilldallas.org
-      </a></h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        DNN website for the Dallas branch of national NPO, Goodwill Industries.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title">
-        miller.agency
-      </h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        Wordpress website for Dallas full-service ad agency, Miller Ad Agency. <em>(Case study coming soon; view the <a href="/projects/miller.agency/demo" target="_blank" class="pansky-link-external" title="Opens new tab" uk-tooltip>local static version</a>)</em> of the project.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title"><a href="https://www.behance.net/williampansky" target="_blank" class="pansky-link-external" class="pansky-link-external" title="Opens new tab" uk-tooltip>
-        Graphic design projects
-      </a></h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        A plethora of designs hosted externally on my <span uk-icon="icon: behance; ratio: .75"></span> Behance profile.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title">
-        illusiveapparel.website
-      </h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        Wordpress website powered by WooCommerce for Dallas apparel boutique. <em>(Case study coming soon; view the <a href="/projects/illusiveapparel.website/demo" target="_blank" class="pansky-link-external" title="Opens new tab" uk-tooltip>local static version</a>)</em> of the project.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title">
-        giftwrapcreations.com
-      </h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        Wordpress website for Dallas gift wrapping artist, Anita Ivancevic. <em>(Case study coming soon; view the <a href="/projects/giftwrapcreations.com/demo" target="_blank" class="pansky-link-external" title="Opens new tab" uk-tooltip>local static version</a>)</em> of the project.
-      </p>
-    </li>
-  </ul>
-</section>
-
-<section class="uk-container uk-margin-large-bottom" id="github">
-
-</section>
-
-
-
-
-<section class="uk-container uk-margin-large-bottom">
-  <h2 class="uk-text-bold">CodePens</h2>
-  <ul id="codepens" class="uk-list uk-list-divider uk-list-large pansky-project-list">
-    <li v-for="item in list">
-      <h5 class="pansky-project-list-title"><a v-bind:href="[[ item.link ]]">
-        [[ item.title ]]
-      </a></h5>
-      <p class="uk-text-meta pansky-project-list-description">
-        [[ item.description ]]
-      </p>
-    </li>
-  </ul>
-</section>
-
-
-</main>
-<footer class="uk-offcanvas-content pansky-home">
-  <hr class="uk-nav-divider-small"></hr>
-  <section id="contact" class="uk-container uk-section uk-section-small">
-    <h2 class="uk-text-bold">Contact</h2>
-    
-<form action="https://formspree.io/williampansky@gmail.com" method="post" class="uk-form-stacked">
-	<fieldset class="uk-fieldset" uk-grid>
-		<div>
-			<label class="uk-form-label" for="name">Name</label>
-			<input type="text" name="name" id="name" class="uk-input" placeholder="Who are you?">
-		</div>
-		<div>
-			<label class="uk-form-label" for="email">Email address</label>
-			<input type="text" name="email" id="email" class="uk-input" aria-describedby="emailHelp" placeholder="How can I get back to you?">
-			<p id="emailHelp" class="uk-text-meta uk-margin-remove-top">Don't worry, I don't sell these things.</p>
-		</div>
-		<div>
-			<label class="uk-form-label" for="exampleInputEmail1">Message</label>
-			<textarea name="message" id="message" class="uk-textarea" rows="3" placeholder="What's on your mind?"></textarea>
-		</div>
-		<div>
-			<p class="uk-text-small">
-				<span class="uk-text-uppercase">Note:</span> I use formspree.io for this bit, due to it being a static-site and all. Their site has been loading slowly recently, but it works — just give it a second or two! Also, anyone got any better alternatives? Cheers.
-			</p>
-		</div>
-		<div>
-			<input type="hidden" name="__subject" value="Contact Form Submission">
-			<input type="hidden" name="__redirect" value="http://williampansky.com">
-			<input type="submit" id="submit" value="Submit" class="uk-button uk-button-primary">
-			<input type="reset" id="reset" value="Reset" class="uk-button uk-button-default">
-		</div>
-	</fieldset>
-</form>
-
-  </section>
-  <section class="uk-container uk-margin-large-bottom">
-    <ul class="uk-iconnav uk-flex-around pansky-social">
-  <li><a href="https://linkedin.com/in/williampansky" target="_blank" title="Opens new tab" uk-tooltip uk-icon="icon: linkedin; ratio: 1.5"></a></li>
-  <li><a href="https://github.com/williampansky" target="_blank" title="Opens new tab" uk-tooltip uk-icon="icon: github; ratio: 1.5"></a></li>
-  <li><a href="https://www.behance.net/williampansky" target="_blank" title="Opens new tab" uk-tooltip uk-icon="icon: behance; ratio: 1.5"></a></li>
+      <ul class="wep-socials uk-iconnav">
+  <li>
+    <a href="https://linkedin.com/in/williampansky" class="uk-padding-small" uk-icon="icon:linkedin; ratio:1.5;">
+      
+    </a>
+  </li>
+  <li>
+    <a href="https://github.com/williampansky" class="uk-padding-small" uk-icon="icon:github; ratio:1.5;">
+      
+    </a>
+  </li>
+  <li>
+    <a href="https://www.behance.net/williampansky" class="uk-padding-small" uk-icon="icon:behance; ratio:1.5;">
+      
+    </a>
+  </li>
 </ul>
 
+    </nav>
+
+    
+    <main id="panel">
+
+
+<section class="uk-section uk-text-center@l uk-flex@l uk-flex-center@l uk-flex-middle@l">
+  <div class="uk-container" itemscope itemtype="http://schema.org/Person" style="max-width:640px;">
+    <h1 class="uk-heading-primary" itemprop="name" content="William Pansky">William Pansky</h1>
+    <p class="uk-text-lead" style="margin-bottom:8px;" itemprop="description">Front-end web developer and graphic designer with ability to solve complex website interface problems through creative and UX-minded solutions.</p>
+    
+    <div class="uk-flex uk-flex-center@l uk-flex-middle@l uk-text-center@l">
+      <nav class="wep-navbar uk-navbar-container uk-navbar-transparent" uk-navbar itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="uk-navbar-center">
+    <ul class="uk-navbar-nav">
+      <li><a href="/">Projects</a></li>
+      <li><a href="/resume">Resume</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+    </div>
+    
+  </div>
+</section>
+
+<section id="projectList" class="uk-section-small">
+
+  
+  <section class="uk-container uk-container-small uk-margin-large-bottom">
+    <div class="uk-child-width-1-1 uk-grid-large" uk-grid>
+
+      
+
+      <article class="wep-project uk-card" itemscope itemtype="http://schema.org/CreativeWork">
+
+        <div class="wep-project-client">
+          <div class="wep-project-client-avatar" style="background-image:url('/img/projects/good-lunch/good-face-block.jpg')" title="Goodwill Industries of Dallas, Inc." itemprop="producer" itemprop="image"></div>
+          <div class="wep-project-client-info">
+            <div class="wep-project-client-info-top" itemprop="provider">GoHugo.io single-page site</div>
+            <div class="wep-project-client-info-bottom" itemscope itemtype="http://schema.org/Organization">
+              <span itemprop="producer" itemprop="brand">Goodwill Industries of Dallas, Inc.</span>
+              <link itemprop="sameAs" href="https://www.goodwilldallas.org/" />
+              <meta itemprop="address" content="Dallas, TX" />
+              <meta itemprop="contributor" content="Miller Ad Agency" />
+            </div>
+          </div>
+        </div>
+
+        <div class="wep-project-image-container large uk-height-large uk-box-shadow-xlarge">
+          <a href="/projectsfeatured/thelunch.info/" title="Deploying a standalone landing page site for Goodwill Dallas&#39; annual fundraising event, THE LUNCH, with GoHugo.io" itemprop="url">
+            <div class="wep-project-image uk-background-cover" style="background-image:url('/projects/thelunch.info/demo/images/Goodwill-worn-out-hands-from-working-hard.jpg')" itemprop="image" itemprop="thumbnailUrl"></div>
+          </a>
+        </div>
+
+        <header class="wep-project-header">
+          <p class="wep-project-category">Case study</p>
+          <h1 class="wep-project-title" itemprop="headline" itemprop="name" itemprop="alternateName">
+            <a href="/projectsfeatured/thelunch.info/" title="Deploying a standalone landing page site for Goodwill Dallas&#39; annual fundraising event, THE LUNCH, with GoHugo.io" itemprop="url">Deploying a standalone landing page site for Goodwill Dallas&#39; annual fundraising event, THE LUNCH, with GoHugo.io</a>
+          </h1>
+          <div itemprop="creator" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="name" content="William Pansky"/>
+            <link itemprop="sameAs" href="https://williampansky.com"/>
+          </div>
+          <p class="wep-project-details uk-text-meta">Published on <time itemprop="datePublished">March 25, 2017</time>. <strong>12 minute read.</strong></p>
+        </header>
+
+        <div class="wep-project-body">
+          <p itemprop="description">The Lunch, Goodwill Industries of Dallas&#39; annual fundraising event, found wonderful success for its first two years – securing over $1.5m each year to, “... expand and enhance job training services.” For 2017, I suggested a revamp ... <a href="/projectsfeatured/thelunch.info/" title="Deploying a standalone landing page site for Goodwill Dallas&#39; annual fundraising event, THE LUNCH, with GoHugo.io" uk-icon="icon: triangle-right" itemprop="url">view project</a></p>
+        </div>
+
+        <hr />
+
+        <footer class="wep-project-footer">
+          <p class="wep-project-details uk-article-meta" style="font-size:12px;">
+            <span itemprop="name">
+              <strong>thelunch.info</strong>
+              <link itemprop="sameAs" href="https://thelunch.info" />
+            </span> / <span itemprop="keywords">[goodwill dallas lunch fundraising]</span>
+          </p>
+        </footer>
+
+      </article>
+
+      
+
+    </div>
   </section>
-  <section class="uk-container uk-text-small uk-margin-small-bottom uk-flex uk-flex-between">
-    <span class="uk-margin-small-bottom" id="copyrightFooter">
-      © <script>document.getElementById('copyrightFooter').appendChild(document.createTextNode(""+new Date().getFullYear()))</script>&nbsp;William Pansky.
-    </span>
-    <span>
-      Powered by <a href="https://gohugo.io" target="_blank" class="pansky-link-external" title="Opens new tab" uk-tooltip>Hugo</a>.
-    </span>
+
+  
+  <section class="uk-container uk-container-small uk-margin-large-bottom">
+    <div class="uk-child-width-1-2@s uk-grid-large" uk-grid>
+
+      
+
+      <article class="wep-project uk-card">
+
+        <div class="wep-project-client">
+          <div class="wep-project-client-avatar" style="background-image:url('/img/projects/gift-website/dwcg-avatar.jpg')" title="Dallas Gift Wrap Creations" itemprop="producer" itemprop="image"></div>
+          <div class="wep-project-client-info">
+            <div class="wep-project-client-info-top" itemprop="provider">Wordpress</div>
+            <div class="wep-project-client-info-bottom" itemscope itemtype="http://schema.org/Organization">
+              <span itemprop="producer" itemprop="brand">Dallas Gift Wrap Creations</span>
+              <link itemprop="sameAs" href="" />
+              <meta itemprop="address" content="" />
+              <meta itemprop="contributor" content="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="wep-project-image-container uk-height-medium uk-box-shadow-medium">
+          <a href="/projects/giftwrapcreations.com/" title="Wordpress website for Dallas gift wrapping artist, Anita Ivancevic" itemprop="url">
+            <div class="wep-project-image uk-background-cover" style="background-image:url('/projects/giftwrapcreations.com/demo/wp-content/uploads/dgwc-002.jpg')" itemprop="image" itemprop="thumbnailUrl"></div>
+          </a>
+        </div>
+
+        <header class="wep-project-header">
+          <p class="wep-project-category">Interactive demo</p>
+          <h1 class="wep-project-title" itemprop="headline" itemprop="name" itemprop="alternateName">
+            <a href="/projects/giftwrapcreations.com/" title="Wordpress website for Dallas gift wrapping artist, Anita Ivancevic" itemprop="url">Wordpress website for Dallas gift wrapping artist, Anita Ivancevic</a>
+          </h1>
+          <div itemprop="creator" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="name" content="William Pansky"/>
+            <link itemprop="sameAs" href="https://williampansky.com"/>
+          </div>
+          <p class="wep-project-details uk-text-meta">Published on <time itemprop="datePublished">June 6, 2017</time>. <strong>1 minute read.</strong></p>
+        </header>
+
+        <div class="wep-project-body">
+          <p itemprop="description">Dallas Gift Wrap Creations manages everything from the design, recipient list, gift receipts, wrapping paper, tissue, ribbon patterns, toppers, monogramming and down to ... <a href="/projects/giftwrapcreations.com/" title="Wordpress website for Dallas gift wrapping artist, Anita Ivancevic" uk-icon="icon: triangle-right" itemprop="url">read on</a></p>
+        </div>
+
+        <hr />
+
+        <footer class="wep-project-footer">
+          <p class="wep-project-details uk-article-meta" style="font-size:12px;">
+            <span itemprop="name">
+              <strong>giftwrapcreations.com</strong>
+              <link itemprop="sameAs" href="" />
+            </span> / <span itemprop="keywords">[wordpress javascript dallas gift wrapping]</span>
+          </p>
+        </footer>
+
+      </article>
+
+      
+
+      <article class="wep-project uk-card">
+
+        <div class="wep-project-client">
+          <div class="wep-project-client-avatar" style="background-image:url('/img/projects/ilsv-website/ilsv-avatar.jpg')" title="Illusive Apparel Worldwide" itemprop="producer" itemprop="image"></div>
+          <div class="wep-project-client-info">
+            <div class="wep-project-client-info-top" itemprop="provider">Wordpress</div>
+            <div class="wep-project-client-info-bottom" itemscope itemtype="http://schema.org/Organization">
+              <span itemprop="producer" itemprop="brand">Illusive Apparel Worldwide</span>
+              <link itemprop="sameAs" href="" />
+              <meta itemprop="address" content="" />
+              <meta itemprop="contributor" content="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="wep-project-image-container uk-height-medium uk-box-shadow-medium">
+          <a href="/projects/illusiveapparel.website/" title="Wordpress powered by WooCommerce for Dallas apparel boutique website" itemprop="url">
+            <div class="wep-project-image uk-background-cover" style="background-image:url('/projects/illusiveapparel.website/demo/wp-content/uploads/2017/06/ilsv-home-hero-woman-holding-staff.jpg')" itemprop="image" itemprop="thumbnailUrl"></div>
+          </a>
+        </div>
+
+        <header class="wep-project-header">
+          <p class="wep-project-category">Interactive demo</p>
+          <h1 class="wep-project-title" itemprop="headline" itemprop="name" itemprop="alternateName">
+            <a href="/projects/illusiveapparel.website/" title="Wordpress powered by WooCommerce for Dallas apparel boutique website" itemprop="url">Wordpress powered by WooCommerce for Dallas apparel boutique website</a>
+          </h1>
+          <div itemprop="creator" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="name" content="William Pansky"/>
+            <link itemprop="sameAs" href="https://williampansky.com"/>
+          </div>
+          <p class="wep-project-details uk-text-meta">Published on <time itemprop="datePublished">June 13, 2017</time>. <strong>1 minute read.</strong></p>
+        </header>
+
+        <div class="wep-project-body">
+          <p itemprop="description">Illusive Apparel delivers award-winning graphic artists create fresh and cutting edge designs ... <a href="/projects/illusiveapparel.website/" title="Wordpress powered by WooCommerce for Dallas apparel boutique website" uk-icon="icon: triangle-right" itemprop="url">read on</a></p>
+        </div>
+
+        <hr />
+
+        <footer class="wep-project-footer">
+          <p class="wep-project-details uk-article-meta" style="font-size:12px;">
+            <span itemprop="name">
+              <strong>illusiveapparel.website</strong>
+              <link itemprop="sameAs" href="" />
+            </span> / <span itemprop="keywords">[wordpress woocommerce dallas apparel]</span>
+          </p>
+        </footer>
+
+      </article>
+
+      
+
+    </div>
   </section>
+
+  
+  <section class="uk-container-expand uk-margin-large-bottom uk-visible@m">
+    <div class="uk-width-1-1">
+
+      
+
+      <article class="wep-project uk-card" itemscope itemtype="http://schema.org/CreativeWork">
+
+        <div class="wep-project-image-container" uk-height-viewport="offset-bottom: 0">
+
+          
+            <div class="wep-project-image large wep-project-image-fullwidth uk-background-cover" style="background-image:url('/projects/miller.agency/demo/wp-content/uploads/maa-services-web.jpg')" itemprop="image" itemprop="thumbnailUrl" uk-parallax="viewport: 0.35; opacity:0,1;"></div>
+          
+
+        </div>
+
+        <div id="fwText" class="wep-project-fullwidth-info wep-project-fullwidth-info-light-bg uk-position-top-left uk-width-1-2@s uk-width-1-3@m uk-width-1-3@l uk-width-1-4@xl uk-width-1-5@xxl uk-width-1-6@xxxl uk-padding" uk-parallax="viewport: 0.85; y: 80,0">
+          <div class="wep-project-client">
+            <div class="wep-project-client-avatar" style="background-image:url('/projects/miller.agency/demo/apple-touch-icon.png')" itemprop="producer" itemprop="image"></div>
+            <div class="wep-project-client-info">
+              <div class="wep-project-client-info-top" itemprop="producer">Wordpress</div>
+              <div class="wep-project-client-info-bottom" itemscope itemtype="http://schema.org/Organization">
+                <span itemprop="producer" itemprop="brand">Miller Ad Agency</span>
+                <link itemprop="sameAs" href="" />
+                <meta itemprop="address" content="" />
+                <meta itemprop="contributor" content="" />
+              </div>
+            </div>
+          </div>
+
+          <header class="wep-project-header">
+            <p class="wep-project-category">Case study</p>
+            <h1 class="wep-project-title" itemprop="headline" itemprop="name" itemprop="alternateName">
+              <a href="/projects/miller.agency/" title="Wordpress CMS platform built with Elementor Pro for Dallas full-service ad agency" itemprop="url">Wordpress CMS platform built with Elementor Pro for Dallas full-service ad agency</a>
+            </h1>
+            <div itemprop="creator" itemscope itemtype="http://schema.org/Person">
+              <meta itemprop="name" content="William Pansky"/>
+              <link itemprop="sameAs" href="https://williampansky.com"/>
+            </div>
+            <p class="wep-project-details uk-text-meta">Published on <time itemprop="datePublished">February 1, 2017</time>. <strong>9 minute read.</strong></p>
+          </header>
+
+          <div class="wep-project-body">
+            <p itemprop="description">Over the course of my third year at Miller Ad Agency, I became increasingly infatuated with front-end web development ... <a href="/projects/miller.agency/" title="Wordpress CMS platform built with Elementor Pro for Dallas full-service ad agency" uk-icon="icon: triangle-right" itemprop="url">read on</a></p>
+          </div>
+
+          <hr />
+
+          <footer class="wep-project-footer">
+            <p class="wep-project-details uk-article-meta" style="font-size:12px;">
+              <span itemprop="name">
+                <strong>miller.agency</strong>
+                <link itemprop="sameAs" href="" />
+              </span> / <span itemprop="keywords">[wordpress dallas ad agency]</span>
+            </p>
+          </footer>
+        </div>
+
+      </article>
+
+      
+
+    </div>
+  </section>
+
+  
+  <section class="uk-container uk-container-small uk-margin-large-bottom uk-hidden@m">
+    <div class="uk-child-width-1-1 uk-grid-large" uk-grid>
+
+      
+
+        <article class="wep-project uk-card" itemscope itemtype="http://schema.org/CreativeWork">
+
+          <div class="wep-project-client">
+            <div class="wep-project-client-avatar" style="background-image:url('/projects/miller.agency/demo/apple-touch-icon.png')" title="Miller Ad Agency" itemprop="producer" itemprop="image"></div>
+            <div class="wep-project-client-info">
+              <div class="wep-project-client-info-top" itemprop="provider">Wordpress</div>
+              <div class="wep-project-client-info-bottom" itemscope itemtype="http://schema.org/Organization">
+                <span itemprop="producer" itemprop="brand">Miller Ad Agency</span>
+                <link itemprop="sameAs" href="" />
+                <meta itemprop="address" content="" />
+                <meta itemprop="contributor" content="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="wep-project-image-container large uk-height-medium uk-box-shadow-large">
+            <a href="/projects/miller.agency/" title="Wordpress CMS platform built with Elementor Pro for Dallas full-service ad agency" itemprop="url">
+              
+                <div class="wep-project-image large uk-background-cover" style="background-image:url('/projects/miller.agency/demo/wp-content/uploads/maa-services-web.jpg')" itemprop="image" itemprop="thumbnailUrl"></div>
+              
+            </a>
+          </div>
+
+          <header class="wep-project-header">
+            <p class="wep-project-category">Case study</p>
+            <h1 class="wep-project-title" itemprop="headline" itemprop="name" itemprop="alternateName">
+              <a href="/projects/miller.agency/" title="Wordpress CMS platform built with Elementor Pro for Dallas full-service ad agency" itemprop="url">Wordpress CMS platform built with Elementor Pro for Dallas full-service ad agency</a>
+            </h1>
+            <div itemprop="creator" itemscope itemtype="http://schema.org/Person">
+              <meta itemprop="name" content="William Pansky"/>
+              <link itemprop="sameAs" href="https://williampansky.com"/>
+            </div>
+            <p class="wep-project-details uk-text-meta">Published on <time itemprop="datePublished">February 1, 2017</time>. <strong>9 minute read.</strong></p>
+          </header>
+
+          <div class="wep-project-body">
+            <p itemprop="description">Over the course of my third year at Miller Ad Agency, I became increasingly infatuated with front-end web development ... <a href="/projects/miller.agency/" title="Wordpress CMS platform built with Elementor Pro for Dallas full-service ad agency" uk-icon="icon: triangle-right" itemprop="url">view project</a></p>
+          </div>
+
+          <hr />
+
+          <footer class="wep-project-footer">
+            <p class="wep-project-details uk-article-meta" style="font-size:12px;">
+              <span itemprop="name">
+                <strong>miller.agency</strong>
+                <link itemprop="sameAs" href="" />
+              </span> / <span itemprop="keywords">[wordpress dallas ad agency]</span>
+            </p>
+          </footer>
+
+        </article>
+
+      
+
+    </div>
+  </section>
+
+  
+  <section class="uk-container uk-container-small uk-margin-large-bottom">
+    <div class="uk-child-width-1-2@s uk-grid-large" uk-grid>
+
+      
+
+      <article class="wep-project uk-card">
+
+        <div class="wep-project-client">
+          <div class="wep-project-client-avatar" style="background-image:url('/apple-touch-icon.png')" title="William Pansky" itemprop="producer" itemprop="image"></div>
+          <div class="wep-project-client-info">
+            <div class="wep-project-client-info-top" itemprop="provider">GitHub repo</div>
+            <div class="wep-project-client-info-bottom" itemscope itemtype="http://schema.org/Organization">
+              <span itemprop="producer" itemprop="brand">William Pansky</span>
+              <link itemprop="sameAs" href="" />
+              <meta itemprop="address" content="" />
+              <meta itemprop="contributor" content="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="wep-project-image-container uk-height-medium uk-box-shadow-medium">
+          <a href="/projects/pansky-boilerplate/" title="How I organize my project assets; installable via Bower" itemprop="url">
+            <div class="wep-project-image uk-background-cover" style="background-image:url('/img/projects/pansky-boilerplate/pansky-boilerplate-codeHero.jpg')" itemprop="image" itemprop="thumbnailUrl"></div>
+          </a>
+        </div>
+
+        <header class="wep-project-header">
+          <p class="wep-project-category">Case study</p>
+          <h1 class="wep-project-title" itemprop="headline" itemprop="name" itemprop="alternateName">
+            <a href="/projects/pansky-boilerplate/" title="How I organize my project assets; installable via Bower" itemprop="url">How I organize my project assets; installable via Bower</a>
+          </h1>
+          <div itemprop="creator" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="name" content="William Pansky"/>
+            <link itemprop="sameAs" href="https://williampansky.com"/>
+          </div>
+          <p class="wep-project-details uk-text-meta">Published on <time itemprop="datePublished">January 11, 2017</time>. <strong>4 minute read.</strong></p>
+        </header>
+
+        <div class="wep-project-body">
+          <p itemprop="description">If you&#39;re a crazy person and, for some odd reason, want to download and tinker then be my guest. You can install with the Bower package manager ... <a href="/projects/pansky-boilerplate/" title="How I organize my project assets; installable via Bower" uk-icon="icon: triangle-right" itemprop="url">read on</a></p>
+        </div>
+
+        <hr />
+
+        <footer class="wep-project-footer">
+          <p class="wep-project-details uk-article-meta" style="font-size:12px;">
+            <span itemprop="name">
+              <strong>Pansky Boilerplate</strong>
+              <link itemprop="sameAs" href="" />
+            </span> / <span itemprop="keywords">[github boilerplate web development]</span>
+          </p>
+        </footer>
+
+      </article>
+
+      
+
+      <article class="wep-project uk-card">
+
+        <div class="wep-project-client">
+          <div class="wep-project-client-avatar" style="background-image:url('/img/projects/good-lunch/good-face-block.jpg')" title="Goodwill Industries of Dallas, Inc." itemprop="producer" itemprop="image"></div>
+          <div class="wep-project-client-info">
+            <div class="wep-project-client-info-top" itemprop="provider">DNN (DotNetNuke)</div>
+            <div class="wep-project-client-info-bottom" itemscope itemtype="http://schema.org/Organization">
+              <span itemprop="producer" itemprop="brand">Goodwill Industries of Dallas, Inc.</span>
+              <link itemprop="sameAs" href="" />
+              <meta itemprop="address" content="" />
+              <meta itemprop="contributor" content="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="wep-project-image-container uk-height-medium uk-box-shadow-medium">
+          <a href="/projects/goodwilldallas.org/" title="DNN website for the Dallas branch of national NPO, Goodwill Industries" itemprop="url">
+            <div class="wep-project-image uk-background-cover" style="background-image:url('/img/projects/good-website/OmniHotelLunchSlider2017.jpg')" itemprop="image" itemprop="thumbnailUrl"></div>
+          </a>
+        </div>
+
+        <header class="wep-project-header">
+          <p class="wep-project-category">Case study</p>
+          <h1 class="wep-project-title" itemprop="headline" itemprop="name" itemprop="alternateName">
+            <a href="/projects/goodwilldallas.org/" title="DNN website for the Dallas branch of national NPO, Goodwill Industries" itemprop="url">DNN website for the Dallas branch of national NPO, Goodwill Industries</a>
+          </h1>
+          <div itemprop="creator" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="name" content="William Pansky"/>
+            <link itemprop="sameAs" href="https://williampansky.com"/>
+          </div>
+          <p class="wep-project-details uk-text-meta">Published on <time itemprop="datePublished">December 10, 2015</time>. <strong>2 minute read.</strong></p>
+        </header>
+
+        <div class="wep-project-body">
+          <p itemprop="description">As part of the creative department at Miller Ad Agency, we collaborated and worked to bring Goodwill Dallas the new ... <a href="/projects/goodwilldallas.org/" title="DNN website for the Dallas branch of national NPO, Goodwill Industries" uk-icon="icon: triangle-right" itemprop="url">read on</a></p>
+        </div>
+
+        <hr />
+
+        <footer class="wep-project-footer">
+          <p class="wep-project-details uk-article-meta" style="font-size:12px;">
+            <span itemprop="name">
+              <strong>goodwilldallas.org</strong>
+              <link itemprop="sameAs" href="" />
+            </span> / <span itemprop="keywords">[goodwill dallas non profit npo]</span>
+          </p>
+        </footer>
+
+      </article>
+
+      
+
+    </div>
+  </section>
+
+</section>
+
+<section id="resumeExp" class="wep-resume-exp uk-background-secondary uk-light uk-margin-large">
+  <div class="uk-grid-collapse uk-child-width-1-4@m" uk-grid>
+
+    
+
+      <section class="uk-card uk-card-body">
+        <div>
+          <h4 class="wep-resume-exp-title">Front-end Web Developer</h4>
+          <meta itemprop="jobTitle" content="Front-end Web Developer"/>
+        </div>
+        <div itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+          <p class="wep-resume-exp-company" itemprop="name">
+            Sabre Corporation
+            <meta itemprop="url" content="https://www.sabre.com/"/>
+          </p>
+          <p class="wep-resume-exp-date uk-text-uppercase" itemprop="event" itemscope itemtype="http://schema.org/Event">
+            <time itemprop="startDate" content="Jul 2017">Jul 2017</time>–<time itemprop="endDate" content="Present">Present</time>
+            
+          </p>
+          <div class="wep-resume-exp-geo">
+            <span itemprop="addressLocality">Southlake</span>, <span itemprop="addressRegion">TX</span>
+            <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" style="display:none;">
+              <meta itemprop="streetAddress" content="3150 Sabre Dr" />
+              <meta itemprop="addressLocality" content="Southlake" />
+              <meta itemprop="addressRegion" content="TX" />
+              <meta itemprop="postalCode" content="76092" />
+              <meta itemprop="addressCountry" content="US" />
+            </address>
+          </div>
+        </div>
+      </section>
+
+    
+
+      <section class="uk-card uk-card-body">
+        <div>
+          <h4 class="wep-resume-exp-title">Graphic Designer &amp; Developer</h4>
+          <meta itemprop="jobTitle" content="Graphic Designer &amp; Developer"/>
+        </div>
+        <div itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+          <p class="wep-resume-exp-company" itemprop="name">
+            Miller Ad Agency
+            <meta itemprop="url" content="https://www.milleradagency.com/"/>
+          </p>
+          <p class="wep-resume-exp-date uk-text-uppercase" itemprop="event" itemscope itemtype="http://schema.org/Event">
+            <time itemprop="startDate" content="Jul 2017">Jul 2017</time>–<time itemprop="endDate" content="Jul 2017">Jul 2017</time>
+            
+              <span class="uk-text-lowercase">(3.2yrs)</span>
+            
+          </p>
+          <div class="wep-resume-exp-geo">
+            <span itemprop="addressLocality">Farmers Branch</span>, <span itemprop="addressRegion">TX</span>
+            <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" style="display:none;">
+              <meta itemprop="streetAddress" content="2711 Valley View Ln Ste #101" />
+              <meta itemprop="addressLocality" content="Farmers Branch" />
+              <meta itemprop="addressRegion" content="TX" />
+              <meta itemprop="postalCode" content="75234" />
+              <meta itemprop="addressCountry" content="US" />
+            </address>
+          </div>
+        </div>
+      </section>
+
+    
+
+      <section class="uk-card uk-card-body">
+        <div>
+          <h4 class="wep-resume-exp-title">Graphic Designer</h4>
+          <meta itemprop="jobTitle" content="Graphic Designer"/>
+        </div>
+        <div itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+          <p class="wep-resume-exp-company" itemprop="name">
+            ONE World Sports
+            <meta itemprop="url" content="https://en.wikipedia.org/wiki/One_World_Sports"/>
+          </p>
+          <p class="wep-resume-exp-date uk-text-uppercase" itemprop="event" itemscope itemtype="http://schema.org/Event">
+            <time itemprop="startDate" content="Oct 2010">Oct 2010</time>–<time itemprop="endDate" content="Mar 2014">Mar 2014</time>
+            
+              <span class="uk-text-lowercase">(3.6yrs)</span>
+            
+          </p>
+          <div class="wep-resume-exp-geo">
+            <span itemprop="addressLocality">Fort Worth</span>, <span itemprop="addressRegion">TX</span>
+            <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" style="display:none;">
+              <meta itemprop="streetAddress" content="" />
+              <meta itemprop="addressLocality" content="Fort Worth" />
+              <meta itemprop="addressRegion" content="TX" />
+              <meta itemprop="postalCode" content="" />
+              <meta itemprop="addressCountry" content="US" />
+            </address>
+          </div>
+        </div>
+      </section>
+
+    
+
+      <section class="uk-card uk-card-body">
+        <div>
+          <h4 class="wep-resume-exp-title">Graphic Designer</h4>
+          <meta itemprop="jobTitle" content="Graphic Designer"/>
+        </div>
+        <div itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+          <p class="wep-resume-exp-company" itemprop="name">
+            Blue Moose Tees
+            <meta itemprop="url" content="http://www.bluemooseapparel.com/"/>
+          </p>
+          <p class="wep-resume-exp-date uk-text-uppercase" itemprop="event" itemscope itemtype="http://schema.org/Event">
+            <time itemprop="startDate" content="Oct 2009">Oct 2009</time>–<time itemprop="endDate" content="Jun 2010">Jun 2010</time>
+            
+              <span class="uk-text-lowercase">(9mos)</span>
+            
+          </p>
+          <div class="wep-resume-exp-geo">
+            <span itemprop="addressLocality">Arlington</span>, <span itemprop="addressRegion">TX</span>
+            <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" style="display:none;">
+              <meta itemprop="streetAddress" content="912 113th St" />
+              <meta itemprop="addressLocality" content="Arlington" />
+              <meta itemprop="addressRegion" content="TX" />
+              <meta itemprop="postalCode" content="76011" />
+              <meta itemprop="addressCountry" content="US" />
+            </address>
+          </div>
+        </div>
+      </section>
+
+    
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="codepenList" class="uk-section-small">
+  <div class="uk-container uk-container-small">
+    <div class="uk-text-center@l uk-margin-bottom">
+      <h3 class="uk-margin-remove-bottom">CodePens</h3>
+      <p class="uk-article-meta" style="font-family:sans-serif; font-size:12px;">
+        <strong>Note:</strong> CodePen links open in a new tab.
+      </p>
+    </div>
+    <div class="uk-child-width-1-3@s uk-grid-collapse" uk-grid>
+
+      
+
+        <article class="wep-pen uk-card" itemscope itemtype="http://schema.org/CreativeWork">
+
+          <div class="wep-pen-image-container">
+            
+              <div class="wep-pen-image uk-background-cover" style="background-image:url('/img/codepens/shs-devAssignment.jpg')" itemprop="image" itemprop="thumbnailUrl"></div>
+            
+          </div>
+
+          <div class="wep-pen-avatar uk-position-top-left" itemprop="provider">
+            <img class="uk-border-circle z-depth-1" src="/img/codepens/codepenlogo.svg" alt="CodePen" itemprop="image" />
+            <link itemprop="sameAs" href="" />
+          </div>
+
+          <header class="wep-pen-header uk-position-bottom-left uk-padding-small" itemprop="headline" itemprop="name">
+            <h1 class="wep-pen-title">Writing a contact form as development assessment</h1>
+            <div itemprop="creator" itemscope itemtype="http://schema.org/Person">
+              <meta itemprop="name" content="William Pansky" />
+              <link itemprop="sameAs" href="https://codepen.io/williampansky/" />
+            </div>
+          </header>
+
+          <footer class="wep-pen-footer uk-padding-small">
+            <a href="https://codepen.io/williampansky/full/rwJmEe/" title="Writing a contact form as development assessment" target="_blank" itemprop="url">View pen</a>
+          </footer>
+
+        </article>
+
+      
+
+        <article class="wep-pen uk-card" itemscope itemtype="http://schema.org/CreativeWork">
+
+          <div class="wep-pen-image-container">
+            
+              <div class="wep-pen-image uk-background-cover" style="background-image:url('/img/codepens/velocityjsSidebarMenu.jpg')" itemprop="image" itemprop="thumbnailUrl"></div>
+            
+          </div>
+
+          <div class="wep-pen-avatar uk-position-top-left" itemprop="provider">
+            <img class="uk-border-circle z-depth-1" src="/img/codepens/codepenlogo.svg" alt="Codepen" itemprop="image" />
+            <link itemprop="sameAs" href="" />
+          </div>
+
+          <header class="wep-pen-header uk-position-bottom-left uk-padding-small" itemprop="headline" itemprop="name">
+            <h1 class="wep-pen-title">VelocityJS mobile sidebar menu experiment</h1>
+            <div itemprop="creator" itemscope itemtype="http://schema.org/Person">
+              <meta itemprop="name" content="William Pansky" />
+              <link itemprop="sameAs" href="https://codepen.io/williampansky/" />
+            </div>
+          </header>
+
+          <footer class="wep-pen-footer uk-padding-small">
+            <a href="https://codepen.io/williampansky/full/ryXRda/" title="VelocityJS mobile sidebar menu experiment" target="_blank" itemprop="url">View pen</a>
+          </footer>
+
+        </article>
+
+      
+
+        <article class="wep-pen uk-card" itemscope itemtype="http://schema.org/CreativeWork">
+
+          <div class="wep-pen-image-container">
+            
+              <div class="wep-pen-image uk-background-cover" style="background-image:url('/img/codepens/velocityjsFullscreenAccordion.gif')" itemprop="image" itemprop="thumbnailUrl" uk-gif></div>
+            
+          </div>
+
+          <div class="wep-pen-avatar uk-position-top-left" itemprop="provider">
+            <img class="uk-border-circle z-depth-1" src="/img/codepens/codepenlogo.svg" alt="Codepen" itemprop="image" />
+            <link itemprop="sameAs" href="https://codepen.io" />
+          </div>
+
+          <header class="wep-pen-header uk-position-bottom-left uk-padding-small" itemprop="headline" itemprop="name">
+            <h1 class="wep-pen-title">Tinkering with Apple-esque fullscreen accordions</h1>
+            <div itemprop="creator" itemscope itemtype="http://schema.org/Person">
+              <meta itemprop="name" content="William Pansky" />
+              <link itemprop="sameAs" href="https://codepen.io/williampansky/" />
+            </div>
+          </header>
+
+          <footer class="wep-pen-footer uk-padding-small">
+            <a href="https://codepen.io/williampansky/full/LLdOLz/" title="Tinkering with Apple-esque fullscreen accordions" target="_blank" itemprop="url">View pen</a>
+          </footer>
+
+        </article>
+
+      
+
+        <article class="wep-pen uk-card" itemscope itemtype="http://schema.org/CreativeWork">
+
+          <div class="wep-pen-image-container">
+            
+              <div class="wep-pen-image uk-background-cover" style="background-image:url('/img/codepens/uikit-psuedoLoad.jpg')" itemprop="image" itemprop="thumbnailUrl"></div>
+            
+          </div>
+
+          <div class="wep-pen-avatar uk-position-top-left" itemprop="provider">
+            <img class="uk-border-circle z-depth-1" src="/img/codepens/codepenlogo.svg" alt="Codepen" itemprop="image" />
+            <link itemprop="sameAs" href="" />
+          </div>
+
+          <header class="wep-pen-header uk-position-bottom-left uk-padding-small" itemprop="headline" itemprop="name">
+            <h1 class="wep-pen-title">Faking load with setTimeout and UIkit&#39;s &lt;progress&gt; element</h1>
+            <div itemprop="creator" itemscope itemtype="http://schema.org/Person">
+              <meta itemprop="name" content="William Pansky" />
+              <link itemprop="sameAs" href="https://codepen.io/williampansky/" />
+            </div>
+          </header>
+
+          <footer class="wep-pen-footer uk-padding-small">
+            <a href="https://codepen.io/williampansky/full/VWRWEB/" title="Faking load with setTimeout and UIkit&#39;s &lt;progress&gt; element" target="_blank" itemprop="url">View pen</a>
+          </footer>
+
+        </article>
+
+      
+
+        <article class="wep-pen uk-card" itemscope itemtype="http://schema.org/CreativeWork">
+
+          <div class="wep-pen-image-container">
+            
+              <div class="wep-pen-image uk-background-cover" style="background-image:url('/img/codepens/flipboardCards.jpg')" itemprop="image" itemprop="thumbnailUrl"></div>
+            
+          </div>
+
+          <div class="wep-pen-avatar uk-position-top-left" itemprop="provider">
+            <img class="uk-border-circle z-depth-1" src="/img/codepens/codepenlogo.svg" alt="Codepen" itemprop="image" />
+            <link itemprop="sameAs" href="" />
+          </div>
+
+          <header class="wep-pen-header uk-position-bottom-left uk-padding-small" itemprop="headline" itemprop="name">
+            <h1 class="wep-pen-title">Creating a Flipboard.com style article layout using UIkit &amp; VelocityJS</h1>
+            <div itemprop="creator" itemscope itemtype="http://schema.org/Person">
+              <meta itemprop="name" content="William Pansky" />
+              <link itemprop="sameAs" href="https://codepen.io/williampansky/" />
+            </div>
+          </header>
+
+          <footer class="wep-pen-footer uk-padding-small">
+            <a href="https://codepen.io/williampansky/full/bRQbdZ/" title="Creating a Flipboard.com style article layout using UIkit &amp; VelocityJS" target="_blank" itemprop="url">View pen</a>
+          </footer>
+
+        </article>
+
+      
+
+    </div>
+  </div>
+</section>
+
+<section id="portfolioList" class="uk-section-small">
+
+
+
+
+
+<section id="portfolioList" class="uk-section-small">
+  <div class="uk-container uk-container-small">
+    <div class="uk-text-center@l uk-margin-bottom">
+      <h3 class="uk-margin-remove-bottom">Design projects</h3>
+      <p class="uk-article-meta" style="font-family:sans-serif; font-size:12px;">
+        <strong>Note:</strong> Behance links open in a new tab.
+      </p>
+    </div>
+    <div class="uk-child-width-1-3@s uk-grid-collapse" uk-grid>
+
+      
+
+        <article class="wep-pen uk-card" itemscope itemtype="http://schema.org/CreativeWork">
+
+          <div class="wep-pen-image-container">
+            
+              <div class="wep-pen-image uk-background-cover" style="background-image:url('/img/portfolio/respect-my-pretty/rmyp-001.jpg')" itemprop="image" itemprop="thumbnailUrl"></div>
+            
+          </div>
+
+          <div class="wep-portfolio-avatar uk-position-top-left" itemprop="provider">
+            <img class="uk-border-circle z-depth-1" src="/img/behance/avatar.jpg" alt="Apparel" itemprop="image" />
+            <link itemprop="sameAs" href="https://www.behance.net/" />
+          </div>
+
+          <header class="wep-pen-header uk-position-bottom-left uk-padding-small" itemprop="headline" itemprop="name">
+            <h1 class="wep-pen-title">Respect My Pretty</h1>
+            <div itemprop="creator" itemscope itemtype="http://schema.org/Person">
+              <meta itemprop="name" content="William Pansky" />
+              <link itemprop="sameAs" href="https://www.behance.net/williampansky" />
+            </div>
+          </header>
+
+          <footer class="wep-pen-footer uk-padding-small">
+            <a href="https://www.behance.net/gallery/54194311/Respect-My-Pretty" title="Respect My Pretty" target="_blank" itemprop="url">View project</a>
+          </footer>
+
+        </article>
+
+      
+
+        <article class="wep-pen uk-card" itemscope itemtype="http://schema.org/CreativeWork">
+
+          <div class="wep-pen-image-container">
+            
+              <div class="wep-pen-image uk-background-cover" style="background-image:url('/img/portfolio/serendipitax/seren-key.jpg')" itemprop="image" itemprop="thumbnailUrl"></div>
+            
+          </div>
+
+          <div class="wep-portfolio-avatar uk-position-top-left" itemprop="provider">
+            <img class="uk-border-circle z-depth-1" src="/img/behance/avatar.jpg" alt="Key Art" itemprop="image" />
+            <link itemprop="sameAs" href="https://www.behance.net/" />
+          </div>
+
+          <header class="wep-pen-header uk-position-bottom-left uk-padding-small" itemprop="headline" itemprop="name">
+            <h1 class="wep-pen-title">Serendipitax</h1>
+            <div itemprop="creator" itemscope itemtype="http://schema.org/Person">
+              <meta itemprop="name" content="William Pansky" />
+              <link itemprop="sameAs" href="https://www.behance.net/williampansky" />
+            </div>
+          </header>
+
+          <footer class="wep-pen-footer uk-padding-small">
+            <a href="https://www.behance.net/gallery/54194463/Serendipitax" title="Serendipitax" target="_blank" itemprop="url">View project</a>
+          </footer>
+
+        </article>
+
+      
+
+        <article class="wep-pen uk-card" itemscope itemtype="http://schema.org/CreativeWork">
+
+          <div class="wep-pen-image-container">
+            
+              <div class="wep-pen-image uk-background-cover" style="background-image:url('/img/portfolio/tungsten-wake-ep/wake-001.jpg')" itemprop="image" itemprop="thumbnailUrl"></div>
+            
+          </div>
+
+          <div class="wep-portfolio-avatar uk-position-top-left" itemprop="provider">
+            <img class="uk-border-circle z-depth-1" src="/img/behance/avatar.jpg" alt="Packaging" itemprop="image" />
+            <link itemprop="sameAs" href="https://www.behance.net/" />
+          </div>
+
+          <header class="wep-pen-header uk-position-bottom-left uk-padding-small" itemprop="headline" itemprop="name">
+            <h1 class="wep-pen-title">Self-Titled EP</h1>
+            <div itemprop="creator" itemscope itemtype="http://schema.org/Person">
+              <meta itemprop="name" content="William Pansky" />
+              <link itemprop="sameAs" href="https://www.behance.net/williampansky" />
+            </div>
+          </header>
+
+          <footer class="wep-pen-footer uk-padding-small">
+            <a href="https://www.behance.net/gallery/54194585/Tungsten-Wake-EP" title="Self-Titled EP" target="_blank" itemprop="url">View project</a>
+          </footer>
+
+        </article>
+
+      
+
+        <article class="wep-pen uk-card" itemscope itemtype="http://schema.org/CreativeWork">
+
+          <div class="wep-pen-image-container">
+            
+              <div class="wep-pen-image uk-background-cover" style="background-image:url('/img/portfolio/evol-world/EVOL-001.jpg')" itemprop="image" itemprop="thumbnailUrl"></div>
+            
+          </div>
+
+          <div class="wep-portfolio-avatar uk-position-top-left" itemprop="provider">
+            <img class="uk-border-circle z-depth-1" src="/img/behance/avatar.jpg" alt="Packaging" itemprop="image" />
+            <link itemprop="sameAs" href="https://www.behance.net/" />
+          </div>
+
+          <header class="wep-pen-header uk-position-bottom-left uk-padding-small" itemprop="headline" itemprop="name">
+            <h1 class="wep-pen-title">Evol World</h1>
+            <div itemprop="creator" itemscope itemtype="http://schema.org/Person">
+              <meta itemprop="name" content="William Pansky" />
+              <link itemprop="sameAs" href="https://www.behance.net/williampansky" />
+            </div>
+          </header>
+
+          <footer class="wep-pen-footer uk-padding-small">
+            <a href="https://www.behance.net/gallery/28656453/EVOL-World" title="Evol World" target="_blank" itemprop="url">View project</a>
+          </footer>
+
+        </article>
+
+      
+
+        <article class="wep-pen uk-card" itemscope itemtype="http://schema.org/CreativeWork">
+
+          <div class="wep-pen-image-container">
+            
+              <div class="wep-pen-image uk-background-cover" style="background-image:url('/img/portfolio/the-strangle-and-the-struggle-ep/s&amp;s-001.jpg')" itemprop="image" itemprop="thumbnailUrl"></div>
+            
+          </div>
+
+          <div class="wep-portfolio-avatar uk-position-top-left" itemprop="provider">
+            <img class="uk-border-circle z-depth-1" src="/img/behance/avatar.jpg" alt="Packaging" itemprop="image" />
+            <link itemprop="sameAs" href="https://www.behance.net/" />
+          </div>
+
+          <header class="wep-pen-header uk-position-bottom-left uk-padding-small" itemprop="headline" itemprop="name">
+            <h1 class="wep-pen-title">The Strangle and The Struggle EP</h1>
+            <div itemprop="creator" itemscope itemtype="http://schema.org/Person">
+              <meta itemprop="name" content="William Pansky" />
+              <link itemprop="sameAs" href="https://www.behance.net/williampansky" />
+            </div>
+          </header>
+
+          <footer class="wep-pen-footer uk-padding-small">
+            <a href="https://www.behance.net/gallery/15694331/The-Strangle-The-Struggle-EP" title="The Strangle and The Struggle EP" target="_blank" itemprop="url">View project</a>
+          </footer>
+
+        </article>
+
+      
+
+        <article class="wep-pen uk-card" itemscope itemtype="http://schema.org/CreativeWork">
+
+          <div class="wep-pen-image-container">
+            
+              <div class="wep-pen-image uk-background-cover" style="background-image:url('/img/portfolio/the-struggle-ep/wake-struggle-001.jpg')" itemprop="image" itemprop="thumbnailUrl"></div>
+            
+          </div>
+
+          <div class="wep-portfolio-avatar uk-position-top-left" itemprop="provider">
+            <img class="uk-border-circle z-depth-1" src="/img/behance/avatar.jpg" alt="Packaging" itemprop="image" />
+            <link itemprop="sameAs" href="https://www.behance.net/" />
+          </div>
+
+          <header class="wep-pen-header uk-position-bottom-left uk-padding-small" itemprop="headline" itemprop="name">
+            <h1 class="wep-pen-title">The Struggle EP</h1>
+            <div itemprop="creator" itemscope itemtype="http://schema.org/Person">
+              <meta itemprop="name" content="William Pansky" />
+              <link itemprop="sameAs" href="https://www.behance.net/williampansky" />
+            </div>
+          </header>
+
+          <footer class="wep-pen-footer uk-padding-small">
+            <a href="https://www.behance.net/gallery/54194697/The-Struggle-EP" title="The Struggle EP" target="_blank" itemprop="url">View project</a>
+          </footer>
+
+        </article>
+
+      
+
+    </div>
+  </div>
+</section>
+
+
+<footer class="uk-section-small">
+
+  <section class="uk-margin-medium-bottom">
+    <nav class="wep-navbar uk-navbar-container uk-navbar-transparent" uk-navbar itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="uk-navbar-center">
+    <ul class="uk-navbar-nav">
+      <li><a href="/">Projects</a></li>
+      <li><a href="/resume">Resume</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+  </section>
+
+  <section class="uk-margin-medium-bottom">
+    <div class="uk-flex uk-flex-center uk-flex-middle uk-text-center">
+      <ul class="wep-socials uk-iconnav">
+  <li>
+    <a href="https://linkedin.com/in/williampansky" class="uk-padding-small" uk-icon="icon:linkedin; ratio:1.5;">
+      
+    </a>
+  </li>
+  <li>
+    <a href="https://github.com/williampansky" class="uk-padding-small" uk-icon="icon:github; ratio:1.5;">
+      
+    </a>
+  </li>
+  <li>
+    <a href="https://www.behance.net/williampansky" class="uk-padding-small" uk-icon="icon:behance; ratio:1.5;">
+      
+    </a>
+  </li>
+</ul>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="wep-container uk-container uk-text-center">
+      <p id="copyrightFooter">
+        © <script>document.getElementById('copyrightFooter').appendChild(document.createTextNode(""+new Date().getFullYear()))</script>&nbsp;William Pansky
+      </p>
+      <p class="uk-text-small">
+        Powered by <a href="https://gohugo.io">Hugo</a> v0.25.1, <a href="https://getuikit.com">UIkit</a>, &amp; <a href="http://velocityjs.org/">VelocityJS</a>.
+      </p>
+    </div>
+  </section>
+
 </footer>
 
-<div id="old">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <p>
-          Sorry, we don't support screens below 320px.
-        </p>
-      </div>
+</main>
+
+<div id="wep-bar" class="scrolling">
+  <div class="left">
+    
+    <ul class="uk-iconnav">
+      <li>
+        <a href="" class="twitter" uk-icon="icon: twitter" title="Hello World" uk-tooltip>
+        </a>
+      </li>
+      <li>
+        <a href="" class="facebook" uk-icon="icon: facebook">
+        </a>
+      </li>
+      <li>
+        <a href="#" class="bookmark" uk-icon="icon: bookmark"></a>
+      </li>
+    </ul>
+  </div>
+  <div class="right">
+
+    <div class="mobile-menu-btn uk-hidden@s">
+      <a href="#" id="slideOut" uk-icon="icon: menu"></a>
     </div>
+
+    
+
+      
+
+      <div class="next navi uk-visible@s">
+        <nav class="wep-navbar uk-navbar-container uk-navbar-transparent" uk-navbar itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="uk-navbar-center">
+    <ul class="uk-navbar-nav">
+      <li><a href="/">Projects</a></li>
+      <li><a href="/resume">Resume</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+
+    
+
   </div>
 </div>
 
-<script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/vue-resource/1.3.4/vue-resource.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/vue-router/2.6.0/vue-router.min.js"></script>
+<div id="fader"></div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.ui.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit-icons.min.js"></script>
-<script src="/js/highlight.pack.js"></script>
+
+
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit-icons.min.js"></script>
+<script src="/js/slideout.min.js"></script>
 <script>
-$(document).ready(function() {
-  $('pre code').each(function(i, block) {
-    hljs.highlightBlock(block);
+  $('a#slideOut').on('click', function() {
+    
+    return false;
   });
 
-  hljs.configure({useBR: true});
-  $('div.code').each(function(i, block) {
-    hljs.highlightBlock(block);
+  var slideout = new Slideout({
+    'panel': document.getElementById('panel'),
+    'menu': document.getElementById('menu'),
+    'padding': 256,
+    'tolerance': 70,
+    'easing': 'cubic-bezier',
+    'side': 'right',
   });
-});
+
+  
+  function close(eve) {
+    eve.preventDefault();
+    slideout.close();
+  }
+
+  slideout
+    .on('beforeopen', function() {
+      this.panel.classList.add('panel-open');
+      $('#wep-bar').addClass('scrolling');
+    })
+    .on('open', function() {
+      this.panel.addEventListener('click', close);
+    })
+    .on('beforeclose', function() {
+      this.panel.classList.remove('panel-open');
+      this.panel.removeEventListener('click', close);
+      $('#wep-bar').removeClass('scrolling');
+    });
 </script>
-<script async src="/js/pansky.min.js"></script>
+<script>
+  
+  document
+    .querySelector('#slideOut')
+    .addEventListener('click', function() {
+      slideout.toggle();
+  });
+</script>
+<script src="/js/highlight.pack.js"></script>
+<script>
+  $(document).ready(function() {
+    $('pre code').each(function(i, block) {
+      hljs.highlightBlock(block);
+    });
+
+    hljs.configure({useBR: true});
+    $('div.code').each(function(i, block) {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+<script src="/js/app.min.js"></script>
+
 
 
 </body>
 </html>
+
 

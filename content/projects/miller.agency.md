@@ -130,7 +130,7 @@ After trying various frameworks, like [Materialize](http://materializecss.com/) 
 
 #### ii. Development – Styleguide
 
-<h6 class="uk-background-default" style="z-index: 5;" uk-sticky="top: 50; animation: uk-animation-slide-top; bottom: #ii-development-construction;">
+<h6 class="uk-background-default" style="z-index: 5;" uk-sticky="top: 50; animation: uk-animation-slide-top; bottom: #typography;">
   Colors
 </h6>
 
@@ -178,6 +178,16 @@ Note that these palettes were made using the SCSS color mixing function; for exa
     <li id="colorsWhite2" class="uk-card uk-card-body uk-card-primary">#fdfdfd</li>
   </ul>
 </ul>
+
+<h6 id="typography" class="uk-background-default" style="z-index: 5;" uk-sticky="top: 50; animation: uk-animation-slide-top; bottom: #ii-development-construction;">
+  Typography
+</h6>
+
+<div id="maaType">
+  <h1>Heading 1 &lt;h1&gt; "Hire us &amp; let's go"</h1>
+  <h2>Heading 2 &lt;h1&gt; "So you’ve just graduated from Hogwarts – congratulations!"</h2>
+  <p>This is a paragraph example; using: font: normal 16px/1.5 "Proxima Nova", Arial, sans-serif; Using the latest advances in digital marketing and advertising, including CRM targeting, geo-fencing, and digital retargeting – we can more efficiently and <strong>successfully</strong> pursue and deliver you more customers. If you’re ready for the success that comes with effective, results-driven advertising, then <span>hire us</span> and join the Miller team!</p>
+</div>
 
 #### ii. Development – Construction
 
@@ -420,10 +430,17 @@ This next section showcases the overal aesthetic and most of the key site compon
 
 <h6 class="uk-background-default" style="z-index: 5;" uk-sticky="bottom: #metro-card-end;">Metro card</h6>
 
-Using Elementor's *card hover* snippet, I designed a metro-esque component we could reuse throughout the site on top-level pages.
+Using Elementor's *flip box* snippet, I designed a metro-esque component we could reuse throughout the site on top-level pages.
 
 Here is an example of said element:
+
+<div class="uk-section">
+
 {{< project-good-maa-metroCard >}}
+
+</div>
+
+<div class="uk-section">
 
 <!-- HOMEPAGE -->
 {{< figureModal src="/img/projects/maa-website/site-homepage.jpg" title="Homepage" class="modal caption wep-box-shadow-bottom" link="siteHomepage" >}}
@@ -434,13 +451,19 @@ Here is an example of said element:
 <!-- TEAM PAGE -->
 {{< figureModal src="/img/projects/maa-website/site-teampage.jpg" title="Team page" class="modal caption wep-box-shadow-bottom" link="siteTeam" >}}
 
+</div>
+
 <div id="metro-card-end"></div>
 
 <h6 class="uk-background-default" style="z-index: 5;" uk-sticky="bottom: #header-nav-footer-mobilemenu-end;">Header, nav, footer, &amp; mobile menu</h6>
 
+<div class="uk-section">
+
 {{< centerImage src="/img/projects/maa-website/site-topNav.jpg" title="" class="" >}}
 
 {{< centerImage src="/img/projects/maa-website/site-footer.jpg" title="Desktop header & footer" class="caption wep-box-shadow-bottom" >}}
+
+</div>
 
 <div class="uk-text-center uk-position-relative uk-section">
   <img src="/img/projects/maa-website/maaMobile.gif" alt="Mobile bar &amp; nav menu" class="" style="width: 40%; position: absolute; padding: 2.1%; top: 15.5%; margin: 0 auto; z-index: 1;">
@@ -448,7 +471,11 @@ Here is an example of said element:
   <span class="caption">Mobile bar &amp; nav</span>
 </div>
 
+<div class="uk-section">
+
 {{< centerImage src="/img/projects/maa-website/site-mobileBar.jpg" title="Smartphone mobile bar" class="caption wep-box-shadow-bottom" >}}
+
+</div>
 
 <div id="header-nav-footer-mobilemenu-end"></div>
 
@@ -468,15 +495,21 @@ Here is an example of said element:
 
 
 
-<div id="ticketreporting-and-issuesupport-end"></div>
+<div id="ticketreporting-and-issuesupport-end"></div> -->
 
 <h6 class="uk-background-default" style="z-index: 5;" uk-sticky="bottom: #teammembers-and-profilepages-end;">Team members &amp; profile pages</h6>
 
+<div class="uk-margin-xlarge-bottom">
 
+{{< centerImage src="/img/projects/maa-website/site-teamSingle.jpg" title="Dynamically-updated author profiles" class="caption wep-box-shadow-bottom" >}}
+
+{{< gist williampansky 12b69c2c48fa808026dbeb25bbd2316d "author.php" >}}
+
+</div>
 
 <div id="teammembers-and-profilepages-end"></div>
 
-<h6 class="uk-background-default" style="z-index: 5;" uk-sticky="bottom: #services-end;">Services</h6>
+<!-- <h6 class="uk-background-default" style="z-index: 5;" uk-sticky="bottom: #services-end;">Services</h6>
 
 
 
@@ -490,7 +523,9 @@ Here is an example of said element:
 
 <h6 class="uk-background-default" style="z-index: 5;" uk-sticky="bottom: #singleLanding-end;">Single-item landing pages</h6>
 
-{{< centerImage src="/img/projects/maa-website/site-pandora.jpg" title="Pandora landing page" class="caption" >}}
+<div class="uk-margin-xlarge-bottom">
+  {{< centerImage src="/img/projects/maa-website/site-pandora.jpg" title="Pandora landing page" class="caption" >}}
+</div>
 
 <div id="singleLanding-end"></div>
 

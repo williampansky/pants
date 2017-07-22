@@ -2,6 +2,7 @@
 draft = true
 title = "TheLunch.info"
 description = "Complete overhaul of branding guidelines and website for the Dallas branch of Goodwill."
+avatar = "/img/behance/avatar.jpg"
 keywords = [ "goodwill", "dallas", "the lunch", "landing page" ]
 featured = "/img/portfolio/thelunch2017/featured.jpg"
 image = "/img/portfolio/thelunch2017/featured.jpg"

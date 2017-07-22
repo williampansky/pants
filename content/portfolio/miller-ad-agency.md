@@ -2,6 +2,7 @@
 draft = true
 title = "Agency Work"
 description = "Complete overhaul of branding guidelines and website for the Dallas branch of Goodwill."
+avatar = "/img/behance/avatar.jpg"
 keywords = [ "goodwill", "dallas", "non profit", "npo" ]
 featured = "/img/portfolio/miller-ad-agency/featured.jpg"
 image = "/img/portfolio/miller-ad-agency/maa-m.jpg"
@@ -11,6 +12,9 @@ client = "Miller Ad Agency"
 category = "Employment"
 project = "Learn the ways of agency life."
 execution = "I have no idea. Honestly. Life is crazy, man."
+
+link = "https://www.behance.net/gallery/54194937/Automotive-Advertising"
+same = "https://www.behance.net/"
 +++
 
 [Miller Ad Agency](http://milleradagency.com), since 1984, has, _"...earned a reputation as experts in digital and traditional advertising-"_ as a full-service suite; everything from account execs to video editors, from media buyers to creatives (that's where I fit in here).

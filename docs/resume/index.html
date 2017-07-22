@@ -10,7 +10,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,IE=11">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
-<meta name="generator" content="Hugo 0.23" />
+<meta name="generator" content="Hugo 0.25.1" />
 
 <meta name="description" content="Dallas, TX; Graphic designer &amp; aspiring front-end webdev.">
 <meta name="keywords" content="william pansky, web development, graphic design, dallas">
@@ -34,7 +34,7 @@
 <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#303030">
-<meta name="theme-color" content="#f76708">
+<meta name="theme-color" content="#0076D6">
 
 
 
@@ -50,16 +50,10 @@
 
   	
   	
+<link href="//cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/css/uikit.min.css" rel="stylesheet">
 
 
-
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/css/uikit.min.css" />
-
-
-<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700|Source+Sans+Pro:400,400i,700,700i" rel="stylesheet">
-
-
-<link rel="stylesheet" href="/css/atom-one-dark.css">
+<link href="//fonts.googleapis.com/css?family=Lato:700|Lora:400,400i,700,700i" rel="stylesheet">
 
 
 <link rel="stylesheet" href="/css/pants.min.css">
@@ -67,12 +61,12 @@
 
   	
     <script>
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='https://www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-25458964-1','auto');ga('send','pageview');
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-25458964-1','auto');ga('send','pageview');
     </script>
 
   	<!--[if lt IE 11]>
@@ -97,389 +91,332 @@
       }
     </style>
   </head>
-  <body>
+  <body class="noscroll">
 
   	<!--[if lt IE 11]>
   	<p class="chromeframe">You are using an <strong>outdated browser</strong>. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   	<![endif]-->
 
-    <header class="uk-navbar-container uk-margin-large-bottom uk-offcanvas-content uk-hidden@m pansky-nav" uk-sticky>
-      <nav class="uk-container" uk-navbar>
-        <div class="uk-navbar-left">
-          <a class="uk-navbar-item uk-logo" href="/">William Pansky</a>
+    <div id="loader" class="uk-width-1-1 uk-background-default uk-flex uk-flex-center uk-flex-middle" style="box-sizing:border-box; width:100vw; min-width:100vw; height:100vh; min-height:100vh; opacity:1; display:flex; text-align:center; padding:30px; position:fixed; top:0; right:0; bottom:0; left:0; z-index:999; background: #fff; background-color:#fff;">
+      
+    </div>
+
+    <nav id="menu">
+      <header class="uk-text-center">
+        <div class="uk-padding-small uk-padding-remove-bottom">
+          <img class="uk-border-circle" src="/apple-touch-icon.png" alt="William Pansky's illustrated avatar" style="max-width:85px;">
         </div>
-        <div class="uk-navbar-right">
-          <ul class="uk-navbar-nav uk-visible@m">
-              <li class="uk-active"><a href="/">Projects</a></li>
-              <li><a href="/resume">Resume</a></li>
-              <li><a href="/contact">Contact</a></li>
-          </ul>
-          <a uk-navbar-toggle-icon="" href="#offcanvas" uk-toggle="target: #offcanvas" class="uk-navbar-toggle uk-hidden@m uk-navbar-toggle-icon uk-icon"></a></div>
+        <div class="uk-padding-small">
+          <p>William Pansky</p>
+          <p class="uk-text-small">Currently working as a front-end developer on the digital experience team at Sabre Corporation.</p>
         </div>
-    	</nav>
-    </header>
-
-    
-
-    <main class="uk-offcanvas-content" itemscope itemtype="http://schema.org/Person">
-
-
-
-
-<aside id="offcanvas" class="tm-sidebar-left" uk-offcanvas="overlay: true">
-  <div class="uk-offcanvas-bar">
-    <ul uk-scrollspy-nav="closest: li; scroll: true; offset: 90" class="uk-nav uk-nav-default tm-nav uk-nav-parent-icon">
-      <header id="navHeader" class="uk-box-shadow-medium" style="background:url('/pansky-offcanvas-header.jpg') no-repeat center center; background-size: cover; overflow: hidden;" tabindex="-1"><a href="/"></a></header>
-
-<section class="pansky-offcanvas-section">
-  <h3 class="pansky-project-list-title"><a href="/">William Pansky</a></h3>
-  <p class="uk-margin-remove-top uk-margin-small-bottom">Front-end web developer and graphic designer with ability to solve complex website interface problems through creative and UX-minded solutions.</p>
-  <ul class="uk-nav uk-nav-primary uk-margin-auto-vertical uk-flex uk-flex-between uk-text-center uk-flex-nowrap">
-    <li><a href="/">
-      <span uk-icon="icon: bolt" class="uk-icon"></span><br />
-      Projects</a>
-    </li>
-    <li><a href="/resume">
-      <span uk-icon="icon: copy" class="uk-icon"></span><br />
-      Resume</a>
-    </li>
-    <li><a href="/contact">
-      <span uk-icon="icon: mail" class="uk-icon"></span><br />
-      Contact</a>
-    </li>
-  </ul>
-</section>
-
-<hr />
-<section class="pansky-offcanvas-section">
-  
-<section class="uk-container uk-margin-large-bottom">
-  <h2 class="uk-text-bold">Projects</h2>
-  <ul class="uk-list uk-list-divider uk-list-large pansky-project-list">
-    <li>
-      <h3 class="pansky-project-list-title"><a href="/projects/thelunch.info/">
-        thelunch.info
-      </a></h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        GoHugo.io stand-alone site for Goodwill Dallas' annual fundraising event, THE LUNCH.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title"><a href="/projects/pansky-boilerplate/">
-        Pansky Boilerplate
-      </a></h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        Simple boilerplate repo for how I generally organize my project assets; installable via Bower CLI.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title"><a href="/projects/goodwilldallas.org/">
-        goodwilldallas.org
-      </a></h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        DNN website for the Dallas branch of national NPO, Goodwill Industries.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title">
-        miller.agency
-      </h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        Wordpress website for Dallas full-service ad agency, Miller Ad Agency. <em>(Case study coming soon; view the <a href="/projects/miller.agency/demo" target="_blank" class="pansky-link-external" title="Opens new tab" uk-tooltip>local static version</a>)</em> of the project.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title"><a href="https://www.behance.net/williampansky" target="_blank" class="pansky-link-external" class="pansky-link-external" title="Opens new tab" uk-tooltip>
-        Graphic design projects
-      </a></h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        A plethora of designs hosted externally on my <span uk-icon="icon: behance; ratio: .75"></span> Behance profile.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title">
-        illusiveapparel.website
-      </h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        Wordpress website powered by WooCommerce for Dallas apparel boutique. <em>(Case study coming soon; view the <a href="/projects/illusiveapparel.website/demo" target="_blank" class="pansky-link-external" title="Opens new tab" uk-tooltip>local static version</a>)</em> of the project.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title">
-        giftwrapcreations.com
-      </h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        Wordpress website for Dallas gift wrapping artist, Anita Ivancevic. <em>(Case study coming soon; view the <a href="/projects/giftwrapcreations.com/demo" target="_blank" class="pansky-link-external" title="Opens new tab" uk-tooltip>local static version</a>)</em> of the project.
-      </p>
-    </li>
-  </ul>
-</section>
-
-<section class="uk-container uk-margin-large-bottom" id="github">
-
-</section>
-
-</section>
-
+      </header>
+      <nav class="wep-navbar uk-navbar-container uk-navbar-transparent" uk-navbar itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="uk-navbar-center">
+    <ul class="uk-navbar-nav">
+      <li><a href="/">Projects</a></li>
+      <li><a href="/resume">Resume</a></li>
+      <li><a href="/contact">Contact</a></li>
     </ul>
   </div>
+</nav>
 
-</aside>
+      <ul class="wep-socials uk-iconnav">
+  <li>
+    <a href="https://linkedin.com/in/williampansky" class="uk-padding-small" uk-icon="icon:linkedin; ratio:1.5;">
+      
+    </a>
+  </li>
+  <li>
+    <a href="https://github.com/williampansky" class="uk-padding-small" uk-icon="icon:github; ratio:1.5;">
+      
+    </a>
+  </li>
+  <li>
+    <a href="https://www.behance.net/williampansky" class="uk-padding-small" uk-icon="icon:behance; ratio:1.5;">
+      
+    </a>
+  </li>
+</ul>
+
+    </nav>
+
+    
+    <main id="panel">
 
 
-<article class="uk-margin-large-bottom pansky-resume">
-  <header class="uk-container uk-margin-large-bottom uk-section uk-section-small" id="#resume">
-    <h1 class="uk-article-title uk-text-bold">William Pansky</h1>
-    <h5 class="uk-text-muted">Front-end Web Development   |  Web Design   |  UI &amp; UX   |  Graphic Design</h5>
-    <p class="uk-text-lead">Front-end web developer and graphic designer with ability to solve complex website interface problems through creative and UX-minded solutions.</p>
-    <div class="uk-tile uk-tile-muted uk-padding-small uk-margin-small-bottom">
-      <dl class="uk-description-list pansky-resume-skillslist">
-        <dt><strong>Technical skills</strong></dt>
-        <dd>HTML5, CSS3, &amp; JavaScript</dd>
-        <dd>Gulp.js CLI Build Toolkit</dd>
-        <dd>Adobe CC; Photoshop, Illustrator, InDesign, Adobe XD, Dreamweaver, Typekit</dd>
-        <dd>SCSS/SASS (CSS Preprocessor)</dd>
-        <dd>Babel.js JavaScript Compiler</dd>
-        <dd>jQuery, jQuery UI, Velocity.js, VelocityUI.js</dd>
-        <dd>PostCSS Compiler Toolkit</dd>
-        <dd>Microsoft Office Suite</dd>
-        <dd>macOS Terminal Cdd (iTerm2)</dd>
-        <dd>Front-end Frameworks; Bootstrap v4, UIkit, Materiaddze.css</dd>
-        <dd>Wordpress PHP</dd>
-        <dd>.Net (DNN)</dd>
-        <dd>GetGrav.org CMS</dd>
-        <dd>GoHugo.io Static-Site Generator</dd>
-      </dl>
+<section class="uk-section uk-text-center@l uk-flex@l uk-flex-center@l uk-flex-middle@l">
+  <div class="uk-container" itemscope itemtype="http://schema.org/Person" style="max-width:640px;">
+    <h1 class="uk-heading-primary" itemprop="name" content="William Pansky">William Pansky</h1>
+    <p class="uk-text-lead" style="margin-bottom:8px;" itemprop="description">Front-end web developer and graphic designer with ability to solve complex website interface problems through creative and UX-minded solutions.</p>
+    
+    <div class="uk-flex uk-flex-center@l uk-flex-middle@l uk-text-center@l">
+      <nav class="wep-navbar uk-navbar-container uk-navbar-transparent" uk-navbar itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="uk-navbar-center">
+    <ul class="uk-navbar-nav">
+      <li><a href="/">Projects</a></li>
+      <li><a href="/resume">Resume</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
     </div>
-    <p><a href="/contact" class="uk-button uk-button-primary" id="resumeContact">Contact William</a></p>
-  </header>
-  <section class="uk-container uk-margin-large-bottom">
-    <div>
-      <h2 class="uk-text-bold uk-margin-small-bottom">Graphic Designer &amp; Front-end Web Developer</h2>
-      <h4 class="uk-margin-remove uk-h4">Miller Ad Agency</h4>
-      <p class="uk-text-meta uk-margin-remove">JUN 2014–PRESENT (3yr, 1mo) – Dallas, TX</p>
-      <p class="uk-text-meta uk-margin-remove"><em>Full-service advertising agency.</em></p>
-      <ul class="uk-list uk-list-divider uk-text-small">
-        <li>
-          Constructed developmental workflow systems for proper SemVer codebase management using industry-standard build tools and software, including:
-          <ul class="uk-nav pansky-resume-sublist">
-            <li>SCSS/SASS.</li>
-            <li>PostCSS.</li>
-            <li>Gulp.</li>
-            <li>Babel.</li>
-            <li>Git &amp; GitHub.</li>
-          </ul>
-        </li>
-        <li>
-          Deployed Wordpress websites using popular plugins, like WooCommerce and Elementor Page Builder. Assembled projects with custom PHP code and Wordpress syntax for efficient ecosystems, including:
-          <ul class="uk-nav pansky-resume-sublist">
-            <li>Conditional style and script enqueuing.</li>
-            <li>Dynamically-updated author profiles.</li>
-            <li>Custom post taxonomies.</li>
-          </ul>
-        </li>
-        <li>Instructed intra-agency training for team members on WordPress CMS content design, creation, and publishing.</li>
-        <li>Played key role in the redesign, development, and launch of GoodwillDallas.org on DotNetNuke; an open-source CMS based on Microsoft’s ASP.NET platform.</li>
-        <li>
-          Designed advertising projects in alignment with account executives, task-specific guidelines, and customer priorities.
-          <ul class="uk-nav pansky-resume-sublist">
-            <li>Web and retargeting banners.</li>
-            <li>Email marketing, direct mail, print materials, billboards, and newspapers.</li>
-            <li>Logos, branding, and style-guides.</li>
-            <li>Online video and on-air television graphics.</li>
-          </ul>
-        </li>
-        <li>Researched and implemented new cloud-based to-do tracking system, thereby reducing creative team errors and increasing productivity.</li>
-      </ul>
+    
+  </div>
+</section>
+
+
+<section class="wep-container uk-container uk-margin-large-bottom">
+  <div class="wep-resume">
+    
+
+<h2 id="graphic-designer-front-end-web-developer">Graphic designer &amp; front-end web developer</h2>
+
+<h4 id="miller-ad-agency">Miller Ad Agency</h4>
+
+<p>JUN 2014–JUL 2017 (3.2yr) — Dallas, TX</p>
+
+<p><em>Full-service advertising agency.</em></p>
+
+<ul>
+<li>Constructed developmental workflow systems for proper SemVer codebase management using industry-standard build tools and software, including: SCSS/SASS, PostCSS, Gulp, Babel, &amp; Git.</li>
+<li>Deployed Wordpress websites using popular plugins, like WooCommerce and Elementor Page Builder. Assembled projects with custom PHP code and Wordpress syntax for efficient ecosystems, including: conditional style and script enqueuing, dynamically-updated author profiles, custom post taxonomies, etc.</li>
+<li>Instructed intra-agency training for team members on WordPress CMS content design, creation, and publishing.</li>
+<li>Played key role in the redesign, development, and launch of GoodwillDallas.org on DotNetNuke; an open-source CMS based on Microsoft’s ASP.NET platform.</li>
+<li>Designed advertising projects in alignment with account executives, task-specific guidelines, and customer priorities; including, but not limited to: web and retargeting banners, email marketing, direct mail, print materials, billboards, and newspapers, logos, branding, and style-guides, online video and on-air television graphics.</li>
+<li>Researched and implemented new cloud-based to-do tracking system, thereby reducing creative team errors and increasing productivity.</li>
+</ul>
+
+<h2 id="graphic-designer">Graphic Designer</h2>
+
+<h4 id="one-world-sports">ONE World Sports</h4>
+
+<p>OCT 2010–MAR 2014 (3.6yr) — Fort Worth, TX</p>
+
+<p><em>Multi-channel television corporation bringing top sports from overseas to the US.</em></p>
+
+<ul>
+<li>Created multi-page direct mailers, posters, web materials, and more for ONE World Sports’ cable launch on DISH Network, Mediacomm, and Optimum TV.</li>
+<li>Directed and developed the ONE World Sports website redesign with Wordpress CMS platform in collaboration with marketing to meet the deadlines of social media and blogging.</li>
+<li>Constructed banners, graphics, and additional elements for all the websites under the parent company, ONE Media Corp.</li>
+<li>Served as key member of team in launching  promotional assets for the AFC Asian Cup Qatar 2011; an event aired on US national television.</li>
+<li>Designed materials promoting ONE CONNXT in annual national and international trade-shows; including Dubai&rsquo;s CABSAT, Singapore&rsquo;s CommunicAsia, and Europe&rsquo;s IBC.</li>
+</ul>
+
+<h2 id="founder-writer-editor-podcast-host">Founder, Writer, Editor, Podcast Host</h2>
+
+<h4 id="the-nerdemic">The Nerdemic</h4>
+
+<p>NOV 2009–NOV 2011 (2yr) — Local &amp; Remote</p>
+
+<p><em>Video game editorial and news website I created late 2009; starting out as a simple weekly audio podcast and evolving into a 10+ contributor blog.</em></p>
+
+<ul>
+<li>Managed contributing freelance writers and edited their work prior to publication.</li>
+<li>Covered local industry events; such as the Fantastic Arcade and Texas Pinball Festival.</li>
+<li>Scheduled, hosted, and recorded a weekly industry-focused podcast.</li>
+<li>Crafted and deployed The Nerdemic’s visual branding and website.</li>
+<li>Managed website traffic and SEO operations.</li>
+</ul>
+
+<h2 id="graphic-designer-1">Graphic Designer</h2>
+
+<h4 id="blue-moose-tees">Blue Moose Tees</h4>
+
+<p>OCT 2009 – JUN 2010 (9mo) — Arlington, TX</p>
+
+<p><em>Design, print, and production apparel shop.</em></p>
+
+<ul>
+<li>Managed company’s online portfolio.</li>
+<li>Designed client-specific graphic t-shirt orders ready for print.</li>
+<li>Recreated low-resolution and pixelated high school logos in Illustrator for use.</li>
+</ul>
+
+<h2 id="education">Education</h2>
+
+<h4 id="westwood-college">Westwood College</h4>
+
+<p>NOV 2008–OCT 2009</p>
+
+<p><em>Associate’s degree, Graphic Design &amp; Multimedia.</em></p>
+
+  </div>
+</section>
+
+<footer class="uk-section-small">
+
+  <section class="uk-margin-medium-bottom">
+    <nav class="wep-navbar uk-navbar-container uk-navbar-transparent" uk-navbar itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="uk-navbar-center">
+    <ul class="uk-navbar-nav">
+      <li><a href="/">Projects</a></li>
+      <li><a href="/resume">Resume</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+  </section>
+
+  <section class="uk-margin-medium-bottom">
+    <div class="uk-flex uk-flex-center uk-flex-middle uk-text-center">
+      <ul class="wep-socials uk-iconnav">
+  <li>
+    <a href="https://linkedin.com/in/williampansky" class="uk-padding-small" uk-icon="icon:linkedin; ratio:1.5;">
+      
+    </a>
+  </li>
+  <li>
+    <a href="https://github.com/williampansky" class="uk-padding-small" uk-icon="icon:github; ratio:1.5;">
+      
+    </a>
+  </li>
+  <li>
+    <a href="https://www.behance.net/williampansky" class="uk-padding-small" uk-icon="icon:behance; ratio:1.5;">
+      
+    </a>
+  </li>
+</ul>
+
     </div>
   </section>
-  <section class="uk-container uk-margin-large-bottom">
-    <div>
-      <h2 class="uk-text-bold uk-margin-small-bottom">Graphic Designer</h2>
-      <h4 class="uk-margin-remove uk-h4">ONE World Sports</h4>
-      <p class="uk-text-meta uk-margin-remove">OCT 2010–MAR 2014 (3yr, 6mo) – Fort Worth, TX</p>
-      <p class="uk-text-meta uk-margin-remove"><em>Multi-channel television corporation bringing top sports from overseas to the US.</em></p>
-      <ul class="uk-list uk-list-divider uk-text-small">
-        <li>Developed multi-page direct mailers, posters, web materials, and more for ONE World Sports’ cable launch on DISH Network, Mediacomm, and Optimum TV.</li>
-        <li>Created striking visual advertising posters for featured television sports programs.</li>
-        <li>Constructed banners, graphics, and additional elements for all the websites under the parent company, ONE Media Corp, Inc.</li>
-        <li>Worked directly on material for inDemand for the AFC Asian Cup Qatar 2011; an event aired on US national television.</li>
-        <li>Designed materials promoting ONE CONNXT in annual national and international trade-shows; including Dubai's CABSAT, Singapore's CommunicAsia, and Europe's IBC.</li>
-      </ul>
+
+  <section>
+    <div class="wep-container uk-container uk-text-center">
+      <p id="copyrightFooter">
+        © <script>document.getElementById('copyrightFooter').appendChild(document.createTextNode(""+new Date().getFullYear()))</script>&nbsp;William Pansky
+      </p>
+      <p class="uk-text-small">
+        Powered by <a href="https://gohugo.io">Hugo</a> v0.25.1, <a href="https://getuikit.com">UIkit</a>, &amp; <a href="http://velocityjs.org/">VelocityJS</a>.
+      </p>
     </div>
   </section>
-  
-  <section class="uk-container uk-margin-large-bottom">
-    <div>
-      <h2 class="uk-text-bold uk-margin-small-bottom">Founder, Writer, Editor, Podcast Host</h2>
-      <h4 class="uk-margin-remove uk-h4">The Nerdemic</h4>
-      <p class="uk-text-meta uk-margin-remove">NOV 2009–NOV 2011 (2yr) – Local &amp; Remote</p>
-      <p class="uk-text-meta uk-margin-remove"><em>Video game editorial website with weekly podcast &amp; 10+ contributors; 2009.</em></p>
-      <ul class="uk-list uk-list-divider uk-text-small">
-        <li>Published video game editorial articles, reviews, and news.</li>
-        <li>Managed contributing freelance writers and edited their work prior to publication.</li>
-        <li>Covered local industry events; such as the Fantastic Arcade and Texas Pinball Festival.</li>
-        <li>Scheduled, hosted, and recorded a weekly industry-focused podcast.</li>
-        <li>Crafted and deployed The Nerdemic’s visual branding and website.</li>
-        <li>Manage website traffic and SEO operations.</li>
-      </ul>
-    </div>
-  </section>
-  <section class="uk-container uk-margin-large-bottom">
-    <div>
-      <h2 class="uk-text-bold uk-margin-small-bottom">Graphic Designer</h2>
-      <h4 class="uk-margin-remove uk-h4">Blue Moose Tees</h4>
-      <p class="uk-text-meta uk-margin-remove">OCT 2009–JUN 2010 (9mo) – Arlington, TX – Design, print, and production apparel shop.</p>
-      <p class="uk-text-meta uk-margin-remove"><em>Video game editorial website with weekly podcast &amp; 10+ contributors; 2009.</em></p>
-      <ul class="uk-list uk-list-divider uk-text-small">
-        <li>Was responsible for managing and updating  company’s online portfolio.</li>
-        <li>Designed client-specific graphic t-shirt orders ready for print.</li>
-        <li>Recreated low-resolution and pixelated high school logos in Illustrator for use.</li>
-      </ul>
-    </div>
-  </section>
-  <section class="uk-container uk-margin-large-bottom">
-    <div class="uk-margin-medium-bottom">
-      <h2 class="uk-text-bold uk-margin-small-bottom">Education</h2>
-      <h4 class="uk-margin-remove uk-h4">freeCodeCamp</h4>
-      <p class="uk-text-meta uk-margin-remove">JAN 2017–(exp.)JAN 2018 – <a href="https://www.freecodecamp.com/williampansky" target="_blank" class="pansky-link-external" title="Opens new tab" uk-tooltip>fCC Profile</a></p>
-      <p class="uk-text-meta uk-margin-remove">Earning <em>Front End Development Certificate</em></p>
-    </div>
-    <div>
-      <h4 class="uk-margin-remove uk-h4">Westwood College</h4>
-      <p class="uk-text-meta uk-margin-remove">NOV 2008–OCT 2009 – Fort Worth, TX</p>
-      <p class="uk-text-meta uk-margin-remove"><em>Associate’s Degree, Graphic Design &amp; Multimedia.</em></p>
-    </div>
-  </section>
-</article>
+
+</footer>
 
 </main>
 
-<footer class="uk-offcanvas-content pansky-project">
-  <section class="uk-container uk-margin-large-bottom">
-    <hr class="uk-nav-divider-small"></hr>
-    <ul class="uk-iconnav uk-flex-around pansky-social">
-  <li><a href="https://linkedin.com/in/williampansky" target="_blank" title="Opens new tab" uk-tooltip uk-icon="icon: linkedin; ratio: 1.5"></a></li>
-  <li><a href="https://github.com/williampansky" target="_blank" title="Opens new tab" uk-tooltip uk-icon="icon: github; ratio: 1.5"></a></li>
-  <li><a href="https://www.behance.net/williampansky" target="_blank" title="Opens new tab" uk-tooltip uk-icon="icon: behance; ratio: 1.5"></a></li>
-</ul>
-
-  </section>
-  <section class="uk-container">
+<div id="wep-bar" class="scrolling">
+  <div class="left">
     
-<section class="uk-container uk-margin-large-bottom">
-  <h2 class="uk-text-bold">Projects</h2>
-  <ul class="uk-list uk-list-divider uk-list-large pansky-project-list">
-    <li>
-      <h3 class="pansky-project-list-title"><a href="/projects/thelunch.info/">
-        thelunch.info
-      </a></h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        GoHugo.io stand-alone site for Goodwill Dallas' annual fundraising event, THE LUNCH.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title"><a href="/projects/pansky-boilerplate/">
-        Pansky Boilerplate
-      </a></h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        Simple boilerplate repo for how I generally organize my project assets; installable via Bower CLI.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title"><a href="/projects/goodwilldallas.org/">
-        goodwilldallas.org
-      </a></h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        DNN website for the Dallas branch of national NPO, Goodwill Industries.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title">
-        miller.agency
-      </h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        Wordpress website for Dallas full-service ad agency, Miller Ad Agency. <em>(Case study coming soon; view the <a href="/projects/miller.agency/demo" target="_blank" class="pansky-link-external" title="Opens new tab" uk-tooltip>local static version</a>)</em> of the project.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title"><a href="https://www.behance.net/williampansky" target="_blank" class="pansky-link-external" class="pansky-link-external" title="Opens new tab" uk-tooltip>
-        Graphic design projects
-      </a></h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        A plethora of designs hosted externally on my <span uk-icon="icon: behance; ratio: .75"></span> Behance profile.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title">
-        illusiveapparel.website
-      </h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        Wordpress website powered by WooCommerce for Dallas apparel boutique. <em>(Case study coming soon; view the <a href="/projects/illusiveapparel.website/demo" target="_blank" class="pansky-link-external" title="Opens new tab" uk-tooltip>local static version</a>)</em> of the project.
-      </p>
-    </li>
-    <li>
-      <h3 class="pansky-project-list-title">
-        giftwrapcreations.com
-      </h3>
-      <p class="uk-text-meta pansky-project-list-description">
-        Wordpress website for Dallas gift wrapping artist, Anita Ivancevic. <em>(Case study coming soon; view the <a href="/projects/giftwrapcreations.com/demo" target="_blank" class="pansky-link-external" title="Opens new tab" uk-tooltip>local static version</a>)</em> of the project.
-      </p>
-    </li>
-  </ul>
-</section>
+    <ul class="uk-iconnav">
+      <li>
+        <a href="" class="twitter" uk-icon="icon: twitter" title="Hello World" uk-tooltip>
+        </a>
+      </li>
+      <li>
+        <a href="" class="facebook" uk-icon="icon: facebook">
+        </a>
+      </li>
+      <li>
+        <a href="#" class="bookmark" uk-icon="icon: bookmark"></a>
+      </li>
+    </ul>
+  </div>
+  <div class="right">
 
-<section class="uk-container uk-margin-large-bottom" id="github">
-
-</section>
-
-  </section>
-  <section class="uk-container uk-text-small uk-flex uk-flex-between">
-    <span class="uk-margin-small-bottom" id="copyrightFooter">
-      © <script>document.getElementById('copyrightFooter').appendChild(document.createTextNode(""+new Date().getFullYear()))</script>&nbsp;William Pansky.
-    </span>
-    <span>
-      Powered by <a href="https://gohugo.io" target="_blank" class="pansky-link-external" title="Opens new tab" uk-tooltip>Hugo</a>.
-    </span>
-  </section>
-</footer>
-
-<div id="old">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <p>
-          Sorry, we don't support screens below 320px.
-        </p>
-      </div>
+    <div class="mobile-menu-btn uk-hidden@s">
+      <a href="#" id="slideOut" uk-icon="icon: menu"></a>
     </div>
+
+    
+
+      
+
+      <div class="next navi uk-visible@s">
+        <nav class="wep-navbar uk-navbar-container uk-navbar-transparent" uk-navbar itemscope itemtype="http://schema.org/SiteNavigationElement">
+  <div class="uk-navbar-center">
+    <ul class="uk-navbar-nav">
+      <li><a href="/">Projects</a></li>
+      <li><a href="/resume">Resume</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+
+    
+
   </div>
 </div>
 
-<script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/vue-resource/1.3.4/vue-resource.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/vue-router/2.6.0/vue-router.min.js"></script>
+<div id="fader"></div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.ui.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.22/js/uikit-icons.min.js"></script>
-<script src="/js/highlight.pack.js"></script>
+
+
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit-icons.min.js"></script>
+<script src="/js/slideout.min.js"></script>
 <script>
-$(document).ready(function() {
-  $('pre code').each(function(i, block) {
-    hljs.highlightBlock(block);
+  $('a#slideOut').on('click', function() {
+    
+    return false;
   });
 
-  hljs.configure({useBR: true});
-  $('div.code').each(function(i, block) {
-    hljs.highlightBlock(block);
+  var slideout = new Slideout({
+    'panel': document.getElementById('panel'),
+    'menu': document.getElementById('menu'),
+    'padding': 256,
+    'tolerance': 70,
+    'easing': 'cubic-bezier',
+    'side': 'right',
   });
-});
+
+  
+  function close(eve) {
+    eve.preventDefault();
+    slideout.close();
+  }
+
+  slideout
+    .on('beforeopen', function() {
+      this.panel.classList.add('panel-open');
+      $('#wep-bar').addClass('scrolling');
+    })
+    .on('open', function() {
+      this.panel.addEventListener('click', close);
+    })
+    .on('beforeclose', function() {
+      this.panel.classList.remove('panel-open');
+      this.panel.removeEventListener('click', close);
+      $('#wep-bar').removeClass('scrolling');
+    });
 </script>
-<script async src="/js/pansky.min.js"></script>
+<script>
+  
+  document
+    .querySelector('#slideOut')
+    .addEventListener('click', function() {
+      slideout.toggle();
+  });
+</script>
+<script src="/js/highlight.pack.js"></script>
+<script>
+  $(document).ready(function() {
+    $('pre code').each(function(i, block) {
+      hljs.highlightBlock(block);
+    });
+
+    hljs.configure({useBR: true});
+    $('div.code').each(function(i, block) {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+<script src="/js/app.min.js"></script>
+
 
 
 </body>
 </html>
+
 

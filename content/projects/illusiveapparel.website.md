@@ -4,7 +4,7 @@ publishDate = "2017-06-13"
 Lastmod = "2017-07-15"
 keywords = [ "wordpress", "woocommerce", "dallas", "apparel" ]
 
-avatar = "/projects/illusiveapparel.website/demo/wp-content/uploads/2017/06/ilsv-logo-png.png"
+avatar = "/img/projects/ilsv-website/ilsv-avatar.jpg"
 tag = "Wordpress"
 client = "Illusive Apparel Worldwide"
 image = "/projects/illusiveapparel.website/demo/wp-content/uploads/2017/06/ilsv-home-hero-woman-holding-staff.jpg"

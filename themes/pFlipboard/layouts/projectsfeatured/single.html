@@ -1,0 +1,89 @@
+{{ partial "header" . }}
+
+<span id="readingProgress"></span>
+
+<nav id="mainNav" class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <div class="uk-navbar-left">
+    <h2 class="uk-navbar-item"><a href="/" class="uk-navbar-item uk-logo">William Pansky</a></h2>
+  </div>
+  <div class="uk-navbar-right uk-visible@s">
+    <ul class="uk-navbar-nav">
+      {{ partial "nav" }}
+    </ul>
+  </div>
+</nav>
+
+<article class="wep-article uk-article uk-section-small">
+  <header class="uk-container uk-container-small">
+
+    {{ if (isset .Params "avatar") | and (isset .Params "client") | and (isset .Params "clientdescription") }}
+      <div class="top">
+        <img src="{{ .Params.avatar }}" class="avatar" alt="{{ .Params.client }}">
+        <div class="client uk-text-meta">
+          <p>{{ .Params.client }}</p>
+          <p>{{ .Params.clientdescription }}</p>
+        </div>
+      </div>
+    {{ end }}
+
+    <h1>{{ .Title }}</h1>
+
+    {{ if (isset .Params "name") | and (isset .Params "tag") }}
+      <p class="uk-text-lead uk-margin-bottom">
+        {{ .Params.category }} / {{ .Params.name }}
+      </p>
+    {{ end }}
+
+    <p class="info uk-article-meta uk-margin-small-bottom" style="font-size:12px;">
+      Published on <time>{{ .PublishDate.Format "January 2, 2006" }}</time>. Last modified on <time>{{ .Lastmod.Format "January 2, 2006" }}</time>.
+    </p>
+
+    <p class="info uk-article-meta" style="font-size:12px;">
+      <strong>{{ .ReadingTime }} minute read.</strong> Word count: {{ .WordCount  }}.
+    </p>
+
+  </header>
+
+  {{ if (isset .Params "image") and (isset .Params "caption") }}
+    <section class="hero uk-section-small uk-padding-remove-bottom">
+      <figure class="caption caption-uk-box-shadow-medium">
+        <img src="{{ .Params.image }}" alt="{{ .Params.client }}">
+          <figcaption>
+            <h4>{{ .Params.caption }}</h4>
+          </figcaption>
+      </figure>
+    </section>
+  {{ end }}
+
+  <section class="content uk-section-small">
+    <div class="wep-container uk-container">
+      {{ .Content }}
+    </div>
+  </section>
+
+  {{ if isset .Params "footer" }}
+    <footer class="uk-section-small">
+      <div class="wep-container uk-container">
+        {{ .Params.footer }}
+      </div>
+    </footer>
+  {{ end }}
+
+  {{/* <aside id="tableContents" class="wep-article-nav">
+    <nav class="">
+      <div class="uk-grid-collapse uk-child-width-1-1 uk-flex-middle" uk-grid>
+      <div class="wep-project-image-container uk-height-medium uk-box-shadow-small">
+        <div class="wep-project-image uk-background-cover z-depth-3" style="background-image:url('{{ .Params.image }}')"></div>
+      </div>
+      <div class="uk-padding">
+        <h4><a href="#deployment">{{ .Params.title }}</a></h4>
+        <ul class="uk-nav">
+          {{ .TableOfContents }}
+        </ul>
+      </div>
+    </nav>
+  </aside> */}}
+
+</article>
+
+{{ partial "footer" . }}

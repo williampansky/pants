@@ -5,56 +5,43 @@
 // ==============================================================
 
 // ==============================================================
-//
 // # TRANSITIONS
-//
 // ==============================================================
-$transition-ease-fast:                  100ms ease-in-out;
-$transition-ease-normal:                300ms ease-in-out;
-$transition-ease-slow:                  600ms ease-in-out;
-$transition-ease-slower:                900ms ease-in-out;
+$transition-ease-fast:    100ms ease-in-out;
+$transition-ease-normal:  300ms ease-in-out;
+$transition-ease-slow:    600ms ease-in-out;
+$transition-ease-slower:  900ms ease-in-out;
 
 
 
 
 // ==============================================================
-//
 // # SHADOWS
 // https://codepen.io/sdthornton/pen/wBZdXq
-//
 // ==============================================================
-$shadow-material-depth-1:               0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-$shadow-material-depth-2:               0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-$shadow-material-depth-3:               0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-$shadow-material-depth-4:               0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-$shadow-material-depth-5:               0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-$shadow-material-depth-6:               0 23px 38px rgba(0,0,0,0.30), 0 19px 12px rgba(0,0,0,0.22);
-$shadow-material-transition:            all 0.3s cubic-bezier(.25,.8,.25,1);
+$shadow-material-depth-1:    0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$shadow-material-depth-2:    0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+$shadow-material-depth-3:    0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+$shadow-material-depth-4:    0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+$shadow-material-depth-5:    0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+$shadow-material-depth-6:    0 23px 38px rgba(0,0,0,0.30), 0 19px 12px rgba(0,0,0,0.22);
+$shadow-material-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 
 
 
 
 
 // ==============================================================
-//
 // # GRID SETTINGS
-//
 // ==============================================================
 // ## GRID SETTINGS => GLOBALS
-$col-full-max-width:                    none;
-$col-full-padding:                      0;
 
-// -----------------------------------------
-// ## GRID SETTINGS => ELEMENTOR SECTIONS
-$elementor-boxed-max-width:             1600px;
 
 
 
 
 // ==============================================================
-//
 // # TYPOGRAPHY
-//
 // ==============================================================
 // ## TYPOGRAPHY => HEADINGS => GLOBALS
 $type-headings-color:                   $color-black-alt;
@@ -73,8 +60,11 @@ $type-headings-h5-size:                 .825rem;
 $type-headings-h6-size:                 .625rem;
 
 // -----------------------------------------
-// ## TYPOGRAPHY => HEADINGS => LINE HEIGHTS
-$type-headings-h1-line-height:          1.1;
+// ## TYPOGRAPHY => HEADINGS => EXTRAS
+$type-headings-h1-font-weight:          bold;
+$type-headings-h1-line-height:          .9;
+$type-headings-h1-letter-spacing:       -2px;
+
 $type-headings-h2-line-height:          1.1;
 $type-headings-h3-line-height:          1.1;
 $type-headings-h4-line-height:          1.1;
@@ -84,16 +74,16 @@ $type-headings-h6-line-height:          1.1;
 // -----------------------------------------
 // ## TYPOGRAPHY => UTILITIES => TEXT LEAD
 $type-text-lead-font-size:              1.25rem;
-$type-text-lead-font-weight:            normal;
+$type-text-lead-font-weight:            300;
+$type-text-lead-line-height:            1.45;
+$type-text-lead-letter-spacing:         .016rem;
 $type-text-lead-text-transform:         none;
 
 
 
 
 // ==============================================================
-//
 // # NAVBAR
-//
 // ==============================================================
 // ## NAVBAR => GLOBALS
 $navbar-logo-max-width:                 100px;
@@ -116,44 +106,9 @@ $navbar-search-border:                  1px solid $color-gray-light;
 
 
 
-// ==============================================================
-//
-// # MEGA MENU
-//
-// ==============================================================
-$megamenu-box-shadow:                   $shadow-material-depth-6;
-
-
-
 
 // ==============================================================
-//
-// # BREADCRUMBS
-//
-// ==============================================================
-$breadcrumb-max-width:                  1600px;
-$breadcrumb-padding:                    10px;
-$breadcrumb-margin:                     0 auto;
-
-
-
-
-// ==============================================================
-//
-// # ENTRY HEADER (h1)
-//
-// ==============================================================
-$content-header-max-width:              1600px;
-$content-header-padding:                10px;
-$content-header-margin:                 0 auto;
-
-
-
-
-// ==============================================================
-//
 // # FOOTER
-//
 // ==============================================================
 // ## FOOTER => WRAPPER
 $footer-wrapper-max-width:              1600px;
@@ -184,23 +139,9 @@ $footer-menu-current-text-transform:    uppercase;
 
 
 
-// ==============================================================
-//
-// # PAGES
-//
-// ==============================================================
-// PAGES => PRODUCTS
-$products-page-max-width:             1600px;
-$products-page-padding:               10px;
-$products-page-margin:                0 auto;
-
-
-
 
 // ==============================================================
-//
 // # BUTTONS
-//
 // ==============================================================
 // ## BUTTONS => GLOBAL
 $button-global-border-radius:         0;

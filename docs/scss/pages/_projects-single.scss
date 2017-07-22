@@ -2,158 +2,154 @@
 // PROJECTS => SINGLE PROJECT
 // ==============================================================
 
-.pansky-project {
-  // @media (min-width: 960px) { margin-left: 100px; }
-  // @media (min-width: 1800px) { margin-left: 0; }
+.wep-article {
+  & h3:not(:first-of-type) {
+    margin-top: 60px;
+  }
 
-  &-details {
-    & dl {
-      border-left: 2px solid #ddd;
-      padding-left: 8px;
-      margin-left: 8px;
-    }
+  & h4 {
+    font-size: 1.15rem;
 
-    & dd {
-      // display: inline-block;
+    &:not(:first-of-type) {
+      margin-top: 48px;
     }
   }
 
-  & .uk-accordion-content {
-    opacity: 0;
+  & .top {
+    & p { margin: 0; }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
   }
 
-  &-readmore {
-    font-size: 1rem;
-    & .uk-icon {
-      position: relative;
-      bottom: 2px;
+  & .avatar {
+    display: block;
+    vertical-align: middle;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+  }
+
+  & .client {
+    font: normal 13px/1.4 sans-serif;
+    letter-spacing: .065px;
+    padding-left: 15px;
+
+    & p:first-child {
+      color: #000;
+    }
+
+    & p:last-child {
+      color: #595959;
     }
   }
 
-  &-readmore-content {
-    // background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(238,238,238,0.65) 100%);
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 8px;
-    // display: none;
-    // opacity: 0;
+  & .info {
+    font: normal .875rem/1.4 sans-serif;
+    letter-spacing: .065px;
+  }
 
-    & p {
-      display: block !important;
+  & .hero {
+    width: 100%;
+  }
+
+  & .caption,
+  & .caption > figcaption > h4 {
+    color: #595959;
+    font: normal 14px/1.25 sans-serif;
+    letter-spacing: .265px;
+    text-align: center;
+    display: block;
+    margin-top: 8px;
+  }
+
+  & .caption {
+    & a,
+    & a:link,
+    & a:visited {
+      // remove underlines
+      &:before, &:after { content: none; }
+    }
+
+    & > img {
+      width: 100%;
+      max-width: 90vw;
+      margin: auto;
+      transform: translateX(0);
+      transition: 100ms ease-in-out;
+      // transition: all 100ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
+      // transition-timing-function: cubic-bezier(0.860, 0.000, 0.070, 1.000);
     }
   }
-} // end pansky-project
 
-.pansky-project-vendor-logo {
-  width: 100%;
-  max-width: 100px;
-  // height: 100%;
-  opacity: 0;
-}
-
-.pansky-icon-sub {
-  transform: rotate(-180deg);
-  position: relative;
-  bottom: 2px;
-}
-
-.pansky-icon-check {
-  height: 30px;
-  float: left;
-}
-
-.pansky-section-fullwidth {
-  padding: 0 0 0 40px;
-}
-
-.pansky-code {
-  background: #282c34;
-
-  & pre {
-    border: 0;
-    border-radius: 0;
-    background: transparent;
-    padding: 0;
-    margin-bottom: 0;
-
-    &.uk-container {
-      margin: 0 auto;
-    }
-  } // end pre
-
-  & a {
-    color: inherit;
-  }
-
-  &-inline {
-    font-size: .75rem;
-    color: #abb2bf;
-    background: #282c34;
-    // padding: 6px 10px;
-    white-space: normal;
-  }
-
-  &-fullwidth {
-    padding: 0 0 0 40px;
-    // @media (min-width: 1800px) { margin-left: 100px; }
-    @media (min-width: 1024px) {
-      // margin-left: calc(-100vw / 2 + 600px / 2);
-      // margin-right: calc(-100vw / 2 + 600px / 2);
-      // width: 100vw;
-      // min-width: 100%;
-      // max-width: none;
-
-      & pre {
-        white-space: pre-wrap;
-        word-wrap: break-word;
-        word-break: break-all;
-        padding: 0;
-      }
-    }
-  }
-}
-
-$modal-color:     mix(white, #282c34, 40%);
-$modal-color-bg:  mix(black, #282c34, 20%);
-
-.uk-modal {
-  &-header, &-footer {
-    background: $modal-color-bg;
-    border-color: mix(black, #282c34, 35%);
-  }
-
-  &-title {
-    font-size: 1rem;
-    color: $modal-color;
-  }
-
-  &-dialog {
-    background: $modal-color-bg;
-    width: 90vw;
-  }
-
-  &-body {
-    background: $modal-color-bg;
-    padding: 0;
-  }
-
-  &-footer {
-    color: $modal-color;
-  }
-
-  & button, & .uk-close {
-    color: $modal-color;
-    border-color: $modal-color;
+  & .uk-accordion-title {
+    font-family: sans-serif;
+    transition: 200ms ease-in-out;
     &:hover, &:focus {
-      color: #fff;
-      border-color: #fff;
+      opacity: .45;
     }
+  }
+} // end -article
+
+.styleguide {
+
+  &-colors {
+    font-family: sans-serif;
+    font-weight: bold;
+    list-style-type: none;
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // align-items: flex-start;
+    // justify-content: space-between;
+    padding: 0;
+    margin: 0 0 1rem;
+
+    & ul { padding: 0; }
+
+    & li {
+      // &:first-of-type {
+      //   min-width: 150px;
+      //   min-height: 150px;
+      // }
+      // min-width: 100px;
+      // min-height: 100px;
+      // margin-right: 20px;
+      &:last-of-type { margin-right: 0; }
+    }
+
+    & #colorsPrimary { background: #0e75dd; }
+    & #colorsPrimaryLight1 { background: mix(white, #0e75dd, 15%); }
+    & #colorsPrimaryLight2 { background: mix(white, #0e75dd, 35%); }
+    & #colorsPrimaryDark1 { background: mix(black, #0e75dd, 15%); }
+    & #colorsPrimaryDark2 { background: mix(black, #0e75dd, 35%); }
+
+    & #colorsAccent { background: #f49200; }
+    & #colorsAccentLight1 { background: mix(white, #f49200, 15%); }
+    & #colorsAccentLight2 { background: mix(white, #f49200, 35%); }
+    & #colorsAccentDark1 { background: mix(black, #f49200, 15%); }
+    & #colorsAccentDark2 { background: mix(black, #f49200, 35%); }
+
+    & #colorsBlack { background: #222; }
+    & #colorsGray1 { background: #666; }
+    & #colorsGray2 { background: #959595; }
+    & #colorsWhite1 { background: #e5e5e5; color: #666; }
+    & #colorsWhite2 { background: #fdfdfd; color: #666; }
   }
 
-  & .pansky-code {
-    background: $modal-color-bg;
-    & pre {
-      padding: 0;
-      margin: 0 auto;
-    }
-  }
-}
+} // end styleguide
+
+
+
+
+
+// .wep-modal-full {
+//   & .uk-close {
+//     background-color: $color-accent;
+//     & svg {
+//       color: #fff;
+//     }
+//   }
+// } // end wep-modal-full

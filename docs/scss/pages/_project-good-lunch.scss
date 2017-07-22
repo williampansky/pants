@@ -1,0 +1,458 @@
+// ======================================================
+// # PROJECT => GOOD LUNCH 2017
+// ======================================================
+
+#mainSponsorOpp {
+
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Roboto:100,400|Domine:400,700|Playfair+Display:400,700,900|Pinyon+Script|Montserrat:400,700');
+
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  //
+  // # TYPE
+  //
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  $headings: Open Sans, "Arial", sans-serif; // headings
+  $bodyCopy: Open Sans, "Arial", sans-serif; // body copy
+  $display: inherit; // display type
+  $ui: "Verdana", sans-serif; // ui type
+  $fancy: Playfair Display, Georgia, "Times New Roman", serif;
+  $script: Pinyon Script, cursive;
+
+
+
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  //
+  // # COLORS
+  //
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  $primary: #33499e; // goodwill blue
+  $primary-alt: #628cc9; // goodwill alt
+  $primary-alt-light: lighten($primary-alt,15%); // goodwill alt-light
+  $primary-alt-dark: darken($primary-alt,15%); // goodwill alt-dark
+  $primary-light: lighten($primary,15%); // #556dc8
+  $primary-lightest: lighten($primary,35%); // #a2afe1
+  $primary-dark: darken($primary,15%); // #202e64
+  $primary-darkest: darken($primary,35%); // #070b17
+
+  // goodwill orange
+  $orange: #ff6c2c;
+  $orange-light: lighten($orange,15%);
+  $orange-dark: darken($orange,15%);
+  $orange-darkest: darken($orange,35%);
+
+  // the lunch purple
+  $accent: #510857;
+  $accent-light: lighten($accent,15%);
+  $accent-lightest: lighten($accent,35%);
+  $accent-dark: darken($accent,8%);
+  $accent-darkest: darken($accent,20%);
+
+  $green: #90b143; // employment green
+  $green-light: lighten($green,15%);
+  $green-dark: darken($green,15%);
+  $green-darkest: darken($green,35%);
+
+  $black: #000; // black-100%
+  $black-light: #303030; // off-black
+  $black-lightest: #4c4c4c; // light-black
+
+  $white: #fff; // white-100%
+  $white-off: #fdfdfd; // off-white
+
+  $gray: #959595; // primary-gray
+  $gray-light: #ddd; // light-gray
+  $gray-lightest: #ececec; // lighter-gray
+  $gray-lunch: #919191; // from print materials
+
+  $headingsColor: #303030; // off-black
+  $bodyColor: #595959; // light-black #4c4c4c
+
+  $success: blue;
+  $error: yellow;
+
+
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  //
+  // # Z-DEPTH / MATERIAL SHADOWS
+  //
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  .z-depth-0 {
+    box-shadow: none !important;
+  }
+  .z-depth-1 {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  }
+  .z-depth-1-half {
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+  }
+  .z-depth-2 {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  }
+  .z-depth-3 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+  }
+  .z-depth-4 {
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+  }
+  .z-depth-5 {
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+  }
+
+  $z-depth-0: none !important;
+  $z-depth-1: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  $z-depth-1-half: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+  $z-depth-2: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  $z-depth-3: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+  $z-depth-4: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+  $z-depth-5: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+
+
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  //
+  // # FX
+  //
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  $vingette-large: inset 0 0 15rem rgba(0,0,0,.35);
+  $vingette-card: inset 0 0 5rem rgba(0,0,0,.5);
+
+
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  //
+  // # BUTTONS-MATERIAL
+  //
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // Shared styles
+  $button-border: none !default;
+  $button-background-focus: lighten($accent, 4%) !default;
+  $button-font-size: .85rem !default;
+  $button-height: 36px !default;
+  $button-padding: 0 2rem !default;
+  $button-radius: 2px !default;
+
+  // Disabled styles
+  $button-disabled-background: $gray-light !default;
+  $button-disabled-color: $black-light !default;
+
+  // Raised buttons
+  $button-raised-background: $accent !default;
+  $button-raised-background-hover: lighten($button-raised-background, 15%) !default;
+  $button-raised-color: $white !default;
+
+  // Large buttons
+  $button-large-icon-font-size: 1.6rem !default;
+  $button-large-height: $button-height * 1.5 !default;
+
+  // Small buttons
+  $button-small-font-size: .65rem !default;
+  $button-small-icon-font-size: .65rem !default;
+  $button-small-height: $button-height / 1.5 !default;
+
+  // Flat buttons
+  $button-flat-color: $black !default;
+  $button-flat-disabled-color: lighten($button-flat-color, 50%) !default;
+
+  // Floating buttons
+  $button-floating-background: $accent !default;
+  $button-floating-background-hover: $button-floating-background !default;
+  $button-floating-color: $white !default;
+  $button-floating-size: 40px !default;
+  $button-floating-large-size: 56px !default;
+  $button-floating-radius: 50% !default;
+
+
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  //
+  // # CARDS
+  //
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  $card-bg-color: #fff;
+  $card-padding: 1rem !default;
+  $card-top-margin: 0;
+  $card-bottom-margin: 1.5rem;
+  $card-link-color: color("$accent") !default;
+  $card-link-color-light: lighten($accent, 20%) !default;
+  $card-border: 1px solid rgba(160,160,160,.2);
+
+
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  //
+  // # ANIMATIONS
+  //
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  $ease-fast: 300ms ease-in-out;
+  $ease-slow: 600ms ease-in-out;
+  $linear-fast: 300ms linear;
+  $linear-slow: 600ms linear;
+
+
+
+
+  & .container {
+    & .row {
+      & .col {
+        // min-width: 100%;
+
+        & .card-block {
+          // padding: 0 .5rem;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    & .container {
+      & .row {
+        & .col {
+          min-width: 33.3%;
+
+          & .card-block {
+
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    & .container > .row {
+      align-items: flex-start;
+      & .col {
+        min-width: auto;
+        padding-right: 0;
+        &:last-of-type { padding-right: 15px; padding-left: 15px; }
+
+        & .card-block {
+          // min-height: 250px;
+          padding: 0 .5rem .5rem;
+          &:last-of-type { min-height: 30px; }
+          &#premFix {
+            // min-height: 300px;
+            // padding: .85rem .5rem 4rem;
+          }
+          &#legFix {
+            // min-height: 230px;
+          }
+          &#suppFix {
+            // min-height: 200px;
+          }
+        }
+
+        & .list-group-item {
+          // padding: .5rem 1.25rem;
+        }
+      }
+      & .card {
+        &:hover, &:focus {
+          box-shadow: $z-depth-5;
+          transform: translate3d(0,-10px,0);
+          // z-index: 999;
+          & .card-img-top {
+            // font-size: 125%;
+            // box-shadow: 0 0 200px rgba(0,0,0,0.65) inset;
+            // background: $primary-alt;
+            text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+          } // end .card-img-top
+        }
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    & .container > .row {
+      & .col {
+        & .card-block {
+          padding: 1rem;
+        }
+      }
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6, li, ol, p, ul {
+    font-family: "Open Sans", Arial, sans-serif;
+  }
+
+  & .card {
+    font-family: "Century Gothic", Lato, sans-serif;
+    margin-bottom: 1.5rem;
+    border: none;
+    transition: 300ms ease-in-out;
+    box-shadow: $z-depth-2;
+
+    & .card-img-top {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 50px;
+      color: $white;
+      background: $black-light;
+      transition: 300ms ease-in-out;
+      text-shadow: 1px 1px 1px rgba(0,0,0,.45);
+      // box-shadow: 0 0 200px rgba(0,0,0,0.35) inset;
+      // & span {
+      //   display: flex;
+      //   flex-direction: row;
+      //   flex-wrap: wrap;
+      //   align-items: center;
+      //   justify-content: center;
+      //   width: 50%;
+      //   text-align: center;
+      //   margin: 0 auto;
+      //   line-height: 1;
+      // }
+
+      & span {
+        max-width: 75%;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 1.25;
+      }
+
+      @media (min-width:1024px) {
+        height: 150px;
+
+        &#sponPresenting {
+          background-image: url("/projects/thelunch.info/demo/images/spon-presenting.jpg");
+          background-blend-mode: soft-light;
+          background-repeat: no-repeat;
+          background-size: cover;
+          transition: 300ms ease-in-out;
+        }
+
+        &#sponPremier {
+          @extend .card-img-top#sponPresenting;
+          background-image: url("/projects/thelunch.info/demo/images/spon-premier.jpg");
+        }
+        //
+        // &#sponLegacy {
+        //   @extend #sponPresenting;
+        //   background-image: url("/images/spon-legacy.jpg");
+        // }
+        //
+        // &#sponChampion {
+        //   @extend #sponPresenting;
+        //   background-image: url("/images/spon-champion.jpg");
+        // }
+        //
+        // &#sponSustaining {
+        //   @extend #sponPresenting;
+        //   background-image: url("/images/spon-sustaining.jpg");
+        // }
+        //
+        // &#sponSupporting {
+        //   @extend #sponPresenting;
+        //   background-image: url("/images/spon-supporting.jpg");
+        // }
+      } // end @media 1024
+    } // end .card-img-top
+  } // end .card
+
+  & .card-text {
+    line-height: 1.25;
+    font-size: .8rem;
+    letter-spacing: -.25px;
+    transition: 300ms ease-in-out;
+  }
+
+  & .list-group {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  & .list-group-item {
+    font-size: 0.8rem;
+    line-height: 1.25;
+    font-family: $display;
+    letter-spacing: .35px;
+    padding: .5rem;
+    background: rgba(0,0,0,.05);
+      &:nth-child(even) { background: none; }
+  }
+
+  & .card-block {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 10px 30px; 
+    position: relative;
+    display: block;
+    // display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    // &:first-of-type { min-height: 250px; }
+    &:last-of-type { min-height: 30px; }
+    & .card-title {
+      font-family: $fancy;
+      font-size: 2rem;
+      & sup {
+        top: -6px;
+        font-size: 1.25rem;
+      }
+      & sub { bottom: 0; }
+    }
+  }
+
+  & .card-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 0;
+    background: $accent;
+    color: lighten($accent,70%);
+    transition: .3s ease-in-out;
+    &:hover, &:focus {
+      background: $accent-light;
+      color: $white;
+    }
+  }
+} // end #mainSponsorOpp
