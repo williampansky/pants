@@ -7,6 +7,12 @@ keywords = [ "wordpress", "javascript", "dallas", "gift wrapping" ]
 title = "Resume"
 +++
 
+## Front-end Web Developer
+#### Sabre Corporation
+JUL 2017–PRESENT — Southlake, TX
+
+_Global leader in innovative technology that leads the travel industry._
+
 ## Graphic designer & front-end web developer
 #### Miller Ad Agency
 JUN 2014–JUL 2017 (3.2yr) — Dallas, TX
