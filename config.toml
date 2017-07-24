@@ -8,6 +8,7 @@ menus = "main"
 publishDir = "docs"
 googleAnalytics = "UA-25458964-1"
 enableEmoji = "true"
+enableRobotsTXT = "true"
 
 [params]
   author = "William Pansky"
