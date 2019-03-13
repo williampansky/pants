@@ -1,6 +1,6 @@
 {
-  "name": "PANTS",
-  "version": "2.0.0",
+  "name": "pants",
+  "version": "2.0.1",
   "description": "Dallas, TX; Graphic designer & aspiring front-end webdev.",
   "main": "index.js",
   "scripts": {
