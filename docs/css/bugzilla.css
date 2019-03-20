@@ -1,0 +1,68 @@
+/* BODY */
+html,
+body {
+	color: #666;
+    color: rgba(0, 0, 0, 0.695);
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.68;
+    letter-spacing: -0.003em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* BUG LIST => TABLE => ROWS */
+.bz_Normal {
+	background: #fff;
+	transition: all 100ms ease-in-out;
+}
+
+.bz_Normal td {
+	color: rgba(0, 0, 0, 0.695);
+	padding: 1em 0.5em;
+}
+
+.bz_90\% {
+	opacity: 0.45;
+}
+
+.bz_buglist {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.bz_buglist > tr:not(:first-child),
+.bz_buglist > :not(:first-child) > tr,
+.bz_buglist > :first-child > tr:not(:first-child) {
+	border-top: 1px solid #e5e5e5;
+}
+
+.bz_Normal:hover,
+.bz_Normal:focus {
+	/*background: rgba(246, 255, 0, 0.26);*/
+	background: #f8f8f8;
+	opacity: 1;
+}
+
+/* BUG LIST => TABLE => SEVERITY */
+.bz_Normal td.bz_bug_severity_column {
+	padding: 0;
+}
+
+.bz_Normal td.bz_bug_severity_column > span {
+	color: transparent;
+	border-radius: 50%;
+    cursor: default;
+    display: block;
+	height: 15px;
+    margin: auto;
+    width: 15px;
+}
+
+span[title="critical"] { background: #ff366a; }
+span[title="major"] { background: #ff9e00; }
+span[title="normal"] { background: #4dcaff; }
+span[title="minor"] { background: #999; }
+span[title="trivial"] { background: #ccc; }
+span[title="enhancement"] { background: #2eb721; }
