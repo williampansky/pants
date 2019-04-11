@@ -1,0 +1,72 @@
+{
+    "baseurl": "https://williampansky.com",
+    "blackfirday": {
+        "extensions": [
+            "autoHeaderIds",
+            "autolink",
+            "backslashLineBreak",
+            "definitionLists",
+            "fencedCode",
+            "footnotes",
+            "headerIds",
+            "joinLines",
+            "noIntraEmphasis",
+            "spaceHeaders",
+            "strikethrough",
+            "tables"
+        ],
+        "taskLists": true,
+        "fractions": true,
+        "latexDashes": true,
+        "plainIDAnchors": true,
+        "smartDashes": true,
+        "smartypants": true
+    },
+    "canonifyurls": true,
+    "enableEmoji": true,
+    "enableRobotsTXT": true,
+    "googleAnalytics": "UA-25458964-1",
+    "languageCode": "en-us",
+    "menu": {
+        "main": [
+            {
+                "identifier": "projects",
+                "name": "Projects",
+                "url": "/",
+                "weight": -100
+            },
+            {
+                "identifier": "resume",
+                "name": "Resume",
+                "url": "/resume",
+                "weight": -90
+            },
+            {
+                "identifier": "contact",
+                "name": "Contact",
+                "url": "/contact",
+                "weight": -80
+            }
+        ]
+    },
+    "metadataformat": "json",
+    "params": {
+        "author": "William Pansky",
+        "copyright": "© 2019 William Pansky.",
+        "description": "Dallas, TX; Graphic designer & aspiring front-end webdev.",
+        "enableGoogleAnalytics": true,
+        "keywords": [
+            "dallas",
+            "front-end",
+            "graphic design",
+            "web development",
+            "william pansky"
+        ],
+        "license": "Released under the MIT license.",
+        "subject": "Me, myself, and I.",
+        "url": "https://williampansky.com"
+    },
+    "publishDir": "dist",
+    "theme": "2019AndBeyond",
+    "title": "William Pansky | Dallas, TX"
+}

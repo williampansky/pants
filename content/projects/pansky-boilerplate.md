@@ -1,28 +1,26 @@
-+++
-draft = false
-publishDate = "2017-01-11"
-Lastmod = "2017-07-15"
-keywords = [ "github", "boilerplate", "web development" ]
-
-avatar = "/apple-touch-icon.png"
-tag = "GitHub repo"
-client = "William Pansky"
-clientDescription = "For over 90 years Goodwill Dallas has been committed to providing job training and employment to those with disabilities and disadvantaging conditions."
-image = "/img/projects/pansky-boilerplate/pansky-boilerplate-codeHero.jpg"
-caption = "Screenshot of, well, this website in my Atom editor."
-category = "Case study"
-title = "How I organize my project assets; installable via Bower"
-name = "Pansky Boilerplate"
-
-summary = "If you're a crazy person and, for some odd reason, want to download and tinker then be my guest. You can install with the Bower package manager ..."
-
-+++
+---
+avatar: "/apple-touch-icon.png"
+caption: "Screenshot of, well, this website in my Atom editor."
+category: "Personal project"
+client: "William Pansky"
+clientDescription: ""
+description: "If you're a crazy person and, for some odd reason, want to download and tinker then be my guest. You can install with the Bower package manager..."
+draft: false
+image: "/img/projects/pansky-boilerplate/_thumb.jpg"
+keywords: ["github", "boilerplate", "web development"]
+Lastmod: "2017-07-15"
+name: "Pansky Boilerplate"
+publishDate: "2017-01-11"
+tag: "GitHub repo"
+title: "How I organize my project assets; installable via Bower"
+weight: 1
+---
 
 ### Installation
 
-If you're a crazy person and, for some odd reason, want to download and tinker then be my guest. You can install with the [Bower](https://bower.io/) package manager.
+If you're a crazy person and, for some odd reason, want to download and tinker then be my guest. You can install with the [Bower](http://bower.io/) package manager.
 
-```
+```command-line
 bower install pansky-boilerplate --save
 ```
 
@@ -46,9 +44,9 @@ bower install pansky-boilerplate --save
 
 ### SCSS file structure
 
-I compartmentalize my SCSS partial files into the following structure:
+I compartmentalize my SCSS partial files into the following structur:
 
-```
+```txt
 assets/scss/
   |
   |-- base/                 # BASE
@@ -59,14 +57,14 @@ assets/scss/
   |   ...
   |
   |-- components/           # COMPONENTS
-  |-- // Resuable module components: buttons, forms, sliders, etc.
+  |-- // Resuable module component: buttons, forms, sliders, etc.
   |   |-- _!module.scss     ## Core storage file for component @imports.
   |   |-- _buttons.scss     ## Button styling.
   |   |-- _lists.scss       ## List styles.
   |   ...
   |
   |-- layout/               # LAYOUT
-  |-- // Styling for larger layout components: nav, header, footer, etc.
+  |-- // Styling for larger layout component: nav, header, footer, etc.
   |   |-- _!module.scss     ## Core storage file for layout @imports.
   |   |-- _header.scss      ## <header>-specific styles.
   |   |-- _grid.scss        ## Project grid specs.
@@ -83,7 +81,7 @@ assets/scss/
   |-- // Definitions, settings, mixins, etc.
   |   |-- _!module.scss     ## Core storage file for partial @imports.
   |   |-- _definitions.scss ## SCSS Variables.
-  |   |-- _settings.scss    ## Settings file: defines global states.
+  |   |-- _settings.scss    ## Settings fil: defines global states.
   |   ...
   |
   |-- themes/               # THEMES
@@ -99,7 +97,7 @@ assets/scss/
   |   ...
   |
   |-- vendors/              # VENDORS
-  |-- // Third-party vendor styles: normalize, animate, etc.
+  |-- // Third-party vendor style: normalize, animate, etc.
   |   |-- _animate.scss     ## Custom animate.css file.
   |   |-- _normalize.scss   ## Standard normalize.css file.
   |   ...
@@ -117,7 +115,7 @@ assets/scss/
 
 ### Gulpfile.js & Babel pipeline
 
-I use various Gulp plugins for my stylesheets and Babel (Gulp-Babel) for my scripts. My default `gulp` CLI command is as follows:
+I use various Gulp plugins for my stylesheets and Babel (Gulp-Babel) for my scripts. My default `gulp` CLI command is as follow:
 
 ```js
 // -----------------------------------
@@ -130,9 +128,9 @@ gulp.task('default', () => {
       autoprefixer()
     ]))
     .pipe(gulpStylelint({
-      reporters: [
+      reporter: [
         {
-          formatter: 'verbose', console: true
+          formatte: 'verbose', consol: true
         }
       ]
     }))
@@ -162,15 +160,15 @@ Primary comment blocks define new sections *(one per section)*, while secondary 
 
 ### Atom.io snippets
 
-CoffeeScript code for Atom's snippets for easier writing; full **snippets.cson** available on my [Gist](https://gist.github.com/williampansky/869225abbb4ee5278ef9c9ea7166d2f1).
+CoffeeScript code for Atom's snippets for easier writing; full **snippets.cson** available on my [Gist](http://gist.github.com/williampansky/869225abbb4ee5278ef9c9ea7166d2f1).
 
-```js
+```cson
 ###########################################
 ###########################################
 ###########################################
 #
 # - SCSS
-'.source.scss':
+'.source.scss:
 #
 ###########################################
 ###########################################
@@ -180,9 +178,9 @@ CoffeeScript code for Atom's snippets for easier writing; full **snippets.cson**
 ##  COMMENTS - .scss Comment Styles
 ## -----------------------------------
  ## COMMENTS - Comment Section Header
- 'Comment Section Header':
-   'prefix': 'com1'
-   'body': """
+ 'Comment Section Header:
+   'prefix: 'com1'
+   'body: """
      // ==============================================
      //
      // #
@@ -192,9 +190,9 @@ CoffeeScript code for Atom's snippets for easier writing; full **snippets.cson**
 
  ## -----------------------------------
  ## COMMENTS - Inline (sub)Comment
- 'Comment Inline':
-   'prefix': 'com2'
-   'body': """
+ 'Comment Inline:
+   'prefix: 'com2'
+   'body: """
 
      // -----------------------------------
      // ##

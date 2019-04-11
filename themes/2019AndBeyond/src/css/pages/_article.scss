@@ -1,0 +1,124 @@
+.article {
+    margin: 40px 0;
+
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+
+    img {
+        box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
+    }
+
+    li {
+        line-height: 1.5;
+    }
+
+    li > strong {
+        font-family: -apple-system, BlinkMacSystemFont, 'Lato', 'Segoe UI',
+        Roboto, 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    .client-block {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: flex-start;
+
+        .avatar {
+            border-radius: 100%;
+            box-shadow: none;
+            display: block;
+            height: 60px;
+            vertical-align: middle;
+            width: 60px;
+        }
+
+        .meta {
+            font: normal 13px/1.4 sans-serif;
+            letter-spacing: 0.065px;
+            padding-left: 15px;
+        }
+
+        .client,
+        .description {
+            margin: 0;
+        }
+
+        .client {
+            color: #111;
+        }
+
+        .description {
+            color: #595959;
+        }
+    }
+
+    .lead {
+        font-family: sans-serif;
+        color: #333;
+        font-size: 1.5rem;
+        font-weight: 300;
+        letter-spacing: -0.865px;
+        line-height: 1.3454;
+        margin: 0 0 20px;
+    }
+
+    .date,
+    .info {
+        color: #757575;
+        font: normal 0.75rem/1.4 sans-serif;
+        letter-spacing: 0.065px;
+        margin: 0 0 10px;
+    }
+
+    .hero {
+        color: #595959;
+        font: normal 14px/1.25 sans-serif;
+        letter-spacing: 0.265px;
+        margin: 40px auto;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+
+        .figure {
+            display: block;
+            margin: 0;
+        }
+
+        .image {
+            border-style: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            margin: auto;
+            max-width: 90vw;
+            transform: translateX(0);
+            transition: 0.1s ease-in-out;
+            width: 100%;
+        }
+
+        .caption {
+            margin-top: 8px;
+        }
+    }
+
+    .content,
+    .footer {
+        margin: 40px auto;
+    }
+
+    .sources {
+        h2 {
+            font-size: 1em;
+            margin-bottom: 8px;
+        }
+
+        li {
+            font-size: 0.875em;
+            line-height: 1.25;
+        }
+
+        ul > li:nth-child(n+2) {
+            margin-top: 6px;
+        }
+    }
+}

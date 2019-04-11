@@ -1,0 +1,240 @@
+<style>
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+
+    /*
+     * 1. Set `font-size` to support `rem` units
+     *    Not using `font` property because a leading hyphen 
+     *    (e.g. -apple-system) causes the font to break in IE11 and Edge
+     * 2. Prevent adjustments of font size after orientation changes in iOS.
+     */
+    html {
+        color: rgba(0, 0, 0, 0.695);
+
+        /* 1 */
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+            'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+            'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+            'Noto Color Emoji';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: normal;
+        letter-spacing: -0.003em;
+        line-height: 1.68;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+
+        /* 2 */
+        -webkit-text-size-adjust: 100%;
+    }
+
+    :root {
+        font-size: 16px;
+    }
+
+    @media (min-width: 400px) and (max-width: 740px) {
+        :root {
+            font-size: calc(16px + (19 - 16) * ((100vw - 400px) / (740 - 400)));
+        }
+    }
+
+    @media (min-width: 740px) {
+        :root {
+            font-size: 19px;
+        }
+    }
+
+    body {
+        background-color: #fafafa;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    @media (min-width: 400px) and (max-width: 740px) {
+        h1 {
+            font-size: calc(26px + (46 - 26) * ((100vw - 400px) / (740 - 400)));
+        }
+    }
+
+    @media (min-width: 740px) {
+        h1 {
+            font-size: 46px;
+        }
+    }
+
+    body {
+        line-height: 1.45em;
+    }
+
+    @media screen and (min-width: 22em) {
+        body {
+            line-height: calc(0.86957vw + 1.2587em);
+        }
+    }
+
+    @media screen and (min-width: 45em) {
+        body {
+            line-height: 1.65em;
+        }
+    }
+
+    address,
+    dl,
+    fieldset,
+    figure,
+    ol,
+    p,
+    pre,
+    ul {
+        margin: 0 0 calc(16px * 0.875) 0;
+    }
+
+    @media (min-width: 400px) and (max-width: 740px) {
+        address,
+        dl,
+        fieldset,
+        figure,
+        ol,
+        p,
+        pre,
+        ul {
+            margin: 0 0 calc(16px + (19 - 16) * ((100vw - 400px) / (740 - 400)))
+                0;
+        }
+    }
+
+    @media (min-width: 740px) {
+        address,
+        dl,
+        fieldset,
+        figure,
+        ol,
+        p,
+        pre,
+        ul {
+            margin: 0 0 calc(16px * 2) 0;
+        }
+    }
+
+    * + address,
+    * + dl,
+    * + fieldset,
+    * + figure,
+    * + ol,
+    * + p,
+    * + pre,
+    * + ul {
+        margin-top: 0;
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+
+    ::-moz-selection {
+        color: white;
+        background-color: #0076d6;
+    }
+
+    ::selection {
+        color: white;
+        background-color: #0076d6;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        font-style: normal;
+        line-height: 1.04;
+        letter-spacing: -0.028em;
+        padding: 4px 0;
+        margin-left: -2.5px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        line-height: 1.14em;
+    }
+
+    @media screen and (min-width: 22em) {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            line-height: calc(0.47826vw + 1.03478em);
+        }
+    }
+
+    @media screen and (min-width: 45em) {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            line-height: 1.25em;
+        }
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* nav li {
+        display: inline-block;
+    } */
+
+    pre {
+        font-size: 0.875em;
+        line-height: 1.5;
+        padding: 3em 2.5em 2em 2.5em;
+    }
+
+    :not(pre) > code {
+        background: #e8e8e8;
+        border-radius: 0;
+        font-size: 0.875em;
+        margin: 0 2px;
+        padding: 2px 6px;
+        white-space: normal;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .chromeframe {
+        background: white;
+        bottom: 0;
+        font-size: 1.5rem;
+        height: 100%;
+        left: 0;
+        opacity: 0.85;
+        padding: 35px;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+    }
+</style>

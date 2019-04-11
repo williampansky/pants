@@ -1,0 +1,20 @@
+{
+    "author": {
+        "homepage": "https://williampansky.com/",
+        "name": "William Pansky"
+    },
+    "description": "A Hugo static site enhanced with React.",
+    "features": [
+        "hugo",
+        "react"
+    ],
+    "homepage": "https://williampansky.com/",
+    "license": "MIT",
+    "licenselink": "https://github.com/williampansky/pants/themes/2019AndBeyond#LICENSE",
+    "min_version": 0.17,
+    "name": "2019AndBeyond",
+    "tags": [
+        "minimal",
+        "case studies"
+    ]
+}

@@ -36,19 +36,19 @@ Next, we tackled their logo. Due to national corporate regulations, there was on
 
 We created a style guide, business cards, folding brochures, a complete website overhaul, and much more. It was a pleasure to work with Goodwill Industries of Dallas and we continue to cooperate in joint endeavors to this day.
 
-{{< figureModal src="/img/projects/good-website/good-website-new-styles-01.jpg" title="Goodwill Dallas' new styleguide" class="caption caption-uk-box-shadow-large" link="style" >}}
+![Goodwill Dallas' new styleguide](/img/projects/good-website/good-website-new-styles-01.jpg")
 
 ### My role
 
 My part revolved around the website. Everything from structure to wireframing to conceptual mockups to production assets to HTML and vanilla CSS (not discovering Sass until well after this project’s completion).
 
-{{< figureModal src="/img/projects/good-website/good-website-old.jpg" title="Screenshot of the original goodwilldallas.org; 2010." class="caption caption-uk-box-shadow-large" link="old" >}}
+![Screenshot of the original goodwilldallas.org; 2010.](/img/projects/good-website/good-website-old.jpg)
 
-{{< figureModal src="/img/projects/good-website/good-website-new-01.jpg" title="Homepage screenshot of the new goodwilldallas.org; 2015." class="caption caption-uk-box-shadow-large" link="new01" >}}
+![Homepage screenshot of the new goodwilldallas.org; 2015.](/img/projects/good-website/good-website-new-01.jpg)
 
-{{< figureModal src="/img/projects/good-website/good-website-new-02.jpg" title="Screenshot of the new goodwilldallas.org 'Give' page; 2015." class="caption caption-uk-box-shadow-large" link="new02" >}}
+![Screenshot of the new goodwilldallas.org 'Give' page; 2015.](/img/projects/good-website/good-website-new-02.jpg)
 
-{{< figureModal src="/img/projects/good-website/good-website-new-03.jpg" title="Screenshot of the new goodwilldallas.org 'Info > The Journey' page; 2015." class="caption caption-uk-box-shadow-large" link="new03" >}}
+![Screenshot of the new goodwilldallas.org 'Info > The Journey' page; 2015.](/img/projects/good-website/good-website-new-03.jpg)
 
 ### Wayback
 

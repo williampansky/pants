@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>{{ .Site.Title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {{ partial "head/meta.html" . }}
+        <!-- {{ partial "head/analytics.html" . }} -->
+        {{ partial "head/critical.styles.html" . }}
+        {{ partial "head/stylesheets.html" . }}
+        {{ partial "head/html5shiv.html" . }}
+    </head>
+    <body>
+        {{ partial "head/chromeframe.html" . }}
+        {{ partial "nav/_index.html" . }}
