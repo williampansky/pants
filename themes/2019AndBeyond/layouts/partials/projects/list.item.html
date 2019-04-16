@@ -1,94 +1,98 @@
 <article class="project" itemscope itemtype="http://schema.org/CreativeWork">
-    <div class="project-client">
-        <div
-            class="project-client-avatar"
-            style="background-image:url('{{ .Params.avatar }}')"
-            title="{{ .Params.client }}"
-            itemprop="producer"
-            itemprop="image"
-        ></div>
-        <div class="project-client-info">
-            <div class="project-client-info-top" itemprop="provider">
-                {{ .Params.tag }}
-            </div>
+    <a
+        href="{{ .Permalink }}"
+        title="{{ .Params.project.title }}"
+        itemprop="url"
+    >
+        <div class="project-client">
             <div
-                class="project-client-info-bottom"
-                itemscope
-                itemtype="http://schema.org/Organization"
-            >
-                <span
-                    itemprop="producer"
-                    itemprop="brand"
-                    >{{ .Params.client }}</span
+                class="project-client-avatar"
+                style="background-image:url('{{ .Params.client.avatar }}')"
+                title="{{ .Params.client.name }}"
+                itemprop="producer"
+                itemprop="image"
+            ></div>
+            <div class="project-client-info">
+                <div class="project-client-info-top" itemprop="provider">
+                    <strong>{{ .Params.project.tag }}</strong>
+                </div>
+                <div
+                    class="project-client-info-bottom"
+                    itemscope
+                    itemtype="http://schema.org/Organization"
                 >
-                <link itemprop="sameAs" href="{{ .Params.clientsame }}" />
-                <meta
-                    itemprop="address"
-                    content="{{ .Params.clientlocation }}"
-                />
-                <meta itemprop="contributor" content="{{ .Params.workfor }}" />
+                    <span
+                        itemprop="producer"
+                        itemprop="brand"
+                        >{{ .Params.client.name }}</span
+                    >
+                    <link itemprop="sameAs" href="{{ .Params.client.url }}" />
+                    <meta
+                        itemprop="address"
+                        content="{{ .Params.client.location }}"
+                    />
+                    <meta
+                        itemprop="contributor"
+                        content="{{ .Params.project.employer }}"
+                    />
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="project-image-container">
-        <div
-            class="project-image"
-            style="background-image:url('{{ .Params.image }}')"
-            itemprop="image"
-            itemprop="thumbnailUrl"
-        ></div>
-    </div>
-
-    <header class="project-header">
-        <p class="project-category">{{ .Params.category }}</p>
-        <h1
-            class="project-title"
-            itemprop="headline"
-            itemprop="name"
-            itemprop="alternateName"
-        >
-            <a
-                href="{{ .Permalink }}"
-                title="{{ .Params.title }}"
-                itemprop="url"
-                >{{ .Title }}</a
-            >
-        </h1>
-        <div itemprop="creator" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="name" content="William Pansky" />
-            <link itemprop="sameAs" href="https://williampansky.com" />
+        <div class="project-image-container">
+            <div
+                class="project-image"
+                style="background-image:url('{{ .Params.project.image }}')"
+                itemprop="image"
+                itemprop="thumbnailUrl"
+            ></div>
         </div>
-        <p class="project-details">
-            Published on
-            <time
-                itemprop="datePublished"
-                >{{ .PublishDate.Format "January 2, 2006" }}</time
-            >. <strong>{{ .ReadingTime }} minute read.</strong>
-        </p>
-    </header>
 
-    <div class="project-body">
-        <p itemprop="description">
-            {{ .Description }}
-            <!-- <a
-                    href="{{ .Permalink }}"
-                    title="{{ .Params.title }}"
-                    itemprop="url"
-                    >view project</a
-                > -->
-        </p>
-    </div>
+        <header class="project-header">
+            <p class="project-category">{{ .Params.project.category }}</p>
+            <h1
+                class="project-title"
+                itemprop="headline"
+                itemprop="name"
+                itemprop="alternateName"
+            >
+                {{- .Params.project.title -}}
+            </h1>
+            <div
+                itemprop="creator"
+                itemscope
+                itemtype="http://schema.org/Person"
+            >
+                <meta itemprop="name" content="{{ .Site.Params.author }}" />
+                <link itemprop="sameAs" href="{{ .Site.BaseURL }}" />
+            </div>
+            <p class="project-details">
+                <strong>{{ .ReadingTime }} minute read.</strong>
+                <span>Published on</span>
+                <time itemprop="datePublished">
+                    {{- .PublishDate.Format "January 2, 2006" -}}
+                </time><span>. </span>
+            </p>
+        </header>
 
-    <hr />
+        {{ if or (.Params.project.summary) (.Description) }}
+        <div class="project-body">
+            <p itemprop="description">
+                {{- or (.Params.project.summary) (.Description) -}}
+            </p>
+        </div>
+        {{ end }}
 
-    <footer class="project-footer">
-        <p class="project-details">
-            <span itemprop="name">
-                <strong>{{ .Params.name }}</strong>
-                <link itemprop="sameAs" href="{{ .Params.projecturl }}" />
-            </span>
-            / <span itemprop="keywords">{{ .Keywords }}</span>
-        </p>
-    </footer>
+        <hr />
+
+        <footer class="project-footer">
+            <p class="project-details">
+                <span itemprop="name">
+                    <strong>{{ .Params.project.name }}</strong>
+                    <link itemprop="sameAs" href="{{ .Params.project.url }}" />
+                </span>
+                <span itemprop="keywords">{{ delimit .Keywords ", " }}</span>
+            </p>
+        </footer>
+    </a>
 </article>

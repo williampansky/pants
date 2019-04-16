@@ -1,22 +1,28 @@
-+++
-draft = false
-publishDate = "2017-06-13"
-Lastmod = "2017-07-15"
-keywords = [ "wordpress", "woocommerce", "dallas", "apparel" ]
-
-avatar = "/img/projects/ilsv-website/ilsv-avatar.jpg"
-tag = "Wordpress"
-client = "Illusive Apparel Worldwide"
-image = "/projects/illusiveapparel.website/demo/wp-content/uploads/2017/06/ilsv-home-hero-woman-holding-staff.jpg"
-caption = ""
-category = "Interactive demo"
-title = "Wordpress powered by WooCommerce for Dallas apparel boutique website"
-name = "illusiveapparel.website"
-
-description = "Wordpress website powered by WooCommerce for Dallas apparel boutique"
-
-summary = "Illusive Apparel delivers award-winning graphic artists create fresh and cutting edge designs ..."
-+++
+---
+draft: false
+featured: false
+keywords: [ "wordpress", "woocommerce", "apparel" ]
+Lastmod: "2017-07-15"
+publishDate: "2017-06-13"
+client: {
+    avatar: "/projects/illusiveapparel.website/_avatar.jpg",
+    caption: "",
+    name: "Illusive Apparel Worldwide",
+    description: "Wordpress website powered by WooCommerce for Dallas apparel boutique",
+    location: "Dallas, TX",
+    url: "http://www.illusiveapparel.com/"
+}
+project: {
+    category: "Interactive demo",
+    employer: "",
+    image: "/projects/illusiveapparel.website/demo/wp-content/uploads/2017/06/ilsv-home-hero-woman-holding-staff.jpg",
+    name: "Illusive Apparel",
+    summary: "Illusive Apparel delivers award-winning graphic artists create fresh and cutting edge designs ..",
+    tag: "Wordpress",
+    title: "Wordpress powered by WooCommerce for Dallas apparel boutique website",
+    url: "illusiveapparel.website"
+}
+---
 
 Illusive Apparel delivers award-winning graphic artists create fresh and cutting edge designs.
 

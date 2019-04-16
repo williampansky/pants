@@ -4,14 +4,14 @@
 // Helper utility styles for adjusting margin, padding, etc.
 // ==============================================================
 
-@import "animations";
-@import "border";
-@import "display";
-@import "shadows";
+@import 'animations';
+@import 'border';
+@import 'display';
+@import 'shadows';
 
 .truncate {
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap
+    white-space: nowrap;
 }

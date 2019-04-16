@@ -1,19 +1,28 @@
 ---
-avatar: "/apple-touch-icon.png"
-caption: "Screenshot of, well, this website in my Atom editor."
-category: "Personal project"
-client: "William Pansky"
-clientDescription: ""
-description: "If you're a crazy person and, for some odd reason, want to download and tinker then be my guest. You can install with the Bower package manager..."
 draft: false
-image: "/img/projects/pansky-boilerplate/_thumb.jpg"
+featured: false
 keywords: ["github", "boilerplate", "web development"]
-Lastmod: "2017-07-15"
-name: "Pansky Boilerplate"
-publishDate: "2017-01-11"
-tag: "GitHub repo"
-title: "How I organize my project assets; installable via Bower"
-weight: 1
+Lastmod: 2017-07-15
+publishDate: 2017-01-11
+weight: 0
+client: {
+    avatar: "/images/pansky.jpg",
+    caption: "Screenshot of, well, this website in my Atom editor.",
+    name: "William Pansky",
+    description: "Seed repo for proper Sass and JavaScript coding standards, best practices, commenting, & file architecture.",
+    location: "Dallas, TX",
+    url: "https://williampansky.com"
+}
+project: {
+    category: "Personal project",
+    employer: "William Pansky",
+    image: "/projects/pansky-boilerplate/_thumb.jpg",
+    name: "Pansky Boilerplate",
+    summary: "Seed repository for proper Sass and JavaScript coding standards, best practices, proper commenting, and file architecture.",
+    tag: "GitHub repo",
+    title: "How I organize my project assets; installable via Bower",
+    url: "https://github.com/williampansky/pansky-boilerplate"
+}
 ---
 
 ### Installation
@@ -44,7 +53,7 @@ bower install pansky-boilerplate --save
 
 ### SCSS file structure
 
-I compartmentalize my SCSS partial files into the following structur:
+I compartmentalize my SCSS partial files into the following structure:
 
 ```txt
 assets/scss/

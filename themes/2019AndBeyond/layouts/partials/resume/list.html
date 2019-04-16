@@ -1,0 +1,11 @@
+<div class="container small">
+    <div class="grid">
+
+        {{ range first 10 (where .Data.Pages.ByDate "Section" "projects") }}
+            <div class="grid-item">
+                {{ partial "projects/list.item" . }}
+            </div>
+        {{ end }}
+        
+    </div>
+</div>

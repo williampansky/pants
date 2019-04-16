@@ -1,22 +1,29 @@
-+++
-draft = false
-publishDate = "2015-12-10"
-Lastmod = "2017-07-15"
-keywords = [ "goodwill", "dallas", "non profit", "npo" ]
-
-avatar = "/img/projects/good-lunch/good-face-block.jpg"
-tag = "DNN (DotNetNuke)"
-client = "Goodwill Industries of Dallas, Inc."
-clientDescription = "For over 90 years Goodwill Dallas has been committed to providing job training and employment to those with disabilities and disadvantaging conditions."
-image = "/img/projects/good-website/OmniHotelLunchSlider2017.jpg"
-caption = "Goodwill works, so people can."
-category = "Case study"
-title = "DNN website for the Dallas branch of national NPO, Goodwill Industries"
-name = "goodwilldallas.org"
-
-summary = "As part of the creative department at Miller Ad Agency, we collaborated and worked to bring Goodwill Dallas the new ..."
-
-+++
+---
+draft: false
+featured: false
+keywords: ["goodwill dallas", "non profit", "dnn"]
+Lastmod: 2017-07-15
+publishDate: 2015-12-10
+weight: 0
+client: {
+    avatar: "/projects/thelunch.info/good-face-block.jpg",
+    caption: "Goodwill works, so people can.",
+    name: "Goodwill Industries of Dallas, Inc.",
+    description: "For over 90 years Goodwill Dallas has been committed to providing job training and employment to those with disabilities and disadvantaging conditions.",
+    location: "Dallas, TX",
+    url: "https://www.goodwilldallas.org/"
+}
+project: {
+    category: "Case study",
+    employer: "Miller Ad Agency",
+    image: "/projects/goodwilldallas.org/OmniHotelLunchSlider2017.jpg",
+    name: "goodwilldallas.org",
+    summary: "As part of the creative department at Miller Ad Agency, we collaborated and worked to bring Goodwill Dallas the new ...",
+    tag: "DNN (DotNetNuke)",
+    title: "DNN website for the Dallas branch of national NPO, Goodwill Industries",
+    url: "https://www.goodwilldallas.org/"
+}
+---
 
 ### Introduction
 

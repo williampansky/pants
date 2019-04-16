@@ -209,7 +209,7 @@ h4,
 h5,
 h6 {
     @include fluid-type('line-height', 22em, 45em, 1.14em, 1.25em);
-    font-family: 'Lato', sans-serif;
+    font-family: $font-sans;
     font-weight: bold;
     font-style: normal;
     line-height: 1.04;
@@ -319,11 +319,21 @@ h5 {
 //   letter-spacing: $type-text-lead-letter-spacing;
 //   text-transform: $type-text-lead-text-transform;
 // }
-.uk-text-lead {
-    font-family: sans-serif;
+.text-lead {
+    font-family: $font-sans;
+    font-size: 1.5rem;
     font-weight: 300;
     line-height: 1.3454;
     letter-spacing: -0.865px;
+}
+
+// -----------------------------------
+// ## UTILITIES => TRUNCATE TEXT
+.text-truncate {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 // -----------------------------------
@@ -331,9 +341,11 @@ h5 {
 em {
     color: inherit;
 }
-strong {
-    color: #222;
-}
+
+// strong {
+//     color: #222;
+// }
+
 .uk-article-meta {
     color: #757575;
 } // lowest AA on #fff;

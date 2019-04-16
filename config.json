@@ -22,6 +22,7 @@
         "smartDashes": true,
         "smartypants": true
     },
+    "buildDrafts": true,
     "canonifyurls": true,
     "enableEmoji": true,
     "enableRobotsTXT": true,
@@ -64,6 +65,7 @@
         ],
         "license": "Released under the MIT license.",
         "subject": "Me, myself, and I.",
+        "tagline": "Front-end web developer and graphic designer with ability to solve complex website interface problems through creative and UX-minded solutions.",
         "url": "https://williampansky.com"
     },
     "publishDir": "dist",

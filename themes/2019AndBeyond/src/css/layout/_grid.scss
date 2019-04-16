@@ -4,28 +4,32 @@
 // Styles and adjustments for the site's grid system.
 // ==============================================================
 
-.wep-container {
-  max-width: 740px;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
+.grid {
+    display: grid;
+    grid-template-rows: repeat(1, auto);
+    grid-gap: 4em 1em;
 
-// .wep-article {
-//   & .content {
-//     & h3, & h4, & h5, & h6,
-//     & p, & dl, & blockquote {
-//       max-width: 740px;
-//       padding: 0 20px;
-//       margin: 0 auto 20px;
-//       box-sizing: border-box;
-//     }
-//   }
-// }
+    @media (min-width: 768px) {
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-@media (min-width:2000px) {
-  .uk-width-1-5\@xxl { width: calc(100% * 1 / 5.001); }
-}
+    @media (min-width: 960px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            'featured featured';
+    }
 
-@media (min-width:2400px) {
-  .uk-width-1-6\@xxxl { width: calc(100% * 1 / 6.001); }
+    &-item {
+    }
+
+    &-item:nth-child(1) {
+        @media (min-width: 960px) {
+            grid-area: featured;
+
+            .project-image-container {
+                height: 350px;
+            }
+        }
+    }
 }

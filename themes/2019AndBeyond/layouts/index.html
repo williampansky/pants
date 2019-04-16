@@ -1,5 +1,19 @@
 {{ partial "head/_index" . }}
     <main class="container">
-        {{ partial "projects/list.html" . }}
+
+        <header class="section">
+            {{ partial "intro" . }}
+        </header>
+
+        <section class="section small">
+            {{ partial "projects/list" . }}
+        </section>
+
+        <footer class="section">
+            <div class="container small">
+                {{ partial "footer/global" . }}
+            </div>
+        </footer>
+
     </main>
-{{ partial "footer/_index.html" . }}
+{{ partial "footer/_index" . }}

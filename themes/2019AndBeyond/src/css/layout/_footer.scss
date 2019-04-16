@@ -5,14 +5,28 @@
 // ==============================================================
 
 .pansky-social {
-  & li { padding: 0; }
-  & a {
-    padding: 24px;
-  }
+    & li {
+        padding: 0;
+    }
+    & a {
+        padding: 24px;
+    }
 }
 
-footer {
-  & .uk-text-small {
-    font-family: sans-serif;
-  }
+main > footer > * {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    @media (min-width: 768px) {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    p {
+        font-family: $font-sans;
+        font-size: 0.675em;
+        line-height: 1.25;
+        margin: 0;
+    }
 }

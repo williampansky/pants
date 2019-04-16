@@ -5,12 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>{{ .Site.Title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {{ partial "head/meta.html" . }}
-        <!-- {{ partial "head/analytics.html" . }} -->
-        {{ partial "head/critical.styles.html" . }}
-        {{ partial "head/stylesheets.html" . }}
-        {{ partial "head/html5shiv.html" . }}
+        {{ partial "head/meta" . }}
+        {{ partial "head/analytics" . }}
+        {{ partial "head/critical.styles" . }}
+        {{ partial "head/stylesheets" . }}
+        {{ partial "head/html5shiv" . }}
     </head>
     <body>
-        {{ partial "head/chromeframe.html" . }}
-        {{ partial "nav/_index.html" . }}
+        {{ partial "head/chromeframe" . }}
+        {{ partial "nav/navbar" . }}

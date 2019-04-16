@@ -1,7 +1,14 @@
-<section class="grid">
-    {{ range first 10 (where .Data.Pages.ByDate "Section" "projects") }}
-        <div class="grid-item">
-            {{ partial "projects/list.item.html" . }}
-        </div>
-    {{ end }}
-</section>
+<div class="container small">
+    <div class="grid">
+
+        {{ range first 20 (where .Data.Pages.ByPublishDate.Reverse "Section" "projects") }}
+            {{ if eq .File.LogicalName "_template.md" }}
+            {{ else }}
+                <div class="grid-item">
+                    {{ partial "projects/list.item" . }}
+                </div>
+            {{ end }}
+        {{ end }}
+        
+    </div>
+</div>

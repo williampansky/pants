@@ -1,18 +1,28 @@
 ---
-avatar: "/img/projects/good-lunch/good-face-block.jpg"
-caption: "Goodwill works, so people can."
-category: "Case study"
-client: "Goodwill Industries of Dallas, Inc."
-clientdescription: "For over 90 years Goodwill Dallas has been committed to providing job training and employment to persons with disabilities and disadvantages to help transform their lives through the power of jobs."
-clientlocation: "Dallas, TX"
-clientsame: "https://www.goodwilldallas.org/"
 draft: false
-image: "/projects/thelunch.info/demo/images/Goodwill-worn-out-hands-from-working-hard.jpg"
-keywords: ["goodwill", "dallas", "lunch", "fundraising"]
-Lastmod: "2017-07-15"
-name: "thelunch.info"
-projecturl: "https://thelunch.info"
-publishDate: "2017-03-25"
+featured: true
+keywords: ["goodwill dallas", "the lunch", "fundraising"]
+Lastmod: 2017-07-15
+publishDate: 2017-03-25
+weight: 1
+client: {
+    avatar: "/projects/thelunch.info/good-face-block.jpg",
+    caption: "Goodwill works, so people can.",
+    name: "Goodwill Industries of Dallas, Inc.",
+    description: "For over 90 years Goodwill Dallas has been committed to providing job training and employment to persons with disabilities and disadvantages to help transform their lives through the power of jobs.",
+    location: "Dallas, TX",
+    url: "https://www.goodwilldallas.org/"
+}
+project: {
+    category: "Case study",
+    employer: "Miller Ad Agency",
+    image: "/projects/thelunch.info/demo/images/Goodwill-worn-out-hands-from-working-hard.jpg",
+    name: "thelunch.info",
+    summary: "The Lunch, Goodwill Industries of Dallas' annual fundraising event, found wonderful success for its first two years—securing over $1.5m each year to, “...expand and enhance job training services.” For 2017, I suggested a revamp ...",
+    tag: "GoHugo.io",
+    title: "Deploying a standalone landing page site for Goodwill Dallas' annual fundraising event, THE LUNCH, with GoHugo.io",
+    url: "https://thelunch.info"
+}
 sources: [
     {
         "name": "Animate.css",
@@ -111,11 +121,6 @@ sources: [
         "description": "Tinted Hero"
     },
 ]
-summary: "The Lunch, Goodwill Industries of Dallas' annual fundraising event, found wonderful success for its first two years – securing over $1.5m each year to, “... expand and enhance job training services.” For 2017, I suggested a revamp ..."
-tag: "GoHugo.io single-page site"
-title: "Deploying a standalone landing page site for Goodwill Dallas' annual fundraising event, THE LUNCH, with GoHugo.io"
-weight: 1
-workfor: "Miller Ad Agency"
 ---
 
 ## Introduction

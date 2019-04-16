@@ -1,0 +1,127 @@
+<article class="entry" itemscope itemtype="http://schema.org/CreativeWork">
+    <!-- <div class="entry-client">
+        <div
+            class="entry-client-avatar"
+            style="background-image:url('{{ .Params.avatar }}')"
+            title="{{ .Params.client }}"
+            itemprop="producer"
+            itemprop="image"
+        ></div>
+        <div class="entry-client-info">
+            <div class="entry-client-info-top" itemprop="provider">
+                {{ .Params.tag }}
+            </div>
+            <div
+                class="entry-client-info-bottom"
+                itemscope
+                itemtype="http://schema.org/Organization"
+            >
+                <span
+                    itemprop="producer"
+                    itemprop="brand"
+                    >{{ .Params.client }}</span
+                >
+                <link itemprop="sameAs" href="{{ .Params.clientsame }}" />
+                <meta
+                    itemprop="address"
+                    content="{{ .Params.clientlocation }}"
+                />
+                <meta itemprop="contributor" content="{{ .Params.workfor }}" />
+            </div>
+        </div>
+    </div> -->
+
+    <header class="entry-header">
+        <h1
+            class="entry-title"
+            itemprop="headline"
+            itemprop="name"
+            itemprop="alternateName"
+        >
+            <span>{{ .Params.job.title }}</span>
+        </h1>
+        <div class="entry-employer">
+            <div
+                class="entry-employer-logo"
+                style="background-image:url('{{ .Site.BaseURL }}images/resume.{{ .Params.employer.logo }}')"
+                title="{{ .Params.client }}"
+                itemprop="image"
+            ></div>
+            <div class="entry-employer-info">
+                <div class="entry-employer-info-top">
+                    <h2 class="entry-employer-name">
+                        <span>{{ .Params.employer.name }}</span>
+                    </h2>
+                </div>
+                <div class="entry-employer-info-bottom">
+                    <p class="entry-employer-description">
+                        <span>{{ .Params.employer.description }}</span>
+                    </p>
+                </div>
+                <div
+                    itemprop="creator"
+                    itemscope
+                    itemtype="http://schema.org/Corporation"
+                >
+                    <meta
+                        itemprop="name"
+                        content="{{ .Params.employer.name }}"
+                    />
+                    <link
+                        itemprop="sameAs"
+                        href="{{ .Params.employer.sameas }}"
+                    />
+                </div>
+            </div>
+        </div>
+        <div class="entry-employer-details">
+            {{ if and (.Params.employment.start) (.Params.employment.end) }}
+            <p>
+                <time
+                    itemprop="datePublished"
+                    >{{ .Params.employment.start }}</time
+                >
+                <span>— </span>
+                <time
+                    itemprop="datePublished"
+                    >{{ .Params.employment.end }}</time
+                >
+                {{ if .Params.employment.abbr }}
+                <span>· </span>
+                <span>{{ .Params.employment.abbr }}</span>
+                {{ end }}
+            </p>
+            {{ end }}
+
+            {{ if and (.Params.employer.address.abbr) (.Params.employer.address.state) }}
+            <p>
+                <span>{{ .Params.employer.address.abbr }},</span>
+                <span>{{ .Params.employer.address.state }}</span>
+            </p>
+            {{ else if and (.Params.employer.address.city) (.Params.employer.address.state) }}
+            <p>
+                <span>{{ .Params.employer.address.city }},</span>
+                <span>{{ .Params.employer.address.state }}</span>
+            </p>
+            {{ end }}
+        </div>
+    </header>
+
+    {{ if or (.Content) }}
+    <div class="entry-body" itemprop="description">
+        {{ .Content }}
+    </div>
+    {{ end }}
+
+    <!-- <hr /> -->
+
+    <!-- <footer class="entry-footer">
+        <p class="entry-details">
+            <span itemprop="name">
+                <strong>{{ .Params.name }}</strong>
+                <link itemprop="sameAs" href="{{ .Params.projecturl }}" />
+            </span>
+            <span itemprop="keywords">{{ delimit .Keywords ", " }}</span>
+        </p>
+    </footer> -->
+</article>

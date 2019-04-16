@@ -2,87 +2,109 @@
 
 <span id="readingProgress"></span>
 
-<main class="container push-left">
-    <article class="article">
-        <header class="header">
-            {{ if (isset .Params "avatar") | and (isset .Params "client") | and (isset .Params "clientdescription") }}
-            <div class="client-block">
-                <img
-                    src="{{ .Params.avatar }}"
-                    class="avatar"
-                    alt="{{ .Params.client }}"
-                />
-                <div class="meta">
-                    <p class="client">{{ .Params.client }}</p>
-                    <p class="description">{{ .Params.clientdescription }}</p>
-                </div>
-            </div>
-            {{ end }}
+<main class="container">
+    <div class="push-left">
+        <article class="article">
+            <header class="header">
+                {{ if and (.Params.client.avatar) (.Params.client.name) (.Params.client.description) }}
+                    <div class="client-block">
+                        <img
+                            src="{{ .Params.client.avatar }}"
+                            class="avatar"
+                            alt="{{ .Params.client.name }}"
+                        />
+                        <div class="meta">
+                            <p class="client">{{ .Params.client.name }}</p>
+                            <p class="description">
+                                {{- .Params.client.description -}}
+                            </p>
+                        </div>
+                    </div>
+                {{ end }}
 
-            <h1 class="title">{{ .Title }}</h1>
+                {{ if and (.Params.project.title) }}
+                    <h1 class="title">{{ .Params.project.title }}</h1>
+                {{ end }}
 
-            {{ if (isset .Params "name") | and (isset .Params "tag") }}
-                <p class="lead">
-                    {{ .Params.category }} / {{ .Params.name }}
-                </p>
-            {{ end }}
+                {{ if and (.Params.project.name) (.Params.project.tag) }}
+                    <p class="lead">
+                        <span>{{ .Params.project.category }}</span>
+                        <span>&nbsp;|&nbsp;</span>
+                        <span>{{ .Params.project.name }}</span>
+                    </p>
+                {{ end }}
 
-            <p class="date">
-                <span>Published on</span>
-                <time datetime="{{ .Date.Format "2006-01-02" }}">
-                {{ .PublishDate.Format "January 2, 2006" }}</time>.
-                <span>Last modified on</span>
-                <time datetime="{{ .Lastmod.Format "2006-01-02" }}">
-                {{ .Lastmod.Format "January 2, 2006" }}</time>.
-            </p>
-
-            <p class="info">
-                <strong class="read">{{ .ReadingTime }} minute read.</strong>
-                <span class="count">Word count: {{ .WordCount  }}.</span>
-            </p>
-        </header>
-
-        {{ if (isset .Params "image") and (isset .Params "caption") }}
-            <section class="hero">
-                <figure class="figure">
-                    <img
-                    class="image"
-                    src="{{ .Params.image }}"
-                    alt="{{ .Params.client }}" />
-                    <figcaption class="caption">
-                        <span>{{ .Params.caption }}</span>
-                    </figcaption>
-                </figure>
-            </section>
-        {{ end }}
-
-        <section class="content">
-            {{ .Content }}
-        </section>
-
-        <footer class="footer">
-            <div class="sources">
-                <h2>Sources</h2>
-                <ul>
-                    {{ range $i, $sequence := .Params.sources }}
-                        <li>
-                            <a
-                            href="{{ $sequence.url }}"
-                            target="_blank">
-                                {{ $sequence.name }}
-                            </a>
-                        </li>
+                <p class="date">
+                    <span>Published on</span>
+                    <time datetime="{{ .Date.Format "2006-01-02" }}">
+                        {{- .PublishDate.Format "January 2, 2006" -}}
+                    </time><span>.</span>
+                    {{ if (.Lastmod) }}
+                        <span>Last modified on</span>
+                        <time datetime="{{ .Lastmod.Format "2006-01-02" }}">
+                            {{- .Lastmod.Format "January 2, 2006" -}}
+                        </time><span>.</span>
                     {{ end }}
-                </ul>
-            </div>
-        </footer>
-    </article>
+                </p>
 
-    <aside
-    class="container toc"
-    uk-scrollspy-nav="closest:li; scroll:true;">
-        {{ .TableOfContents }}
-    </aside>
+                <p class="info">
+                    <strong class="read">{{ .ReadingTime }} minute read.</strong>
+                    <span class="count">Word count: {{ .WordCount  }}.</span>
+                </p>
+            </header>
+
+            {{ if and (.Params.project.image) (.Params.client.name) (.Params.client.caption) }}
+                <section class="hero">
+                    <figure class="figure">
+                        <img
+                        class="image"
+                        src="{{ .Params.project.image }}"
+                        alt="{{ .Params.client.name }}" />
+                        <figcaption class="caption">
+                            <span>{{ .Params.client.caption }}</span>
+                        </figcaption>
+                    </figure>
+                </section>
+            {{ end }}
+
+            {{ if (.Content) }}
+                <section class="content">
+                    {{ .Content }}
+                </section>
+            {{ end }}
+
+            {{ if (isset .Params "sources") }}
+                <footer class="footer">
+                    <div class="sources">
+                        <h2>Sources</h2>
+                        <ul>
+                            {{ range $i, $sequence := .Params.sources }}
+                                <li>
+                                    <a
+                                    href="{{ $sequence.url }}"
+                                    target="_blank">
+                                        {{ $sequence.name }}
+                                    </a>
+                                </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </footer>
+            {{ end }}
+        </article>
+
+        <aside
+        class="container toc"
+        uk-scrollspy-nav="closest:li; scroll:true;">
+            {{ .TableOfContents }}
+        </aside>
+    </div>
+
+    <footer class="section">
+        <div class="container small">
+            {{ partial "footer/global" . }}
+        </div>
+    </footer>
 </main>
 
 {{ partial "footer/_index" . }}

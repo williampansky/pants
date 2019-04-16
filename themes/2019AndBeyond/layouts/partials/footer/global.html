@@ -1,0 +1,13 @@
+<p>
+    ©&nbsp;<span id="copyright"></span>&nbsp;William Pansky. All rights
+    reserved.
+</p>
+<p>
+    Powered by <a href="https://gohugo.io">Hugo</a> v{{ .Hugo.Version }}
+</p>
+
+<script>
+    document
+        .getElementById('copyright')
+        .appendChild(document.createTextNode('' + new Date().getFullYear()));
+</script>

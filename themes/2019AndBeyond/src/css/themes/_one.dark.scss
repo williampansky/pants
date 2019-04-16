@@ -1,0 +1,76 @@
+/*
+
+Atom One Dark by Daniel Gamage
+Original One Dark Syntax theme from https://github.com/atom/one-dark-syntax
+
+base:    #282c34
+mono-1:  #abb2bf
+mono-2:  #818896
+mono-3:  #5c6370
+hue-1:   #56b6c2
+hue-2:   #61aeee
+hue-3:   #c678dd
+hue-4:   #98c379
+hue-5:   #e06c75
+hue-5-2: #be5046
+hue-6:   #d19a66
+hue-6-2: #e6c07b
+
+*/
+
+$base:      #282c34;
+$mono-0:    #f8f8f8;
+$mono-1:    #abb2bf;
+$mono-2:    #818896;
+$mono-3:    #5c6370;
+$hue-1:     #56b6c2;
+$hue-2:     #61aeee;
+$hue-3:     #c678dd;
+$hue-4:     #98c379;
+$hue-5:     #e06c75;
+$hue-5-2:   #be5046;
+$hue-6:     #d19a66;
+$hue-6-2:   #e6c07b;
+
+.one-dark {
+    background: $base;
+    color: $mono-1;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: white;
+    }
+
+    a,
+    a:link,
+    a:visited {
+        color: $hue-6-2;
+    }
+}
+
+.one-dark .project {
+    a {
+        color: inherit;
+    }
+
+    &-title {
+        color: $hue-6-2;
+    }
+
+    &-body {
+        color: $mono-0;
+    }
+
+    &-category,
+    &-details {
+        color: $mono-2;
+    }
+
+    hr {
+        border-color: $mono-3;
+    }
+}

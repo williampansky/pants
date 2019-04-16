@@ -1,118 +1,73 @@
-+++
-draft = false
-publishdate = "2017-02-01"
-Lastmod = "2017-07-15"
-keywords = [ "wordpress", "dallas", "ad agency" ]
+---
+draft: false
+featured: false
+keywords: ["wordpress", "dallas", "ad agency"]
+Lastmod: 2017-07-15
+publishdate: 2017-02-01
+weight: 0
+client: {
+    avatar: "/projects/miller.agency/demo/apple-touch-icon.png",
+    caption: "Wordpress CMS platform built with Elementor Pro for Dallas full-service ad agency",
+    name: "Miller Ad Agency",
+    description: "For more than 30 years, Miller Ad Agency has earned a reputation as experts in advertising. From boosting your bottom line to growing your market share, Miller Ad Agency brings results.",
+    location: "Dallas, TX",
+    url: "https://www.milleradagency.com/"
+}
+project: {
+    category: "Case study",
+    employer: "Miller Ad Agency",
+    image: "/projects/miller.agency/demo/wp-content/uploads/newsletter-2017-01-hero.jpg",
+    name: "miller.agency",
+    summary: "Over the course of my third year at Miller Ad Agency, I became increasingly infatuated with front-end web development ...",
+    tag: "Wordpress",
+    title: "Wordpress CMS platform built with Elementor Pro for Dallas full-service ad agency",
+    url: "https://github.com/milleradagency/millerAgency"
+}
+hero: "/projects/miller.agency/demo/wp-content/uploads/maa-services-web.jpg"
+---
 
-avatar = "/projects/miller.agency/demo/apple-touch-icon.png"
-tag = "Wordpress"
-client = "Miller Ad Agency"
-clientdescription = "For more than 30 years, Miller Ad Agency has earned a reputation as experts in advertising. From boosting your bottom line to growing your market share, Miller Ad Agency brings results."
-image = "/projects/miller.agency/demo/wp-content/uploads/newsletter-2017-01-hero.jpg"
-hero = "/projects/miller.agency/demo/wp-content/uploads/maa-services-web.jpg"
-caption = ""
-category = "Case study"
-title = "Wordpress CMS platform built with Elementor Pro for Dallas full-service ad agency"
-name = "miller.agency"
+## Introduction
 
-description = "Wordpress CMS platform built with Elementor Pro for Dallas full-service ad agency"
-
-summary = "Over the course of my third year at Miller Ad Agency, I became increasingly infatuated with front-end web development ..."
-+++
-
-### Introduction
-
-<p class="uk-text-lead">Over the course of my third year at Miller Ad Agency I became increasingly infatuated with front-end web development.</p>
+Over the course of my third year at Miller Ad Agency I became increasingly infatuated with front-end web development.
 
 I learned as much as I could, I dreamt about UI and UX before falling asleep, I carved out a *(basically)* web-only position for myself; if it were possible to eat web dev – I'd have probably done that too.
 
 My awesome art director and good friend, [Sasha Gelemanovic](https://www.linkedin.com/in/sasha-gelemanovic-a31b9460/), knew he needed a way to keep me interested in the day-to-day workload. He devised a proposal for a new agency website to freshen-up the face of the company and, **in all honesty**, keep me around. Not that I'd leave anytime soon, but we could both feel it coming.
 
-<div id="#notification" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">
-  <div>
-    <div class="uk-card uk-card-primary uk-card-body uk-text-center">
-      <h3 class="uk-card-title uk-margin-remove"><span uk-icon="icon: code; ratio: 3;"></span></h3>
-      <h5 class="uk-margin-remove">
-        This case study contains a crap-ton of code examples. :stuck_out_tongue_winking_eye:
-      </h5>
-    </div>
-  </div>
-</div>
+> This case study contains a crap-ton of code examples. :stuck_out_tongue_winking_eye:
 
-### Objective
+## Objective
 
 To construct a brand new website for my then-employer, Miller Ad Agency, that implemented all that I had learned over the last year in the dev space.
 
-### Project details
+## Project details
 
-<dl class="uk-description-list">
-<dt>Client</dt>
-  <dd>Miller Ad Agency</dd>
-<dt>Project</dt>
-  <dd>Wordpress CMS platform built with Elementor Pro for Dallas full-service ad agency.</dd>
-<dt>Site name</dt>
-  <dd>millerAgency</dd>
-<dt>Site URL</dt>
-  <dd>miller.agency</dd>
-<dt>Repo URL</dt>
-  <dd>https://github.com/milleradagency/millerAgency</dd>
-<dt>Standards</dt>
-  <dd>HTML5</dd>
-  <dd>CSS3</dd>
-  <dd>JavaScript</dd>
-  <dd>Wordpress CMS</dd>
-<dt>Libraries &amp; third-party plugins</dt>
-<ul class="uk-margin-remove-top" uk-accordion="multiple: true; duration: 400; transition: ease-in-out">
-  <li>
-    <div class="uk-accordion-title uk-text-small">Click to expand</div>
-    <div class="uk-accordion-content">
-      <dl class="uk-description-list">
-        <dt>Elementor Page Builder</dt>
-          <dd>
-            Elementor offers developers the freedom to customize and extend it and can become a useful plugin for developers that don't want to be chained to a theme.
-          </dd>
-        <dt>Google Analytics</dt>
-          <dd>
-            Google Analytics lets you measure your advertising ROI as well as track your Flash, video, and social networking sites and applications.<sup>5</sup>
-          </dd>
-        <dt>Google Fonts</dt>
-          <dd>
-            Google Fonts ... is an interactive directory of free hosted application programming interfaces for web fonts.<sup>6</sup>
-          </dd>
-        <dt>jQuery</dt>
-          <dd>
-            Cross-platform JavaScript library designed to simplify the client-side scripting of HTML.
-          </dd>
-        <dt>Modernizr</dt>
-          <dd>
-            Modernizr tells you what HTML, CSS and JavaScript features the user’s browser has to offer.
-          </dd>
-        <dt>SCSS</dt>
-          <dd>
-            Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
-          </dd>
-        <dt>UIkit</dt>
-          <dd>
-            A lightweight and modular front-end framework for developing fast and powerful web interfaces.
-          </dd>
-        <dt>Wordpress</dt>
-          <dd>
-            Trusted by the Best. 28% of the web uses WordPress, from hobby blogs to the biggest news sites online. Discover more sites built with WordPress.
-          </dd>
-        <dt>CodePen</dt>
-          <dd>Detect Internet Explorer (IE) up to version 11 and Edge (12+)<sup>12</sup></dd>
-          <dd>Material Design Box Shadows<sup>13</sup></dd>
-          <dd>Sticky Slider Navigation<sup>14</sup></dd>
-          <dd>Tinted Hero<sup>15</sup></dd>
-      </dl>
-    </div>
-  </li>
-</ul>
-</dl>
+- **Client:** Miller Ad Agency
+- **Project:** Wordpress CMS platform built with Elementor Pro for Dallas full-service ad agency.
+- **Site name:** millerAgency
+- **Site URL:** miller.agency
+- **Repo URL:** https://github.com/milleradagency/millerAgency
+- **Standards:** HTML5, CSS3, JavaScript, Wordpress CMS
 
-### Development
+### Libraries &amp; third-party plugins
+|Package|Description|
+|:---|:---|
+|Elementor Page Builder|Elementor offers developers the freedom to customize and extend it and can become a useful plugin for developers that don't want to be chained to a theme.|
+|Google Analytics|Google Analytics lets you measure your advertising ROI as well as track your Flash, video, and social networking sites and applications.|
+|Google Fonts|Google Fonts ... is an interactive directory of free hosted application programming interfaces for web fonts.
+|jQuery|Cross-platform JavaScript library designed to simplify the client-side scripting of HTML.|
+|Modernizr|Modernizr tells you what HTML, CSS and JavaScript features the user’s browser has to offer.|
+|SCSS|Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.|
+|UIkit|A lightweight and modular front-end framework for developing fast and powerful web interfaces.|
+|Wordpress|Trusted by the Best. 28% of the web uses WordPress, from hobby blogs to the biggest news sites online. Discover more sites built with WordPress.|
+|CodePen|Detect Internet Explorer (IE) up to version 11 and Edge (12+)|
+|CodePen|Material Design Box Shadows|
+|CodePen|Sticky Slider Navigation|
+|CodePen|Tinted Hero|
 
-#### i. Development – Research
+## Development
+
+### Research
 
 I had *"built"* Wordpress sites in the past, but this time I **really needed to build it**. I dug in and learned all that I could about PHP and Wordpress-specific syntax in order to develop a site that was optimized, dynamic, and performant. We're talkin' conditional style and script enqueuing, dynamically-updated author profiles, custom post taxonomies – *all that jazz.* We'll dig into the code here in a bit.
 
@@ -124,85 +79,53 @@ I also needed the site to be easily updatedable and maintanable by those who don
 
 After trying various frameworks, like [Materialize](http://materializecss.com/) and Bootstrap v4, I decided UIkit was my go-to for this project. I freakin' love [UIkit](https://getuikit.com/) – it offers lots of creative freedom and a solid foundation to build off of.
 
-<div class="uk-text-center"><img src="/img/vendors/uikit.svg" alt="UIkit"></div>
+![UIkit](/img/vendors/uikit.jpg)
 
 > A lightweight and modular front-end framework for developing fast and powerful web interfaces. —[[UIkit](https://getuikit.com/)]
 
-#### ii. Development – Styleguide
+### Styleguide
 
-<h6 class="uk-background-default" style="z-index: 5;" uk-sticky="top: 50; animation: uk-animation-slide-top; bottom: #typography;">
-  Colors
-</h6>
+#### Colors
 
-###### Colors — Primary
-<ul id="styleguideColors1" class="styleguide-colors uk-child-width-1-2@s uk-grid-collapse" uk-grid>
-  <li id="colorsPrimary" class="uk-card uk-card-body uk-card-primary">#0e75dd</li>
-  <ul class="uk-child-width-1-2 uk-grid-collapse" uk-grid>
-    <li id="colorsPrimaryLight1" class="uk-card uk-card-body uk-card-primary">#328ae2</li>
-    <li id="colorsPrimaryLight2" class="uk-card uk-card-body uk-card-primary">#62a5e9</li>
-    <li id="colorsPrimaryDark1" class="uk-card uk-card-body uk-card-primary">#0c63bc</li>
-    <li id="colorsPrimaryDark2" class="uk-card uk-card-body uk-card-primary">#094c90</li>
-  </ul>
-</ul>
+##### Primary
+- #0e75dd
+- #328ae2
+- #62a5e9
+- #0c63bc
+- #094c90
 
 Note that these palettes were made using the SCSS color mixing function; for example:
 
-```
-{{< highlight scss >}}
-  $color-primary:               #0e75dd; // original: 0053a
-  $color-primary-light:         mix(white, $color-primary, 15%);
-  $color-primary-lightest:      mix(white, $color-primary, 35%);
-  $color-primary-dark:          mix(black, $color-primary, 15%);
-  $color-primary-darkest:       mix(black, $color-primary, 35%);
-{{< /highlight >}}
+```scss
+$color-primary:               #0e75dd; // original: 0053a
+$color-primary-light:         mix(white, $color-primary, 15%);
+$color-primary-lightest:      mix(white, $color-primary, 35%);
+$color-primary-dark:          mix(black, $color-primary, 15%);
+$color-primary-darkest:       mix(black, $color-primary, 35%);
 ```
 
-###### Colors — Accent
-<ul id="styleguideColors2" class="styleguide-colors uk-child-width-1-2@s uk-grid-collapse" uk-grid>
-  <li id="colorsAccent" class="uk-card uk-card-body uk-card-primary">#f49200</li>
-  <ul class="uk-child-width-1-2 uk-grid-collapse" uk-grid>
-    <li id="colorsAccentLight1" class="uk-card uk-card-body uk-card-primary">#f6a226</li>
-    <li id="colorsAccentLight2" class="uk-card uk-card-body uk-card-primary">#f8b859</li>
-    <li id="colorsAccentDark1" class="uk-card uk-card-body uk-card-primary">#cf7c00</li>
-    <li id="colorsAccentDark2" class="uk-card uk-card-body uk-card-primary">#9f5f00</li>
-  </ul>
-</ul>
+##### Accent
+- #f49200
+- #f6a226
+- #f8b859
+- #cf7c00
+- #9f5f00
 
-###### Colors — Grayscale
-<ul id="styleguideColors3" class="styleguide-colors uk-child-width-1-2@s uk-grid-collapse" uk-grid>
-  <li id="colorsBlack" class="uk-card uk-card-body uk-card-primary">#222</li>
-  <ul class="uk-child-width-1-2 uk-grid-collapse" uk-grid>
-    <li id="colorsGray1" class="uk-card uk-card-body uk-card-primary">#666</li>
-    <li id="colorsGray2" class="uk-card uk-card-body uk-card-primary">#959595</li>
-    <li id="colorsWhite1" class="uk-card uk-card-body uk-card-primary">#e5e5e5</li>
-    <li id="colorsWhite2" class="uk-card uk-card-body uk-card-primary">#fdfdfd</li>
-  </ul>
-</ul>
+##### Grayscale
+- #222
+- #666
+- #959595
+- #e5e5e5
+- #fdfdfd
 
-<h6 id="typography" class="uk-background-default" style="z-index: 5;" uk-sticky="top: 50; animation: uk-animation-slide-top; bottom: #ii-development-construction;">
-  Typography
-</h6>
-
-<div id="maaType">
-  <h1>Heading 1 &lt;h1&gt; "Hire us &amp; let's go"</h1>
-  <h2>Heading 2 &lt;h1&gt; "So you’ve just graduated from Hogwarts – congratulations!"</h2>
-  <p>This is a paragraph example; using: font: normal 16px/1.5 "Proxima Nova", Arial, sans-serif; Using the latest advances in digital marketing and advertising, including CRM targeting, geo-fencing, and digital retargeting – we can more efficiently and <strong>successfully</strong> pursue and deliver you more customers. If you’re ready for the success that comes with effective, results-driven advertising, then <span>hire us</span> and join the Miller team!</p>
-</div>
-
-#### ii. Development – Construction
+### Construction
 
 I said we'd look at some code later; well, later is now.
 
-<h6 class="uk-background-default" style="z-index: 5;" uk-sticky="top: 50; animation: uk-animation-slide-top; bottom: #style-css-end;">
-  style.css
-</h6>
+#### style.css
+_Wordpress' required style.css file._
 
-```
-{{< highlight css >}}
-// ==============================================================
-// Wordpress' required style.css
-// ==============================================================
-
+```css
 /*
   Theme Name: millerAgency
   Theme URI: https://github.com/milleradagency/millerAgency
@@ -216,17 +139,13 @@ I said we'd look at some code later; well, later is now.
   License: GNU General Public License v2.0
   License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
-{{< /highlight >}}
 ```
-
-<div id="style-css-end"></div>
 
 I'm excited by all that I've learned from this project — Wordpress is surprisingly interesting once you dig into the nuts and bolts. For example, the `funtions.php` and the ability to dynamically enqueue scripts or stylesheets through if/else conditionals.
 
-<h6 class="uk-background-default" style="z-index: 5;" uk-sticky="top: 50; animation: uk-animation-slide-top; bottom: #functions-php-end;">funtions.php</h6>
+#### funtions.php
 
-```
-{{< highlight php >}}
+```php
 // ==============================================================
 // functions.php
 // ==============================================================
@@ -287,32 +206,24 @@ function millerAgency_assets() {
 
 }
 add_action( 'wp_enqueue_scripts', 'millerAgency_assets' );
-{{< /highlight >}}
 ```
-
-<div id="functions-php-end"></div>
 
 The HTML5 Boilerplate was quite bare (as expected) so I needed to punch in some of the dynamic Wordpressy things I wanted to achieve, like:
 
-<h6 class="uk-background-default" style="z-index: 5;" uk-sticky="bottom: #featured-image-support-end;">Featured image support</h6>
+#### Featured image support
 
-```
-{{< highlight php >}}
+```php
 // ------------------------------
 // Featured Image
 function mytheme_post_thumbnails() {
     add_theme_support( 'post-thumbnails' );
 }
 add_action( 'after_setup_theme', 'mytheme_post_thumbnails' );
-{{< /highlight >}}
 ```
 
-<div id="featured-image-support-end"></div>
+#### Navigation menu functionality
 
-<h6 class="uk-background-default" style="z-index: 5;" uk-sticky="bottom: #navigation-menu-functionality-end;">Navigation menu functionality</h6>
-
-```
-{{< highlight php >}}
+```php
 // ------------------------------
 // Nav Menus
 function nav_menu() {
@@ -320,15 +231,11 @@ function nav_menu() {
 	register_nav_menu( 'mobile', 'Mobile Menu' );
 }
 add_action( 'after_setup_theme', 'nav_menu' );
-{{< /highlight >}}
 ```
 
-<div id="navigation-menu-functionality-end"></div>
+#### Custom post taxonomy and type
 
-<h6 class="uk-background-default" style="z-index: 5;" uk-sticky="top: 50; animation: uk-animation-slide-top; bottom: #custom-post-taxonomy-and-type-end;">Custom post taxonomy and type</h6>
-
-```
-{{< highlight php >}}
+```php
 // ------------------------------
 // custom post taxonomy — seperates portfolio categories from blog categories
 // codex.wordpress.org/Function_Reference/register_taxonomy#Example
@@ -419,122 +326,47 @@ function custom_post_type() {
 // containing our post type registration is not
 // unnecessarily executed.
 add_action( 'init', 'custom_post_type', 1 );
-{{< /highlight >}}
 ```
 
-<div id="custom-post-taxonomy-and-type-end"></div>
-
-#### ii. Development – Components
+### Components
 
 This next section showcases the overal aesthetic and most of the key site components. Lot's of screenshots and examples incoming.
 
-<h6 class="uk-background-default" style="z-index: 5;" uk-sticky="bottom: #metro-card-end;">Metro card</h6>
+#### Metro card
 
 Using Elementor's *flip box* snippet, I designed a metro-esque component we could reuse throughout the site on top-level pages.
 
 Here is an example of said element:
 
-<div class="uk-section">
-
 {{< project-good-maa-metroCard >}}
 
-</div>
+##### Homepage
+![Homepage](/img/projects/maa-website/site-homepage.jpg)
 
-<div class="uk-section">
+##### About page
+![About page](/img/projects/maa-website/site-aboutpage.jpg)
 
-<!-- HOMEPAGE -->
-{{< figureModal src="/img/projects/maa-website/site-homepage.jpg" title="Homepage" class="modal caption wep-box-shadow-bottom" link="siteHomepage" >}}
+##### Team page
+![Team page](/img/projects/maa-website/site-teampage.jpg)
 
-<!-- ABOUT PAGE -->
-{{< figureModal src="/img/projects/maa-website/site-aboutpage.jpg" title="About page" class="modal caption wep-box-shadow-bottom" link="siteAbout" >}}
+#### Header, nav, footer, &amp; mobile menu
 
-<!-- TEAM PAGE -->
-{{< figureModal src="/img/projects/maa-website/site-teampage.jpg" title="Team page" class="modal caption wep-box-shadow-bottom" link="siteTeam" >}}
+![miller.agency topnav](/img/projects/maa-website/site-topNav.jpg)
 
-</div>
+![miller.agency footer](/img/projects/maa-website/site-footer.jpg)
 
-<div id="metro-card-end"></div>
+![Mobile bar &amp; nav menu](/img/projects/maa-website/maaMobile.gif)
 
-<h6 class="uk-background-default" style="z-index: 5;" uk-sticky="bottom: #header-nav-footer-mobilemenu-end;">Header, nav, footer, &amp; mobile menu</h6>
+#### Team members &amp; profile pages
 
-<div class="uk-section">
+![Dynamically-updated author profiles](/img/projects/maa-website/site-teamSingle.jpg)
 
-{{< centerImage src="/img/projects/maa-website/site-topNav.jpg" title="" class="" >}}
-
-{{< centerImage src="/img/projects/maa-website/site-footer.jpg" title="Desktop header & footer" class="caption wep-box-shadow-bottom" >}}
-
-</div>
-
-<div class="uk-text-center uk-position-relative uk-section">
-  <img src="/img/projects/maa-website/maaMobile.gif" alt="Mobile bar &amp; nav menu" class="" style="width: 40%; position: absolute; padding: 2.1%; top: 15.5%; margin: 0 auto; z-index: 1;">
-  <img src="/img/projects/maa-website/iphone6plus.png" alt="" class="" style="width:40%; position: relative; z-index: 2;">
-  <span class="caption">Mobile bar &amp; nav</span>
-</div>
-
-<div class="uk-section">
-
-{{< centerImage src="/img/projects/maa-website/site-mobileBar.jpg" title="Smartphone mobile bar" class="caption wep-box-shadow-bottom" >}}
-
-</div>
-
-<div id="header-nav-footer-mobilemenu-end"></div>
-
-<!-- <h6 class="uk-background-default" style="z-index: 5;" uk-sticky="bottom: #bloglist-and-singleposts-end;">Blog list and single posts</h6>
-
-
-
-<div id="bloglist-and-singleposts-end"></div>
-
-<h6 class="uk-background-default" style="z-index: 5;" uk-sticky="bottom: #careerspage-end;">Careers page</h6>
-
-
-
-<div id="careerspage-end"></div>
-
-<h6 class="uk-background-default" style="z-index: 5;" uk-sticky="bottom: #ticketreporting-and-issuesupport-end;">Ticket reporting &amp; issue support</h6>
-
-
-
-<div id="ticketreporting-and-issuesupport-end"></div> -->
-
-<h6 class="uk-background-default" style="z-index: 5;" uk-sticky="bottom: #teammembers-and-profilepages-end;">Team members &amp; profile pages</h6>
-
-<div class="uk-margin-xlarge-bottom">
-
-{{< centerImage src="/img/projects/maa-website/site-teamSingle.jpg" title="Dynamically-updated author profiles" class="caption wep-box-shadow-bottom" >}}
-
+##### author.php
 {{< gist williampansky 12b69c2c48fa808026dbeb25bbd2316d "author.php" >}}
 
-</div>
+#### Single-item landing pages
+![Pandora landing page](/img/projects/maa-website/site-pandora.jpg)
 
-<div id="teammembers-and-profilepages-end"></div>
-
-<!-- <h6 class="uk-background-default" style="z-index: 5;" uk-sticky="bottom: #services-end;">Services</h6>
-
-
-
-<div id="services-end"></div>
-
-<h6 class="uk-background-default" style="z-index: 5;" uk-sticky="bottom: #newsletters-end;">Newsletter portal &amp; landing pages</h6>
-
-
-
-<div id="newsletters-end"></div> -->
-
-<h6 class="uk-background-default" style="z-index: 5;" uk-sticky="bottom: #singleLanding-end;">Single-item landing pages</h6>
-
-<div class="uk-margin-xlarge-bottom">
-  {{< centerImage src="/img/projects/maa-website/site-pandora.jpg" title="Pandora landing page" class="caption" >}}
-</div>
-
-<div id="singleLanding-end"></div>
-
-<!-- <h6 class="uk-background-default" style="z-index: 5;" uk-sticky="bottom: #quizes-end;">Quizes &amp; leads</h6>
-
-
-
-<div id="quizes-end"></div> -->
-
-### Demo
+## Demo
 
 To view the miller.agency demo, [click here](/projects/miller.agency/demo).

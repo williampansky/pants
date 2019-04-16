@@ -264,6 +264,11 @@ div.code-toolbar > .toolbar .toolbar-item {
     padding: 0.5em 1em;
 }
 
+.language-css ~ .toolbar {
+    background: #379ad6;
+    color: #fff;
+}
+
 .language-js ~ .toolbar {
     background: #eed817;
     color: #111;
@@ -281,6 +286,11 @@ div.code-toolbar > .toolbar .toolbar-item {
 
 .language-go ~ .toolbar {
     background: #45699b;
+    color: #fff;
+}
+
+.language-php ~ .toolbar {
+    background: #575788;
     color: #fff;
 }
 
