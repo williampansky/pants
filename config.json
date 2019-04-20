@@ -43,10 +43,16 @@
                 "weight": -90
             },
             {
+                "identifier": "references",
+                "name": "References",
+                "url": "/references",
+                "weight": -80
+            },
+            {
                 "identifier": "contact",
                 "name": "Contact",
                 "url": "/contact",
-                "weight": -80
+                "weight": -70
             }
         ]
     },

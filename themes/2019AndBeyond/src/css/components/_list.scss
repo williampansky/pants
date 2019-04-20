@@ -49,4 +49,37 @@ ul {
     & > li > ul {
         margin-top: 10px;
     }
+
+    & > li > ul {
+        padding: 0;
+    }
+}
+
+ol {
+    padding: 0;
+
+    & > li {
+        margin-left: calc(0.5em + 10px);
+        padding-left: 0.5em;
+        position: relative;
+    }
+
+    & > li > :last-child {
+        margin-bottom: 0;
+    }
+
+    & ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 30px;
+    }
+
+    & > li:nth-child(n + 2),
+    & > li > ul {
+        margin-top: 10px;
+    }
+
+    & > li > ul {
+        padding: 0;
+    }
 }

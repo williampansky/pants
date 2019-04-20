@@ -27,18 +27,22 @@
                 {{ end }}
 
                 {{ if and (.Params.project.name) (.Params.project.tag) }}
-                    <p class="lead">
+                    <p class="info">
                         <span>{{ .Params.project.category }}</span>
-                        <span>&nbsp;|&nbsp;</span>
-                        <span>{{ .Params.project.name }}</span>
+                        <span>&nbsp;·&nbsp;</span>
+                        <strong>
+                            <span>{{ .Params.project.name }}</span>
+                        </strong>
                     </p>
                 {{ end }}
 
                 <p class="date">
-                    <span>Published on</span>
-                    <time datetime="{{ .Date.Format "2006-01-02" }}">
-                        {{- .PublishDate.Format "January 2, 2006" -}}
-                    </time><span>.</span>
+                    <strong>
+                        <span>Published on</span>
+                        <time datetime="{{ .Date.Format "2006-01-02" }}">
+                            {{- .PublishDate.Format "January 2, 2006" -}}
+                        </time><span>.</span>
+                    </strong>
                     {{ if (.Lastmod) }}
                         <span>Last modified on</span>
                         <time datetime="{{ .Lastmod.Format "2006-01-02" }}">
@@ -48,27 +52,32 @@
                 </p>
 
                 <p class="info">
-                    <strong class="read">{{ .ReadingTime }} minute read.</strong>
                     <span class="count">Word count: {{ .WordCount  }}.</span>
+                    <strong class="read">{{ .ReadingTime }} minute read.</strong>
                 </p>
             </header>
 
-            {{ if and (.Params.project.image) (.Params.client.name) (.Params.client.caption) }}
+            {{ if and (.Params.project.image) (.Params.client.name) }}
                 <section class="hero">
                     <figure class="figure">
                         <img
                         class="image"
                         src="{{ .Params.project.image }}"
-                        alt="{{ .Params.client.name }}" />
-                        <figcaption class="caption">
-                            <span>{{ .Params.client.caption }}</span>
-                        </figcaption>
+                        alt="{{ .Params.project.name }}" />
+                        {{ if (.Params.project.caption) }}
+                            <figcaption class="caption">
+                                <span>{{ .Params.client.caption }}</span>
+                            </figcaption>
+                        {{ end }}
                     </figure>
                 </section>
             {{ end }}
 
             {{ if (.Content) }}
                 <section class="content">
+                    {{ if (.Params.project.lead) }}
+                        <p class="lead">{{ .Params.project.lead }}</p>
+                    {{ end }}
                     {{ .Content }}
                 </section>
             {{ end }}
@@ -94,7 +103,7 @@
         </article>
 
         <aside
-        class="container toc"
+        class="container uk-animation-slide-right-small toc"
         uk-scrollspy-nav="closest:li; scroll:true;">
             {{ .TableOfContents }}
         </aside>

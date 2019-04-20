@@ -38,7 +38,8 @@ employer: {
 - Maintained legacy enterprise website projects.
 - morez
 - mohg meta
-- mohg schema tags 
+- mohg schema tags
+- mohg press center
 - skynet.override
 - shs-docs
 - championed stylelint standards

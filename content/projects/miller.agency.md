@@ -20,6 +20,7 @@ project: {
     name: "miller.agency",
     summary: "Over the course of my third year at Miller Ad Agency, I became increasingly infatuated with front-end web development ...",
     tag: "Wordpress",
+    thumbnail: "/projects/miller.agency/_thumb.jpg",
     title: "Wordpress CMS platform built with Elementor Pro for Dallas full-service ad agency",
     url: "https://github.com/milleradagency/millerAgency"
 }
@@ -75,11 +76,11 @@ I also needed the site to be easily updatedable and maintanable by those who don
 
 > Elementor offers developers the freedom to customize and extend it and can become a useful plugin for developers that don't want to be chained to a theme.
 
-![Elementor](/img/projects/maa-website/elementor-trio.jpg)
+![Elementor](/projects/miller.agency/elementor-trio.jpg)
 
 After trying various frameworks, like [Materialize](http://materializecss.com/) and Bootstrap v4, I decided UIkit was my go-to for this project. I freakin' love [UIkit](https://getuikit.com/) – it offers lots of creative freedom and a solid foundation to build off of.
 
-![UIkit](/img/vendors/uikit.jpg)
+![UIkit](/images/vendors/uikit.jpg)
 
 > A lightweight and modular front-end framework for developing fast and powerful web interfaces. —[[UIkit](https://getuikit.com/)]
 
@@ -341,31 +342,31 @@ Here is an example of said element:
 {{< project-good-maa-metroCard >}}
 
 ##### Homepage
-![Homepage](/img/projects/maa-website/site-homepage.jpg)
+![Homepage](/projects/miller.agency/site-homepage.jpg)
 
 ##### About page
-![About page](/img/projects/maa-website/site-aboutpage.jpg)
+![About page](/projects/miller.agency/site-aboutpage.jpg)
 
 ##### Team page
-![Team page](/img/projects/maa-website/site-teampage.jpg)
+![Team page](/projects/miller.agency/site-teampage.jpg)
 
 #### Header, nav, footer, &amp; mobile menu
 
-![miller.agency topnav](/img/projects/maa-website/site-topNav.jpg)
+![miller.agency topnav](/projects/miller.agency/site-topNav.jpg)
 
-![miller.agency footer](/img/projects/maa-website/site-footer.jpg)
+![miller.agency footer](/projects/miller.agency/site-footer.jpg)
 
-![Mobile bar &amp; nav menu](/img/projects/maa-website/maaMobile.gif)
+![Mobile bar &amp; nav menu](/projects/miller.agency/maaMobile.gif)
 
 #### Team members &amp; profile pages
 
-![Dynamically-updated author profiles](/img/projects/maa-website/site-teamSingle.jpg)
+![Dynamically-updated author profiles](/projects/miller.agency/site-teamSingle.jpg)
 
 ##### author.php
 {{< gist williampansky 12b69c2c48fa808026dbeb25bbd2316d "author.php" >}}
 
 #### Single-item landing pages
-![Pandora landing page](/img/projects/maa-website/site-pandora.jpg)
+![Pandora landing page](/projects/miller.agency/site-pandora.jpg)
 
 ## Demo
 

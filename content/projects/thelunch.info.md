@@ -1,6 +1,6 @@
 ---
 draft: false
-featured: true
+featured: false
 keywords: ["goodwill dallas", "the lunch", "fundraising"]
 Lastmod: 2017-07-15
 publishDate: 2017-03-25
@@ -20,6 +20,7 @@ project: {
     name: "thelunch.info",
     summary: "The Lunch, Goodwill Industries of Dallas' annual fundraising event, found wonderful success for its first two years—securing over $1.5m each year to, “...expand and enhance job training services.” For 2017, I suggested a revamp ...",
     tag: "GoHugo.io",
+    thumbnail: "/projects/thelunch.info/_thumb.jpg",
     title: "Deploying a standalone landing page site for Goodwill Dallas' annual fundraising event, THE LUNCH, with GoHugo.io",
     url: "https://thelunch.info"
 }
@@ -180,11 +181,11 @@ So now I had a plan: build with Hugo, write content in [Markdown](https://www.wi
 
 I started with some wireframe sketches; the conceptual layout of the landing page took on various aspects of lessons I’ve learned and read about — captivating hero image with a simple intro and engaging CTA, elongated explanation with some statistics, easy navigation, etc.
 
-![Always a good idea to sketch some simple wireframes when starting a new project](/img/projects/good-lunch/good-lunch-wireframes-01.jpg)
+![Always a good idea to sketch some simple wireframes when starting a new project](/projects/thelunch.info/good-lunch-wireframes-01.jpg)
 
 At this point, the client sent over some print materials they whipped up in-house; the pieces included key information for the page, as well as a branded visual identity.
 
-![Screenshot of THE LUNCH's hero and intro sections](/img/projects/good-lunch/good-lunch-hero-intro.jpg)
+![Screenshot of THE LUNCH's hero and intro sections](/projects/thelunch.info/good-lunch-hero-intro.jpg)
 
 ### Construction
 
@@ -306,7 +307,7 @@ The primary organization for my SCSS is as follows:
 
 I wanted the elements that housed the details and benefits for sponsoring the event to look pretty slick, professional, and appealing. Using a 'pricing table' aesthetic, I designed some responsive cards from Bootstrap's base component.
 
-![Sponsorship cards for THE LUNCH](/img/projects/good-lunch/good-lunch-sponcards.jpg)
+![Sponsorship cards for THE LUNCH](/projects/thelunch.info/good-lunch-sponcards.jpg)
 
 #### Javascript
 
@@ -458,7 +459,7 @@ Due to the nature of the event and it’s target market, I opted to make the bas
 
 The site did encounter some hiccups when testing IE11, but that was expected. Additionally, I tested the page on iOS (current + back one version) using Xcode Simulator and live devices, Android (current version) using live devices, and several breakpoints using the Emmet Re:View [plugin](https://chrome.google.com/webstore/detail/emmet-review/epejoicbhllgiimigokgjdoijnpaphdp?hl=en) for Chrome *(pictured below)*.
 
-![Emmet Re:View Chrome Plugin](/img/projects/good-lunch/good-lunch-emmet.jpg)
+![Emmet Re:View Chrome Plugin](/projects/thelunch.info/good-lunch-emmet.jpg)
 
 ## Issues & Solutions
 
@@ -468,7 +469,7 @@ There's always issues, *always*. Tracked 'em on on the repo; the following is a 
 
 > *#11:* The hero intro sections encountered bugs on Windows 7 IE10/11.
 
-![Screenshot of repo issues #11 for THE LUNCH 2017](/img/projects/good-lunch/good-lunch-issues-11.jpg)
+![Screenshot of repo issues #11 for THE LUNCH 2017](/projects/thelunch.info/good-lunch-issues-11.jpg)
 
 The issue was resolved through the following tweaks:
 
@@ -482,7 +483,7 @@ View issue on [GitHub](https://github.com/milleradagency/GOOD-Lunch/issues/11)
 
 > *#13:* The sponsor/donor tier-card sections encountered bugs on Windows 10 Edge v13.
 
-![Screenshot of repo issues #13 for THE LUNCH 2017](/img/projects/good-lunch/good-lunch-issues-13.jpg)
+![Screenshot of repo issues #13 for THE LUNCH 2017](/projects/thelunch.info/good-lunch-issues-13.jpg)
 
 The issue was resolved through the following tweaks:
 
@@ -518,7 +519,7 @@ View issue on [GitHub](https://github.com/milleradagency/GOOD-Lunch/issues/38).
 
 Ahh, going live... such a terrifying and exhilarating time! The project hit v1.0.0 and the Deployment milestone was completed. Although, I guess I forgot to actually close the milestone – *hence the date of closure*.
 
-![THE LUNCH deployment milestone on GitHub](/img/projects/good-lunch/good-lunch-milestone-deployment.jpg)
+![THE LUNCH deployment milestone on GitHub](/projects/thelunch.info/good-lunch-milestone-deployment.jpg)
 
 ## Post-release
 

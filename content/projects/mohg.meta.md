@@ -16,10 +16,11 @@ client: {
 project: {
     category: "Case study",
     employer: "Sabre Corporation",
-    image: "/projects/mohg.morez/_thumb.jpg",
+    image: "/projects/mohg.meta/homepage.jpg",
     name: "mandarinoriental.com",
     summary: "",
     tag: "Meta Tags",
+    thumbnail: "/projects/mohg.meta/_thumb.jpg",
     title: "Upgrading enterprise meta tags",
     url: "https://mandarinoriental.com/"
 }

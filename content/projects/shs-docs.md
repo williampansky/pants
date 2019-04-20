@@ -16,10 +16,11 @@ client: {
 project: {
     category: "Personal project",
     employer: "William Pansky",
-    image: "/projects/shs-docs/_thumb.jpg",
+    image: "/projects/shs-docs/example.jpg",
     name: "shs-docs",
     summary: "A documentation generator package designed for SHSDX OpMod developers.",
     tag: "NPM Package",
+    thumbnail: "/projects/shs-docs/_thumb.jpg",
     title: "Developing a documentation generator; installable via NPM",
     url: "https://www.npmjs.com/package/shs-docs"
 }

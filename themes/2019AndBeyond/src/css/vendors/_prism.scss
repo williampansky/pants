@@ -10,7 +10,6 @@ code[class*='language-'],
 pre[class*='language-'] {
     color: black;
     background: none;
-    box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     font-size: 0.875em;
     text-align: left;
@@ -28,6 +27,10 @@ pre[class*='language-'] {
     -moz-hyphens: none;
     -ms-hyphens: none;
     hyphens: none;
+}
+
+pre[class*='language-'] {
+    box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
 }
 
 pre[class*='language-']::-moz-selection,
@@ -261,7 +264,7 @@ div.code-toolbar > .toolbar {
 }
 
 div.code-toolbar > .toolbar .toolbar-item {
-    padding: 0.5em 1em;
+    padding: 0.55em 1em 0.5em;
 }
 
 .language-css ~ .toolbar {
@@ -272,6 +275,12 @@ div.code-toolbar > .toolbar .toolbar-item {
 .language-js ~ .toolbar {
     background: #eed817;
     color: #111;
+}
+
+.language-jsx ~ .toolbar {
+    // background: #46cdef;
+    background: #0d7f9b;
+    color: #fff;
 }
 
 .language-scss ~ .toolbar {
@@ -292,6 +301,21 @@ div.code-toolbar > .toolbar .toolbar-item {
 .language-php ~ .toolbar {
     background: #575788;
     color: #fff;
+}
+
+.language-treeview ~ .toolbar {
+    background: #ddd;
+    color: #333;
+}
+
+.language-bad ~ .toolbar {
+    background: #ad0009;
+    color: #ffbaba;
+}
+
+.language-good ~ .toolbar {
+    background: #270;
+    color: #dff2bf;
 }
 
 div.code-toolbar > .toolbar a {

@@ -16,10 +16,11 @@ client: {
 project: {
     category: "Personal project",
     employer: "William Pansky",
-    image: "/projects/pictures-of-parker/_thumb.jpg",
+    image: "/projects/pictures-of-parker/readme.jpg",
     name: "picturesofparker.com",
     summary: "Simple weather app using create-react-app in CodeSandbox ...",
     tag: "vue js gallery",
+    thumbnail: "/projects/pictures-of-parker/_thumb.jpg",
     title: "Building a shrine for our fur-child",
     url: "https://picturesofparker.com"
 }

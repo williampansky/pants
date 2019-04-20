@@ -19,6 +19,7 @@ project: {
     name: "Illusive Apparel",
     summary: "Illusive Apparel delivers award-winning graphic artists create fresh and cutting edge designs ..",
     tag: "Wordpress",
+    thumbnail: "/projects/illusiveapparel.website/_thumb.jpg",
     title: "Wordpress powered by WooCommerce for Dallas apparel boutique website",
     url: "illusiveapparel.website"
 }

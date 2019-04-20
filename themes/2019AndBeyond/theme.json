@@ -6,7 +6,6 @@
     "description": "A Hugo static site enhanced with React.",
     "features": [
         "hugo",
-        "react"
     ],
     "homepage": "https://williampansky.com/",
     "license": "MIT",

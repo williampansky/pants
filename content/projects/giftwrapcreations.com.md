@@ -23,6 +23,7 @@ project: {
     recipient list, gift receipts, wrapping paper, tissue, ribbon patterns, 
     toppers ...",
     tag: "Wordpress",
+    thumbnail: "/projects/giftwrapcreations.com/_thumb.jpg",
     title: "Wordpress website for Dallas gift wrapping artist, Anita Ivancevic",
     url: "https://www.giftwrapcreations.com/"
 }

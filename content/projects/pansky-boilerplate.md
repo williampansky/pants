@@ -16,10 +16,11 @@ client: {
 project: {
     category: "Personal project",
     employer: "William Pansky",
-    image: "/projects/pansky-boilerplate/_thumb.jpg",
+    image: "/projects/pansky-boilerplate/editor.jpg",
     name: "Pansky Boilerplate",
     summary: "Seed repository for proper Sass and JavaScript coding standards, best practices, proper commenting, and file architecture.",
     tag: "GitHub repo",
+    thumbnail: "/projects/pansky-boilerplate/_thumb.jpg",
     title: "How I organize my project assets; installable via Bower",
     url: "https://github.com/williampansky/pansky-boilerplate"
 }

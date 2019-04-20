@@ -2,5 +2,8 @@
     "search.exclude": {
         "static/*/**": true
     },
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "[markdown]": {
+        "editor.quickSuggestions": true
+    }
 }

@@ -20,6 +20,7 @@ project: {
     name: "goodwilldallas.org",
     summary: "As part of the creative department at Miller Ad Agency, we collaborated and worked to bring Goodwill Dallas the new ...",
     tag: "DNN (DotNetNuke)",
+    thumbnail: "/projects/goodwilldallas.org/_thumb.jpg",
     title: "DNN website for the Dallas branch of national NPO, Goodwill Industries",
     url: "https://www.goodwilldallas.org/"
 }
@@ -43,19 +44,19 @@ Next, we tackled their logo. Due to national corporate regulations, there was on
 
 We created a style guide, business cards, folding brochures, a complete website overhaul, and much more. It was a pleasure to work with Goodwill Industries of Dallas and we continue to cooperate in joint endeavors to this day.
 
-![Goodwill Dallas' new styleguide](/img/projects/good-website/good-website-new-styles-01.jpg")
+![Goodwill Dallas' new styleguide](/projects/goodwilldallas.org/good-website-new-styles-01.jpg")
 
 ### My role
 
 My part revolved around the website. Everything from structure to wireframing to conceptual mockups to production assets to HTML and vanilla CSS (not discovering Sass until well after this project’s completion).
 
-![Screenshot of the original goodwilldallas.org; 2010.](/img/projects/good-website/good-website-old.jpg)
+![Screenshot of the original goodwilldallas.org; 2010.](/projects/goodwilldallas.org/good-website-old.jpg)
 
-![Homepage screenshot of the new goodwilldallas.org; 2015.](/img/projects/good-website/good-website-new-01.jpg)
+![Homepage screenshot of the new goodwilldallas.org; 2015.](/projects/goodwilldallas.org/good-website-new-01.jpg)
 
-![Screenshot of the new goodwilldallas.org 'Give' page; 2015.](/img/projects/good-website/good-website-new-02.jpg)
+![Screenshot of the new goodwilldallas.org 'Give' page; 2015.](/projects/goodwilldallas.org/good-website-new-02.jpg)
 
-![Screenshot of the new goodwilldallas.org 'Info > The Journey' page; 2015.](/img/projects/good-website/good-website-new-03.jpg)
+![Screenshot of the new goodwilldallas.org 'Info > The Journey' page; 2015.](/projects/goodwilldallas.org/good-website-new-03.jpg)
 
 ### Wayback
 

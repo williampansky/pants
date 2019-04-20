@@ -1,0 +1,23 @@
+{{ partial "head/_index" . }}
+    <main class="container">
+
+        <header class="section">
+            {{ partial "intro" . }}
+        </header>
+
+        <section class="section small">
+            <div class="container xsmall references">
+                {{ range first 20 (where .Data.Pages.ByPublishDate.Reverse "Section" "references") }}
+                    {{ partial "references/list.item" . }}
+                {{ end }}
+            </div>
+        </section>
+
+        <footer class="section">
+            <div class="container small">
+                {{ partial "footer/global" . }}
+            </div>
+        </footer>
+
+    </main>
+{{ partial "footer/_index" . }}
