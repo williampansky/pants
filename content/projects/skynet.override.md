@@ -33,9 +33,33 @@ project: {
 
 The code found in this project does not, in any way, conflict with the original SVN repository. All JavaScript interaction is limited to front-end DOM manipulation; meaning it's tweaking the presentational aspect in a way anyone with Chrome devtools can do. It does not compromise or tap into the server, database, or other core aspects of Skynet. It's simply a visual _(aesthetic)_ upgrade.
 
-## Features
+## Upgrades
 
 Skynet.Override strives to provide a modern interface experience for the outdated front-end with help from the UIkit framework.
+
+### Login
+![Login](/projects/skynet.override/login.jpg)
+![Login Override](/projects/skynet.override/login.override.jpg)
+
+### Tasks List
+![Tasks](/projects/skynet.override/tasks.jpg)
+![Tasks Override](/projects/skynet.override/tasks.override.jpg)
+
+### Resource Links
+![Resources](/projects/skynet.override/resources.jpg)
+![Resources Override](/projects/skynet.override/resources.override.jpg)
+
+### Account Page
+![Account](/projects/skynet.override/account.jpg)
+![Account Override](/projects/skynet.override/account.override.jpg)
+
+### Single-task
+![Single Task](/projects/skynet.override/single.jpg)
+![Single Task Override](/projects/skynet.override/single.override.jpg)
+
+### Task Comments
+![Task Comments](/projects/skynet.override/comments.jpg)
+![Task Comments Override](/projects/skynet.override/comments.override.jpg)
 
 ## Installing / Getting started
 

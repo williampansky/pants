@@ -16,10 +16,11 @@ client: {
 project: {
     category: "Case study",
     employer: "Sabre Corporation",
-    image: "/projects/mohg.morez/_thumb.jpg",
+    image: "/projects/mohg.morez/login.jpg",
     name: "morez",
     summary: "",
     tag: "Vue Web App",
+    thumbnail: "/projects/mohg.morez/_thumb.jpg",
     title: "Developing an internal call-center reservation webapp",
     url: "https://mandarinoriental.com/"
 }
