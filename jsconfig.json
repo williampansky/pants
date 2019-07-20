@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "jsx": "react",
-    "noLib": true,
     "target": "es6",
     "baseUrl": ".",
     "paths": {
