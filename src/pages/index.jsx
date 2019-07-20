@@ -21,6 +21,7 @@ export const pageQuery = graphql`
                 featuredPost {
                     id
                     title
+                    slug
                     client {
                         name
                         website
@@ -80,6 +81,7 @@ export const pageQuery = graphql`
                 allPosts {
                     id
                     title
+                    slug
                     client {
                         name
                         website
