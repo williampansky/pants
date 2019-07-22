@@ -59,24 +59,6 @@ export const pageQuery = graphql`
                             description
                         }
                     }
-                    leadParagraph {
-                        leadParagraph
-                    }
-                    introduction {
-                        introduction
-                    }
-                    objective {
-                        objective
-                    }
-                    development {
-                        development
-                    }
-                    conclusion {
-                        conclusion
-                    }
-                    sources {
-                        sources
-                    }
                 }
                 allPosts {
                     id
@@ -118,24 +100,6 @@ export const pageQuery = graphql`
                         description {
                             description
                         }
-                    }
-                    leadParagraph {
-                        leadParagraph
-                    }
-                    introduction {
-                        introduction
-                    }
-                    objective {
-                        objective
-                    }
-                    development {
-                        development
-                    }
-                    conclusion {
-                        conclusion
-                    }
-                    sources {
-                        sources
                     }
                 }
             }
