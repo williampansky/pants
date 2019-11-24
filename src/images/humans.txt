@@ -1,0 +1,24 @@
+/* PROJECT */
+  Site Name:   William Pansky
+  Site URL:    williampansky.com
+  Description: Dallas, TX; Graphic designer & aspiring front-end webdev.
+  Created:     2009/10/06
+
+/* AUTHOR */
+  Name:        William Pansky
+  Nickname:    williampansky
+  Title:       Front-end Developer
+  Location:    Dallas, TX
+  Site:        williampansky.com
+
+/* ABOUT */
+  Hello, my name is William Pansky! I'm a 30-year-old professional graphic designer
+  living in the Dallas-Fort Worth Metroplex. I love art, design, type,
+  and all things visually creative, inspiring, and expressive.
+  Laughing is my primary form of exercise.
+
+/* SOCIAL */
+  Github:      github.com/williampansky
+  LinkedIn:    linkedin.com/in/williampansky
+  Behance:     behance.net/williampansky
+  Facebook:    facebook.com/williampansky
