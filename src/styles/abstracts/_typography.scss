@@ -21,23 +21,23 @@ $min_font: 16;
 $max_font: 19;
 
 :root {
-    font-size: #{$min_font}px;
+  font-size: #{$min_font}px;
 }
 
 // This part is a little bit ugly
 @media (min-width: #{$min_width}px) and (max-width: #{$max_width}px) {
-    :root {
-        font-size: calc(
-            #{$min_font}px + (#{$max_font} - #{$min_font}) *
-                ((100vw - #{$min_width}px) / (#{$max_width} - #{$min_width}))
-        );
-    }
+  :root {
+    font-size: calc(
+      #{$min_font}px + (#{$max_font} - #{$min_font}) *
+        ((100vw - #{$min_width}px) / (#{$max_width} - #{$min_width}))
+    );
+  }
 }
 
 @media (min-width: #{$max_width}px) {
-    :root {
-        font-size: #{$max_font}px;
-    }
+  :root {
+    font-size: #{$max_font}px;
+  }
 }
 
 // -----------------------------------
@@ -46,22 +46,22 @@ $h1_min_font: 26;
 $h1_max_font: 46;
 
 h1 {
-    font-size: #{$h1_min_font}px;
+  font-size: #{$h1_min_font}px;
 }
 
 @media (min-width: #{$min_width}px) and (max-width: #{$max_width}px) {
-    h1 {
-        font-size: calc(
-            #{$h1_min_font}px + (#{$h1_max_font} - #{$h1_min_font}) *
-                ((100vw - #{$min_width}px) / (#{$max_width} - #{$min_width}))
-        );
-    }
+  h1 {
+    font-size: calc(
+      #{$h1_min_font}px + (#{$h1_max_font} - #{$h1_min_font}) *
+        ((100vw - #{$min_width}px) / (#{$max_width} - #{$min_width}))
+    );
+  }
 }
 
 @media (min-width: #{$max_width}px) {
-    h1 {
-        font-size: #{$h1_max_font}px;
-    }
+  h1 {
+    font-size: #{$h1_max_font}px;
+  }
 }
 
 // ======================================================
@@ -70,48 +70,48 @@ h1 {
 // codepen.io/MadeByMike/pen/7744b5fc445e2b34a9e2bb1e21e8b09c
 // ======================================================
 @mixin fluid-type(
-    $properties,
-    $min-screen,
-    $max-screen,
-    $min-value,
-    $max-value
+  $properties,
+  $min-screen,
+  $max-screen,
+  $min-value,
+  $max-value
 ) {
-    & {
-        @each $property in $properties {
-            #{$property}: $min-value;
-        }
-
-        @media screen and (min-width: $min-screen) {
-            @each $property in $properties {
-                #{$property}: calc-interpolation(
-                    $min-screen,
-                    $min-value,
-                    $max-screen,
-                    $max-value
-                );
-            }
-        }
-
-        @media screen and (min-width: $max-screen) {
-            @each $property in $properties {
-                #{$property}: $max-value;
-            }
-        }
+  & {
+    @each $property in $properties {
+      #{$property}: $min-value;
     }
+
+    @media screen and (min-width: $min-screen) {
+      @each $property in $properties {
+        #{$property}: calc-interpolation(
+          $min-screen,
+          $min-value,
+          $max-screen,
+          $max-value
+        );
+      }
+    }
+
+    @media screen and (min-width: $max-screen) {
+      @each $property in $properties {
+        #{$property}: $max-value;
+      }
+    }
+  }
 }
 
 @function calc-interpolation($min-screen, $min-value, $max-screen, $max-value) {
-    $a: ($max-value - $min-value) / ($max-screen - $min-screen);
-    $b: $min-value - $a * $min-screen;
+  $a: ($max-value - $min-value) / ($max-screen - $min-screen);
+  $b: $min-value - $a * $min-screen;
 
-    $sign: '+';
+  $sign: '+';
 
-    @if ($b < 0) {
-        $sign: '-';
-        $b: abs($b);
-    }
+  @if ($b < 0) {
+    $sign: '-';
+    $b: abs($b);
+  }
 
-    @return calc(#{$a * 100}vw #{$sign} #{$b});
+  @return calc(#{$a * 100}vw #{$sign} #{$b});
 }
 
 // ======================================================
@@ -121,15 +121,16 @@ h1 {
 // ======================================================
 // ## BODY => BASE SETTINGS
 body {
-    @include fluid-type('line-height', 22em, 45em, 1.45em, 1.65em);
-    color: rgba(0, 0, 0, 0.695);
-    font-family: 'Lora', Georgia, serif;
-    font-weight: normal;
-    font-style: normal;
-    line-height: 1.68;
-    letter-spacing: -0.003em;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
+  @include fluid-type('line-height', 22em, 45em, 1.45em, 1.65em);
+  color: rgba(0, 0, 0, 0.695);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.68;
+  letter-spacing: -0.003em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 // -----------------------------------
@@ -143,59 +144,54 @@ ol,
 p,
 pre,
 ul {
-    margin: calc(#{$min_font}px * 0.875) 0;
+  margin: calc(#{$min_font}px * 0.875) 0;
 }
 
 p > img {
-    margin-bottom: calc(-#{$min_font}px * 0.875);
+  margin-bottom: calc(-#{$min_font}px * 0.875);
 }
 
 // This part is a little bit ugly
 @media (min-width: #{$min_width}px) and (max-width: #{$max_width}px) {
-    address,
-    dl,
-    fieldset,
-    figure,
-    ol,
-    p,
-    pre,
-    ul {
-        margin: calc(
-                #{$min_font}px + (#{$max_font} - #{$min_font}) *
-                    (
-                        (100vw - #{$min_width}px) /
-                            (#{$max_width} - #{$min_width})
-                    )
-            )
-            0;
-    }
+  address,
+  dl,
+  fieldset,
+  figure,
+  ol,
+  p,
+  pre,
+  ul {
+    margin: calc(
+        #{$min_font}px + (#{$max_font} - #{$min_font}) *
+          ((100vw - #{$min_width}px) / (#{$max_width} - #{$min_width}))
+      )
+      0;
+  }
 
-    p > img {
-        margin-bottom: calc(
-            -#{$min_font}px + (#{$max_font} - #{$min_font}) *
-                (
-                    (100vw - #{$min_width}px) /
-                        (#{$max_width} - #{$min_width})
-                )
-        );
-    }
+  p > img {
+    margin-bottom: calc(
+      -#{$min_font}px + (#{$max_font} - #{$min_font}) * ((
+              100vw - #{$min_width}px
+            ) / (#{$max_width} - #{$min_width}))
+    );
+  }
 }
 
 @media (min-width: #{$max_width}px) {
-    address,
-    dl,
-    fieldset,
-    figure,
-    ol,
-    p,
-    pre,
-    ul {
-        margin: calc(#{$min_font}px * 2) 0;
-    }
+  address,
+  dl,
+  fieldset,
+  figure,
+  ol,
+  p,
+  pre,
+  ul {
+    margin: calc(#{$min_font}px * 2) 0;
+  }
 
-    p > img {
-        margin-bottom: calc(-#{$min_font}px * 1);
-    }
+  p > img {
+    margin-bottom: calc(-#{$min_font}px * 1);
+  }
 }
 
 // * + address,
@@ -216,7 +212,7 @@ p > img {
 // }
 
 ::selection {
-    background-color: lightcoral;
+  background-color: lightcoral;
 }
 
 // ======================================================
@@ -232,13 +228,13 @@ h3,
 h4,
 h5,
 h6 {
-    @include fluid-type('line-height', 22em, 45em, 1.14em, 1.25em);
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    line-height: 1.04;
-    letter-spacing: -0.028em;
-    padding: 4px 0;
+  @include fluid-type('line-height', 22em, 45em, 1.14em, 1.25em);
+  // font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.04;
+  letter-spacing: -0.028em;
+  padding: 4px 0;
 }
 
 // *+.uk-h1, *+.uk-h2, *+.uk-h3, *+.uk-h4, *+.uk-h5, *+.uk-h6, *+h1, *+h2, *+h3, *+h4, *+h5, *+h6 {
@@ -278,27 +274,27 @@ h6 {
 // -----------------------------------
 // ## HEADINGS => h5
 h5 {
-    font-size: inherit;
-    // font-size: $type-headings-h5-size;
-    // line-height: $type-headings-h5-line-height;
+  font-size: inherit;
+  // font-size: $type-headings-h5-size;
+  // line-height: $type-headings-h5-line-height;
 }
 
 // ======================================================
 // # DEFINITION LISTS
 // ======================================================
 dl {
-    & > dt,
-    & dd {
-        font-family: sans-serif;
-    }
+  & > dt,
+  & dd {
+    font-family: sans-serif;
+  }
 
-    & dd {
-        color: #666;
-        font-size: 14px;
-        font-weight: normal;
-        line-height: 1.35;
-        letter-spacing: 0.125px;
-    }
+  & dd {
+    color: #666;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.35;
+    letter-spacing: 0.125px;
+  }
 }
 
 // ======================================================
@@ -307,49 +303,49 @@ dl {
 // ## UTILITIES => TEXT LEAD
 .text-lead,
 .text-lead p {
-    font-family: sans-serif;
-    font-size: 1.5rem;
-    font-weight: 300;
-    line-height: 1.3454;
-    letter-spacing: -0.865px;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.3454;
+  letter-spacing: -0.865px;
 }
 
 // -----------------------------------
 // ## UTILITIES => MISC TEXT STYLES
 em {
-    color: inherit;
+  color: inherit;
 }
 
 .article-meta {
-    color: #757575;
+  color: #757575;
 } // lowest AA on #fff;
 
 // -----------------------------------
 // ## UTILITIES => PRE & CODE
 pre {
-    background: rgba(0, 0, 0, 0.05);
-    padding: 20px;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 20px;
 }
 
 :not(pre) > code,
 :not(pre) > kbd,
 :not(pre) > samp {
-    color: inherit;
-    word-break: break-word;
-    word-wrap: break-word;
-    white-space: pre-wrap;
+  color: inherit;
+  word-break: break-word;
+  word-wrap: break-word;
+  white-space: pre-wrap;
 }
 
 // -----------------------------------
 // ## UTILITIES => BLOCKQUOTES
 blockquote {
-    font-size: 1.05rem;
-    letter-spacing: 0.01rem;
-    border-left: 3px solid rgba(0, 0, 0, 0.8);
-    padding: 0 0 2px 20px;
-    margin-left: 4px;
+  font-size: 1.05rem;
+  letter-spacing: 0.01rem;
+  border-left: 3px solid rgba(0, 0, 0, 0.8);
+  padding: 0 0 2px 20px;
+  margin-left: 4px;
 
-    @media (min-width: 740px) {
-        margin-left: -23px;
-    }
+  @media (min-width: 740px) {
+    margin-left: -23px;
+  }
 }

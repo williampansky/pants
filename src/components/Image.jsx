@@ -14,7 +14,7 @@ import Img from 'gatsby-image';
  */
 
 const Image = ({ src, alt }) => {
-    return <Img fluid={src} alt={alt} />;
+  return <Img fluid={src} alt={alt} />;
 };
 
 export default Image;

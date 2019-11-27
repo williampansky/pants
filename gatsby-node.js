@@ -6,30 +6,39 @@
 
 const path = require('path');
 exports.createPages = ({ actions, graphql }) => {
-    const { createPage } = actions;
-    const template = path.resolve(`src/templates/posts.jsx`);
-    return graphql(`
-        {
-            allContentfulCaseStudy {
-                edges {
-                    node {
-                        slug
-                    }
-                }
-            }
+  const { createPage, createRedirect } = actions;
+
+  // @see https://www.gatsbyjs.org/docs/actions/#createRedirect
+  createRedirect({
+    fromPath: '/projectsfeatured/thelunch.info/',
+    toPath: '/posts/the-lunch',
+    isPermanent: true
+  });
+
+  // posts templates
+  const template = path.resolve(`src/templates/posts.jsx`);
+  return graphql(`
+    {
+      allContentfulCaseStudy {
+        edges {
+          node {
+            slug
+          }
         }
-    `).then(result => {
-        if (result.errors) return Promise.reject(result.errors);
-        result.data.allContentfulCaseStudy.edges.forEach(({ node }) => {
-            if (node) {
-                createPage({
-                    path: `/posts/${node.slug}`,
-                    component: template,
-                    context: {
-                        slug: node.slug
-                    }
-                });
-            }
+      }
+    }
+  `).then(result => {
+    if (result.errors) return Promise.reject(result.errors);
+    result.data.allContentfulCaseStudy.edges.forEach(({ node }) => {
+      if (node) {
+        createPage({
+          path: `/posts/${node.slug}`,
+          component: template,
+          context: {
+            slug: node.slug
+          }
         });
+      }
     });
+  });
 };

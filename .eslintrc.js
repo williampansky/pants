@@ -18,9 +18,10 @@ module.exports = {
         'eslint:recommended',
         'plugin:jsx-a11y/recommended',
         'plugin:react/recommended',
+        'plugin:react/all',
+        'react-app',
         'prettier',
         'prettier/react',
-        'react-app'
     ],
 
     /**
@@ -107,7 +108,7 @@ module.exports = {
          */
         indent: [
             'error',
-            4,
+            2,
             {
                 SwitchCase: 1
             }
