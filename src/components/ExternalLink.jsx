@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
-const ExternalLink = ({ href, text }) => {
+const ExternalLink = ({ href, rel, target, text }) => {
   return (
-    <Component href={href} rel="noopener noreferrer" target="_blank">
+    <Component href={href} rel={rel} target={target}>
       {text}
     </Component>
   );
@@ -29,5 +30,17 @@ const Component = styled.a`
     justify-content: flex-end;
   }
 `;
+
+ExternalLink.propTypes = {
+  href: PropTypes.string.isRequired,
+  rel: PropTypes.string,
+  target: PropTypes.string,
+  text: PropTypes.string.isRequired
+};
+
+ExternalLink.defaultProps = {
+  rel: 'noopener noreferrer',
+  target: '_blank'
+};
 
 export default ExternalLink;
