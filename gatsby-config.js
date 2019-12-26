@@ -15,15 +15,14 @@ require('dotenv').config({ path: `.env` });
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`
+    title: `William Pansky`,
+    description: `Front-end web developer and graphic designer with ability to solve complex website interface problems through creative and UX-minded solutions.`,
+    author: `William Pansky`
   },
   plugins: [
     /**
      * Wrapper around the webpack feature for aliasing import statements.
-     * @name gatsby-plugin-alias-imports
-     * @see [Docs]{@link https://www.gatsbyjs.org/packages/gatsby-plugin-alias-imports/}
+     * @see https://www.gatsbyjs.org/packages/gatsby-plugin-alias-imports/
      */
     {
       resolve: `gatsby-plugin-alias-imports`,
@@ -39,9 +38,8 @@ module.exports = {
      * Source plugin for pulling content types, entries, and assets into
      * Gatsby from [Contentful] spaces. It creates links between entry types
      * and asset so they can be queried in Gatsby using GraphQL.
-     * [Contentful]: https://www.contentful.com/
      *
-     * @name gatsby-source-contentful
+     * [Contentful]: https://www.contentful.com/
      * @see https://www.gatsbyjs.org/packages/gatsby-source-contentful/
      */
     {
@@ -70,12 +68,11 @@ module.exports = {
      * - **Favicon support**
      * - **Legacy icon support (iOS)**
      * - **Cache busting**
-     * - **Localization** - Provides unqiue manifests [(Example)]
+     * - **Localization** - Provides unique manifests [(Example)]
      *
-     * @name gatsby-plugin-manifest
-     * @see https://www.gatsbyjs.org/packages/gatsby-plugin-manifest
      * [here]: https://caniuse.com/#feat=web-app-manifest
      * [Example]: https://github.com/gatsbyjs/gatsby/tree/master/examples/using-i18n
+     * @see https://www.gatsbyjs.org/packages/gatsby-plugin-manifest
      */
     {
       resolve: `gatsby-plugin-manifest`,
@@ -99,7 +96,6 @@ module.exports = {
      * this plugin should be listed after that plugin so the manifest file can
      * be included in the service worker.
      *
-     * @name gatsby-plugin-offline
      * @see https://www.gatsbyjs.org/packages/gatsby-plugin-offline
      */
     'gatsby-plugin-offline',
@@ -109,7 +105,6 @@ module.exports = {
      * increase performance as opposed to loading webfonts from Google’s
      * external stylesheet.
      *
-     * @name gatsby-plugin-google-fonts
      * @see https://www.gatsbyjs.org/packages/gatsby-plugin-google-fonts
      */
     {
@@ -121,9 +116,15 @@ module.exports = {
     },
 
     /**
+     * Automatically generates a _headers file & a _redirects file at the root
+     * of the public folder to configure HTTP headers & redirects on Netlify.
+     * @see https://www.gatsbyjs.org/packages/gatsby-plugin-netlify
+     */
+    `gatsby-plugin-netlify`,
+
+    /**
      * Gatsby plugin to handle PostCSS.
      *
-     * @name gatsby-plugin-postcss
      * @see https://www.gatsbyjs.org/packages/gatsby-plugin-postcss
      */
     `gatsby-plugin-postcss`,
@@ -143,16 +144,13 @@ module.exports = {
      * and `description` metadata stored in the document head is a key
      * component used by Google in determining placement in search results.
      *
-     * @name gatsby-plugin-react-helmet
-     * @see https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet
      * [React-Helmet]: https://github.com/nfl/react-helmet
+     * @see https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet
      */
     'gatsby-plugin-react-helmet',
 
     /**
      * Create `robots.txt` for your Gatsby site.
-     *
-     * @name gatsby-plugin-robots-txt
      * @see https://www.gatsbyjs.org/packages/gatsby-plugin-robots-txt
      */
     {
@@ -164,8 +162,6 @@ module.exports = {
 
     /**
      * Provides drop-in support for SASS/SCSS stylesheets
-     *
-     * @name gatsby-plugin-sass
      * @see https://www.gatsbyjs.org/packages/gatsby-plugin-sass
      */
     'gatsby-plugin-sass',
@@ -174,7 +170,6 @@ module.exports = {
      * Aims to provide excellent out-of-the box settings
      * for processing common web image formats.
      *
-     * @name gatsby-plugin-sharp
      * @see https://www.gatsbyjs.org/packages/gatsby-plugin-sharp
      */
     `gatsby-plugin-sharp`,
@@ -183,9 +178,8 @@ module.exports = {
      * Adds syntax highlighting to code blocks
      * in markdown files using [PrismJS].
      *
-     * @name gatsby-remark-prismjs
-     * @see https://www.gatsbyjs.org/packages/gatsby-remark-prismjs
      * [PrismJS]: https://prismjs.com/
+     * @see https://www.gatsbyjs.org/packages/gatsby-remark-prismjs
      */
     {
       resolve: `gatsby-remark-prismjs`,
@@ -246,7 +240,6 @@ module.exports = {
      * A Gatsby source plugin for sourcing data into your
      * Gatsby application from your local filesystem.
      *
-     * @name gatsby-plugin-filesystem
      * @see https://www.gatsbyjs.org/packages/gatsby-plugin-filesystem
      */
     {
@@ -260,9 +253,8 @@ module.exports = {
     /**
      * Parses Markdown files using [Remark].
      *
-     * @name gatsby-transformer-remark
-     * @see https://www.gatsbyjs.org/packages/gatsby-transformer-remark/
      * [Remark]: https://remark.js.org/
+     * @see https://www.gatsbyjs.org/packages/gatsby-transformer-remark/
      */
     {
       resolve: `gatsby-transformer-remark`,
@@ -286,9 +278,8 @@ module.exports = {
      * GraphQL types for processing your images in a variety of ways
      * including resizing, cropping, and creating responsive images.
      *
-     * @name gatsby-transformer-sharp
-     * @see https://www.gatsbyjs.org/packages/gatsby-transformer-sharp
      * [Sharp]: https://github.com/lovell/sharp
+     * @see https://www.gatsbyjs.org/packages/gatsby-transformer-sharp
      */
     `gatsby-transformer-sharp`,
 
@@ -298,7 +289,6 @@ module.exports = {
      *
      * **NOTE** This plugin must be the last entry in the `plugins` array.
      *
-     * @name gatsby-plugin-meta-redirect
      * @see https://www.gatsbyjs.org/packages/gatsby-plugin-meta-redirect
      */
     `gatsby-plugin-meta-redirect`
