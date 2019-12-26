@@ -1,0 +1,4 @@
+# Netlify Redirects
+# @see https://play.netlify.com/redirects
+
+/projectsfeatured/thelunch.info/	    /posts/the-lunch	    301
