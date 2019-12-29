@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-// import Layout from '@/components/Layout';
+import Layout from '@/components/Layout';
 import SEO from '@/components/SEO';
 import Name from '@/components/Name';
 import GridItem from '@/components/GridItem';
@@ -12,58 +12,59 @@ import ExternalLink from '@/components/ExternalLink';
 import FONTS from '@/fonts.json';
 
 const IndexPage = ({ data }) => {
-  const [fontObject, setFontObject] = useState({
-    headlineFamily:
-      "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
-    headlineWeight: 400,
-    textFamily:
-      "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
-    textWeight: 400
-  });
+    const [fontObject, setFontObject] = useState({
+        headlineFamily:
+            "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+        headlineWeight: 400,
+        textFamily:
+            "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+        textWeight: 400
+    });
 
-  const getRandomFontFamily = useCallback((array = FONTS) => {
-    const selection = Math.floor(Math.random() * array.length);
-    setFontObject(array[selection]);
-  }, []);
+    const getRandomFontFamily = useCallback((array = FONTS) => {
+        const selection = Math.floor(Math.random() * array.length);
+        setFontObject(array[selection]);
+    }, []);
 
-  useEffect(() => {
-    getRandomFontFamily();
-  }, [getRandomFontFamily]);
+    useEffect(() => {
+        getRandomFontFamily();
+    }, [getRandomFontFamily]);
 
-  return (
-    <Grid font={fontObject}>
-      <SEO title="Home" />
+    return (
+        <Layout>
+            <SEO title="Home" />
+            <Grid font={fontObject}>
+                <GridItem>
+                    <Name font={fontObject} />
+                </GridItem>
 
-      <GridItem>
-        <Name font={fontObject} />
-      </GridItem>
-
-      <GridItem>
-        <TextLead
-          text="Front-end web developer and graphic designer with ability to solve complex
+                <GridItem>
+                    <TextLead
+                        text="Front-end web developer and graphic designer with ability to solve complex
       website interface problems through creative and UX-minded solutions."
-        />
-      </GridItem>
+                    />
+                </GridItem>
 
-      <GridItem>
-        <Employment />
-      </GridItem>
+                <GridItem>
+                    <Employment />
+                </GridItem>
 
-      <GridItem padding={false}>
-        <ExternalLink
-          href="https://www.linkedin.com/in/williampansky/"
-          text="linkedin.com/in/williampansky"
-        />
-      </GridItem>
+                <GridItem padding={false}>
+                    <ExternalLink
+                        href="https://www.linkedin.com/in/williampansky/"
+                        text="linkedin.com/in/williampansky"
+                    />
+                </GridItem>
 
-      <GridItem padding={false}>
-        <ExternalLink
-          href="mailto:williampansky@gmail.com"
-          text="williampansky@gmail.com"
-        />
-      </GridItem>
-    </Grid>
-  );
+                <GridItem padding={false}>
+                    <ExternalLink
+                        href="mailto:williampansky@gmail.com"
+                        text="williampansky@gmail.com"
+                    />
+                </GridItem>
+            </Grid>
+        </Layout>
+    );
 };
 
 // prettier-ignore
@@ -119,100 +120,100 @@ const Grid = styled.main`
 `;
 
 export const pageQuery = graphql`
-  query a {
-    allContentfulBlogPosts {
-      nodes {
-        featuredPost {
-          id
-          title
-          slug
-          client {
-            name
-            website
-            description {
-              description
-            }
-            logo {
-              localFile {
-                childImageSharp {
-                  fluid {
-                    ...GatsbyImageSharpFluid
-                  }
-                  original {
-                    height
-                    width
-                  }
+    query a {
+        allContentfulBlogPosts {
+            nodes {
+                featuredPost {
+                    id
+                    title
+                    slug
+                    client {
+                        name
+                        website
+                        description {
+                            description
+                        }
+                        logo {
+                            localFile {
+                                childImageSharp {
+                                    fluid {
+                                        ...GatsbyImageSharpFluid
+                                    }
+                                    original {
+                                        height
+                                        width
+                                    }
+                                }
+                            }
+                        }
+                        avatar {
+                            localFile {
+                                childImageSharp {
+                                    fluid(jpegProgressive: true, quality: 65) {
+                                        ...GatsbyImageSharpFluid
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    project {
+                        title
+                        website
+                        repository
+                        description {
+                            description
+                        }
+                    }
                 }
-              }
-            }
-            avatar {
-              localFile {
-                childImageSharp {
-                  fluid(jpegProgressive: true, quality: 65) {
-                    ...GatsbyImageSharpFluid
-                  }
+                allPosts {
+                    id
+                    title
+                    slug
+                    client {
+                        name
+                        website
+                        description {
+                            description
+                        }
+                        logo {
+                            localFile {
+                                childImageSharp {
+                                    fluid {
+                                        ...GatsbyImageSharpFluid
+                                    }
+                                    original {
+                                        height
+                                        width
+                                    }
+                                }
+                            }
+                        }
+                        avatar {
+                            localFile {
+                                childImageSharp {
+                                    fluid(jpegProgressive: true, quality: 65) {
+                                        ...GatsbyImageSharpFluid
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    project {
+                        title
+                        website
+                        repository
+                        description {
+                            description
+                        }
+                    }
                 }
-              }
             }
-          }
-          project {
-            title
-            website
-            repository
-            description {
-              description
-            }
-          }
         }
-        allPosts {
-          id
-          title
-          slug
-          client {
-            name
-            website
-            description {
-              description
-            }
-            logo {
-              localFile {
-                childImageSharp {
-                  fluid {
-                    ...GatsbyImageSharpFluid
-                  }
-                  original {
-                    height
-                    width
-                  }
-                }
-              }
-            }
-            avatar {
-              localFile {
-                childImageSharp {
-                  fluid(jpegProgressive: true, quality: 65) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
-            }
-          }
-          project {
-            title
-            website
-            repository
-            description {
-              description
-            }
-          }
-        }
-      }
     }
-  }
 `;
 
 IndexPage.propTypes = {
-  data: PropTypes.object.isRequired
+    data: PropTypes.object.isRequired
 };
 
 export default IndexPage;

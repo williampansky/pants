@@ -21,7 +21,7 @@ module.exports = {
         'plugin:react/all',
         'react-app',
         'prettier',
-        'prettier/react',
+        'prettier/react'
     ],
 
     /**
@@ -108,7 +108,7 @@ module.exports = {
          */
         indent: [
             'error',
-            2,
+            4,
             {
                 SwitchCase: 1
             }

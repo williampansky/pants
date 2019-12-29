@@ -8,22 +8,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
+import UIkit from 'uikit';
+import Icons from 'uikit/dist/js/uikit-icons';
+
+// loads the Icon plugin
+UIkit.use(Icons);
 
 const Layout = ({ children }) => {
-  return (
-    <>
-      <main>{children}</main>
-      {/* <footer>
+    return (
+        <>
+            <main>{children}</main>
+            {/* <footer>
         © {new Date().getFullYear()}, Built with
         {` `}
         <a href="https://www.gatsbyjs.org">Gatsby</a>
       </footer> */}
-    </>
-  );
+        </>
+    );
 };
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
+    children: PropTypes.node.isRequired
 };
 
 export default Layout;

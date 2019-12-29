@@ -4,5 +4,6 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-import './node_modules/normalize.css/normalize.css';
+// import './node_modules/normalize.css/normalize.css';
+import './node_modules/uikit/dist/css/uikit.min.css';
 import '@/styles/main.scss';
