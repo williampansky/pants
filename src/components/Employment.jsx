@@ -24,6 +24,7 @@ const Component = styled.div`
         font-weight: normal;
         line-height: 1;
         margin: 0 0 0.25em;
+        padding: 0;
     }
 `;
 

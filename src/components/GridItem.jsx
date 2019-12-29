@@ -37,7 +37,7 @@ const GridItem = ({ children, padding, text }) => {
 };
 
 const Component = styled.section`
-    animation: scale-up-center 600ms cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    /* animation: scale-up-center 600ms cubic-bezier(0.39, 0.575, 0.565, 1) both; */
     background-color: ${props => props.bg};
     color: ${props => props.txt};
     box-sizing: border-box;

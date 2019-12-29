@@ -69,7 +69,7 @@ const Component = styled.h1`
 
 // prettier-ignore
 const FirstName = styled.div`
-    animation: tracking-in-expand 700ms 800ms cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    /* animation: tracking-in-expand 700ms 800ms cubic-bezier(0.215, 0.610, 0.355, 1.000) both; */
     .i1 { left: -1px; }
     .l1 { left: -7px; }
     .l2 { left: -9px; }
@@ -116,7 +116,7 @@ const FirstName = styled.div`
 
 // prettier-ignore
 const LastName = styled.div`
-    animation: tracking-in-expand 700ms 1200ms cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    /* animation: tracking-in-expand 700ms 1200ms cubic-bezier(0.215, 0.610, 0.355, 1.000) both; */
     top: -15px;
     left: 5px;
     .a  { left: -4px; }

@@ -11,6 +11,7 @@ const Component = styled.p`
     line-height: 1.5;
     font-weight: 300;
     margin: 0;
+    padding: 0;
 
     @media (min-width: 460px) {
         font-size: 1.2em;
