@@ -1,38 +1,55 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export default function Employment() {
+export default function Employment({
+    dateEnd,
+    dateStart,
+    id,
+    location,
+    name,
+    title,
+    website
+}) {
     return (
-        <Component>
-            <h2>
-                Frontend Developer, <strong>Credera</strong>
-            </h2>
-            <Location>Dallas/Fort Worth Area</Location>
-            <Timeline>May 2019 - Present</Timeline>
+        <Component className="uk-card uk-card-body uk-light" id={id}>
+            <Title>{title}</Title>
+            <Company>{name}</Company>
+            <Timeline>{`${dateStart}—${dateEnd}`}</Timeline>
+            <Location>{location}</Location>
+            <meta content={website} name="website" />
         </Component>
     );
 }
 
-const Component = styled.div`
-    font-size: 1em;
+const Component = styled.article`
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 16px;
     line-height: 1;
     margin: 0;
-    padding: 0;
-
-    h2 {
-        color: inherit;
-        font-weight: normal;
-        line-height: 1;
-        margin: 0 0 0.25em;
-        padding: 0;
-    }
 `;
 
-const Location = styled.div`
+const Title = styled.h1`
+    color: inherit;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0 0 0.25em;
+    padding: 0;
+`;
+
+const Company = styled.p`
+    margin: 0 0 0.275em;
+`;
+
+const Timeline = styled.p`
+    font-size: 0.765em;
     margin: 0 0 0.15em;
 `;
 
-const Timeline = styled.div`
+const Location = styled.p`
     font-size: 0.765em;
-    line-height: 1;
+    margin: 0;
 `;

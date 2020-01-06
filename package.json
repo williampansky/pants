@@ -27,6 +27,7 @@
     "gatsby-source-filesystem": "^2.1.5",
     "gatsby-transformer-remark": "^2.6.7",
     "gatsby-transformer-sharp": "^2.3.9",
+    "intersection-observer": "^0.7.0",
     "normalize.css": "^8.0.1",
     "postcss-preset-env": "^6.7.0",
     "prismjs": "^1.16.0",
@@ -38,8 +39,9 @@
     "uikit": "^3.2.6"
   },
   "devDependencies": {
+    "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.0.0",
-    "eslint-config-react-app": "^4.0.1",
+    "eslint-config-react-app": "^5.1.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.2",
     "eslint-plugin-react-hooks": "^1.6.1",

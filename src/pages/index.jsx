@@ -1,174 +1,146 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import Layout from '@/components/Layout';
 import SEO from '@/components/SEO';
-import Name from '@/components/Name';
-import GridItem from '@/components/GridItem';
-import TextLead from '@/components/TextLead';
 import Employment from '@/components/Employment';
-import ExternalLink from '@/components/ExternalLink';
-import FONTS from '@/fonts.json';
+import Post from '@/components/Post';
+import BlogPosts from '@/features/ContentfulBlogPosts/BlogPosts.container';
 
 const IndexPage = ({ data }) => {
-    const [fontObject, setFontObject] = useState({
-        headlineFamily:
-            "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
-        headlineWeight: 400,
-        textFamily:
-            "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
-        textWeight: 400
-    });
+    const {
+        allContentfulEmployer,
+        allContentfulBlogPosts,
+        contentfulBlogPosts,
+        site: {
+            siteMetadata: { author, description }
+        }
+    } = data;
 
-    const getRandomFontFamily = useCallback((array = FONTS) => {
-        const selection = Math.floor(Math.random() * array.length);
-        setFontObject(array[selection]);
-    }, []);
-
-    useEffect(() => {
-        getRandomFontFamily();
-    }, [getRandomFontFamily]);
+    const employers = allContentfulEmployer && allContentfulEmployer.nodes;
+    const blogPosts = allContentfulBlogPosts && allContentfulBlogPosts.nodes[0];
+    const allPosts = blogPosts && blogPosts.allPosts;
+    const featuredPost = blogPosts && blogPosts.featuredPost;
 
     return (
         <Layout>
             <SEO title="Home" />
-            <div
-                className="uk-grid uk-grid-collapse uk-child-width-expand"
-                uk-grid="masonry: false;"
-                uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 200;"
-            >
-                <div>
-                    <GridItem>
-                        <Name font={fontObject} />
-                    </GridItem>
+            <section className="uk-section">
+                <div className="uk-container">
+                    <h1 className="uk-heading-large">{author}</h1>
+                    <p className="uk-text-lead">{description}</p>
                 </div>
-
-                <div className="uk-width-auto">
-                    <GridItem>
-                        <TextLead
-                            text="Front-end web developer and graphic designer with ability to solve complex
-      website interface problems through creative and UX-minded solutions."
+            </section>
+            <section className="uk-background-secondary">
+                <div
+                    className="uk-grid uk-grid-collapse uk-grid-match uk-child-width-1-2@s uk-child-width-1-4@m"
+                    uk-grid=""
+                >
+                    {employers.map((employer, idx) => {
+                        const {
+                            dateEnd,
+                            dateStart,
+                            id,
+                            location,
+                            name,
+                            title,
+                            website
+                        } = employer;
+                        return (
+                            <div
+                                className={idx !== 0 ? 'uk-visible@m' : ''}
+                                key={id}
+                            >
+                                <Employment
+                                    dateEnd={dateEnd}
+                                    dateStart={dateStart}
+                                    id={id}
+                                    location={location}
+                                    name={name}
+                                    title={title}
+                                    visible={idx[0]}
+                                    website={website}
+                                />
+                            </div>
+                        );
+                    })}
+                </div>
+            </section>
+            <BlogPosts data={contentfulBlogPosts} />
+            {/* <section>
+                <div
+                // className="uk-grid uk-grid-collapse uk-child-width-1-4@m uk-child-width-1-5@l uk-child-width-1-6@xl"
+                // uk-grid="masonry: true;"
+                >
+                    <div>
+                        <Post
+                            id={featuredPost.id}
+                            title={featuredPost.title}
+                            slug={featuredPost.slug}
+                            primaryColor={featuredPost.primaryColor}
+                            projectTitle={featuredPost.project.title}
+                            datePublished={featuredPost.datePublished}
+                            imageData={
+                                featuredPost.hero.localFile.childImageSharp
+                                    .fluid
+                            }
                         />
-                    </GridItem>
-                </div>
+                    </div>
 
-                <div>
-                    <GridItem>
-                        <Employment />
-                    </GridItem>
-                </div>
+                    {allPosts.map(post => {
+                        const {
+                            id,
+                            title,
+                            slug,
+                            primaryColor,
+                            project,
+                            datePublished,
+                            hero: {
+                                localFile: {
+                                    childImageSharp: { fluid }
+                                }
+                            }
+                        } = post;
+                        const projectTitle = project && project.title;
 
-                <div>
-                    <GridItem padding={false}>
-                        <ExternalLink
-                            href="https://www.linkedin.com/in/williampansky/"
-                            text="linkedin.com/in/williampansky"
-                        />
-                    </GridItem>
+                        return (
+                            <div key={id}>
+                                <Post
+                                    id={id}
+                                    title={title}
+                                    slug={slug}
+                                    primaryColor={primaryColor}
+                                    projectTitle={projectTitle}
+                                    datePublished={datePublished}
+                                    imageData={fluid}
+                                />
+                            </div>
+                        );
+                    })}
                 </div>
-
-                <div>
-                    <GridItem padding={false}>
-                        <ExternalLink
-                            href="mailto:williampansky@gmail.com"
-                            text="williampansky@gmail.com"
-                        />
-                    </GridItem>
-                </div>
-            </div>
+            </section> */}
         </Layout>
     );
 };
 
+// datePublished(formatString: "dddd, MMMM Do YYYY")
 export const pageQuery = graphql`
-    query a {
-        allContentfulBlogPosts {
+    query indexPage {
+        site {
+            ...SiteInformation
+        }
+        contentfulBlogPosts {
+            ...BlogPosts
+        }
+        allContentfulEmployer(sort: { order: ASC, fields: createdAt }) {
             nodes {
-                featuredPost {
-                    id
-                    title
-                    slug
-                    client {
-                        name
-                        website
-                        description {
-                            description
-                        }
-                        logo {
-                            localFile {
-                                childImageSharp {
-                                    fluid {
-                                        ...GatsbyImageSharpFluid
-                                    }
-                                    original {
-                                        height
-                                        width
-                                    }
-                                }
-                            }
-                        }
-                        avatar {
-                            localFile {
-                                childImageSharp {
-                                    fluid(jpegProgressive: true, quality: 65) {
-                                        ...GatsbyImageSharpFluid
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    project {
-                        title
-                        website
-                        repository
-                        description {
-                            description
-                        }
-                    }
-                }
-                allPosts {
-                    id
-                    title
-                    slug
-                    client {
-                        name
-                        website
-                        description {
-                            description
-                        }
-                        logo {
-                            localFile {
-                                childImageSharp {
-                                    fluid {
-                                        ...GatsbyImageSharpFluid
-                                    }
-                                    original {
-                                        height
-                                        width
-                                    }
-                                }
-                            }
-                        }
-                        avatar {
-                            localFile {
-                                childImageSharp {
-                                    fluid(jpegProgressive: true, quality: 65) {
-                                        ...GatsbyImageSharpFluid
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    project {
-                        title
-                        website
-                        repository
-                        description {
-                            description
-                        }
-                    }
-                }
+                dateEnd
+                dateStart
+                id
+                location
+                name
+                title
+                website
             }
         }
     }

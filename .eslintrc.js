@@ -287,6 +287,15 @@ module.exports = {
         'no-useless-concat': 'error',
 
         /**
+         * This rule allows you to enforce curly braces or disallow
+         * unnecessary curly braces in JSX props and/or children.
+         *
+         * @memberof eslint:rules
+         * @see [eslint:docs](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-brace-presence.md)
+         */
+        'react/jsx-curly-brace-presence': 0,
+
+        /**
          * Asynchronous functions that don’t use `await` might not
          * need to be asynchronous functions and could be the unintentional
          * result of refactoring. This rule warns async functions which

@@ -1,0 +1,10 @@
+#BlogPosts {
+    @media (max-width: 959px) {
+        padding-top: 0;
+
+        & > div {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}

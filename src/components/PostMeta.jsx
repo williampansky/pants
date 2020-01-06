@@ -42,7 +42,7 @@ const PostMeta = ({
             case 'ContentfulCaseStudy':
                 string = 'Case Study';
                 break;
-        
+
             default:
                 string = '';
                 break;
@@ -55,20 +55,27 @@ const PostMeta = ({
         <Container>
             <CategoryAndProject>
                 <span>{handleCategoryName(category)}</span>
-                <span> / </span>
+                <span>{` / `}</span>
                 <span>{project}</span>
             </CategoryAndProject>
             <DateTime>
-                <span>Published on </span>
-                <time>{datePublished}</time>.<span>Last modified on </span>
-                <time>{dateModified}</time>.
+                <span>{`Published on `}</span>
+                <time>{datePublished}</time>
+                <span>{`. `}</span>
+                <span>{`Last modified on`}</span>
+                <span>{` `}</span>
+                <time>{dateModified}</time>
+                <span>{`.`}</span>
             </DateTime>
             <ReadingTimeWrapper>
                 <strong>
                     <time>{timeToRead}</time>
-                    <span> minute read. </span>
+                    <span>{` minute read. `}</span>
                 </strong>
-                <span>{wordCount} words.</span>.
+                <span>
+                    {wordCount}
+                    {` words.`}
+                </span>
             </ReadingTimeWrapper>
         </Container>
     );

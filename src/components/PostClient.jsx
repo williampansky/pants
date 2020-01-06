@@ -3,6 +3,38 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Image from '@/components/Image';
 
+const PostClient = ({
+    client: {
+        name,
+        description: { description },
+        avatar: {
+            localFile: {
+                childImageSharp: { fluid }
+            }
+        }
+    }
+}) => (
+    <Container>
+        <ImageWrapper>
+            <Image alt={name} src={fluid} />
+        </ImageWrapper>
+        <InfoWrapper>
+            <ClientName>{name}</ClientName>
+            <Description>{description}</Description>
+        </InfoWrapper>
+    </Container>
+);
+
+PostClient.propTypes = {
+    client: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        description: PropTypes.shape({
+            description: PropTypes.string
+        }),
+        avatar: PropTypes.object
+    }).isRequired
+};
+
 const Container = styled.article`
     align-items: center;
     display: flex;
@@ -32,7 +64,7 @@ const Description = styled.p`
 
 const InfoWrapper = styled.header`
     padding-left: 15px;
-    
+
     ${ClientName},
     ${Description} {
         font-family: sans-serif;
@@ -42,23 +74,5 @@ const InfoWrapper = styled.header`
         line-height: 1.4;
     }
 `;
-
-const PostClient = ({
-    client: { name, website, description, logo, avatar }
-}) => (
-    <Container>
-        <ImageWrapper>
-            <Image src={avatar.childImageSharp.fluid} alt={name} />
-        </ImageWrapper>
-        <InfoWrapper>
-            <ClientName>{name}</ClientName>
-            <Description>{description}</Description>
-        </InfoWrapper>
-    </Container>
-);
-
-PostClient.propTypes = {
-    client: PropTypes.object.isRequired
-};
 
 export default PostClient;
