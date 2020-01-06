@@ -1,7 +1,6 @@
 import React from 'react';
-// import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import styled from 'styled-components';
 import Layout from '@/components/Layout';
 import Image from '@/components/Image';
@@ -9,11 +8,26 @@ import SEO from '@/components/SEO';
 import PostClient from '@/components/PostClient';
 import PostMeta from '@/components/PostMeta';
 
+const HeaderNav = styled.header`
+    .uk-navbar-item,
+    .uk-navbar-nav > li > a,
+    .uk-navbar-toggle {
+        font-size: 16px;
+        height: 44px;
+        min-height: 44px;
+        text-transform: none;
+    }
+
+    .uk-logo {
+        font-weight: bold;
+    }
+`;
+
 const Article = styled.article`
     margin: 40px auto;
 
     @media (min-width: 960px) {
-        margin: 70px auto;
+        margin: 40px auto 70px;
     }
 
     img {
@@ -107,6 +121,15 @@ const PostBody = styled.div`
         display: block;
         margin-top: 8px;
     }
+
+    a {
+        text-decoration: underline;
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+    }
 `;
 
 const Post = ({ data }) => {
@@ -119,6 +142,12 @@ const Post = ({ data }) => {
         internal: { type },
         leadParagraph,
         markdown,
+        markdown: {
+            childMarkdownRemark: {
+                timeToRead,
+                wordCount: { words }
+            }
+        },
         project,
         slug,
         sources,
@@ -126,67 +155,65 @@ const Post = ({ data }) => {
         updatedAt
     } = contentfulCaseStudy;
 
+    const postAvatarObject =
+        client &&
+        client.avatar &&
+        client.avatar.localFile &&
+        client.avatar.localFile.childImageSharp &&
+        client.avatar.localFile.childImageSharp.fluid;
+    const postBody =
+        markdown &&
+        markdown.childMarkdownRemark &&
+        markdown.childMarkdownRemark.html;
     const postHeroImage =
         hero &&
         hero.localFile &&
         hero.localFile.childImageSharp &&
         hero.localFile.childImageSharp.fluid;
-    const postBody =
-        markdown &&
-        markdown.childMarkdownRemark &&
-        markdown.childMarkdownRemark.html;
     const postLeadParagraph =
         leadParagraph &&
         leadParagraph.childMarkdownRemark &&
         leadParagraph.childMarkdownRemark.html;
     const projectTitle = project && project.title;
 
-    data = {
-        id: data.contentfulCaseStudy.id,
-        title: data.contentfulCaseStudy.title,
-        slug: data.contentfulCaseStudy.slug,
-        updatedAt: data.contentfulCaseStudy.updatedAt,
-        category: data.contentfulCaseStudy.internal.type,
-        client: {
-            name: data.contentfulCaseStudy.client.name,
-            website: data.contentfulCaseStudy.client.website,
-            description: data.contentfulCaseStudy.client.description.description
-                ? data.contentfulCaseStudy.client.description.description
-                : null,
-            logo: data.contentfulCaseStudy.client.logo,
-            avatar: data.contentfulCaseStudy.client.avatar.localFile
-                ? data.contentfulCaseStudy.client.avatar.localFile
-                : null
-        },
-        project: {
-            title: data.contentfulCaseStudy.project.title,
-            website: data.contentfulCaseStudy.project.website,
-            repository: data.contentfulCaseStudy.project.repository,
-            description: data.contentfulCaseStudy.project.description
-                .description
-                ? data.contentfulCaseStudy.project.description.description
-                : null
-        },
-        hero: data.contentfulCaseStudy.hero.localFile
-            ? data.contentfulCaseStudy.hero.localFile
-            : null,
-        leadParagraph: data.contentfulCaseStudy.leadParagraph
-            .childMarkdownRemark.html
-            ? data.contentfulCaseStudy.leadParagraph.childMarkdownRemark.html
-            : null,
-        markdown: data.contentfulCaseStudy.markdown.childMarkdownRemark
-            ? data.contentfulCaseStudy.markdown.childMarkdownRemark
-            : null,
-        sources: data.contentfulCaseStudy.sources
-            ? data.contentfulCaseStudy.sources
-            : null
-    };
-
-    // console.log(data);
-
     return (
         <Layout>
             <SEO title={title} />
+
+            <HeaderNav>
+                <nav className="uk-navbar-container uk-navbar-transparent uk-navbar">
+                    <div className="uk-navbar-left">
+                        <div className="uk-navbar-item">
+                            <Link className="uk-navbar-item uk-logo" to="/">
+                                William Pansky
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="uk-navbar-right uk-visible@s">
+                        <ul className="uk-navbar-nav">
+                            <nav
+                                className="wep-navbar uk-navbar-container uk-navbar-transparent uk-navbar"
+                                uk-navbar=""
+                            >
+                                <div className="uk-navbar-center">
+                                    <ul className="uk-navbar-nav">
+                                        <li>
+                                            <Link to="/">Projects</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/resume">Resume</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/contact">Contact</Link>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </ul>
+                    </div>
+                </nav>
+            </HeaderNav>
+
             <Article data-slug={slug} id={id}>
                 <Header>
                     <PostClient client={client} />
@@ -196,8 +223,8 @@ const Post = ({ data }) => {
                         dateModified={updatedAt}
                         datePublished={datePublished}
                         project={projectTitle}
-                        timeToRead={data.markdown.timeToRead}
-                        wordCount={data.markdown.wordCount.words}
+                        timeToRead={timeToRead}
+                        wordCount={words}
                     />
                 </Header>
 
@@ -212,7 +239,7 @@ const Post = ({ data }) => {
                 />
 
                 <PostAvatar>
-                    <Image src={data.client.avatar.childImageSharp.fluid} />
+                    <Image src={postAvatarObject} />
                 </PostAvatar>
 
                 <Section id="postSection">

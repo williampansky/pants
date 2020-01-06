@@ -5,7 +5,7 @@ export const Hero = graphql`
         hero {
             localFile {
                 childImageSharp {
-                    fluid(jpegProgressive: true, quality: 65) {
+                    fluid(jpegProgressive: true, quality: 100) {
                         ...GatsbyImageSharpFluid_withWebp
                     }
                 }

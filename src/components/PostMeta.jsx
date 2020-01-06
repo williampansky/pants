@@ -83,9 +83,9 @@ const PostMeta = ({
 
 PostMeta.propTypes = {
     category: PropTypes.string.isRequired,
-    project: PropTypes.string.isRequired,
-    datePublished: PropTypes.string.isRequired,
     dateModified: PropTypes.string.isRequired,
+    datePublished: PropTypes.string.isRequired,
+    project: PropTypes.string.isRequired,
     timeToRead: PropTypes.number.isRequired,
     wordCount: PropTypes.number.isRequired
 };
